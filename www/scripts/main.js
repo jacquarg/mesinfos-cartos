@@ -53,21 +53,28 @@ $(document).ready(function(){
 openListPopin = function(filter) {
   var popin, list;
   var template = function(list) {
-    return "<div class='draggable'>"
-    +   "<div class='close'></div>"
-    +   "<div class='list'></div>"
+    var caract = miConfig.typologiesMap[list.title];
+    var colors = caract.color.r + ', ' + caract.color.g + ', ' + caract.color.b ;
+    return "<div class='listpopin' style='border-color: rgba(" + colors + ", 0.2);' >"
+    +   "<div class='header' style='background-color: rgb(" + colors + ");' >"
+    +     "<img class='icon' src='img/" + caract.headerIcon  + "'>"
+    +     "<h2>" + list.title + "</h2>"
+    +     "<div class='close'>X</div>"
+    +   "</div>"
+    +   "<ul class='list' style='border-color: rgb(" + colors + ");'></ul>"
     + "</div>";
   };
 
   var lineTemplate = function(info) {
-    var html = "<li>"
-    +   "<span>"
+    var html = "<li>" ;
+     if (info.referential) {
+      html += "<img class='referentiallink' src='img/referential_link.png'>";
+    }
+    html +=   "<span>"
     +     info.desc
     +   "</span>";
 
-    if (info.referential) {
-      html += "<span class='referential'>Referential</span>";
-    }
+
 
     html += "</li>";
 
@@ -75,7 +82,7 @@ openListPopin = function(filter) {
     line.click(function() {
       openDetailPopin(info);
     });
-    line.find('.referential').click(function() {
+    line.find('.referentiallink').click(function() {
       openListPopin({
         typology: "Référentiels et Normes",
         referential: info.referential,
@@ -86,9 +93,9 @@ openListPopin = function(filter) {
   };
 
   list = filterList(filter);
-  popin = $(template());
+  popin = $(template(list));
 
-  list.forEach(function(info) {
+  list.infos.forEach(function(info) {
     popin.find('.list').append(lineTemplate(info));
   })
   // popin.find('.list').html(list.map(lineTemplate).join('\n'));
@@ -108,7 +115,7 @@ openListPopin = function(filter) {
 openDetailPopin = function(info) {
 
   var template = function(info) {
-    return "<div class='draggable'>"
+    return "<div class='detailpopin'>"
     +   "<div class='close'></div>"
     +    "<div>" + info.desc + "</div>";
     +    "<div>" + info.support + "</div>";
@@ -135,6 +142,10 @@ openPopin = function(html) {
 }
 
 filterList = function(filter) {
+  var list = {
+    title: "search",
+    // infos: [],
+  };
 
   var hasValue = function(value, filterValue) {
     if (value && value instanceof Array) {
@@ -143,20 +154,25 @@ filterList = function(filter) {
       return value === filterValue;
     }
   };
-    return infos.filter(function(info) {
-        var keep = true;
-        var passFilter = false;
-        for (k in filter) {
 
-          if (filter[k] instanceof Array) {
-            passFilter = filter[k].some(function(v) {
-              return hasValue(info[k], v); });
-          } else {
-            passFilter = hasValue(info[k], filter[k]);
-          }
+  if ('typology' in filter) {
+    list.title = filter.typology;
+  }
+  list.infos = infos.filter(function(info) {
+      var keep = true;
+      var passFilter = false;
+      for (k in filter) {
 
-          keep = keep && passFilter ;
+        if (filter[k] instanceof Array) {
+          passFilter = filter[k].some(function(v) {
+            return hasValue(info[k], v); });
+        } else {
+          passFilter = hasValue(info[k], filter[k]);
         }
-        return keep;
-    });
+
+        keep = keep && passFilter ;
+      }
+      return keep;
+  });
+  return list;
 };

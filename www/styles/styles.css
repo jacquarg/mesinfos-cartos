@@ -3,40 +3,20 @@
   font-weight: bold;
   src: url("../fonts/ScalaSans-BoldLF.otf") format("opentype");
 }
-/*
+
 @font-face {
   font-family: scala;
   font-weight: regular;
-  src: url("fonts/ScalaSans-Regular.otf") format("opentype");
+  src: url("../fonts/ScalaSans-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: scala;
   font-weight: light;
-  src: url("fonts/ScalaSansLight.otf") format("opentype");
-}*/
-
-
-
-.draggable {
-  position: absolute;
-  top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -100px;
-    height:100px;
-    width:200px;
-    background: blue;
+  src: url("../fonts/ScalaSansLight.otf") format("opentype");
 }
 
-.close {
-  position: absolute;
-  right: 0;
-  top:0;
-  height: 30px;
-  width: 30px;
-  background: red;
-}
+
 
 h1 {
   font-family: scala;
@@ -52,7 +32,7 @@ h1 {
   position: absolute;
   margin-left: -500px;
   padding-bottom: 50%;
-  
+
   margin-top: 10%;
 }
 #container > div {  
@@ -74,6 +54,86 @@ max-width: 11%;
 text-align: center;
 }
 
+/* Popins */
+.listpopin {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  margin-top: -50px;
+  margin-left: -100px;
+  height: 500px;
+  width: 400px;
+  background: white;
+  z-index: 1000;
+
+  border: solid 10px;
+}
+
+.listpopin .header {
+  width: 400px;
+  height: 70px;
+
+  background: rgb(35, 189, 182) none repeat scroll 0% 0%;  
+}
+
+.listpopin .header .close {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  color: white;
+  font-family: scala;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+
+}
+
+.listpopin .header h2 {
+  text-align: center;
+  font-family: scala;
+  font-weight: bold;
+  font-size: 16pt;
+  padding: 0;
+  margin-left: 60px;
+  margin-right: 25px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.listpopin .header .icon {
+  position: absolute;
+  height: 35px;
+  left: 17px;
+  top: 17px;
+}
+
+.listpopin .list {
+  padding-top: 10px;
+  overflow: auto;
+  height: 404px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+
+  border: solid 3px rgb(35, 189, 182);
+}
+
+.listpopin .list li {
+  font-family: scala;
+  font-weight: light;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.listpopin .list li span {
+  cursor: pointer;
+}
+
+.listpopin .list .referentiallink {
+  height: 30px;
+  float: right; 
+  cursor: pointer;
+
+}
 /* MIS */
 #donneesnonpersonnelles {
   position: absolute;
@@ -135,7 +195,7 @@ text-align: center;
   left: 50.5%;
   margin-left: -33.2%;
   width: 67%;
-  padding-top: 47.6%;
+  margin-top: 47.6%;
 }
 
 #caractpdt {
