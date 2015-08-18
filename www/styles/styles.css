@@ -1,0 +1,19 @@
+.draggable {
+  position: absolute;
+  top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    height:100px;
+    width:200px;
+    background: blue;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top:0;
+  height: 30px;
+  width: 30px;
+  background: red;
+}

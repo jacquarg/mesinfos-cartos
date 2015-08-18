@@ -1,0 +1,1057 @@
+﻿[
+  {
+    "typology": "Contexte",
+    "desc": "Restauration collective : composition des menus, labellisation et provenance des produits",
+    "support": "Sites web municipaux/école/crous/entreprise",
+    "access": "Scraping",
+    "accessEasyness": "2",
+    "supportExample": "Site web de la municipalité : Grenoble : http://www.grenoble.fr/231-restauration-scolaire.htm\nLyon : http://www.lyon.fr/page/enfance-et-education/leducation/la-restauration-scolaire.html",
+    "subTypology": "",
+    "domain": "Alimentation",
+    "referencial": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Horaires des marchés",
+    "support": "Sites web municipaux",
+    "access": "Scraping",
+    "accessEasyness": "2",
+    "supportExample": "Grenoble : http://www.grenoble.fr/222-les-marches-a-grenoble.htm\nLyon : http://www.lyon.fr/page/economie/commerces/les-marches-lyonnais.html",
+    "subTypology": "",
+    "domain": "Alimentation",
+    "referencial": null
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Labellisation EcoLabel Européen de mes biens de consommation (hors alimentation)",
+    "support": "The Ecolabel Catalogue - Commission Européenne (R1) croisé avec historique d'achat produits divers",
+    "access": "Calcul",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Historique d'achat de mes biens de consommation hors alimentation (petit équipement, biens divers, ...)",
+    "support": "Ticket de caisse ; Données de ma carte de fidélité ; Espace client en ligne de ma banque",
+    "access": "OCR ; Retranscription ; Scraping",
+    "accessEasyness": "2",
+    "supportExample": "Skerou : http://www.skerou.com/",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Fruits et légumes achetés/consommés",
+    "support": "Photographies smartphone ; Déclaratif",
+    "access": "Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Alimentation",
+    "referencial": null
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Provenance des fruits et légumes achetés",
+    "support": "Etiquettes dans les rayons ou marché",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Alimentation",
+    "referencial": null
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Provenance et composition de mes produits alimentaires",
+    "support": "Emballage produit ou Open Food Fact (R2) et/ou Liste code pays sur les code-barres (R3) croisé avec historique d'achat alimentation",
+    "access": "OCR ; Retranscription ; Calcul",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Alimentation",
+    "referencial": [
+      "R2"
+    ]
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Date de péremption de mes produits alimentaires",
+    "support": "Emballage produit",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Alimentation",
+    "referencial": null
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Type d'emballage de mes biens de consommation (produits alimentaires, petit équipement, biens divers)",
+    "support": "Symbole recyclage sur l'emballage produit",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Alimentation",
+    "referencial": null
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Provenance de mes biens de consommation (hors alimentation)",
+    "support": "Notice ou Liste code pays sur les code-barres (R3) croisé avec historique d'achat produits divers",
+    "access": "Calcul",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R3"
+    ]
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Energie nécessaire pour produire mes produits alimentaires",
+    "support": "Articles, Etudes sur les sites web d'associations, d'institutions etc (R4) croisé avec historique d'achat alimentation",
+    "access": "Calcul",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Alimentation",
+    "referencial": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Emissions (g de CO2) par produit alimentaire acheté",
+    "support": "Croisement de la base carbone Ademe (R5) et de mon historique d'achat alimentation",
+    "access": "Calcul",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Alimentation",
+    "referencial": [
+      "R5"
+    ]
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Historique d'achats : nom des produits alimentaires achetés",
+    "support": "Tickets de caisse ; Carte de fidélité",
+    "access": "OCR ; Retranscription ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "Skerou : http://www.skerou.com/",
+    "subTypology": "",
+    "domain": "Alimentation",
+    "referencial": [
+      "R2"
+    ]
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Lieux de compost",
+    "support": "Site web de Sinoé déchets, site d'associations locales (Les compostiers)",
+    "access": "Open Data",
+    "accessEasyness": "2",
+    "supportExample": "http://www.sinoe.org/filtres/index/thematique ; \nSite web de l'association Les compostiers à Lyon : http://www.lescompostiers.org/cartographie-composteurs-collectifs",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Météo : luminosité, vent, température exterieure",
+    "support": "Météo en ligne ; Station météo connectée",
+    "access": "Scraping ; API",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Température intérieure de mon appartement",
+    "support": "Cadran du thermomètre ; Thermomètre connecté ; Station météo connectée",
+    "access": "API ; OCR ; Retranscription",
+    "accessEasyness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Données thermographiques de mon bâtiment",
+    "support": "Photos aériennes thermiques",
+    "access": "Demande à faire aux collectivités locales qui en disposent",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Mode de production de l'électricité de mon fournisseur (X% nucléaire ; X% charbon etc)",
+    "support": "Facture (mix énergétique) ; Site de mon fournisseur",
+    "access": "Scraping",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Poids de mes déchets",
+    "support": "Poubelle connectée ; Balance ; Calcul à partir des tickets de caisse croisés avec Open Food Fact/poid des produits",
+    "access": "API ; Scraping ; OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Historique de la consommation (kwh/an et mois ; €/an et mois) des anciens locataires de mon appartement",
+    "support": "Factures ; Espaces clients des anciens locataires",
+    "access": "Scraping (nécessite un partage entre locataires)",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Suivi de ma production (si autoproduction) en Kwh",
+    "support": "Contrat achat énergie photovoltaique EDF ; Approximation avec dynamo",
+    "access": "Scraping ; OCR ; Retranscription",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Consommation de mon domicile en eau (quantité et débit)",
+    "support": "Débitmètre (connecté ou non) ; Compteur d'eau intelligent",
+    "access": "API ; OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Consommation de mon domicile en kwh / an : moyenne et détail",
+    "support": "Compteur intelligent ; Espace client ; Factures (relevé tous les 6 mois)",
+    "access": "Scraping ; API ; OCR ; Retranscription",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Consommation de mon domicile en € par an : moyenne et détail",
+    "support": "Compteur intelligent ; Espace client ; Factures (relevé tous les 6 mois)",
+    "access": "Scraping ; API ; OCR ; Retranscription",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": [
+      "R1",
+      "R1"
+    ]
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Consommation de mon domicile en kwh / mois : : moyenne et détail",
+    "support": "Compteur intelligent ; Relevé manuel",
+    "access": "Scraping ; API ; OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Consommation de mon domicile en € par mois : moyenne et détail",
+    "support": "Compteur intelligent ; Relevé manuel",
+    "access": "Scraping ; API ; OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": [
+      "R1",
+      "R1"
+    ]
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Solutions d'amélioration du diagnostic de mon logement",
+    "support": "DPE (Diagnostic de Performance énergétique)",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Performance énergétique estimée de mon logement et de mon bâtiment (consommation d'énergie et impact en terme d'émission de gaz à effet de serre)",
+    "support": "DPE (Diagnostic de Performance énergétique) : étiquette climat et étiquette énergie",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Propriétés de mon logement : isolation, surface et nombre de pièces, fenêtres, orientation, matériaux, mur (constitution), toiture...",
+    "support": "DPE (Diagnostic de Performance énergétique) ; Plan",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Equipement de chauffage de mon logement : type (centralisé ou non ; gaz ou électricité) et nombre",
+    "support": "DPE (Diagnostic de Performance énergétique) ; Plan",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Equipement de production d'eau chaude sanitaire de mon logement : type et nombre",
+    "support": "DPE (Diagnostic de Performance énergétique) ; Plan",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Equipement de refroidissement et de ventilation de mon logement : type et nombre",
+    "support": "DPE (Diagnostic de Performance énergétique) ; Plan",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Quantité d'énergie effectivement consommée (sur la base de factures) du bâtiment ou du logement",
+    "support": "DPE (Diagnostic de Performance énergétique)",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Estimation de la quantité d'énergie consommée (sur la base de standards) du bâtiment ou du logement",
+    "support": "DPE (Diagnostic de Performance énergétique)",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Date, prix et caractéristiques des travaux effectués",
+    "support": "Factures des différents prestataires",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Date de construction de mon domicile",
+    "support": "DPE (Diagnostic de Performance énergétique) ; Plan ; Bail",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Mon profil",
+    "desc": "Composition du foyer (nombre de personne, âge...) et adresse",
+    "support": "Livret de famille ; etc",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Mes pratiques internet : nombre de mail envoyés/reçus par h/ jour",
+    "support": "Historique de mon application mail",
+    "access": "Scraping",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Mes pratiques internet  : nombre et nom des sites visités par h/ jour",
+    "support": "Historique de navigation",
+    "access": "Scraping",
+    "accessEasyness": "2",
+    "supportExample": "Fichier \"place.sqlite\" du profil Firefox",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Pratiques diverses du foyer (température de confort, usage d'appareils, nombre de douches, h de rentrée du travail...)",
+    "support": "Questionnaire d'usage ; Déclaratif",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Caractéristiques équipements",
+    "desc": "Classe énergétique de mes équipements",
+    "support": "Etiquette environnementale et énergie (Notice ; Garantie) ou croisement du type/nom de mon équipement avec le référentiel pertinent (R7)",
+    "access": "OCR ; Retranscription ; Calcul",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": [
+      "R7"
+    ]
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Type, nom et modèle de l'équipement (machine à laver etc)",
+    "support": "Notice de l'équipement ; Sur l'équipement ; Garanties",
+    "access": "OCR ; Retranscription ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": [
+      "R7"
+    ]
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Coût unitaire de l'équipement",
+    "support": "Reçus ; Tickets de caisses ; Relevé de comptes ; Garantie",
+    "access": "OCR ; Retranscription ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Consommation réelle de chaque équipement",
+    "support": "Etiquette environnementale ; Capteur sur le compteur ; Capteurs sur l'équipement",
+    "access": "Scraping ; API ; OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Usage de chaque équipement : nombre d'heures et fréquence d'utilisation, programme, ...",
+    "support": "Déclaratif ; Capteur sur le compteurs ; Capteurs sur l'équipement",
+    "access": "Retranscription ; API ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Date d'achat d'un équipement",
+    "support": "Facture ; Garantie",
+    "access": "Scraping ; OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": null
+  },
+  {
+    "typology": "Caractéristiques équipements",
+    "desc": "Consommation (Litres / 100km) et émissions polluantes (Grammes / KM) de mon véhicule",
+    "support": "Croisement de la base de données Ademe \"Emissions de CO2 et de polluants des véhicules commercialisés en France\" (R8) et du modèle de mon véhicule",
+    "access": "Calcul",
+    "accessEasyness": "2",
+    "supportExample": "Certains site web reprennent les données de l'Ademe (par exemple : https://wehicles.com/mag)",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": [
+      "R8"
+    ]
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Etat du trafic",
+    "support": "Site de Waze et autre applications",
+    "access": "Scraping",
+    "accessEasyness": "1",
+    "supportExample": "https://www.waze.com/fr",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Trajets effectués avec mon véhicule instant T et historique : nombre de kilomètre, distance, lieux",
+    "support": "Historique GPS (véhicule, smartphone)",
+    "access": "API ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Trajets effectués avec vélos en libre service (vélov' etc) : nombre de kilomètre, distance, lieux",
+    "support": "Compte en ligne \"vélos en libre service (vélov' etc)\"",
+    "access": "API ; Scrapping",
+    "accessEasyness": "2",
+    "supportExample": "API appli mobile AllBikesNow : https://developer.jcdecaux.com/#/opendata/vls?page=getstarted",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Prix du carburant : dans chaque station",
+    "support": "Sites web spécialisé (ex : Zagaz)",
+    "access": "Scraping ; API",
+    "accessEasyness": "2",
+    "supportExample": "http://www.zagaz.com/index.php",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Prix des transports publics (Bus ; TER, Métro)",
+    "support": "Sites des transporteurs de ma ville (R)",
+    "access": "Open Data ; Scraping",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Trajets fréquents (ex : domicile/travail ; supermarché/domicile/travail, etc) : nombre de kilomètres",
+    "support": "Carte de transport ; Historique GPS ; Historique Géolocalisation",
+    "access": "API ; scraping",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Consommation de carburant par trajet : type, coût, volume, prix",
+    "support": "Site de conversion (ex : Via Michelin)",
+    "access": "Scraping ; API",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Nombre de km d'un covoiturage donné, véhicule utilisé...",
+    "support": "Blablacar et autres sites de consommation collaborative",
+    "access": "Scraping",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Marque et modèle de mon véhicule",
+    "support": "Contrat d'assurance ; Carte grise ; Sur le véhicule ; Facture",
+    "access": "OCR ; Retranscription ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": [
+      "R6",
+      "R8",
+      "R9"
+    ]
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Consommation réelle de mon véhicule (en l/km et en kw/km)",
+    "support": "Ordinateur de bord ; Capteurs supplémentaires ; Ticket de caisse de station service ; Relevé bancaire",
+    "access": "API ; Scraping ; OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Caractéristiques équipements",
+    "desc": "Classe énergétique de mon véhicule",
+    "support": "Etiquette énergie (site web du constructeur ; contrat d'assurance) ou croisement du modèle de mon véhicule avec le référentiel Car Labelling Ademe (R6)",
+    "access": "OCR ; Retranscription ; Calcul",
+    "accessEasyness": "2",
+    "supportExample": "Certains site web reprennent les données de l'Ademe (par exemple : https://wehicles.com/mag)",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": [
+      "R6"
+    ]
+  },
+  {
+    "typology": "Caractéristiques équipements",
+    "desc": "Type d'énergie consommée par mon véhicule (essence, diesel, électricité, hybride...)",
+    "support": "Etiquette énergie (site web du constructeur ; contrat d'assurance) ou croisement du modèle avec le référentiel Car Labelling Ademe (R6)",
+    "access": "OCR ; Retranscription ; Scraping ; Calcul",
+    "accessEasyness": "2",
+    "supportExample": "Certains site web reprennent les données de l'Ademe (par exemple : https://wehicles.com/mag)",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": [
+      "R6"
+    ]
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Date d'achat de mon véhicule",
+    "support": "Contrat d'assurance ; Carte grise ; Facture",
+    "access": "OCR ; Retranscription ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Caractéristiques équipements",
+    "desc": "Classe d’efficacité en carburant (pneu) de mon véhicule",
+    "support": "Etiquette de performance énergétique, d’adhérence et sonore pour les pneus (site web du constructeur ; contrat d'assurance)",
+    "access": "OCR ; Retranscription",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Coût unitaire de mon véhicule",
+    "support": "Bon de commande ; Facture",
+    "access": "OCR ; Retranscription ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Mon logement / Mes équipements",
+    "desc": "Usage de mon véhicule : nombre d'heures et fréquence d'utilisation, nombre de personnes qui l'utilisent, ...",
+    "support": "Ordinateur de bord ; Capteurs véhicule",
+    "access": "API ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "https://dev.xee.com/",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Géolocalisation de mon véhicule : instant T et historique",
+    "support": "GPS ; Capteurs véhicule ; Ordinateur de bord",
+    "access": "API ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Historique de géolocalisation",
+    "support": "Compte en ligne de mon opérateur ; Google TakeOut  ; Application de mon smartphone",
+    "access": "API ; Scraping",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles de consommation énergétique",
+    "desc": "Rythme de consommation de mon véhicule (nombre de pleins d'essence par semaine, par mois)",
+    "support": "Déclaratif ; Données bancaires ; Tickets de caisse ; Capteurs véhicule ; Ordinateur de bord",
+    "access": "OCR ; Retranscription ; Scraping ; API",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Agenda personnel",
+    "support": "Agenda en ligne",
+    "access": "API ; Scraping",
+    "accessEasyness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": null
+  },
+  {
+    "typology": "Données personnelles hors consommation énergétique",
+    "desc": "Nombre de calories brûlées par jour et par acte",
+    "support": "Tracker d'activité",
+    "access": "API ; Scraping",
+    "accessEasyness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Consommation des équipements municipaux (en KW/H, eau, gaz, bois, charbon...)",
+    "support": "Compteurs intelligents ; Factures  ; Compte en ligne",
+    "access": "API ; Scraping (nécessite un partage de la ville)",
+    "accessEasyness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Caractéristique de mon quartier : commerces de proximité ; revenu moyen ; nombre de km2 ; ...",
+    "support": "Sites divers (ici : Kelquartier)",
+    "access": "Scraping",
+    "accessEasyness": "3",
+    "supportExample": "http://www.kelquartier.com/ile_de_france_paris_paris_12_quartier_vallee_de_fecamp_75012-q100505/revenu_moyen.html",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": null
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "The Ecolabel Catalogue - Commission Européenne",
+    "support": "Site du catalogue de la Comission Européenne",
+    "access": "Open Data",
+    "accessEasyness": "3",
+    "supportExample": "http://ec.europa.eu/ecat/",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Caractéristiques des aliments (composition, emballage, provenance, valeur nutritionnelle, label, ...)",
+    "support": "Site d'Open Food Facts",
+    "access": "Open Data",
+    "accessEasyness": "3",
+    "supportExample": "http://fr.openfoodfacts.org/",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R2"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Liste des préfixe pays sur les code-barres",
+    "support": "Site de GS1",
+    "access": "Scraping",
+    "accessEasyness": "3",
+    "supportExample": "http://www.gs1.org/company-prefix",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R3"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Energie nécessaire pour produire un aliment",
+    "support": "Articles, Etudes sur les sites web d'associations, d'institutions etc",
+    "access": "Scraping",
+    "accessEasyness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Emissions (kg de CO2) par achat de biens (alimentaires et autres) et services",
+    "support": "Base carbone Ademe",
+    "access": "Scraping",
+    "accessEasyness": "3",
+    "supportExample": "http://bilans-ges.ademe.fr/fr/basecarbone/donnees-consulter/choix-categorie/categorie/8",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R5"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Classe énergétique des véhicules commercialisés en France",
+    "support": "Car Labelling Ademe",
+    "access": "Scraping",
+    "accessEasyness": "3",
+    "supportExample": "http://carlabelling.ademe.fr/",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R6"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Classe énergétique des équipements commercialisés en France (hors véhicules)",
+    "support": "Sur les sites de vente en ligne (ex : Darty)",
+    "access": "Scraping",
+    "accessEasyness": "2",
+    "supportExample": "http://www.darty.com/",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R7"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Emissions de CO2 et de polluants des véhicules commercialisés en France",
+    "support": "Jeu de données Ademe",
+    "access": "Open Data",
+    "accessEasyness": "3",
+    "supportExample": "https://www.data.gouv.fr/fr/datasets/emissions-de-co2-et-de-polluants-des-vehicules-commercialises-en-france/",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R8"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Type d'énergie consommée des véhicules commercialisés en France",
+    "support": "Car Labelling Ademe",
+    "access": "Scraping",
+    "accessEasyness": "3",
+    "supportExample": "http://carlabelling.ademe.fr/",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R9"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Consommation d'énergie en France/jour",
+    "support": "Site web du RTE (Réseau de l'intelligence électrique) et autres sites",
+    "access": "Open Data",
+    "accessEasyness": "3",
+    "supportExample": "http://clients.rte-france.com/lang/fr/visiteurs/vie/courbes.jsp",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Offres de tous les fournisseurs d'énergie : prix annuel, prix de l'abonnement, prix du kWh, % d'énergie verte, conditions du contrat, services associés, puissance (kVA)",
+    "support": "Site des fournisseurs ; Services de comparaison",
+    "access": "Scraping",
+    "accessEasyness": "3",
+    "supportExample": "http://www.quechoisir.org/app/comparateur-gaz-electricite/comparatif-gratuit/",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Prix domestiques de l'énergie (électricité et gaz) pour un ménage, en fonction de son abonnement et de sa consommation énergétique",
+    "support": "Bases de données en ligne du Ministère de l'Ecologie, du Développement durable et de l'Energie.",
+    "access": "Scraping",
+    "accessEasyness": "3",
+    "supportExample": "http://developpement-durable.bsocom.fr/statistiques/ReportFolders/reportFolders.aspx",
+    "subTypology": "",
+    "domain": "Domicile",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Impact énergétique d'envoi d'un mail, d'une requête, etc",
+    "support": "Articles, Etudes sur les sites web d'associations, d'institutions etc Articles",
+    "access": "OCR ; Retranscription ; Scraping",
+    "accessEasyness": "1",
+    "supportExample": "https://www.ademe.fr/sites/default/files/assets/documents/guide-pratique-internet-courriels-reduire-impacts.pdf",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Impact énergétique de chaque site web",
+    "support": "Site de W.E.A (Web Energy Archive)",
+    "access": "Open Data",
+    "accessEasyness": "3",
+    "supportExample": "http://webenergyarchive.com/",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Prix du carburant en moyenne par département",
+    "support": "Site \"Prix du carburant\" du Ministère de l'Ecologie, du Développement durable et de l'Energie",
+    "access": "Open Data",
+    "accessEasyness": "3",
+    "supportExample": "http://www.prix-carburants.gouv.fr/",
+    "subTypology": "",
+    "domain": "",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Coût (énergétique ; financier ; Co2) des transports selon le nombre de km",
+    "support": "Sites de calculs (type Quizz Ademe)",
+    "access": "Scraping ; API",
+    "accessEasyness": "3",
+    "supportExample": "http://quizz.ademe.fr/eco-deplacements/calculette/calculette.html",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Trafic annuel par station de métro, de bus, de tramway...",
+    "support": "Site des transporteurs",
+    "access": "Open Data",
+    "accessEasyness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Émissions de CO2 sur les liaisons TGV",
+    "support": "Site de la SNCF ; Données SNCF",
+    "access": "Open Data",
+    "accessEasyness": "3",
+    "supportExample": "https://ressources.data.sncf.com/explore/dataset/emission-co2-tgv/?tab=metas",
+    "subTypology": "",
+    "domain": "Mobilité",
+    "referencial": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Tables de conversion",
+    "desc": "Base permanente des équipements (présence ou absence d'un équipement public, densité d'un type d'équipements, indicateur de disponibilité d'un équipement du point de vue des habitants)",
+    "support": "Site de l'INSEE (base permanente des équipements)",
+    "access": "Open Data",
+    "accessEasyness": "3",
+    "supportExample": "http://www.insee.fr/fr/themes/detail.asp?reg_id=0&ref_id=fd-bpe14&page=fichiers_detail/BPE14/telechargement.htm",
+    "subTypology": "",
+    "domain": "Autre",
+    "referencial": [
+      "R2"
+    ]
+  }
+]
