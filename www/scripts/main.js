@@ -14,6 +14,16 @@ $(document).ready(function(){
       infos = data;
   });
 
+  $('img').on('dragstart', function(event) { event.preventDefault(); });
+
+  $('[data-typology]').click(function(ev) {
+    console.log(ev);
+    openListPopin({
+      typology: ev.target.dataset.typology
+    });
+
+  });
+
   $('#showPopup').click(function() {
     openListPopin({
         typology: 'Données personnelles médicales',

@@ -1,3 +1,23 @@
+@font-face {
+  font-family: scala;
+  font-weight: bold;
+  src: url("../fonts/ScalaSans-BoldLF.otf") format("opentype");
+}
+/*
+@font-face {
+  font-family: scala;
+  font-weight: regular;
+  src: url("fonts/ScalaSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: scala;
+  font-weight: light;
+  src: url("fonts/ScalaSansLight.otf") format("opentype");
+}*/
+
+
+
 .draggable {
   position: absolute;
   top: 50%;
@@ -16,4 +36,202 @@
   height: 30px;
   width: 30px;
   background: red;
+}
+
+h1 {
+  font-family: scala;
+  font-weight: bold;
+  font-size: 240%;
+  color: #017E8C;
+  text-align: center;
+}
+
+#container {
+  width: 100%;
+  left: 50%;
+  position: absolute;
+  margin-left: -500px;
+  padding-bottom: 50%;
+  
+  margin-top: 10%;
+}
+#container > div {  
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#container img, h2 {
+  position: absolute;
+  /*height: 100%;*/
+  /*width: 100%;*/
+}
+
+#container h2 {
+  font-family: scala;
+font-weight: bold;
+font-size: 120%;
+max-width: 11%;
+text-align: center;
+}
+
+/* MIS */
+#donneesnonpersonnelles {
+  position: absolute;
+  left: 0;
+  width: 31%;
+  top: 36%;
+  /*height: 100%;*/
+
+}
+
+#donneespersonnelles {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  
+  margin-left: -25%;
+  width: 50%;
+  height: 100%;
+  z-index: 100;
+
+}
+#caracteristiques {
+  position: absolute;
+  right: 0;
+  width: 31%;
+  top: 36%;
+}
+
+#referentielnormes {
+  width: 51.4%;
+  left: 1.6%;
+  margin-top: 0.4%;
+  /*height: 100%;*/
+
+}
+
+#contexte {
+  width: 50%;
+  right: 0%;
+  top: 0%;
+  /*height: 100%;*/
+
+}
+
+#dpm {
+  width: 48.5%;
+  left: 3.5%;
+  top: 0.2%;
+}
+
+#dpnm {
+  width: 50%;
+  right: 0%;
+  /*height: 100%;*/
+
+}
+
+#profil {
+  left: 50.5%;
+  margin-left: -33.2%;
+  width: 67%;
+  padding-top: 47.6%;
+}
+
+#caractpdt {
+  margin-top: 0%;
+  width: 47.8%;
+  left: 4.5%;
+  /*height: 100%;*/
+
+}
+
+#caractmed {
+  width: 50%;
+  right: 0%;
+  top: 0%;
+  /*height: 100%;*/
+
+}
+
+#pindnp {
+  left: 14.4%;
+  width: 3%;
+  top: 14%;
+}
+
+#titlednp {
+  color: #23BDB6;
+  left: 11%;
+  top: 2%;
+}
+
+#pindp {
+  left: 49%;
+width: 3%;
+top: 5%;
+}
+
+#titledp {
+  color: #017E8C;
+  left: 45%;
+  top: -5%;
+}
+
+#pincaract {
+  top: 14%;
+  left: 83.2%;
+  width: 3.5%;
+}
+
+#titlecaract {
+  color: #EC4B36;
+  right: 10%;
+  top: 2%;
+}
+
+#iconreferentiels {
+  width: 11%;
+left: 35%;
+padding-top: 7%;
+}
+
+#iconcontexte {
+width: 15%;
+right: 30%;
+padding-top: 7%;
+}
+#icondpm {
+width: 11%;
+left: 35%;
+padding-top: 7%;
+}
+#icondpnm {
+width: 11%;
+right: 34%;
+padding-top: 6%;
+}
+
+#iconprofil {
+width: 7%;
+left: 47%;
+padding-top: 58%;
+}
+
+#iconuser {
+width: 11%;
+left: 45%;
+padding-top: 43%;
+}
+
+#iconcaractpdt {
+width: 15%;
+left: 32%;
+padding-top: 7%;
+}
+
+#iconcaractmed {
+width: 13%;
+right: 31%;
+padding-top: 7%;
 }

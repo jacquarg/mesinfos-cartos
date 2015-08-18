@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Carto : GDoc --> JSONLP</title>
+    <title>MesInfos Santé</title>
     <script src="scripts/vendors/jquery-1.9.1.js"></script>
     <script src="scripts/vendors/jquery-ui.min.js"></script>
 
@@ -19,9 +19,50 @@
  </head>
 
   <body>
-    <div id="container">
+    <h1 id="title">MESINFOS SANTÉ</h1>
+    <div id="container"><div>
+    <h2 id="titlednp">DONNÉES NON PERSONNELLES</h2>
+    <img id="pindnp" src="img/pin_dnp.png" >
+    <div id="donneesnonpersonnelles">
+      
+      <img id="referentielnormes" data-typology="Référentiels et Normes" src="img/referentiels_flat.png">
+      <img id="contexte" data-typology="Contexte" src="img/contexte_flat.png">
+      <img id="iconreferentiels" src="img/icon_referentiels.png" >
+      <img id="iconcontexte" src="img/icon_contexte.png" >
+    </div>
+
+    <h2 id="titledp">DONNÉES PERSONNELLES</h2>
+    <img id="pindp" src="img/pin_dp.png" >
+    <div id="donneespersonnelles">
+      
+
+      <img id="dpm" data-typology="Données personnelles médicales" src="img/dpm_flat.png">
+      <img id="dpnm" data-typology="Données personnelles non médicales" src="img/dpnm_flat.png">
+      <img id="profil" data-typology="Mon profil" src="img/profil_flat.png">
+
+      <img id="icondpm" src="img/icon_dpm.png" >
+      <img id="icondpnm" src="img/icon_dpnm.png" >
+      <img id="iconprofil" src="img/icon_profil.png" >
+      <img id="iconuser" src="img/icon_user.png" >
+    </div>
+      
+    <h2 id="titlecaract">LES CARACTÉRISTIQUES</h2>
+    <img id="pincaract" src="img/pin_caract.png" >
+    <div id="caracteristiques">
+      
+
+
+      <img id="caractpdt" data-typology="Caractéristiques produits" src="img/caract_pdt_flat.png">
+      <img id="caractmed" data-typology="Caractéristiques médicaments" src="img/caract_med_flat.png">
+
+      <img id="iconcaractpdt" src="img/icon_caract_pdt.png" >
+      <img id="iconcaractmed" src="img/icon_caract_med.png" >
+
+    </div>
+
     <button id="showPopup" href="#">Show infos !</button> 
 
+    </div>
     </div>
       <script>
         window.miConfig = {

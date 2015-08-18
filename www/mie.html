@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Carto : GDoc --> JSONLP</title>
+    <script src="scripts/vendors/jquery-1.9.1.js"></script>
+    <script src="scripts/vendors/jquery-ui.min.js"></script>
+
+    <script src="scripts/vendors/async.js"></script>
+    <script src="scripts/vendors/FileSaver.min.js"></script>
+
+
+    <script src="scripts/vendors/sheetrock.min.js"></script>
+
+
+
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+ </head>
+
+  <body>
+    <div id="container">
+    <button id="showPopup" href="#">Show infos !</button> 
+
+    </div>
+      <script>
+        window.miConfig = {
+            infosUri: 'data/mis_infos.json',
+        };
+
+      </script>
+      <script src="scripts/main.js"></script>
+  </body>
+</html>
