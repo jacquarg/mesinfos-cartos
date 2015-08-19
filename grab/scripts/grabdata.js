@@ -55,7 +55,7 @@ var rows2Infos = function(rows) {
             desc: row[2].trim(),
             support: row[3].trim(),
             access: row[4].trim(),
-            accessEasyness: row[5].trim(),
+            accessEasiness: row[5].trim(),
             supportExample: row[6].trim(),
             subTypology: row[7].trim(),
             domain: row[8].trim(),

@@ -1,17 +1,17 @@
 @font-face {
-  font-family: scala;
+  font-family: scalabold;
   font-weight: bold;
   src: url("../fonts/ScalaSans-BoldLF.otf") format("opentype");
 }
 
 @font-face {
-  font-family: scala;
+  font-family: scalaregular;
   font-weight: regular;
   src: url("../fonts/ScalaSans-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: scala;
+  font-family: scalalight;
   font-weight: light;
   src: url("../fonts/ScalaSansLight.otf") format("opentype");
 }
@@ -19,7 +19,7 @@
 
 
 h1 {
-  font-family: scala;
+  font-family: scalabold;
   font-weight: bold;
   font-size: 240%;
   color: #017E8C;
@@ -30,10 +30,10 @@ h1 {
   width: 100%;
   left: 50%;
   position: absolute;
-  margin-left: -500px;
+  margin-left: -50%;
   padding-bottom: 50%;
 
-  margin-top: 10%;
+  /*margin-top: 10%;*/
 }
 #container > div {  
   position: absolute;
@@ -47,54 +47,49 @@ h1 {
 }
 
 #container h2 {
-  font-family: scala;
-font-weight: bold;
+  font-family: scalabold;
+/*font-weight: bold;*/
 font-size: 120%;
 max-width: 11%;
 text-align: center;
 }
 
 /* Popins */
+
+.listpopin .close, .detailpopin .close {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  font-family: scalabold;
+  font-size: 17px;
+  cursor: pointer;
+}
+
 .listpopin {
   position: absolute;
   top: 20%;
   left: 45%;
   margin-top: -50px;
   margin-left: -100px;
-  height: 500px;
-  width: 400px;
+  width: 300px;
   background: white;
   z-index: 1000;
-
-  border: solid 10px;
 }
 
 .listpopin .header {
-  width: 400px;
   height: 70px;
+  color: white;
 
   background: rgb(35, 189, 182) none repeat scroll 0% 0%;  
 }
 
-.listpopin .header .close {
-  position: absolute;
-  right: 10px;
-  top: 6px;
-  color: white;
-  font-family: scala;
-  font-weight: bold;
-  font-size: 17px;
-  cursor: pointer;
-
-}
-
 .listpopin .header h2 {
+  width: 220px;
   text-align: center;
-  font-family: scala;
-  font-weight: bold;
-  font-size: 16pt;
+  font-family: scalabold;
+  font-size: 13pt;
   padding: 0;
-  margin-left: 60px;
+  margin-left: 55px;
   margin-right: 25px;
   color: white;
   text-transform: uppercase;
@@ -108,21 +103,19 @@ text-align: center;
 }
 
 .listpopin .list {
-  padding-top: 10px;
   overflow: auto;
-  height: 404px;
+  max-height: 400px;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 10px;
 
-  border: solid 3px rgb(35, 189, 182);
+  /*border*/: solid 3px rgb(35, 189, 182);
 }
 
 .listpopin .list li {
-  font-family: scala;
-  font-weight: light;
+  font-family: scalalight;
   font-size: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .listpopin .list li span {
   cursor: pointer;
@@ -132,34 +125,103 @@ text-align: center;
   height: 30px;
   float: right; 
   cursor: pointer;
-
 }
+
+.listpopin h4 {
+  font-family: scalabold;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.listpopin ul {
+  margin-left: 15px;
+  padding-left: 10px
+}
+
+.detailpopin {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  width: 270px;
+  background: white;
+  z-index: 1000;
+
+  /*border*/: solid 10px;
+}
+
+.detailpopin .header {
+  position: relative;
+}
+
+
+
+.detailpopin h4 {
+  background-color: rgb(197, 197, 197);
+  color: white;
+  font-family: scalabold;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.detailpopin .header img {
+  position: absolute;
+  top: -7px;
+  left: 20px;
+  width: 40px;
+}
+
+.detailpopin p {
+  font-family: scalalight;
+  font-size: 12px;
+  margin: 12px;
+}
+
+.detailpopin p.desc {
+  margin-right: 30px;
+}
+
+.detailpopin .accesseasiness {
+  background-color: rgb(197, 197, 197);
+  color: white;
+  font-family: scalabold;
+  font-size: 20px;
+  line-height: 35px;  
+  text-align: center;
+}
+
+.detailpopin .accesseasiness h4 {
+  margin-bottom: 0px;
+}
+
+.detailpopin .accesseasiness img {
+  height: 35px;
+}
+
+
+
 /* MIS */
 #donneesnonpersonnelles {
   position: absolute;
-  left: 0;
-  width: 31%;
-  top: 36%;
-  /*height: 100%;*/
-
+  width: 26%;
+  top: 20%;
+  left: 11%;
 }
 
 #donneespersonnelles {
   position: absolute;
   left: 50%;
-  top: 20%;
-  
-  margin-left: -25%;
-  width: 50%;
+  top: 10%;
+  width: 36%;
   height: 100%;
   z-index: 100;
-
+  margin-left: -18%;
 }
 #caracteristiques {
   position: absolute;
-  right: 0;
-  width: 31%;
-  top: 36%;
+  width: 26%;
+  top: 20%;
+  right: 11%;
 }
 
 #referentielnormes {

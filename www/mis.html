@@ -21,8 +21,8 @@
   <body>
     <h1 id="title">MESINFOS SANTÉ</h1>
     <div id="container"><div>
-    <h2 id="titlednp">DONNÉES NON PERSONNELLES</h2>
-    <img id="pindnp" src="img/pin_dnp.png" >
+    <!-- <h2 id="titlednp">DONNÉES NON PERSONNELLES</h2>
+    <img id="pindnp" src="img/pin_dnp.png" > -->
     <div id="donneesnonpersonnelles">
       
       <img id="referentielnormes" data-typology="Référentiels et Normes" src="img/referentiels_flat.png">
@@ -31,8 +31,8 @@
       <img id="iconcontexte" src="img/icon_contexte.png" >
     </div>
 
-    <h2 id="titledp">DONNÉES PERSONNELLES</h2>
-    <img id="pindp" src="img/pin_dp.png" >
+    <!-- <h2 id="titledp">DONNÉES PERSONNELLES</h2>
+    <img id="pindp" src="img/pin_dp.png" > -->
     <div id="donneespersonnelles">
       
 
@@ -46,8 +46,8 @@
       <img id="iconuser" src="img/icon_user.png" >
     </div>
       
-    <h2 id="titlecaract">LES CARACTÉRISTIQUES</h2>
-    <img id="pincaract" src="img/pin_caract.png" >
+    <!-- <h2 id="titlecaract">LES CARACTÉRISTIQUES</h2>
+    <img id="pincaract" src="img/pin_caract.png" > -->
     <div id="caracteristiques">
       
 
@@ -60,8 +60,6 @@
 
     </div>
 
-    <button id="showPopup" href="#">Show infos !</button> 
-
     </div>
     </div>
       <script>
@@ -71,31 +69,43 @@
               "Contexte": {
                 color:  {r: 0x4F, g: 0xCE, b: 0xC5},
                 headerIcon: 'contexte_header.png',
+                position: {left: 38, top: 61},
               },
               "Mon profil": {
                 color: {r: 0x05, g: 0x86, b: 0x91},
                 headerIcon: 'profil_header.png',
+                position: {left: 38, top: 61},
               },
               "Données personnelles non médicales": {
                 color: {r: 0x48, g: 0xAB, b: 0xC5},
                 headerIcon: 'dpnm_header.png',
+                position: {left: 74, top: 14},
+
               },
               "Données personnelles médicales": {
                 color: {r: 0x03, g: 0x8E, b: 0xA6},
                 headerIcon: 'dpm_header.png',
+                position: {left: 43, top: 14},
+
               },
               "Caractéristiques produits": {
                 color: {r: 0xEC, g: 0x4B, b: 0x36},
                 headerIcon: 'caract_pdt_header.png',
+                position: {left: 38, top: 61},
+
               },
               "Caractéristiques médicaments": {
                 color: {r: 0xEF, g: 0x65, b: 0x22},
                 headerIcon: 'caract_med_header.png',
+                position: {left: 38, top: 61},
+
               },
 
               "Référentiels et Normes": {
                 color: {r: 0x23, g: 0xDB, b: 0xB6},
-                headerIcon: "referentiels_header.png"
+                headerIcon: "referentiels_header.png",
+                position: {left: 38, top: 61},
+
               }
             }
         };

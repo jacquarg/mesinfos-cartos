@@ -24,30 +24,6 @@ $(document).ready(function(){
 
   });
 
-  $('#showPopup').click(function() {
-    openListPopin({
-        typology: 'Données personnelles médicales',
-        //domain: 'Médico-financier',
-    });
-  });
-
-  // $('#showPopup').click(function() {
-  //   var lst = filterList({
-  //       typology: 'Données personnelles médicales',
-  //       domain: 'Médico-financier',
-  //   });
-
-  //   var popin = $("<div class='draggable'></div>");
-
-  //   popin.html(lst.map(function(info) {
-  //       return '<li>' + info.desc + '</li>';
-  //   }).join('\n'));
-
-  //   popin.draggable();
-
-  //   $("body").append(popin);
-
-  // });
 });
 
 openListPopin = function(filter) {
@@ -55,13 +31,15 @@ openListPopin = function(filter) {
   var template = function(list) {
     var caract = miConfig.typologiesMap[list.title];
     var colors = caract.color.r + ', ' + caract.color.g + ', ' + caract.color.b ;
-    return "<div class='listpopin' style='border-color: rgba(" + colors + ", 0.2);' >"
+    var position = "left:" + caract.position.left
+      + "%;top:" + caract.position.top + "%;";
+    return "<div class='listpopin' style='box-shadow: 0px 0px 6px 10px rgba(" + colors + ", 0.3);" + position + "' >"
     +   "<div class='header' style='background-color: rgb(" + colors + ");' >"
     +     "<img class='icon' src='img/" + caract.headerIcon  + "'>"
     +     "<h2>" + list.title + "</h2>"
     +     "<div class='close'>X</div>"
     +   "</div>"
-    +   "<ul class='list' style='border-color: rgb(" + colors + ");'></ul>"
+    +   "<div class='list'></div>"
     + "</div>";
   };
 
@@ -74,13 +52,17 @@ openListPopin = function(filter) {
     +     info.desc
     +   "</span>";
 
-
-
     html += "</li>";
 
     var line = $(html);
-    line.click(function() {
-      openDetailPopin(info);
+    line.find('span').click(function(ev) {
+      console.log(ev);
+      var position = {
+        left: $(ev.target).parents('.listpopin').offset().left - 290,
+        top: ev.pageY
+      };
+      console.log(position);
+      openDetailPopin(info, position);
     });
     line.find('.referentiallink').click(function() {
       openListPopin({
@@ -93,12 +75,22 @@ openListPopin = function(filter) {
   };
 
   list = filterList(filter);
+  list = groupByKeyword(list);
   popin = $(template(list));
 
-  list.infos.forEach(function(info) {
-    popin.find('.list').append(lineTemplate(info));
-  })
-  // popin.find('.list').html(list.map(lineTemplate).join('\n'));
+  var keywords = Object.keys(list.byKeyword);
+  keywords.sort();
+  var sublist;
+  keywords.forEach(function(k) {
+    sublist = $("<div>"
+    +   "<h4>" + k + "</h4>"
+    +   "<ul class='sublist'></ul>"
+    + "</div>");
+    list.byKeyword[k].forEach(function(info) {
+      sublist.find('.sublist').append(lineTemplate(info));
+    });
+    popin.find('.list').append(sublist);
+  });
 
   openPopin(popin);
   // popin.draggable();
@@ -112,15 +104,40 @@ openListPopin = function(filter) {
 
 };
 
-openDetailPopin = function(info) {
+openDetailPopin = function(info, position) {
+  var caract = miConfig.typologiesMap[info.typology];
+  var colors = caract.color.r + ', ' + caract.color.g + ', ' + caract.color.b ;
+  var position = "left:" + position.left
+      + "px;top:" + position.top + "px;";
+  if (info.supportExample) {
+    info.supportExampleWLinks = info.supportExample.replace(/https?:\/\/([^\/]*)[^\s]*/g, "<a target='_blank' href='$&'>$1</a>");
+  } else {
+    info.supportExampleWLinks = '';
+  }
 
   var template = function(info) {
-    return "<div class='detailpopin'>"
-    +   "<div class='close'></div>"
-    +    "<div>" + info.desc + "</div>";
-    +    "<div>" + info.support + "</div>";
-    +    "<div>" + info.access + "</div>";
-    +    "<div>" + info.accessEasyness + "</div>";
+    return "<div class='detailpopin' style='box-shadow: 0px 0px 6px 10px rgba(" + colors + ", 0.3);" + position + "' >"
+    +   "<div class='close'>X</div>"
+    +   "<p class='desc'>" + info.desc + "</p>"
+    +   "<div class='support'>"
+    +     "<div class='header'>"
+    +       "<img src='img/icon_support.png' >"
+    +       "<h4>OÙ CELA SE TROUVE</h4>"
+    +     "</div>"
+    +     "<p>" + info.support + "</p>"
+    +   "</div>"
+    +   "<div class='access'>"
+    +     "<div class='header'>"
+    +       "<img src='img/icon_access.png' >"
+    +       "<h4>COMMENT Y ACCÉDER</h4>"
+    +     "</div>"
+    +     "<p>" + info.access + "</p>"
+    +     "<p><i>" + info.supportExampleWLinks + "</i></p>"
+    +   "</div>"
+    +   "<div class='accesseasiness'>"
+    +       "<h4>FACILITÉ D'ACCÈS</h4>"
+    +       "<img src='img/accesseasiness_" + info.accessEasiness + ".png' >"
+    +   "</div>"
     + "</div>";
   };
 
@@ -173,6 +190,20 @@ filterList = function(filter) {
         keep = keep && passFilter ;
       }
       return keep;
+  });
+  return list;
+};
+
+groupByKeyword = function(list) {
+  list.byKeyword = {};
+
+  list.infos.forEach(function(info) {
+    // TODO : domain --> keyword.
+    if (!(info.domain in list.byKeyword)) {
+      list.byKeyword[info.domain] = [];
+    }
+    list.byKeyword[info.domain].push(info);
+
   });
   return list;
 };
