@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Carto : GDoc --> JSONLP</title>
+    <title>MesInfos Énergies</title>
     <script src="scripts/vendors/jquery-1.9.1.js"></script>
     <script src="scripts/vendors/jquery-ui.min.js"></script>
 
@@ -20,12 +20,151 @@
 
   <body>
     <div id="container">
-    <button id="showPopup" href="#">Show infos !</button> 
-
+      <img id="fond" src="img/fond_mie.png" />  
     </div>
+    <div id="legend">
+      <h3>Données personnelles de consommation énergétique</h3>
+      <p>mes données, concernant directement ma consommation énergétique. (Par exemple “la consommation de mon domicile en kWh/mois”)</p>
+
+      <h3>Données personnelles hors consommation énergétique</h3>
+      <p>mes données, concernant indirectement ou directement ma consommation énergétique, mais qui sont importantes pour comprendre ou agir dessus. (Par exemple "mon historique d’achats")</p>
+
+      <h3>Mon profil</h3>
+      <p>regroupe mes données essentielles, liées à mon identité et à mon foyer (âge, nombre, ...)</p>
+
+      <h3>Mon logement / Mes équipements</h3>
+      <p>regroupe les données qui concernent mes équipements et mon logement (Par exemple "marque et modèle de ma voiture")</p>
+
+      <h3>Caractéristiques équipements</h3>
+      <p>ce qui qualifie un de mes équipements (voiture, machines à laver, ...), m'apportant ainsi une indication importante pour comprendre et agir sur ma consommation. (Par exemple le prix du carburant (moyenne par département))</p>
+
+      <h3>Caractéristiques produits</h3>
+      <p>ce qui qualifie mes produits (aliments, …) m’apportant ainsi une indication importante pour comprendre et agir sur ma consommation. (Par exemple la liste des produits disposant de l'EcoLabel Européen)</p>
+
+      <h3>Contexte</h3>
+      <p>ce sont les données de situation, qui concernent mon environnement immédiat ou qui permettent d’établir des conjectures sur ma consommation, mon empreinte environnementale. (Par exemple, la température extérieure)</p>
+ 
+      <h3>Référentiels et Tables de conversion</h3>
+      <p>données ou bases de données qui rassemblent standards, référentiels, annuaires, ou encore calculs permettant de basculer d’une unité vers une autre (Par exemple, le coût (énergétique ; financier ; Co2) des transports selon le nombre de km)</p>
+
+
+ 
+
+
+
+
+
+        </div>
+    
+
       <script>
         window.miConfig = {
-            infosUri: 'data/mis_infos.json',
+            infosUri: 'data/mie_infos.json',
+            areas: [
+                {
+                    label: "Données personnelles de consommation énergétique",
+                    rMin: 0,
+                    rMax: 146,
+                    tMin: 1.57,
+                    tMax: 3.14,
+                },
+                {
+                    label: "Données personnelles hors consommation énergétique",
+                    rMin: 0,
+                    rMax: 146,
+                    tMin: 3.14,
+                    tMax: 4.71,
+                },
+                {
+                    label: "Mon profil",
+                    rMin: 0,
+                    rMax: 146,
+                    tMin: 0,
+                    tMax: 1.57,
+                },
+                {
+                    label: "Mon logement / Mes équipements",
+                    rMin: 0,
+                    rMax: 126,
+                    tMin: 4.71,
+                    tMax: 0,
+                },
+                {
+                    label: "Caractéristiques équipements",
+                    rMin: 160,
+                    rMax: 271,
+                    tMin: 0.77,
+                    tMax: 3.12,
+                },
+                {
+                    label: "Caractéristiques produits",
+                    rMin: 160,
+                    rMax: 271,
+                    tMin: 3.16,
+                    tMax: 5.49,
+                },
+                {
+                    label: "Contexte",
+                    rMin: 274,
+                    rMax: 398,
+                    tMin: 2.68,
+                    tMax: 3.41,
+                },
+                {
+                    label: "Référentiels et Tables de conversion",
+                    rMin: 254,
+                    rMax: 398,
+                    tMin: 6.0,
+                    tMax: 0.44,
+                },
+            ],
+
+            typologiesMap: {
+              "Données personnelles de consommation énergétique": {
+                color: {r: 0x00, g: 0xB0, b: 0xBF},
+                headerIcon: 'dpm_header.png',
+                position: {left: 43, top: 14},
+
+              },
+              "Données personnelles hors consommation énergétique": {
+                color: {r: 0x1F, g: 0xCF, b: 0xC2},
+                headerIcon: 'dpnm_header.png',
+                position: {left: 74, top: 14},
+
+              },
+              "Mon profil": {
+                color: {r: 0x00, g: 0x96, b: 0xA1},
+                headerIcon: 'profil_header.png',
+                position: {left: 38, top: 61},
+              },
+              "Mon logement / Mes équipements": {
+                color: {r: 0x15, g: 0x5C, b: 0x9A},
+                headerIcon: 'profil_header.png',
+                position: {left: 38, top: 61},
+              },
+              "Caractéristiques équipements": {
+                color: {r: 0x00, g: 0x77, b: 0xA1},
+                headerIcon: 'caract_med_header.png',
+                position: {left: 38, top: 61},
+
+              },
+              "Caractéristiques produits": {
+                color: {r: 0x4C, g: 0xA6, b: 0xFB},
+                headerIcon: 'caract_pdt_header.png',
+                position: {left: 38, top: 61},
+
+              },
+              "Contexte": {
+                color:  {r: 0x36, g: 0xA9, b: 0xE1},
+                headerIcon: 'contexte_header.png',
+                position: {left: 38, top: 61},
+              },
+              "Référentiels et Tables de conversion": {
+                color: {r: 0x00, g: 0x96, b: 0xA1},
+                headerIcon: "referentiels_header.png",
+                position: {left: 38, top: 61},
+              }
+            }
         };
 
       </script>
