@@ -2,6 +2,7 @@
 var displayJSON = function(data) { console.log(JSON.stringify(data, null, 2));};
 
 
+var BASE_WIDTH = 800, BASE_HEIGHT = 600;
 var infos = [];
 
 // Create popup
@@ -16,6 +17,28 @@ $(document).ready(function(){
 
   $('img').on('dragstart', function(event) { event.preventDefault(); });
 
+  $('img').click(function(ev) {
+    var coord = toResizedPolar(ev);
+    var inArea = miConfig.areas.filter(function(area) {
+      if (area.rMin < coord.r && coord.r < area.rMax) {
+        var tMax = area.tMax;
+        var t = coord.t
+        if (area.tMin > area.tMax) {
+          tMax += 2 * Math.PI;
+          if (coord.t < area.tMin) { t += 2 * Math.PI; }
+        }
+        if (area.tMin < t && t < tMax) {
+          return true;
+        }
+      }
+      return false;
+    });
+    console.log(inArea);
+    if (inArea.length > 0) {
+      openListPopin({ typology: inArea[0].label });
+    }
+  });
+
   $('[data-typology]').click(function(ev) {
     console.log(ev);
     openListPopin({
@@ -24,7 +47,59 @@ $(document).ready(function(){
 
   });
 
+  // Set dimensions
+  var ratio = BASE_WIDTH / BASE_HEIGHT;
+  var wW = $(window).width();
+  var wH = $(window).height();
+  var width, height;
+  if (wW / wH < ratio) {
+    width = wW;
+    height = wW / ratio ;
+  } else {
+    width = wH * ratio ;
+    height = wH;
+  }
+
+  $("#container").width(width);
+  $("#container").height(height);
+
+  $("#legend h3").each(function(i, elem) {
+    console.log(elem);
+    var color = miConfig.typologiesMap[elem.innerHTML].color ;
+    var colorStr = 'rgb(' + color.r + ', ' + color.g + ', ' + color.b + ')' ;
+
+    $(elem).css('color', colorStr);
+    $(elem).next('p').css('color', colorStr);
+
+  });
 });
+
+toResizedPolar = function(e) {
+  console.log(e);
+  var x = e.offsetX;
+  var y = e.offsetY;
+  var sizeRatio = $("#container").width() / BASE_WIDTH ;
+  console.log("x: " + x + ", y: " + y);
+
+  // apply ratio
+  x = x / sizeRatio ;
+  y = y / sizeRatio ;
+
+  var CENTER_X = 406 , CENTER_Y = 300 ;
+  // move to centered direct cartesian
+  x = x - CENTER_X ;
+  y = -y + CENTER_Y ;
+
+  console.log("x: " + x + ", y: " + y);
+
+  // convert to polar
+  r = Math.sqrt(x * x + y * y);
+  t = Math.atan2(y, x);
+  t = (t + 2 * Math.PI) %  (2 * Math.PI)
+  console.log(r);
+  console.log(t);
+  return {r: r, t: t};
+}
 
 openListPopin = function(filter) {
   var popin, list;

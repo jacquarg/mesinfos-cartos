@@ -19,83 +19,127 @@
  </head>
 
   <body>
-    <h1 id="title">MESINFOS SANTÉ</h1>
-    <div id="container"><div>
-    <!-- <h2 id="titlednp">DONNÉES NON PERSONNELLES</h2>
-    <img id="pindnp" src="img/pin_dnp.png" > -->
-    <div id="donneesnonpersonnelles">
-      
-      <img id="referentielnormes" data-typology="Référentiels et Normes" src="img/referentiels_flat.png">
-      <img id="contexte" data-typology="Contexte" src="img/contexte_flat.png">
-      <img id="iconreferentiels" src="img/icon_referentiels.png" >
-      <img id="iconcontexte" src="img/icon_contexte.png" >
+    <div id="container">
+        <!-- <div> -->
+            <img id="fond" src="img/fond_mis.png" />
+         <!--    <map name='mismap' >
+              <area shape="poly" coords="13,49,59.5,16.5,51.5,30.5,24.5,49%"  href="javascript:alert('square')">
+              <area shape="rect" coords="130,490,595,165"  href="javascript:alert('squareuh')">
+
+            </map> -->
+        <!-- </div> -->
     </div>
+        <div id="legend">
+         <h3>Mon profil</h3>
+         <p>regroupe mes données essentielles, liées à mon identité et à mes caractéristiques biologiques principales (âge, taille, ...)</p>
 
-    <!-- <h2 id="titledp">DONNÉES PERSONNELLES</h2>
-    <img id="pindp" src="img/pin_dp.png" > -->
-    <div id="donneespersonnelles">
-      
+         <h3>Données personnelles médicales</h3>
+         <p>mes données concernant directement ma santé et produites - le plus généralement - dans un cadre médical. (Par exemple "mon taux de cholestérol")</p>
 
-      <img id="dpm" data-typology="Données personnelles médicales" src="img/dpm_flat.png">
-      <img id="dpnm" data-typology="Données personnelles non médicales" src="img/dpnm_flat.png">
-      <img id="profil" data-typology="Mon profil" src="img/profil_flat.png">
+         <h3>Données personnelles non médicales</h3>
+         <p>mes données concernant directement ou indirectement ma sant et produites dans un cadre non médical. (Par exemple "mon historique de géolocalisation")</p>
 
-      <img id="icondpm" src="img/icon_dpm.png" >
-      <img id="icondpnm" src="img/icon_dpnm.png" >
-      <img id="iconprofil" src="img/icon_profil.png" >
-      <img id="iconuser" src="img/icon_user.png" >
-    </div>
-      
-    <!-- <h2 id="titlecaract">LES CARACTÉRISTIQUES</h2>
-    <img id="pincaract" src="img/pin_caract.png" > -->
-    <div id="caracteristiques">
-      
+        <h3>Caractéristiques médicaments</h3>
+        <p>ce qui qualifie mes médicaments, m'apportant ainsi une indication importante pour comprendre et agir sur ma santé. (Par exemple la composition de mes médicaments)</p>
 
+         <h3>Caractéristiques produits</h3>
+         <p>ce qui qualifie mes achats, mes consommations (alimentaires, parapharmacie, équipements médicaux, ...), m’apportant ainsi une indication importante pour comprendre et agir sur ma santé.  (Par exemple la composition de mes produits alimentaires)</p>
 
-      <img id="caractpdt" data-typology="Caractéristiques produits" src="img/caract_pdt_flat.png">
-      <img id="caractmed" data-typology="Caractéristiques médicaments" src="img/caract_med_flat.png">
+        <h3>Contexte</h3>
+        <p>données de situation, qui concernent mon environnement immédiat ou qui permettent d’établir des corrélations ou des prévisions quant à ma santé. (Par exemple, le taux de pollen ambiant)</p>
 
-      <img id="iconcaractpdt" src="img/icon_caract_pdt.png" >
-      <img id="iconcaractmed" src="img/icon_caract_med.png" >
+        <h3>Référentiels et Normes</h3>
+        <p>données ou bases de données qui rassemblent standards de santé, référentiels, annuaires, ...  (Par exemple les pathologies en fonction des zones géographiques, de l'âge etc)</p>
 
-    </div>
+        </div>
+    
 
-    </div>
-    </div>
       <script>
         window.miConfig = {
             infosUri: 'data/mis_infos.json',
+            areas: [
+                {
+                    label: "Données personnelles médicales",
+                    rMin: 0,
+                    rMax: 140,
+                    tMin: 0.77,
+                    tMax: 3.14,
+                },
+                {
+                    label: "Données personnelles non médicales",
+                    rMin: 0,
+                    rMax: 140,
+                    tMin: 3.14,
+                    tMax: 5.49,
+                },
+                {
+                    label: "Mon profil",
+                    rMin: 0,
+                    rMax: 126,
+                    tMin: 5.49,
+                    tMax: 0.77,
+                },
+                {
+                    label: "Caractéristiques produits",
+                    rMin: 160,
+                    rMax: 271,
+                    tMin: 3.16,
+                    tMax: 5.49,
+                },
+                {
+                    label: "Caractéristiques médicaments",
+                    rMin: 160,
+                    rMax: 271,
+                    tMin: 0.77,
+                    tMax: 3.12,
+                },
+                {
+                    label: "Référentiels et Normes",
+                    rMin: 254,
+                    rMax: 398,
+                    tMin: 6.0,
+                    tMax: 0.44,
+                },
+                {
+                    label: "Contexte",
+                    rMin: 274,
+                    rMax: 398,
+                    tMin: 2.68,
+                    tMax: 3.41,
+                },
+            ],
+
             typologiesMap: {
               "Contexte": {
-                color:  {r: 0x4F, g: 0xCE, b: 0xC5},
+                color:  {r: 0x4B, g: 0xB2, b: 0xE4},
                 headerIcon: 'contexte_header.png',
                 position: {left: 38, top: 61},
               },
               "Mon profil": {
-                color: {r: 0x05, g: 0x86, b: 0x91},
+                color: {r: 0x00, g: 0x96, b: 0xA1},
                 headerIcon: 'profil_header.png',
                 position: {left: 38, top: 61},
               },
               "Données personnelles non médicales": {
-                color: {r: 0x48, g: 0xAB, b: 0xC5},
+                color: {r: 0x1F, g: 0xCF, b: 0xC2},
                 headerIcon: 'dpnm_header.png',
                 position: {left: 74, top: 14},
 
               },
               "Données personnelles médicales": {
-                color: {r: 0x03, g: 0x8E, b: 0xA6},
+                color: {r: 0x00, g: 0xB0, b: 0xBF},
                 headerIcon: 'dpm_header.png',
                 position: {left: 43, top: 14},
 
               },
               "Caractéristiques produits": {
-                color: {r: 0xEC, g: 0x4B, b: 0x36},
+                color: {r: 0x4C, g: 0xA6, b: 0xFB},
                 headerIcon: 'caract_pdt_header.png',
                 position: {left: 38, top: 61},
 
               },
               "Caractéristiques médicaments": {
-                color: {r: 0xEF, g: 0x65, b: 0x22},
+                color: {r: 0x00, g: 0x77, b: 0xA1},
                 headerIcon: 'caract_med_header.png',
                 position: {left: 38, top: 61},
 
