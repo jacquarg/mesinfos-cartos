@@ -79,11 +79,26 @@ h1 {
 
 #legend {
   position: absolute;
-  right: 0px;
-  bottom: 20px;
-  width: 300px;
+  right: 20px;
   padding: 20px;
+  height: 80%;
+  overflow: auto;
   box-shadow: 0px 0px 6px 10px rgba(150, 150, 150, 0.3);
+}
+@media ( min-width: 1150px) {
+  #legend {
+    top: 10%;
+    width: 300px;
+  }
+}
+@media (max-width: 1150px) {
+  #legend {
+    top: 110%;
+    width: 80%;
+    height: auto;
+    right: 50%;
+    margin-right: -43%;
+  }
 }
 
 #legend h3 {
@@ -96,7 +111,7 @@ margin-bottom: 0px;
 
 #legend p {
   font-family: gothamrndlightita ;
-  font-size: 11px;
+  font-size: 13px;
 margin-top: 0px;
 }
 
@@ -104,53 +119,59 @@ margin-top: 0px;
 
 .listpopin .close, .detailpopin .close {
   position: absolute;
-  right: 10px;
-  top: 6px;
+  right: 5px;
+  top: 2px;
   font-family: scalabold;
-  font-size: 17px;
+  font-size: 15px;
   cursor: pointer;
 }
 
-.listpopin {
-  position: absolute;
+.detailpopin, .listpopin {
+  position: absolute !important;
   top: 20%;
   left: 45%;
-  margin-top: -50px;
-  margin-left: -100px;
-  width: 300px;
   background: white;
   z-index: 1000;
 }
 
-.listpopin .header {
-  height: 70px;
-  color: white;
+.listpopin {
+  width: 250px;
 
+}
+.detailpopin {
+  width: 270px;  
+}
+
+.listpopin .header {
+  height: 60px;
+  width: 100%;
+  color: white;
   background: rgb(35, 189, 182) none repeat scroll 0% 0%;  
 }
 
-.listpopin .header h2 {
-  width: 220px;
+.listpopin .header h3 {
+  display: inline-block;
+  vertical-align: middle;
   text-align: center;
-  font-family: scalabold;
-  font-size: 13pt;
-  padding: 0;
-  margin-left: 55px;
-  margin-right: 25px;
-  color: white;
+  padding: 0px;
+  margin: 0px;
+  color: #FFF;
+  font-family: gothamrndbold;
   text-transform: uppercase;
+  font-size: 13px;
+  width: 185px
 }
 
 .listpopin .header .icon {
-  position: absolute;
-  height: 35px;
-  left: 17px;
-  top: 17px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  margin: 13px 0px 13px 13px;
 }
 
 .listpopin .list {
   overflow: auto;
-  max-height: 400px;
+  max-height: 220px;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 10px;
@@ -188,7 +209,7 @@ margin-top: 0px;
   position: absolute;
   top: 20%;
   left: 45%;
-  width: 270px;
+  width: 180px;
   background: white;
   z-index: 1000;
 
@@ -205,16 +226,17 @@ margin-top: 0px;
   background-color: rgb(197, 197, 197);
   color: white;
   font-family: scalabold;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 12px;
+  line-height: 20px;
   text-align: center;
+  padding-left: 14px;
 }
 
 .detailpopin .header img {
   position: absolute;
-  top: -7px;
-  left: 20px;
-  width: 40px;
+  top: -5px;
+  left: 5px;
+  width: 30px;
 }
 
 .detailpopin p {
@@ -241,7 +263,7 @@ margin-top: 0px;
 }
 
 .detailpopin .accesseasiness img {
-  height: 35px;
+  height: 25px;
 }
 
 

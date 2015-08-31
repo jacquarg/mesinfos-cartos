@@ -74,11 +74,16 @@ $(document).ready(function(){
   });
 });
 
+getSizeRatio = function() {
+    return $("#container").width() / BASE_WIDTH ;
+}
+
 toResizedPolar = function(e) {
   console.log(e);
-  var x = e.offsetX;
-  var y = e.offsetY;
-  var sizeRatio = $("#container").width() / BASE_WIDTH ;
+  var x = (e.offsetX || e.pageX - $(e.target).offset().left);
+  var y = (e.offsetY || e.pageY - $(e.target).offset().top);
+
+  var sizeRatio = getSizeRatio();
   console.log("x: " + x + ", y: " + y);
 
   // apply ratio
@@ -106,12 +111,13 @@ openListPopin = function(filter) {
   var template = function(list) {
     var caract = miConfig.typologiesMap[list.title];
     var colors = caract.color.r + ', ' + caract.color.g + ', ' + caract.color.b ;
-    var position = "left:" + caract.position.left
-      + "%;top:" + caract.position.top + "%;";
+    var sizeRatio = $("#container").width() / BASE_WIDTH ;
+    var position = "left:" + caract.position.left * sizeRatio
+      + "px;top:" + caract.position.top * sizeRatio + "px;";
     return "<div class='listpopin' style='box-shadow: 0px 0px 6px 10px rgba(" + colors + ", 0.3);" + position + "' >"
     +   "<div class='header' style='background-color: rgb(" + colors + ");' >"
     +     "<img class='icon' src='img/" + caract.headerIcon  + "'>"
-    +     "<h2>" + list.title + "</h2>"
+    +     "<h3>" + list.title + "</h3>"
     +     "<div class='close'>X</div>"
     +   "</div>"
     +   "<div class='list'></div>"
@@ -133,7 +139,7 @@ openListPopin = function(filter) {
     line.find('span').click(function(ev) {
       console.log(ev);
       var position = {
-        left: $(ev.target).parents('.listpopin').offset().left - 290,
+        left: $(ev.target).parents('.listpopin').offset().left - 190,
         top: ev.pageY
       };
       console.log(position);
