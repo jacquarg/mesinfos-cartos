@@ -19,28 +19,32 @@ $(document).ready(function(){
 
   $('img').click(function(ev) {
     var coord = toResizedPolar(ev);
-    var inArea = miConfig.areas.filter(function(area) {
-      if (area.rMin < coord.r && coord.r < area.rMax) {
-        var tMax = area.tMax;
-        var t = coord.t
-        if (area.tMin > area.tMax) {
-          tMax += 2 * Math.PI;
-          if (coord.t < area.tMin) { t += 2 * Math.PI; }
+    var inArea;
+    if (coord.r < 30) {
+      inArea = [{label: "Mon profil"}];
+    } else {
+      inArea = miConfig.areas.filter(function(area) {
+        if (area.rMin < coord.r && coord.r < area.rMax) {
+          var tMax = area.tMax;
+          var t = coord.t
+          if (area.tMin > area.tMax) {
+            tMax += 2 * Math.PI;
+            if (coord.t < area.tMin) { t += 2 * Math.PI; }
+          }
+          if (area.tMin < t && t < tMax) {
+            return true;
+          }
         }
-        if (area.tMin < t && t < tMax) {
-          return true;
-        }
-      }
-      return false;
-    });
-    console.log(inArea);
+        return false;
+      });
+    }
     if (inArea.length > 0) {
       openListPopin({ typology: inArea[0].label });
     }
   });
 
+
   $('[data-typology]').click(function(ev) {
-    console.log(ev);
     openListPopin({
       typology: ev.target.dataset.typology
     });
@@ -114,7 +118,7 @@ openListPopin = function(filter) {
     var sizeRatio = $("#container").width() / BASE_WIDTH ;
     var position = "left:" + caract.position.left * sizeRatio
       + "px;top:" + caract.position.top * sizeRatio + "px;";
-    return "<div class='listpopin' style='box-shadow: 0px 0px 6px 10px rgba(" + colors + ", 0.3);" + position + "' >"
+    return "<div class='listpopin' style='border: solid 2px rgb(" + colors + ");" + position + "' >"
     +   "<div class='header' style='background-color: rgb(" + colors + ");' >"
     +     "<img class='icon' src='img/" + caract.headerIcon  + "'>"
     +     "<h3>" + list.title + "</h3>"
@@ -173,7 +177,8 @@ openListPopin = function(filter) {
     popin.find('.list').append(sublist);
   });
 
-  openPopin(popin);
+  openPopin(popin)
+    .draggable( "option", "handle", ".header" );
   // popin.draggable();
   // popin.find('.close').click(function() {
   //   popin.remove();
@@ -197,7 +202,7 @@ openDetailPopin = function(info, position) {
   }
 
   var template = function(info) {
-    return "<div class='detailpopin' style='box-shadow: 0px 0px 6px 10px rgba(" + colors + ", 0.3);" + position + "' >"
+    return "<div class='detailpopin' style='" + position + "' >"
     +   "<div class='close'>X</div>"
     +   "<p class='desc'>" + info.desc + "</p>"
     +   "<div class='support'>"

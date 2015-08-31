@@ -19,40 +19,34 @@
  </head>
 
   <body>
+    <h1>MesInfos Énergies</h1>
     <div id="container">
       <img id="fond" src="img/fond_mie.png" />  
     </div>
     <div id="legend">
-      <h3>Données personnelles de consommation énergétique</h3>
-      <p>mes données, concernant directement ma consommation énergétique. (Par exemple “la consommation de mon domicile en kWh/mois”)</p>
+      <h3 data-typology="Données personnelles de consommation énergétique">Données personnelles de consommation énergétique</h3>
+      <p data-typology="Données personnelles de consommation énergétique">mes données, concernant directement ma consommation énergétique. (Par exemple “la consommation de mon domicile en kWh/mois”)</p>
 
-      <h3>Données personnelles hors consommation énergétique</h3>
-      <p>mes données, concernant indirectement ou directement ma consommation énergétique, mais qui sont importantes pour comprendre ou agir dessus. (Par exemple "mon historique d’achats")</p>
+      <h3 data-typology="Données personnelles hors consommation énergétique">Données personnelles hors consommation énergétique</h3>
+      <p data-typology="Données personnelles hors consommation énergétique">mes données, concernant indirectement ou directement ma consommation énergétique, mais qui sont importantes pour comprendre ou agir dessus. (Par exemple "mon historique d’achats")</p>
 
-      <h3>Mon profil</h3>
-      <p>regroupe mes données essentielles, liées à mon identité et à mon foyer (âge, nombre, ...)</p>
+      <h3 data-typology="Mon profil">Mon profil</h3>
+      <p data-typology="Mon profil">regroupe mes données essentielles, liées à mon identité et à mon foyer (âge, nombre, ...)</p>
 
-      <h3>Mon logement / Mes équipements</h3>
-      <p>regroupe les données qui concernent mes équipements et mon logement (Par exemple "marque et modèle de ma voiture")</p>
+      <h3 data-typology="Mon logement / Mes équipements">Mon logement / Mes équipements</h3>
+      <p data-typology="Mon logement / Mes équipements">regroupe les données qui concernent mes équipements et mon logement (Par exemple "marque et modèle de ma voiture")</p>
 
-      <h3>Caractéristiques équipements</h3>
-      <p>ce qui qualifie un de mes équipements (voiture, machines à laver, ...), m'apportant ainsi une indication importante pour comprendre et agir sur ma consommation. (Par exemple le prix du carburant (moyenne par département))</p>
+      <h3 data-typology="Caractéristiques équipements">Caractéristiques équipements</h3>
+      <p data-typology="Caractéristiques équipements">ce qui qualifie un de mes équipements (voiture, machines à laver, ...), m'apportant ainsi une indication importante pour comprendre et agir sur ma consommation. (Par exemple le prix du carburant (moyenne par département))</p>
 
-      <h3>Caractéristiques produits</h3>
-      <p>ce qui qualifie mes produits (aliments, …) m’apportant ainsi une indication importante pour comprendre et agir sur ma consommation. (Par exemple la liste des produits disposant de l'EcoLabel Européen)</p>
+      <h3 data-typology="Caractéristiques produits">Caractéristiques produits</h3>
+      <p data-typology="Caractéristiques produits">ce qui qualifie mes produits (aliments, …) m’apportant ainsi une indication importante pour comprendre et agir sur ma consommation. (Par exemple la liste des produits disposant de l'EcoLabel Européen)</p>
 
-      <h3>Contexte</h3>
-      <p>ce sont les données de situation, qui concernent mon environnement immédiat ou qui permettent d’établir des conjectures sur ma consommation, mon empreinte environnementale. (Par exemple, la température extérieure)</p>
+      <h3 data-typology="Contexte">Contexte</h3>
+      <p data-typology="Contexte">ce sont les données de situation, qui concernent mon environnement immédiat ou qui permettent d’établir des conjectures sur ma consommation, mon empreinte environnementale. (Par exemple, la température extérieure)</p>
  
-      <h3>Référentiels et Tables de conversion</h3>
-      <p>données ou bases de données qui rassemblent standards, référentiels, annuaires, ou encore calculs permettant de basculer d’une unité vers une autre (Par exemple, le coût (énergétique ; financier ; Co2) des transports selon le nombre de km)</p>
-
-
- 
-
-
-
-
+      <h3 data-typology="Référentiels et Tables de conversion">Référentiels et Tables de conversion</h3>
+      <p data-typology="Référentiels et Tables de conversion">données ou bases de données qui rassemblent standards, référentiels, annuaires, ou encore calculs permettant de basculer d’une unité vers une autre (Par exemple, le coût (énergétique ; financier ; Co2) des transports selon le nombre de km)</p>
 
         </div>
     
@@ -122,13 +116,13 @@
             typologiesMap: {
               "Données personnelles de consommation énergétique": {
                 color: {r: 0x3F, g: 0xA8, b: 0x7B},
-                headerIcon: 'dpm_header.png',
+                headerIcon: 'dpconso_header.png',
                 position: {left: 170, top: 50},
 
               },
               "Données personnelles hors consommation énergétique": {
                 color: {r: 0xB7, g: 0xDB, b: 0x6C},
-                headerIcon: 'dpnm_header.png',
+                headerIcon: 'dphconso_header.png',
                 position: {left: 170, top: 280},
 
               },
@@ -139,12 +133,12 @@
               },
               "Mon logement / Mes équipements": {
                 color: {r: 0x59, g: 0xB3, b: 0x60},
-                headerIcon: 'profil_header.png',
+                headerIcon: 'equipements_header.png',
                 position: {left: 380, top: 280},
               },
               "Caractéristiques équipements": {
                 color: {r: 0x2C, g: 0x85, b: 0x6D},
-                headerIcon: 'caract_med_header.png',
+                headerIcon: 'caract_equipements_header.png',
                 position: {left: 500, top: 10},
 
               },

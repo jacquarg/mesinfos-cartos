@@ -1,22 +1,4 @@
 @font-face {
-  font-family: scalabold;
-  font-weight: bold;
-  src: url("../fonts/ScalaSans-BoldLF.otf") format("opentype");
-}
-
-@font-face {
-  font-family: scalaregular;
-  font-weight: regular;
-  src: url("../fonts/ScalaSans-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: scalalight;
-  font-weight: light;
-  src: url("../fonts/ScalaSansLight.otf") format("opentype");
-}
-
-@font-face {
   font-family: gothamrndbold;
   font-weight: bold;
   src: url("../fonts/GothamRnd-Bold.otf") format("opentype");
@@ -33,14 +15,20 @@
   font-weight: light;
   src: url("../fonts/GothamRnd-LightIta.otf") format("opentype");
 }
-
+@font-face {
+  font-family: gothamrndlight;
+  font-weight: light;
+  src: url("../fonts/GothamRnd-Light.otf") format("opentype");
+}
 
 h1 {
   font-family: gothamrndbold;
   font-weight: bold;
   font-size: 240%;
-  color: #017E8C;
+  color: #9D9D9D;
   text-align: center;
+  text-transform: uppercase;
+  margin: 60px;
 }
 
 #container {
@@ -65,7 +53,7 @@ h1 {
 }
 
 #container h2 {
-  font-family: scalabold;
+  font-family: gothamrndbold;
 /*font-weight: bold;*/
   font-size: 120%;
   max-width: 11%;
@@ -83,8 +71,9 @@ h1 {
   padding: 20px;
   height: 80%;
   overflow: auto;
-  box-shadow: 0px 0px 6px 10px rgba(150, 150, 150, 0.3);
+  border: solid 10px rgba(150, 150, 150, 0.3);
 }
+  
 @media ( min-width: 1150px) {
   #legend {
     top: 10%;
@@ -121,7 +110,7 @@ margin-top: 0px;
   position: absolute;
   right: 5px;
   top: 2px;
-  font-family: scalabold;
+  font-family: gothamrndbold;
   font-size: 15px;
   cursor: pointer;
 }
@@ -180,7 +169,7 @@ margin-top: 0px;
 }
 
 .listpopin .list li {
-  font-family: scalalight;
+  font-family: gothamrndlight;
   font-size: 12px;
   margin-bottom: 10px;
 }
@@ -189,13 +178,13 @@ margin-top: 0px;
 }
 
 .listpopin .list .referentiallink {
-  height: 30px;
+  height: 20px;
   float: right; 
   cursor: pointer;
 }
 
 .listpopin h4 {
-  font-family: scalabold;
+  font-family: gothamrndbold;
   font-size: 14px;
   margin-left: 15px;
 }
@@ -213,7 +202,8 @@ margin-top: 0px;
   background: white;
   z-index: 1000;
 
-  /*border*/: solid 10px;
+  border: 1px solid rgb(157, 157, 157);
+  
 }
 
 .detailpopin .header {
@@ -223,24 +213,24 @@ margin-top: 0px;
 
 
 .detailpopin h4 {
-  background-color: rgb(197, 197, 197);
-  color: white;
-  font-family: scalabold;
-  font-size: 12px;
+  background-color: #F6F6F6;
+  color: #9D9D9D;
+  font-family: gothamrndbold;
+  font-size: 11px;
   line-height: 20px;
   text-align: center;
-  padding-left: 14px;
+  padding-left: 17px;
 }
 
 .detailpopin .header img {
   position: absolute;
-  top: -5px;
+  top: -2px;
   left: 5px;
-  width: 30px;
+  width: 24px;
 }
 
 .detailpopin p {
-  font-family: scalalight;
+  font-family: gothamrndlight;
   font-size: 12px;
   margin: 12px;
 }
@@ -250,9 +240,9 @@ margin-top: 0px;
 }
 
 .detailpopin .accesseasiness {
-  background-color: rgb(197, 197, 197);
+  background-color: #F6F6F6;
   color: white;
-  font-family: scalabold;
+  font-family: gothamrndbold;
   font-size: 20px;
   line-height: 35px;  
   text-align: center;
