@@ -82,10 +82,17 @@ getSizeRatio = function() {
     return $("#container").width() / BASE_WIDTH ;
 }
 
-toResizedPolar = function(e) {
-  console.log(e);
+getOffsetCoordinatesOfEvent = function(e) {
   var x = (e.offsetX || e.pageX - $(e.target).offset().left);
   var y = (e.offsetY || e.pageY - $(e.target).offset().top);
+  return [x, y];
+}
+
+toResizedPolar = function(e) {
+  console.log(e);
+  var coords = getOffsetCoordinatesOfEvent(e);
+  var x = coords[0];
+  var y = coords[1];
 
   var sizeRatio = getSizeRatio();
   console.log("x: " + x + ", y: " + y);
@@ -143,8 +150,8 @@ openListPopin = function(filter) {
     line.find('span').click(function(ev) {
       console.log(ev);
       var position = {
-        left: $(ev.target).parents('.listpopin').offset().left - 190,
-        top: ev.pageY
+        left: $(ev.target).parents('.listpopin').position().left - 182 - Math.random() * 5,
+        top: ev.pageY - $('#container').offset().top
       };
       console.log(position);
       openDetailPopin(info, position);
@@ -179,15 +186,6 @@ openListPopin = function(filter) {
 
   openPopin(popin)
     .draggable( "option", "handle", ".header" );
-  // popin.draggable();
-  // popin.find('.close').click(function() {
-  //   popin.remove();
-  // });
-
-
-
-  // $("body").append(popin);
-
 };
 
 openDetailPopin = function(info, position) {
@@ -239,7 +237,7 @@ openPopin = function(html) {
     popin.remove();
   });
 
-  $("body").append(popin);
+  $("#container").append(popin);
 
   return popin;
 }
