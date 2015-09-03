@@ -18,9 +18,21 @@
 
   <body>
     <h1>MesInfos Énergies</h1>
+    <button class='defi' data-defi="all">Toutes les infos</button>
+    <button class='defi' data-defi="Payer moins cher">Payer moins cher</button>
     <div id="zoom">
     <div id="container">
-      <img id="fond" src="img/fond_mie.png" />  
+      <img id="fond" class="mapbg" src="img/fond_mie.png" />
+      <img data-typology="Caractéristiques équipements" class="mapbg" src="img/mie_caracequipement.png" />
+      <img  data-typology="Caractéristiques produits" class="mapbg" src="img/mie_caractpdt.png" />
+      <img data-typology="Contexte" class="mapbg" src="img/mie_contexte.png" />
+      <img data-typology="Données personnelles de consommation énergétique" class="mapbg" src="img/mie_dpce.png" />
+      <img data-typology="Données personnelles hors consommation énergétique" class="mapbg" src="img/mie_dpnce.png" />
+      <img data-typology="Mon logement" class="mapbg" src="img/mie_logement.png" />
+      <img data-typology="Mon profil" class="mapbg" src="img/mie_profil.png" />
+      <img data-typology="Référentiels et Tables de conversion" class="mapbg" src="img/mie_reftab.png" />
+      <img class="mapbg" src="img/mie_user.png" />
+
     </div>
     </div>
     <div id="legend">
@@ -33,8 +45,8 @@
       <h3 data-typology="Mon profil">Mon profil</h3>
       <p data-typology="Mon profil">regroupe des données essentielles qui me caractérisent, liées à mon identité et à mon foyer (âge, nombre, ...)</p>
 
-      <h3 data-typology="Mon logement / Mes équipements">Mon logement / Mes équipements</h3>
-      <p data-typology="Mon logement / Mes équipements">regroupe les données qui concernent mes équipements et mon logement (Par exemple "marque et modèle de ma voiture")</p>
+      <h3 data-typology="Mon logement">Mon logement</h3>
+      <p data-typology="Mon logement">regroupe les données qui concernent mon logement et ses équipements (Par exemple "type de chauffage")</p>
 
       <h3 data-typology="Caractéristiques équipements">Caractéristiques équipements</h3>
       <p data-typology="Caractéristiques équipements">ce qui qualifie un de mes équipements (voiture, machines à laver, ...), m'apportant ainsi une indication importante pour comprendre et agir sur ma consommation. (Par exemple “Classe énergétique de mes équipements”)</p>
@@ -73,16 +85,16 @@
                 {
                     label: "Mon profil",
                     rMin: 0,
-                    rMax: 146,
-                    tMin: 0,
-                    tMax: 1.57,
-                },
-                {
-                    label: "Mon logement / Mes équipements",
-                    rMin: 0,
                     rMax: 126,
                     tMin: 4.71,
                     tMax: 0,
+                },
+                {
+                    label: "Mon logement",
+                    rMin: 0,
+                    rMax: 146,
+                    tMin: 0,
+                    tMax: 1.57,
                 },
                 {
                     label: "Caractéristiques équipements",
@@ -132,7 +144,7 @@
                 headerIcon: 'profil_header.png',
                 position: {left: 380, top: 100},
               },
-              "Mon logement / Mes équipements": {
+              "Mon logement": {
                 color: {r: 0x59, g: 0xB3, b: 0x60},
                 headerIcon: 'equipements_header.png',
                 position: {left: 380, top: 280},
@@ -159,7 +171,11 @@
                 headerIcon: "referentiels_header.png",
                 position: {left: 650, top: 230},
               }
-            }
+            },
+
+            defis: {
+              "Payer moins cher": "data/defi_mie_payermoinscher.json",
+            },
         };
 
       </script>

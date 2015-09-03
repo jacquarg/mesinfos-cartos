@@ -2,9 +2,13 @@
 var displayJSON = function(data) { console.log(JSON.stringify(data, null, 2));};
 
 
-var BASE_WIDTH = 800, BASE_HEIGHT = 600;
-var infos = [];
+// var BASE_WIDTH = 800, BASE_HEIGHT = 600;
+var BASE_WIDTH = 823, BASE_HEIGHT = 681;
+var CENTER_X = 411 , CENTER_Y = 346 ;
 
+var infos = [];
+var defis = {};
+var currentDefi = undefined;
 // Create popup
 
 // getJSON
@@ -14,9 +18,16 @@ $(document).ready(function(){
       infos = data;
   });
 
+  var defiName, uri;
+  for (defiName in miConfig.defis) {
+    $.getJSON(miConfig.defis[defiName], function(data) {
+      defis[defiName] = data;
+    });
+  }
+
   $('img').on('dragstart', function(event) { event.preventDefault(); });
 
-  $('#fond').click(function(ev) {
+  $('.mapbg').click(function(ev) {
     if (dragDistance > 5) { return }
     var coord = toResizedPolar(ev);
     var inArea;
@@ -39,19 +50,43 @@ $(document).ready(function(){
       });
     }
     if (inArea.length > 0) {
-      openListPopin({ typology: inArea[0].label });
+      openListPopin({
+        typology: inArea[0].label,
+        defi: currentDefi, });
     }
   });
 
   $('#container').on('mousedown', draggable);
 
 
-
-  $('[data-typology]').click(function(ev) {
+  $('#legend > [data-typology]').click(function(ev) {
     openListPopin({
-      typology: ev.target.dataset.typology
+      typology: ev.target.dataset.typology,
+      defi: currentDefi,
     });
+  });
 
+  $('[data-defi]').click(function(ev) {
+    var typologies;
+    currentDefi = ev.target.dataset.defi;
+    if (currentDefi === 'all') {
+      currentDefi = undefined;
+      $('img[data-typology]').hide();
+
+    } else {
+      // Show / Hide some typologies
+      typologies = extractTypologies(filterList({ defi: currentDefi }));
+    }
+    for (var typology in miConfig.typologiesMap) {
+      var mapBg = $('img[data-typology="' + typology + '"]');
+      console.log(mapBg);
+      if (typologies[typology]) {
+        mapBg.hide();
+      } else {
+        mapBg.show();
+      }
+    }
+    // typologies =
   });
 
   // Set dimensions
@@ -110,7 +145,8 @@ removeDrag = function() {
 
 // Make the background draggable
 draggable = function(e) {
-  if (e.target.id === 'fond') {
+  console.log(e.target);
+  if (e.target.className === 'mapbg') {
     document.addEventListener('mousemove', drag);
     document.addEventListener('mouseup', removeDrag);
     dragDistance = 0;
@@ -140,7 +176,8 @@ toResizedPolar = function(e) {
   x = x / sizeRatio ;
   y = y / sizeRatio ;
 
-  var CENTER_X = 406 , CENTER_Y = 300 ;
+  // var CENTER_X = 406 , CENTER_Y = 300 ;
+
   // move to centered direct cartesian
   x = x - CENTER_X ;
   y = -y + CENTER_Y ;
@@ -216,6 +253,13 @@ openListPopin = function(filter, position) {
   };
 
   list = filterList(filter);
+
+  if (list.infos.length == 0) {
+    // totally filtered popin, don't show it empty.
+    console.info("No info to dislpay.");
+    return;
+  }
+
   list = groupByKeyword(list);
   popin = $(template(list, position));
 
@@ -257,7 +301,7 @@ openDetailPopin = function(info, position) {
     +   "<div class='support'>"
     +     "<div class='header'>"
     +       "<img src='img/icon_support.png' >"
-    +       "<h4>OÙ CELA SE TROUVE</h4>"
+    +       "<h4>OÙ</h4>"
     +     "</div>"
     +     "<p>" + info.support + "</p>"
     +   "</div>"
@@ -314,10 +358,10 @@ filterList = function(filter) {
       var keep = true;
       var passFilter = false;
       for (k in filter) {
-
-        if (filter[k] instanceof Array) {
-          passFilter = filter[k].some(function(v) {
-            return hasValue(info[k], v); });
+        if (k === 'defi') {
+          passFilter = $.inArray(info.desc, defis[filter[k]]) != -1;
+        } else if (filter[k] instanceof Array) {
+          passFilter = filter[k].some(function(v) { return hasValue(info[k], v); });
         } else {
           passFilter = hasValue(info[k], filter[k]);
         }
@@ -342,3 +386,13 @@ groupByKeyword = function(list) {
   });
   return list;
 };
+
+extractTypologies = function(list) {
+  typologies = {};
+
+  list.infos.forEach(function(info) {
+    typologies[info.typology] = true;
+  });
+
+  return typologies;
+}

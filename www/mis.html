@@ -6,6 +6,7 @@
     <title>MesInfos Santé</title>
     <script src="scripts/vendors/jquery-1.9.1.js"></script>
     <script src="scripts/vendors/jquery-ui.min.js"></script>
+    <script src="scripts/vendors/jquery.mousewheel.min.js"></script>
 
     <script src="scripts/vendors/async.js"></script>
     <script src="scripts/vendors/FileSaver.min.js"></script>
@@ -20,15 +21,21 @@
 
   <body>
     <h1>MesInfos Santé</h1>
-    <div id="container">
-        <!-- <div> -->
-            <img id="fond" src="img/fond_mis.png" />
-         <!--    <map name='mismap' >
-              <area shape="poly" coords="13,49,59.5,16.5,51.5,30.5,24.5,49%"  href="javascript:alert('square')">
-              <area shape="rect" coords="130,490,595,165"  href="javascript:alert('squareuh')">
+    <button class='defi' data-defi="all">Toutes les infos</button>
+    <button class='defi' data-defi="Payer moins cher">Payer moins cher</button>
+    <div id="zoom">
+      <div id="container">
+        <img id="fond" class="mapbg" src="img/fond_mis.png" />
+        <img data-typology="Caractéristiques médicaments" class="mapbg" src="img/mis_caractmed.png" />
+        <img data-typology="Caractéristiques produits" class="mapbg" src="img/mis_caractpdt.png" />
+        <img data-typology="Contexte" class="mapbg" src="img/mis_contexte.png" />
+        <img data-typology="Données personnelles médicales" class="mapbg" src="img/mis_dpm.png" />
+        <img data-typology="Données personnelles non médicales" class="mapbg" src="img/mis_dpnm.png" />
+        <img data-typology="Mon profil" class="mapbg" src="img/mis_profil.png" />
+        <img data-typology="Référentiels et Normes" class="mapbg" src="img/mis_refnormes.png" />
+        <img class="mapbg" src="img/mis_user.png" />
 
-            </map> -->
-        <!-- </div> -->
+      </div>
     </div>
         <div id="legend">
          <h3 data-typology="Mon profil">Mon profil</h3>

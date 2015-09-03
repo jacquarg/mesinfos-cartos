@@ -10,8 +10,6 @@ function fetchFromSpreadsheets(spreadSheetUri, referentialUri, callback) {
 
             callback(null, res[0].concat(res[1]));
     });
-
-
 }
 
 function fetchFromSpreadsheet(spreadSheetUri, callback) {
@@ -69,55 +67,35 @@ var rows2Infos = function(rows) {
     return infos
 }
 
-var rows2Metadoctype = function(rows) {
-    var i, row, currentDT = {}, docType, k, v;
-
-    var fieldsCol = {
-        champs: true,
-        champsValeur: true,
-        champsType: true,
-        champsDescription: true,
-    };
-    var docTypes = [];
-
-    for (i=0;i<rows.length;i++) { //
-        row = rows[i].cells;
-        if (row.commentaires) { continue; }
-
-        if (row.type && row.type !== "" && currentDT.type !== row.type) {
-            // New doctype
-            if (currentDT.type) {  // Initialization.
-                docTypes.push(currentDT);
+function fetchDefiFromSpreadsheet(spreadSheetUri, callback) {
+    sheetrock({
+        url: spreadSheetUri,
+        callback: function (error, options, response) {
+            if (error) { return callback(error); }
+            var infos, err;
+            try {
+                infos = rows2InfoNames(response.rows);
+                callback(err, infos);
+            } catch (e) {
+                err = e;
+                console.log(e);
             }
+            // callback(err, metaDoctypes);
+      }
+    });
+}
 
-            currentDT = $.extend({}, true, row);
 
-            // Clean empty keys
-            for (k in currentDT) {
-                if (currentDT[k] == null || currentDT[k] === "") {
-                    delete currentDT[k];
-                }
-            }
-            for (k in fieldsCol) {
-                delete currentDT[k];
-            }
-            currentDT.fields = [];
+var rows2InfoNames = function(rows) {
+    console.log(rows);
 
-        }
+    var infos = [], row, info;
+    for (i=0; i<rows.length; i++) {
+        row = rows[i].cellsArray;
+        if (row[9]) { continue; }
 
-        // extract data of a field
-        field = {};
-        for (k in fieldsCol) {
-            field[k] = row[k];
-        }
-
-        currentDT.fields.push(field);
+        infos.push(row[0].trim());
 
     }
-    // add last document.
-    docTypes.push(currentDT);
-    //console.log(docTypes);
-    return docTypes;
-};
-
-
+    return infos
+}

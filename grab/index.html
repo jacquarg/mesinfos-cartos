@@ -23,7 +23,9 @@
     
     <div id="container">
     <button id="fetchMIS" href="#">MesInfos Santé</button> 
-    <button id="fetchMIE" href="#">MesInfos Énergies</button> 
+    <button id="fetchMIE" href="#">MesInfos Énergies</button>
+    <input id="defiUri" type="text"/>
+    <button id="fetchDefi" href='#'>Defi</button>
       <script>
         
         var fetchAndSave = function(spreadSheetUri, uri2, fileName) {
@@ -39,6 +41,21 @@
           });
 
         $('#fetchMIE').click(function() { fetchAndSave('https://docs.google.com/spreadsheets/d/1-ALgp7PdR_nQYbFuXnXeSQh4h_FcVKf2qVualMgwukg/edit?pli=1#gid=180305342', 'https://docs.google.com/spreadsheets/d/1-ALgp7PdR_nQYbFuXnXeSQh4h_FcVKf2qVualMgwukg/edit?pli=1#gid=935325708', 'mie_infos.json');
+
+        var fetchAndSaveDefi = function(spreadSheetUri, fileName) {
+          fetchDefiFromSpreadsheet(spreadSheetUri, function(err, infos) {
+            console.log(infos); 
+
+            var blob = new Blob([JSON.stringify(infos, null, 2)], {type: "text/json;charset=utf-8"});
+            saveAs(blob, fileName);
+          });
+        };
+
+        $('#fetchDefi').click(function() {
+          console.log('toto');
+          
+          fetchAndSaveDefi($('#defiUri').val(), 'defi.json');
+        })
         });
       </script>
     </div>

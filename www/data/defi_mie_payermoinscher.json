@@ -1,0 +1,9 @@
+﻿[
+  "Trajets fréquents (ex : domicile/travail ; supermarché/domicile/travail, etc) : nombre de kilomètres",
+  "Géolocalisation de mon véhicule : instant T et historique",
+  "Coût (énergétique ; financier ; CO2) des transports selon le nombre de km",
+  "Données du réseau de transport de l'éléctricité",
+  "Ajoutés en remplacement",
+  "Usage de chaque équipement : nombre d'heures et fréquence d'utilisation, programme, ...",
+  "Météo : luminosité, vent, température exterieure"
+]

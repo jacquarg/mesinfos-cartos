@@ -190,7 +190,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Données thermographiques de mon bâtiment",
     "support": "Photos aériennes thermiques",
     "access": "Demande à faire aux collectivités locales qui en disposent",
@@ -235,7 +235,7 @@
   },
   {
     "typology": "Données personnelles de consommation énergétique",
-    "desc": "Suivi de ma production (si autoproduction) en Kwh",
+    "desc": "Suivi de ma production (si autoproduction) en kWh",
     "support": "Contrat achat énergie photovoltaique EDF ; Approximation avec dynamo",
     "access": "Scraping ; OCR ; Retranscription",
     "accessEasiness": "2",
@@ -282,7 +282,7 @@
   },
   {
     "typology": "Données personnelles de consommation énergétique",
-    "desc": "Consommation de mon domicile en kwh / mois : : moyenne et détail",
+    "desc": "Consommation de mon domicile en kwh / mois : moyenne et détail",
     "support": "Compteur intelligent ; Relevé manuel",
     "access": "Scraping ; API ; OCR ; Retranscription",
     "accessEasiness": "1",
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Solutions d'amélioration du diagnostic de mon logement",
     "support": "DPE (Diagnostic de Performance énergétique)",
     "access": "OCR ; Retranscription",
@@ -317,7 +317,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Performance énergétique estimée de mon logement et de mon bâtiment (consommation d'énergie et impact en terme d'émission de gaz à effet de serre)",
     "support": "DPE (Diagnostic de Performance énergétique) : étiquette climat et étiquette énergie",
     "access": "OCR ; Retranscription",
@@ -328,7 +328,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Propriétés de mon logement : isolation, surface et nombre de pièces, fenêtres, orientation, matériaux, mur (constitution), toiture...",
     "support": "DPE (Diagnostic de Performance énergétique) ; Plan",
     "access": "OCR ; Retranscription",
@@ -339,7 +339,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Equipement de chauffage de mon logement : type (centralisé ou non ; gaz ou électricité) et nombre",
     "support": "DPE (Diagnostic de Performance énergétique) ; Plan",
     "access": "OCR ; Retranscription",
@@ -350,7 +350,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Equipement de production d'eau chaude sanitaire de mon logement : type et nombre",
     "support": "DPE (Diagnostic de Performance énergétique) ; Plan",
     "access": "OCR ; Retranscription",
@@ -361,7 +361,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Equipement de refroidissement et de ventilation de mon logement : type et nombre",
     "support": "DPE (Diagnostic de Performance énergétique) ; Plan",
     "access": "OCR ; Retranscription",
@@ -394,7 +394,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Date, prix et caractéristiques des travaux effectués",
     "support": "Factures des différents prestataires",
     "access": "OCR ; Retranscription",
@@ -405,7 +405,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Date de construction de mon domicile",
     "support": "DPE (Diagnostic de Performance énergétique) ; Plan ; Bail",
     "access": "OCR ; Retranscription",
@@ -477,7 +477,7 @@
     ]
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Type, nom et modèle de l'équipement (machine à laver etc)",
     "support": "Notice de l'équipement ; Sur l'équipement ; Garanties",
     "access": "OCR ; Retranscription ; Scraping",
@@ -490,7 +490,7 @@
     ]
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Coût unitaire de l'équipement",
     "support": "Reçus ; Tickets de caisses ; Relevé de comptes ; Garantie",
     "access": "OCR ; Retranscription ; Scraping",
@@ -523,7 +523,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Mon logement",
     "desc": "Date d'achat d'un équipement",
     "support": "Facture ; Garantie",
     "access": "Scraping ; OCR ; Retranscription",
@@ -535,7 +535,7 @@
   },
   {
     "typology": "Caractéristiques équipements",
-    "desc": "Consommation (Litres / 100km) et émissions polluantes (Grammes / KM) de mon véhicule",
+    "desc": "Consommation (Litres / 100km) et émissions polluantes (Grammes / km) de mon véhicule",
     "support": "Croisement de la base de données Ademe \"Emissions de CO2 et de polluants des véhicules commercialisés en France\" (R8) et du modèle de mon véhicule",
     "access": "Calcul",
     "accessEasiness": "2",
@@ -635,7 +635,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Données personnelles hors consommation énergétique",
     "desc": "Marque et modèle de mon véhicule",
     "support": "Contrat d'assurance ; Carte grise ; Sur le véhicule ; Facture",
     "access": "OCR ; Retranscription ; Scraping",
@@ -651,7 +651,7 @@
   },
   {
     "typology": "Données personnelles de consommation énergétique",
-    "desc": "Consommation réelle de mon véhicule (en l/km et en kw/km)",
+    "desc": "Consommation réelle de mon véhicule (en L/km et en kW/km)",
     "support": "Ordinateur de bord ; Capteurs supplémentaires ; Ticket de caisse de station service ; Relevé bancaire",
     "access": "API ; Scraping ; OCR ; Retranscription",
     "accessEasiness": "1",
@@ -687,7 +687,7 @@
     ]
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Données personnelles hors consommation énergétique",
     "desc": "Date d'achat de mon véhicule",
     "support": "Contrat d'assurance ; Carte grise ; Facture",
     "access": "OCR ; Retranscription ; Scraping",
@@ -709,7 +709,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Données personnelles hors consommation énergétique",
     "desc": "Coût unitaire de mon véhicule",
     "support": "Bon de commande ; Facture",
     "access": "OCR ; Retranscription ; Scraping",
@@ -720,7 +720,7 @@
     "referential": null
   },
   {
-    "typology": "Mon logement / Mes équipements",
+    "typology": "Données personnelles hors consommation énergétique",
     "desc": "Usage de mon véhicule : nombre d'heures et fréquence d'utilisation, nombre de personnes qui l'utilisent, ...",
     "support": "Ordinateur de bord ; Capteurs véhicule",
     "access": "API ; Scraping",
@@ -1004,7 +1004,7 @@
   },
   {
     "typology": "Référentiels et Tables de conversion",
-    "desc": "Coût (énergétique ; financier ; Co2) des transports selon le nombre de km",
+    "desc": "Coût (énergétique ; financier ; CO2) des transports selon le nombre de km",
     "support": "Sites de calculs (type Quizz Ademe)",
     "access": "Scraping ; API",
     "accessEasiness": "3",
