@@ -20,22 +20,29 @@
  </head>
 
   <body>
-    <h1>MesInfos Santé</h1>
-    <button class='defi' data-defi="all">Toutes les infos</button>
-    <button class='defi' data-defi="Payer moins cher">Payer moins cher</button>
+    <h1>MesInfos <span style="color:#06888E;">Santé</span></h1>
+    <h2 style="color:#06888E;" >Paysage des informations de santé des individus</h2>
+    <div id="workarea">
+    <div id='buttons' class="buttons buttons-mie">
+      <img class='defi' data-defi="all" src='img/bouton_defi_gris.png' />
+      <img class='defi' data-defi="Payer moins cher" src='img/bouton_defi_mis.png' />
+      <img class='defi' data-defi="all" src='img/bouton_defi_gris.png' />
+      <img class='defi' data-defi="all" src='img/bouton_defi_gris.png' />
+    </div>
     <div id="zoom">
       <div id="container">
         <img id="fond" class="mapbg" src="img/fond_mis.png" />
-        <img data-typology="Caractéristiques médicaments" class="mapbg" src="img/mis_caractmed.png" />
-        <img data-typology="Caractéristiques produits" class="mapbg" src="img/mis_caractpdt.png" />
-        <img data-typology="Contexte" class="mapbg" src="img/mis_contexte.png" />
-        <img data-typology="Données personnelles médicales" class="mapbg" src="img/mis_dpm.png" />
-        <img data-typology="Données personnelles non médicales" class="mapbg" src="img/mis_dpnm.png" />
-        <img data-typology="Mon profil" class="mapbg" src="img/mis_profil.png" />
-        <img data-typology="Référentiels et Normes" class="mapbg" src="img/mis_refnormes.png" />
-        <img class="mapbg" src="img/mis_user.png" />
+        <img data-typology="Caractéristiques médicaments" class="mapbg layer" src="img/mis_caractmed.png" />
+        <img data-typology="Caractéristiques produits" class="mapbg layer" src="img/mis_caractpdt.png" />
+        <img data-typology="Contexte" class="mapbg layer" src="img/mis_contexte.png" />
+        <img data-typology="Données personnelles médicales" class="mapbg layer" src="img/mis_dpm.png" />
+        <img data-typology="Données personnelles non médicales" class="mapbg layer" src="img/mis_dpnm.png" />
+        <img data-typology="Mon profil" class="mapbg layer" src="img/mis_profil.png" />
+        <img data-typology="Référentiels et Normes" class="mapbg layer" src="img/mis_refnormes.png" />
+        <img class="mapbg layer" src="img/mis_user.png" />
 
       </div>
+    </div>
     </div>
         <div id="legend">
          <h3 data-typology="Mon profil">Mon profil</h3>

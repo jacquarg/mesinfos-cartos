@@ -138,7 +138,7 @@
   },
   {
     "typology": "Données personnelles médicales",
-    "desc": "Type de mon ALD (Affectation Longue Durée, maladie chronique) sur proposition du médecin traitant : 1 (ALD non exonérante), 2 (ALD 30, liste), 3 (ALD hors liste), 4 (polypathologie invalidante), 5 (autre)",
+    "desc": "Type de mon ALD (Affectation Longue Durée, maladie chronique) sur proposition du médecin traitant : 1, 2 , 3, 4, 5",
     "support": "Protocole de soin. Cerfa n°1162*04",
     "access": "scraping, OCR et retranscription",
     "accessEasiness": "2",
@@ -152,7 +152,7 @@
   },
   {
     "typology": "Données personnelles médicales",
-    "desc": "Type de mon ALD sur décision du médecin conseil (sécurité sociale) : 1 (ALD non exonérante), 2 (ALD 30, liste), 3 (ALD hors liste), 4 (polypathologie invalidante), 5 (autre) ET date de la décision",
+    "desc": "Type de mon ALD sur décision du médecin conseil (sécurité sociale) : 1, 2 , 3, 4, 5) et date de la décision",
     "support": "Protocole de soin. Cerfa n°1162*05",
     "access": "OCR et retranscription",
     "accessEasiness": "1",
@@ -191,7 +191,7 @@
   },
   {
     "typology": "Données personnelles médicales",
-    "desc": "Qualité buccodentaire : hygiène, suivi, localisation des dents cariées, anomalies dento-maxillo-faciales, trouble de l’articulé temporo-mandibulaire, ...",
+    "desc": "Qualité buccodentaire : hygiène, suivi, localisation des dents cariées, anomalies dento-maxillo-faciales, ...",
     "support": "Bilan Bucodentaire",
     "access": "OCR et retranscription",
     "accessEasiness": "1",
@@ -206,7 +206,7 @@
     "support": "Résultat analyse de sang ; Oxymètre connecté (seul ou présent dans les trackers d'activité)",
     "access": "OCR et retranscription ; Scraping ; API",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Constante",
     "referential": [
@@ -219,7 +219,7 @@
     "support": "Résultat analyse de sang ; Autotest",
     "access": "OCR et retranscription ; Scraping",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Constante",
     "referential": [
@@ -232,7 +232,7 @@
     "support": "Résultat analyse de sang ; Autotest",
     "access": "OCR et retranscription ; Scraping ; API",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Constante",
     "referential": [
@@ -245,7 +245,7 @@
     "support": "Résultat analyse de sang ; Autotest",
     "access": "OCR et retranscription ; Scraping ; API",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Constante",
     "referential": [
@@ -258,7 +258,7 @@
     "support": "Résultat analyse de sang",
     "access": "OCR et retranscription ; Scraping ; API",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Constante",
     "referential": [
@@ -323,7 +323,7 @@
     "support": "Résultat analyse de sang",
     "access": "OCR et retranscription ; Scraping",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Constante",
     "referential": [
@@ -336,7 +336,7 @@
     "support": "Résultat analyse de sang",
     "access": "OCR et retranscription ; Scraping",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Pathologie",
     "referential": null
@@ -347,7 +347,7 @@
     "support": "Résultat analyse de sang",
     "access": "OCR et retranscription ; Scraping",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Constante",
     "referential": [
@@ -360,7 +360,7 @@
     "support": "Résultat analyse de sang",
     "access": "OCR et retranscription ; Scraping",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Constante",
     "referential": null
@@ -371,7 +371,7 @@
     "support": "Résultat analyse de sang",
     "access": "OCR et retranscription ; Scraping",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Constante",
     "referential": null
@@ -382,7 +382,7 @@
     "support": "Résultat analyse d'urine ; Autotest",
     "access": "OCR et retranscription ; Scraping",
     "accessEasiness": "2",
-    "supportExample": "Portail récupération de résultats d'analyse : http://www.mesanalyses.fr/",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
     "subTypology": "",
     "domain": "Constante",
     "referential": [
@@ -624,7 +624,7 @@
   },
   {
     "typology": "Données personnelles médicales",
-    "desc": "Prise réelle de médicament, prise : nom, date, quantité",
+    "desc": "Prise réelle de médicament : nom du médicament, date, quantité",
     "support": "Piluliers intelligents ; boitiers automatiques (par ex. insuline) ; carnet de suivi des prises de médicament",
     "access": "API ; Saisie manuelle",
     "accessEasiness": "1",
@@ -636,7 +636,7 @@
   {
     "typology": "Caractéristiques médicaments",
     "desc": "Composition de mes médicaments",
-    "support": "Boite du médicament ; Base de donnée publique des médicaments (R8) croisée avec mon historique d'achat en pharmacie, mes ordonnances etc",
+    "support": "Boite du médicament ; Base de donnée publique des médicaments croisée avec mon historique d'achat en pharmacie, mes ordonnances etc",
     "access": "OCR ; Retranscription ; Calcul",
     "accessEasiness": "1",
     "supportExample": "",
@@ -649,7 +649,7 @@
   {
     "typology": "Caractéristiques médicaments",
     "desc": "Les effets secondaires connus de mes traitements",
-    "support": "Croisement du site d'EudraVigilance (Pharmacovigilance in the European Economic Area) (R5) et de mon historique d'achat en pharmacie, mes ordonnances etc",
+    "support": "Croisement du site d'EudraVigilance (Pharmacovigilance in the European Economic Area) et de mon historique d'achat en pharmacie, mes ordonnances etc",
     "access": "Calcul",
     "accessEasiness": "2",
     "supportExample": "",
@@ -675,7 +675,7 @@
   {
     "typology": "Caractéristiques produits",
     "desc": "Composition de mes produits de parapharmarcie",
-    "support": "Etiquette ou Croisement du site Open Beauty Facts (R19) et de mon historique d'achats",
+    "support": "Etiquette ou Croisement du site Open Beauty Facts et de mon historique d'achats",
     "access": "OCR ; Retranscription ; Calcul",
     "accessEasiness": "2",
     "supportExample": "",
@@ -687,15 +687,14 @@
   },
   {
     "typology": "Caractéristiques produits",
-    "desc": "Labellisation de mes produits (alimentaires et parapharmacie)",
-    "support": "Etiquette ou Croisement du site Open Beauty Facts (R19) ou Open Food Fact (R1) et de mon historique d'achats",
+    "desc": "Labellisation de mes produits de parapharmacie",
+    "support": "Etiquette ou Croisement du site Open Beauty Facts et de mon historique d'achats",
     "access": "OCR ; Retranscription ; Calcul",
     "accessEasiness": "",
     "supportExample": "",
     "subTypology": "",
     "domain": "",
     "referential": [
-      "R1",
       "R19"
     ]
   },
@@ -838,7 +837,7 @@
   },
   {
     "typology": "Données personnelles non médicales",
-    "desc": "Nombre de SMS envoyés et reçus",
+    "desc": "Nombre de SMS envoyés et reçus (semaine/mois/année)",
     "support": "Décompte de mon smartphone ; compte en ligne de mon opérateur",
     "access": "Scraping ; API",
     "accessEasiness": "2",
@@ -849,7 +848,7 @@
   },
   {
     "typology": "Données personnelles non médicales",
-    "desc": "Nombre de tweets",
+    "desc": "Nombre de tweets (publiés, reçus, par semaine/mois/année)",
     "support": "Compte twitter",
     "access": "Scraping ; API",
     "accessEasiness": "3",
@@ -933,12 +932,12 @@
   {
     "typology": "Caractéristiques produits",
     "desc": "Composition de mes produits alimentaires",
-    "support": "Emballage produit ou Open Food Fact (R1) croisé avec historique d'achat alimentation",
+    "support": "Emballage produit ou Open Food Fact croisé avec historique d'achat alimentation",
     "access": "OCR ; Retranscription ; Calcul",
     "accessEasiness": "2",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Hygiène de vie",
+    "domain": "",
     "referential": [
       "R1"
     ]
@@ -946,7 +945,7 @@
   {
     "typology": "Caractéristiques produits",
     "desc": "Provenance de mes produits alimentaires",
-    "support": "Emballage produit ou Open Food Fact (R1) et/ou Liste code pays sur les code-barres (R15) croisé avec historique d'achat alimentation",
+    "support": "Emballage produit ou Open Food Fact et/ou Liste code pays sur les code-barres croisé avec historique d'achat alimentation",
     "access": "OCR ; Retranscription ; Calcul",
     "accessEasiness": "2",
     "supportExample": "",
@@ -960,7 +959,7 @@
   {
     "typology": "Caractéristiques produits",
     "desc": "Labellisation de mes produits alimentaires",
-    "support": "Emballage produit ou Open Food Fact (R1) croisé avec historique d'achat alimentation",
+    "support": "Emballage produit ou Open Food Fact croisé avec historique d'achat alimentation",
     "access": "OCR ; Retranscription ; Calcul",
     "accessEasiness": "2",
     "supportExample": "",
@@ -972,7 +971,7 @@
   },
   {
     "typology": "Données personnelles non médicales",
-    "desc": "Historique d'achat alimentation",
+    "desc": "Mes achats d'alimentation",
     "support": "Tickets de caisse",
     "access": "OCR et retranscription",
     "accessEasiness": "1",
@@ -1009,7 +1008,7 @@
   },
   {
     "typology": "Données personnelles non médicales",
-    "desc": "Nombre d'heure de travail : officielle et officieuse",
+    "desc": "Nombre d'heures de travail : officielles et officieuses",
     "support": "Contrat de travail ; Déclaratif ; Géolocalisation",
     "access": "Scraping ; Saisie Manuelle ; API",
     "accessEasiness": "1",
@@ -1046,8 +1045,8 @@
   },
   {
     "typology": "Données personnelles non médicales",
-    "desc": "Nombre de cigarettes/semaine",
-    "support": "Données bancaires ; Tickets de caisse ; Déclaratif ; Questionnaire (assurance maladie après 50 ans, mutuelle, sports à risque,  'Institut national du cancer etc)",
+    "desc": "Nombre de cigarettes/jour/semaine",
+    "support": "Données bancaires ; Tickets de caisse ; Déclaratif ; Questionnaire (assurance maladie après 50 ans, mutuelle, sports à risque,  Institut national du cancer etc)",
     "access": "Scraping ; OCR et retranscription ; Saisie Manuelle",
     "accessEasiness": "1",
     "supportExample": "",
@@ -1142,7 +1141,7 @@
     "typology": "Mon profil",
     "desc": "Identité (nom, prénom, date de naissance, adresse, profession, sexe)",
     "support": "Carte d'identité ; Passeport ; Profil sécurité sociale, assurances, mutuelles, banques, CAF, MonSP, impôts, employeurs, etc...",
-    "access": "Scraping",
+    "access": "Scraping ; Saisie Manuelle",
     "accessEasiness": "2",
     "supportExample": "",
     "subTypology": "",
@@ -1174,10 +1173,10 @@
   {
     "typology": "Contexte",
     "desc": "Taux d'UV",
-    "support": "http://www.meteofrance.com/accueil",
+    "support": "Site météo",
     "access": "Scraping",
     "accessEasiness": "2",
-    "supportExample": "",
+    "supportExample": "http://www.meteofrance.com/accueil",
     "subTypology": "",
     "domain": "",
     "referential": null
@@ -1206,7 +1205,7 @@
   },
   {
     "typology": "Contexte",
-    "desc": "Hygrométrie",
+    "desc": "Hydrométrie",
     "support": "Station météo",
     "access": "API",
     "accessEasiness": "3",
@@ -1240,7 +1239,7 @@
   {
     "typology": "Contexte",
     "desc": "Pollution (NO2, O3, PM10, PM2, SO2)",
-    "support": "Site web",
+    "support": "Site web divers",
     "access": "Scraping",
     "accessEasiness": "2",
     "supportExample": "pour l'Ile de France : http://www.airparif.asso.fr/",
@@ -1251,7 +1250,7 @@
   {
     "typology": "Contexte",
     "desc": "Bruit ambiant (en dB)",
-    "support": "Site Web ; Capteurs",
+    "support": "Site Web divers ; Capteurs",
     "access": "Scraping ; API",
     "accessEasiness": "2",
     "supportExample": "pour l'Ile de France : http://www.bruitparif.fr/",
@@ -1358,7 +1357,7 @@
   {
     "typology": "Référentiels et Normes",
     "desc": "Les effets secondaires connus des traitements",
-    "support": "Site d'EudraVigilance (Pharmacovigilance in the European Economic Area) (R2)",
+    "support": "Site d'EudraVigilance (Pharmacovigilance in the European Economic Area)",
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "http://www.adrreports.eu/fr/",
@@ -1370,8 +1369,8 @@
   },
   {
     "typology": "Référentiels et Normes",
-    "desc": "Guide « vos droits et démarches » contient plus de 2 800 fiches d’information et questions-réponses et quelques 5 000 liens vers des ressources utiles (formulaires, démarches en ligne, textes de référence, sites web publics, etc.) pour exercer ses droits et accomplir ses démarches.",
-    "support": "Jeu de données Administration Premier Ministre",
+    "desc": "Guide « vos droits et démarches » (2 800 fiches d’information et questions-réponses et quelques 5 000 liens vers des ressources utiles)",
+    "support": "Jeu de données \"Service du Premier Ministre\"",
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "https://www.data.gouv.fr/fr/datasets/service-public-fr-guide-vos-droits-et-demarches-particuliers/",
@@ -1397,7 +1396,7 @@
   {
     "typology": "Référentiels et Normes",
     "desc": "Base de données publique des médicaments (base officielle)",
-    "support": "Jeu de données Ministère des Affaires sociales, de la Santé et des Droits des femmes",
+    "support": "Jeu de données \"Ministère des Affaires sociales, de la Santé et des Droits des femmes\"",
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "https://www.data.gouv.fr/fr/datasets/base-de-donnees-publique-des-medicaments-base-officielle/",

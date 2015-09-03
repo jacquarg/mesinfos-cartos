@@ -6,8 +6,8 @@
     "access": "Scraping",
     "accessEasiness": "2",
     "supportExample": "Site web de la municipalité : Grenoble : http://www.grenoble.fr/231-restauration-scolaire.htm\nLyon : http://www.lyon.fr/page/enfance-et-education/leducation/la-restauration-scolaire.html",
-    "subTypology": "",
-    "domain": "Alimentation",
+    "subTypology": "Alimentation",
+    "domain": "",
     "referential": null
   },
   {
@@ -17,19 +17,19 @@
     "access": "Scraping",
     "accessEasiness": "2",
     "supportExample": "Grenoble : http://www.grenoble.fr/222-les-marches-a-grenoble.htm\nLyon : http://www.lyon.fr/page/economie/commerces/les-marches-lyonnais.html",
-    "subTypology": "",
-    "domain": "Alimentation",
+    "subTypology": "Alimentation",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Caractéristiques produits",
     "desc": "Labellisation EcoLabel Européen de mes biens de consommation (hors alimentation)",
-    "support": "The Ecolabel Catalogue - Commission Européenne (R1) croisé avec historique d'achat produits divers",
+    "support": "The Ecolabel Catalogue - Commission Européenne croisé avec historique d'achat produits divers",
     "access": "Calcul",
     "accessEasiness": "2",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Autre",
+    "domain": "",
     "referential": [
       "R1"
     ]
@@ -41,8 +41,8 @@
     "access": "OCR ; Retranscription ; Scraping",
     "accessEasiness": "2",
     "supportExample": "Skerou : http://www.skerou.com/",
-    "subTypology": "",
-    "domain": "Autre",
+    "subTypology": "Autre",
+    "domain": "",
     "referential": [
       "R1"
     ]
@@ -54,8 +54,8 @@
     "access": "Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Alimentation",
+    "subTypology": "Alimentation",
+    "domain": "",
     "referential": null
   },
   {
@@ -66,18 +66,18 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Alimentation",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Caractéristiques produits",
     "desc": "Provenance et composition de mes produits alimentaires",
-    "support": "Emballage produit ou Open Food Fact (R2) et/ou Liste code pays sur les code-barres (R3) croisé avec historique d'achat alimentation",
+    "support": "Emballage produit ou Open Food Fact et/ou Liste code pays sur les code-barres croisé avec historique d'achat alimentation",
     "access": "OCR ; Retranscription ; Calcul",
     "accessEasiness": "2",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Alimentation",
+    "domain": "",
     "referential": [
       "R2"
     ]
@@ -90,7 +90,7 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Alimentation",
+    "domain": "",
     "referential": null
   },
   {
@@ -101,13 +101,13 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Alimentation",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Caractéristiques produits",
     "desc": "Provenance de mes biens de consommation (hors alimentation)",
-    "support": "Notice ou Liste code pays sur les code-barres (R3) croisé avec historique d'achat produits divers",
+    "support": "Notice ou Liste code pays sur les code-barres croisé avec historique d'achat produits divers",
     "access": "Calcul",
     "accessEasiness": "2",
     "supportExample": "",
@@ -120,12 +120,12 @@
   {
     "typology": "Caractéristiques produits",
     "desc": "Energie nécessaire pour produire mes produits alimentaires",
-    "support": "Articles, Etudes sur les sites web d'associations, d'institutions etc (R4) croisé avec historique d'achat alimentation",
+    "support": "Articles, Etudes sur les sites web d'associations, d'institutions etc croisé avec historique d'achat alimentation",
     "access": "Calcul",
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Alimentation",
+    "domain": "",
     "referential": [
       "R4"
     ]
@@ -133,12 +133,12 @@
   {
     "typology": "Caractéristiques produits",
     "desc": "Emissions (g de CO2) par produit alimentaire acheté",
-    "support": "Croisement de la base carbone Ademe (R5) et de mon historique d'achat alimentation",
+    "support": "Croisement de la base carbone Ademe et de mon historique d'achat alimentation",
     "access": "Calcul",
     "accessEasiness": "2",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Alimentation",
+    "domain": "",
     "referential": [
       "R5"
     ]
@@ -150,8 +150,8 @@
     "access": "OCR ; Retranscription ; Scraping",
     "accessEasiness": "1",
     "supportExample": "Skerou : http://www.skerou.com/",
-    "subTypology": "",
-    "domain": "Alimentation",
+    "subTypology": "Alimentation",
+    "domain": "",
     "referential": [
       "R2"
     ]
@@ -163,8 +163,8 @@
     "access": "Open Data",
     "accessEasiness": "2",
     "supportExample": "http://www.sinoe.org/filtres/index/thematique ; \nSite web de l'association Les compostiers à Lyon : http://www.lescompostiers.org/cartographie-composteurs-collectifs",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -174,8 +174,8 @@
     "access": "Scraping ; API",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -185,8 +185,8 @@
     "access": "API ; OCR ; Retranscription",
     "accessEasiness": "3",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -197,7 +197,7 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -207,8 +207,8 @@
     "access": "Scraping",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -218,8 +218,8 @@
     "access": "API ; Scraping ; OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -229,8 +229,8 @@
     "access": "Scraping (nécessite un partage entre locataires)",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -240,8 +240,8 @@
     "access": "Scraping ; OCR ; Retranscription",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -251,8 +251,8 @@
     "access": "API ; OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -262,8 +262,8 @@
     "access": "Scraping ; API ; OCR ; Retranscription",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -273,8 +273,8 @@
     "access": "Scraping ; API ; OCR ; Retranscription",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": [
       "R11",
       "R12"
@@ -287,8 +287,8 @@
     "access": "Scraping ; API ; OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -298,8 +298,8 @@
     "access": "Scraping ; API ; OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": [
       "R11",
       "R12"
@@ -313,7 +313,7 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -324,7 +324,7 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -335,7 +335,7 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -346,7 +346,7 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -357,7 +357,7 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -368,7 +368,7 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -378,8 +378,8 @@
     "access": "OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -389,8 +389,8 @@
     "access": "OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -401,7 +401,7 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -412,18 +412,29 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Mon profil",
-    "desc": "Composition du foyer (nombre de personne, âge...) et adresse",
+    "desc": "Composition de mon foyer (nombre de personne, âge...)",
     "support": "Livret de famille ; etc",
     "access": "OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Mon profil",
+    "desc": "Mon adresse",
+    "support": "Carte d'identité ; Passeport ; Profil sécurité sociale, assurances, mutuelles, banques, CAF, MonSP, impôts, employeurs, etc...",
+    "access": "Scraping ; Saisie Manuelle",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
     "referential": null
   },
   {
@@ -433,8 +444,8 @@
     "access": "Scraping",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Autre",
+    "subTypology": "Autre",
+    "domain": "",
     "referential": [
       "R13"
     ]
@@ -446,8 +457,8 @@
     "access": "Scraping",
     "accessEasiness": "2",
     "supportExample": "Fichier \"place.sqlite\" du profil Firefox",
-    "subTypology": "",
-    "domain": "Autre",
+    "subTypology": "Autre",
+    "domain": "",
     "referential": [
       "R14"
     ]
@@ -459,45 +470,45 @@
     "access": "OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Caractéristiques équipements",
     "desc": "Classe énergétique de mes équipements",
-    "support": "Etiquette environnementale et énergie (Notice ; Garantie) ou croisement du type/nom de mon équipement avec le référentiel pertinent (R7)",
+    "support": "Etiquette environnementale et énergie (Notice ; Garantie) ou croisement du type/nom de mon équipement avec les référentiels nécessaires (ex: catalogue Darty)",
     "access": "OCR ; Retranscription ; Calcul",
     "accessEasiness": "2",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": [
       "R7"
     ]
   },
   {
     "typology": "Mon logement",
-    "desc": "Type, nom et modèle de l'équipement (machine à laver etc)",
+    "desc": "Type, nom et modèle de mes équipements (machine à laver etc)",
     "support": "Notice de l'équipement ; Sur l'équipement ; Garanties",
     "access": "OCR ; Retranscription ; Scraping",
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": [
       "R7"
     ]
   },
   {
     "typology": "Mon logement",
-    "desc": "Coût unitaire de l'équipement",
+    "desc": "Coût unitaire de mes équipements",
     "support": "Reçus ; Tickets de caisses ; Relevé de comptes ; Garantie",
     "access": "OCR ; Retranscription ; Scraping",
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -507,8 +518,8 @@
     "access": "Scraping ; API ; OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
@@ -518,30 +529,30 @@
     "access": "Retranscription ; API ; Scraping",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Mon logement",
-    "desc": "Date d'achat d'un équipement",
+    "desc": "Date d'achat de mes équipement",
     "support": "Facture ; Garantie",
     "access": "Scraping ; OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Domicile",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Caractéristiques équipements",
     "desc": "Consommation (Litres / 100km) et émissions polluantes (Grammes / km) de mon véhicule",
-    "support": "Croisement de la base de données Ademe \"Emissions de CO2 et de polluants des véhicules commercialisés en France\" (R8) et du modèle de mon véhicule",
+    "support": "Croisement de la base de données Ademe \"Emissions de CO2 et de polluants des véhicules commercialisés en France\" et du modèle de mon véhicule",
     "access": "Calcul",
     "accessEasiness": "2",
-    "supportExample": "Certains site web reprennent les données de l'Ademe (par exemple : https://wehicles.com/mag)",
+    "supportExample": "Certains site web reprennent les données de l'Ademe ( par exemple : https://wehicles.com/mag )",
     "subTypology": "",
-    "domain": "Mobilité",
+    "domain": "",
     "referential": [
       "R8"
     ]
@@ -553,19 +564,19 @@
     "access": "Scraping",
     "accessEasiness": "1",
     "supportExample": "https://www.waze.com/fr",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Données personnelles hors consommation énergétique",
-    "desc": "Trajets effectués avec mon véhicule instant T et historique : nombre de kilomètre, distance, lieux",
+    "desc": "Trajets effectués avec mon véhicule instant T et historique : nombre de kilomètres, distance, lieux",
     "support": "Historique GPS (véhicule, smartphone)",
     "access": "API ; Scraping",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -575,8 +586,8 @@
     "access": "API ; Scrapping",
     "accessEasiness": "2",
     "supportExample": "API appli mobile AllBikesNow : https://developer.jcdecaux.com/#/opendata/vls?page=getstarted",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -586,19 +597,19 @@
     "access": "Scraping ; API",
     "accessEasiness": "2",
     "supportExample": "http://www.zagaz.com/index.php",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Contexte",
     "desc": "Prix des transports publics (Bus ; TER, Métro)",
-    "support": "Sites des transporteurs de ma ville (R)",
+    "support": "Sites des transporteurs de ma ville",
     "access": "Open Data ; Scraping",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -608,8 +619,8 @@
     "access": "API ; scraping",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -619,8 +630,8 @@
     "access": "Scraping ; API",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -630,8 +641,8 @@
     "access": "Scraping",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -641,8 +652,8 @@
     "access": "OCR ; Retranscription ; Scraping",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": [
       "R6",
       "R8",
@@ -656,19 +667,19 @@
     "access": "API ; Scraping ; OCR ; Retranscription",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Caractéristiques équipements",
     "desc": "Classe énergétique de mon véhicule",
-    "support": "Etiquette énergie (site web du constructeur ; contrat d'assurance) ou croisement du modèle de mon véhicule avec le référentiel Car Labelling Ademe (R6)",
+    "support": "Etiquette énergie (site web du constructeur ; contrat d'assurance) ou croisement du modèle de mon véhicule avec le référentiel Car Labelling Ademe",
     "access": "OCR ; Retranscription ; Calcul",
     "accessEasiness": "2",
-    "supportExample": "Certains site web reprennent les données de l'Ademe (par exemple : https://wehicles.com/mag)",
+    "supportExample": "Certains site web reprennent les données de l'Ademe (par exemple : https://wehicles.com/mag )",
     "subTypology": "",
-    "domain": "Mobilité",
+    "domain": "",
     "referential": [
       "R6"
     ]
@@ -676,12 +687,12 @@
   {
     "typology": "Caractéristiques équipements",
     "desc": "Type d'énergie consommée par mon véhicule (essence, diesel, électricité, hybride...)",
-    "support": "Etiquette énergie (site web du constructeur ; contrat d'assurance) ou croisement du modèle avec le référentiel Car Labelling Ademe (R6)",
+    "support": "Etiquette énergie (site web du constructeur ; contrat d'assurance) ou croisement du modèle avec le référentiel Car Labelling Ademe",
     "access": "OCR ; Retranscription ; Scraping ; Calcul",
     "accessEasiness": "2",
-    "supportExample": "Certains site web reprennent les données de l'Ademe (par exemple : https://wehicles.com/mag)",
+    "supportExample": "Certains site web reprennent les données de l'Ademe (par exemple : https://wehicles.com/mag )",
     "subTypology": "",
-    "domain": "Mobilité",
+    "domain": "",
     "referential": [
       "R6"
     ]
@@ -693,8 +704,8 @@
     "access": "OCR ; Retranscription ; Scraping",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -705,7 +716,7 @@
     "accessEasiness": "1",
     "supportExample": "",
     "subTypology": "",
-    "domain": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -715,8 +726,8 @@
     "access": "OCR ; Retranscription ; Scraping",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -726,8 +737,8 @@
     "access": "API ; Scraping",
     "accessEasiness": "1",
     "supportExample": "https://dev.xee.com/",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -737,8 +748,8 @@
     "access": "API ; Scraping",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -748,19 +759,19 @@
     "access": "API ; Scraping",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
     "typology": "Données personnelles de consommation énergétique",
     "desc": "Rythme de consommation de mon véhicule (nombre de pleins d'essence par semaine, par mois)",
-    "support": "Déclaratif ; Données bancaires ; Tickets de caisse ; Capteurs véhicule ; Ordinateur de bord",
+    "support": "Données bancaires ; Tickets de caisse ; Capteurs véhicule ; Ordinateur de bord",
     "access": "OCR ; Retranscription ; Scraping ; API",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": null
   },
   {
@@ -770,8 +781,8 @@
     "access": "API ; Scraping",
     "accessEasiness": "2",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Autre",
+    "subTypology": "Autre",
+    "domain": "",
     "referential": null
   },
   {
@@ -781,8 +792,8 @@
     "access": "API ; Scraping",
     "accessEasiness": "3",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Autre",
+    "subTypology": "Autre",
+    "domain": "",
     "referential": null
   },
   {
@@ -792,8 +803,8 @@
     "access": "API ; Scraping (nécessite un partage de la ville)",
     "accessEasiness": "1",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Autre",
+    "subTypology": "Autre",
+    "domain": "",
     "referential": null
   },
   {
@@ -803,8 +814,19 @@
     "access": "Scraping",
     "accessEasiness": "3",
     "supportExample": "http://www.kelquartier.com/ile_de_france_paris_paris_12_quartier_vallee_de_fecamp_75012-q100505/revenu_moyen.html",
-    "subTypology": "",
-    "domain": "Autre",
+    "subTypology": "Autre",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Typologie",
+    "desc": "Pourlacartographie\"MESINFOSENERGIES\":huitièmetypologie:\"référentielsettablesdeconversion\"Quoi?(nom)",
+    "support": "Où?(support)",
+    "access": "Comment?(accès)",
+    "accessEasiness": "Facilitéd'accès(1à3)",
+    "supportExample": "Exempled'accès",
+    "subTypology": "SousTypologie/mots-clés(pourtridans\"pop-up\")",
+    "domain": "Commentaires(pouralgodereprésentation)#",
     "referential": null
   },
   {
@@ -814,7 +836,7 @@
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "http://ec.europa.eu/ecat/",
-    "subTypology": "",
+    "subTypology": "Autre",
     "domain": "",
     "referential": [
       "R1"
@@ -827,7 +849,7 @@
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "http://fr.openfoodfacts.org/",
-    "subTypology": "",
+    "subTypology": "Alimentation",
     "domain": "",
     "referential": [
       "R2"
@@ -840,7 +862,7 @@
     "access": "Scraping",
     "accessEasiness": "3",
     "supportExample": "http://www.gs1.org/company-prefix",
-    "subTypology": "",
+    "subTypology": "Autre",
     "domain": "",
     "referential": [
       "R3"
@@ -853,7 +875,7 @@
     "access": "Scraping",
     "accessEasiness": "3",
     "supportExample": "",
-    "subTypology": "",
+    "subTypology": "Alimentation",
     "domain": "",
     "referential": [
       "R4"
@@ -866,7 +888,7 @@
     "access": "Scraping",
     "accessEasiness": "3",
     "supportExample": "http://bilans-ges.ademe.fr/fr/basecarbone/donnees-consulter/choix-categorie/categorie/8",
-    "subTypology": "",
+    "subTypology": "Alimentation",
     "domain": "",
     "referential": [
       "R5"
@@ -879,7 +901,7 @@
     "access": "Scraping",
     "accessEasiness": "3",
     "supportExample": "http://carlabelling.ademe.fr/",
-    "subTypology": "",
+    "subTypology": "Mobilité",
     "domain": "",
     "referential": [
       "R6"
@@ -892,7 +914,7 @@
     "access": "Scraping",
     "accessEasiness": "2",
     "supportExample": "http://www.darty.com/",
-    "subTypology": "",
+    "subTypology": "Mobilité",
     "domain": "",
     "referential": [
       "R7"
@@ -905,7 +927,7 @@
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "https://www.data.gouv.fr/fr/datasets/emissions-de-co2-et-de-polluants-des-vehicules-commercialises-en-france/",
-    "subTypology": "",
+    "subTypology": "Mobilité",
     "domain": "",
     "referential": [
       "R8"
@@ -918,7 +940,7 @@
     "access": "Scraping",
     "accessEasiness": "3",
     "supportExample": "http://carlabelling.ademe.fr/",
-    "subTypology": "",
+    "subTypology": "Mobilité",
     "domain": "",
     "referential": [
       "R9"
@@ -931,8 +953,8 @@
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "http://clients.rte-france.com/lang/fr/visiteurs/vie/courbes.jsp",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": [
       "R10"
     ]
@@ -944,8 +966,8 @@
     "access": "Scraping",
     "accessEasiness": "3",
     "supportExample": "http://www.quechoisir.org/app/comparateur-gaz-electricite/comparatif-gratuit/",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": [
       "R11"
     ]
@@ -957,8 +979,8 @@
     "access": "Scraping",
     "accessEasiness": "3",
     "supportExample": "http://developpement-durable.bsocom.fr/statistiques/ReportFolders/reportFolders.aspx",
-    "subTypology": "",
-    "domain": "Domicile",
+    "subTypology": "Domicile",
+    "domain": "",
     "referential": [
       "R12"
     ]
@@ -966,12 +988,12 @@
   {
     "typology": "Référentiels et Tables de conversion",
     "desc": "Impact énergétique d'envoi d'un mail, d'une requête, etc",
-    "support": "Articles, Etudes sur les sites web d'associations, d'institutions etc Articles",
+    "support": "Articles, Etudes sur les sites web d'associations, d'institutions etc",
     "access": "OCR ; Retranscription ; Scraping",
     "accessEasiness": "1",
     "supportExample": "https://www.ademe.fr/sites/default/files/assets/documents/guide-pratique-internet-courriels-reduire-impacts.pdf",
-    "subTypology": "",
-    "domain": "Autre",
+    "subTypology": "Autre",
+    "domain": "",
     "referential": [
       "R13"
     ]
@@ -983,8 +1005,8 @@
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "http://webenergyarchive.com/",
-    "subTypology": "",
-    "domain": "Autre",
+    "subTypology": "Autre",
+    "domain": "",
     "referential": [
       "R14"
     ]
@@ -996,7 +1018,7 @@
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "http://www.prix-carburants.gouv.fr/",
-    "subTypology": "",
+    "subTypology": "Mobilité",
     "domain": "",
     "referential": [
       "R15"
@@ -1009,8 +1031,8 @@
     "access": "Scraping ; API",
     "accessEasiness": "3",
     "supportExample": "http://quizz.ademe.fr/eco-deplacements/calculette/calculette.html",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": [
       "R16"
     ]
@@ -1022,8 +1044,8 @@
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": [
       "R17"
     ]
@@ -1035,8 +1057,8 @@
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "https://ressources.data.sncf.com/explore/dataset/emission-co2-tgv/?tab=metas",
-    "subTypology": "",
-    "domain": "Mobilité",
+    "subTypology": "Mobilité",
+    "domain": "",
     "referential": [
       "R18"
     ]
@@ -1048,8 +1070,8 @@
     "access": "Open Data",
     "accessEasiness": "3",
     "supportExample": "http://www.insee.fr/fr/themes/detail.asp?reg_id=0&ref_id=fd-bpe14&page=fichiers_detail/BPE14/telechargement.htm",
-    "subTypology": "",
-    "domain": "Autre",
+    "subTypology": "Autre",
+    "domain": "",
     "referential": [
       "R20"
     ]

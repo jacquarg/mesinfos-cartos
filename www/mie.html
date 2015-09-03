@@ -17,9 +17,15 @@
  </head>
 
   <body>
-    <h1>MesInfos Énergies</h1>
-    <button class='defi' data-defi="all">Toutes les infos</button>
-    <button class='defi' data-defi="Payer moins cher">Payer moins cher</button>
+    <h1>MesInfos <span style="color:#2B846C;">Énergies</span></h1>
+    <h2 style="color:#2B846C;" >Paysage des informations énergétiques (mobilité, domicile, alimentation, …) des individus</h2>
+    <div id="workarea">
+    <div id='buttons' class="buttons buttons-mie">
+      <img class='defi' data-defi="all" src='img/bouton_defi_gris.png' />
+      <img class='defi' data-defi="Payer moins cher" src='img/bouton_defi_mis.png' />
+      <img class='defi' data-defi="all" src='img/bouton_defi_gris.png' />
+      <img class='defi' data-defi="all" src='img/bouton_defi_gris.png' />
+    </div>
     <div id="zoom">
     <div id="container">
       <img id="fond" class="mapbg" src="img/fond_mie.png" />
@@ -33,6 +39,7 @@
       <img data-typology="Référentiels et Tables de conversion" class="mapbg" src="img/mie_reftab.png" />
       <img class="mapbg" src="img/mie_user.png" />
 
+    </div>
     </div>
     </div>
     <div id="legend">
@@ -60,8 +67,14 @@
       <h3 data-typology="Référentiels et Tables de conversion">Référentiels et Tables de conversion</h3>
       <p data-typology="Référentiels et Tables de conversion">données ou bases de données qui rassemblent standards, référentiels, annuaires, ou encore calculs permettant de basculer d’une unité vers une autre (Par exemple, le coût (énergétique ; financier ; CO2) des transports selon le nombre de km)</p>
 
+      
         </div>
-    
+
+    <div id='credits'>
+        <img id='creditsbam' src='img/credits_bam.png' />
+        <img id='creditscc' src='img/credits_creativecommons.png' />
+        <img id='creditsfing' src='img/credits_fing.png' />
+      </div>
 
       <script>
         window.miConfig = {

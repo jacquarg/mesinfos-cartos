@@ -26,6 +26,7 @@ $(document).ready(function(){
   }
 
   $('img').on('dragstart', function(event) { event.preventDefault(); });
+  resetDefi();
 
   $('.mapbg').click(function(ev) {
     if (dragDistance > 5) { return }
@@ -50,9 +51,11 @@ $(document).ready(function(){
       });
     }
     if (inArea.length > 0) {
-      openListPopin({
-        typology: inArea[0].label,
-        defi: currentDefi, });
+      var filter = { typology: inArea[0].label };
+      if (currentDefi) {
+        filter.defi = currentDefi;
+      }
+      openListPopin(filter);
     }
   });
 
@@ -60,19 +63,18 @@ $(document).ready(function(){
 
 
   $('#legend > [data-typology]').click(function(ev) {
-    openListPopin({
-      typology: ev.target.dataset.typology,
-      defi: currentDefi,
-    });
+    var filter = { typology: ev.target.dataset.typology };
+    if (currentDefi) {
+      filter.defi = currentDefi;
+    }
+    openListPopin(filter);
   });
 
   $('[data-defi]').click(function(ev) {
     var typologies;
     currentDefi = ev.target.dataset.defi;
     if (currentDefi === 'all') {
-      currentDefi = undefined;
-      $('img[data-typology]').hide();
-
+      resetDefi();
     } else {
       // Show / Hide some typologies
       typologies = extractTypologies(filterList({ defi: currentDefi }));
@@ -105,8 +107,8 @@ $(document).ready(function(){
   $("#container").width(width);
   $("#container").height(height);
 
-  $("#zoom").width(width);
-  $("#zoom").height(height);
+  // $("#zoom").width(width);
+  // $("#zoom").height(height);
 
   $("#legend h3").each(function(i, elem) {
     var color = miConfig.typologiesMap[elem.innerHTML].color ;
@@ -119,12 +121,16 @@ $(document).ready(function(){
 
 
   $('#zoom').mousewheel(function(event) {
-    event.preventDefault();
-    var delta = event.deltaY * event.deltaFactor / 2 ;
-    $('#container').width($('#container').width() + delta * ratio);
-    $('#container').height($('#container').height() + delta);
-  });
+    if (event.target.className.indexOf('mapbg') != -1) {
+      event.preventDefault();
+      var delta = event.deltaY * event.deltaFactor / 2 ;
+      $('#container').width($('#container').width() + delta * ratio);
+      $('#container').height($('#container').height() + delta);
 
+      // Automatically scroll down, to use whole available area.
+      window.scrollTo(0, $('#zoom').offset().top + $('zoom').height());
+    }
+  });
 
 });
 
@@ -133,7 +139,6 @@ drag = function(e) {
   e.preventDefault();
   $('#zoom').scrollTop($('#zoom').scrollTop()  - e.movementY);
   $('#zoom').scrollLeft($('#zoom').scrollLeft()  - e.movementX);
-
   dragDistance += e.movementX * e.movementX + e.movementY * e.movementY ;
 
 }
@@ -146,11 +151,16 @@ removeDrag = function() {
 // Make the background draggable
 draggable = function(e) {
   console.log(e.target);
-  if (e.target.className === 'mapbg') {
+  if (e.target.className.indexOf('mapbg') != -1) {
     document.addEventListener('mousemove', drag);
     document.addEventListener('mouseup', removeDrag);
     dragDistance = 0;
   }
+}
+
+resetDefi = function() {
+  currentDefi = undefined;
+  $('img[data-typology]').hide();
 }
 
 getSizeRatio = function() {
