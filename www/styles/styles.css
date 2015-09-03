@@ -40,6 +40,11 @@ h1 {
   margin-left: -50%;
 }
 
+#zoom {
+  overflow: auto;
+  position: absolute;
+}
+
 #fond {
   width: 100%;
   height: 100%;
@@ -89,10 +94,10 @@ margin-top: 0px;
 .listpopin .close, .detailpopin .close {
   position: absolute;
   right: 5px;
-  top: 2px;
+  top: 3  px;
   font-family: gothamrndbold;
-  font-size: 15px;
   cursor: pointer;
+  width: 13px;
 }
 
 .detailpopin, .listpopin {
@@ -171,7 +176,8 @@ margin-top: 0px;
 
 .listpopin ul {
   margin-left: 15px;
-  padding-left: 10px
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .detailpopin {
@@ -184,6 +190,15 @@ margin-top: 0px;
 
   border: 1px solid rgb(157, 157, 157);
   
+}
+
+.detailpopin .title {
+  background-color: #FFCA00;
+  color: white;
+  font-family: gothamrndbold;
+  padding: 12px;
+  font-size: 12px;
+
 }
 
 .detailpopin .header {
@@ -215,8 +230,8 @@ margin-top: 0px;
   margin: 12px;
 }
 
-.detailpopin p.desc {
-  margin-right: 30px;
+.detailpopin p a {
+  color: #666;
 }
 
 .detailpopin .accesseasiness {
@@ -235,5 +250,3 @@ margin-top: 0px;
 .detailpopin .accesseasiness img {
   height: 25px;
 }
-
-

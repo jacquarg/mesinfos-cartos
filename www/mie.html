@@ -6,22 +6,22 @@
     <title>MesInfos Énergies</title>
     <script src="scripts/vendors/jquery-1.9.1.js"></script>
     <script src="scripts/vendors/jquery-ui.min.js"></script>
+    <script src="scripts/vendors/jquery.mousewheel.min.js"></script>
 
     <script src="scripts/vendors/async.js"></script>
     <script src="scripts/vendors/FileSaver.min.js"></script>
 
-
     <script src="scripts/vendors/sheetrock.min.js"></script>
-
-
 
     <link href="styles/styles.css" rel="stylesheet" type="text/css" />
  </head>
 
   <body>
     <h1>MesInfos Énergies</h1>
+    <div id="zoom">
     <div id="container">
       <img id="fond" src="img/fond_mie.png" />  
+    </div>
     </div>
     <div id="legend">
       <h3 data-typology="Données personnelles de consommation énergétique">Données personnelles de consommation énergétique</h3>
@@ -54,6 +54,7 @@
       <script>
         window.miConfig = {
             infosUri: 'data/mie_infos.json',
+            referentialTypology: "Référentiels et Tables de conversion",
             areas: [
                 {
                     label: "Données personnelles de consommation énergétique",
@@ -151,7 +152,7 @@
               "Contexte": {
                 color:  {r: 0x75, g: 0xCB, b: 0x82},
                 headerIcon: 'contexte_header.png',
-                position: {left: 10, top: 230},
+                position: {left: 150, top: 10},
               },
               "Référentiels et Tables de conversion": {
                 color: {r: 0x2B, g: 0xC3, b: 0x6B},

@@ -11,13 +11,13 @@ var infos = [];
 $(document).ready(function(){
 
   $.getJSON(miConfig.infosUri, function(data) {
-      console.log(data);
       infos = data;
   });
 
   $('img').on('dragstart', function(event) { event.preventDefault(); });
 
-  $('img').click(function(ev) {
+  $('#fond').click(function(ev) {
+    if (dragDistance > 5) { return }
     var coord = toResizedPolar(ev);
     var inArea;
     if (coord.r < 30) {
@@ -43,6 +43,9 @@ $(document).ready(function(){
     }
   });
 
+  $('#container').on('mousedown', draggable);
+
+
 
   $('[data-typology]').click(function(ev) {
     openListPopin({
@@ -67,8 +70,10 @@ $(document).ready(function(){
   $("#container").width(width);
   $("#container").height(height);
 
+  $("#zoom").width(width);
+  $("#zoom").height(height);
+
   $("#legend h3").each(function(i, elem) {
-    console.log(elem);
     var color = miConfig.typologiesMap[elem.innerHTML].color ;
     var colorStr = 'rgb(' + color.r + ', ' + color.g + ', ' + color.b + ')' ;
 
@@ -76,10 +81,44 @@ $(document).ready(function(){
     $(elem).next('p').css('color', colorStr);
 
   });
+
+
+  $('#zoom').mousewheel(function(event) {
+    event.preventDefault();
+    var delta = event.deltaY * event.deltaFactor / 2 ;
+    $('#container').width($('#container').width() + delta * ratio);
+    $('#container').height($('#container').height() + delta);
+  });
+
+
 });
 
+
+drag = function(e) {
+  e.preventDefault();
+  $('#zoom').scrollTop($('#zoom').scrollTop()  - e.movementY);
+  $('#zoom').scrollLeft($('#zoom').scrollLeft()  - e.movementX);
+
+  dragDistance += e.movementX * e.movementX + e.movementY * e.movementY ;
+
+}
+
+removeDrag = function() {
+  document.removeEventListener('mouseup', removeDrag);
+  document.removeEventListener('mousemove', drag);
+}
+
+// Make the background draggable
+draggable = function(e) {
+  if (e.target.id === 'fond') {
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', removeDrag);
+    dragDistance = 0;
+  }
+}
+
 getSizeRatio = function() {
-    return $("#container").width() / BASE_WIDTH ;
+  return $("#container").width() / BASE_WIDTH ;
 }
 
 getOffsetCoordinatesOfEvent = function(e) {
@@ -117,19 +156,27 @@ toResizedPolar = function(e) {
   return {r: r, t: t};
 }
 
-openListPopin = function(filter) {
+openListPopin = function(filter, position) {
   var popin, list;
-  var template = function(list) {
+
+  var template = function(list, position) {
     var caract = miConfig.typologiesMap[list.title];
+    console.log(position);
+    if (position === undefined) {
+      var sizeRatio = $("#container").width() / BASE_WIDTH ;
+      position = {
+        left: caract.position.left * sizeRatio,
+        top: caract.position.top * sizeRatio,
+      }
+    }
+    console.log(position);
     var colors = caract.color.r + ', ' + caract.color.g + ', ' + caract.color.b ;
     var sizeRatio = $("#container").width() / BASE_WIDTH ;
-    var position = "left:" + caract.position.left * sizeRatio
-      + "px;top:" + caract.position.top * sizeRatio + "px;";
-    return "<div class='listpopin' style='border: solid 2px rgb(" + colors + ");" + position + "' >"
+    return "<div class='listpopin' style='border: solid 2px rgb(" + colors + "); left:" + position.left + "px;top:" + position.top + "px;' >"
     +   "<div class='header' style='background-color: rgb(" + colors + ");' >"
     +     "<img class='icon' src='img/" + caract.headerIcon  + "'>"
     +     "<h3>" + list.title + "</h3>"
-    +     "<div class='close'>X</div>"
+    +     "<img src='img/close.png' class='close'/>"
     +   "</div>"
     +   "<div class='list'></div>"
     + "</div>";
@@ -147,19 +194,21 @@ openListPopin = function(filter) {
     html += "</li>";
 
     var line = $(html);
+    // Position of surrounding popups
     line.find('span').click(function(ev) {
-      console.log(ev);
       var position = {
         left: $(ev.target).parents('.listpopin').position().left - 182 - Math.random() * 5,
-        top: ev.pageY - $('#container').offset().top
+        top: ev.pageY - $('#container').offset().top - 20,
       };
-      console.log(position);
       openDetailPopin(info, position);
     });
-    line.find('.referentiallink').click(function() {
+    line.find('.referentiallink').click(function(ev) {
       openListPopin({
-        typology: "Référentiels et Normes",
-        referential: info.referential,
+        typology: miConfig.referentialTypology,
+        referential: info.referential
+      }, {
+        left: $(ev.target).parents('.listpopin').position().left + 250 + 10,
+        top: ev.pageY - $('#container').offset().top - 20
       });
     });
 
@@ -168,7 +217,7 @@ openListPopin = function(filter) {
 
   list = filterList(filter);
   list = groupByKeyword(list);
-  popin = $(template(list));
+  popin = $(template(list, position));
 
   var keywords = Object.keys(list.byKeyword);
   keywords.sort();
@@ -201,8 +250,10 @@ openDetailPopin = function(info, position) {
 
   var template = function(info) {
     return "<div class='detailpopin' style='" + position + "' >"
-    +   "<div class='close'>X</div>"
-    +   "<p class='desc'>" + info.desc + "</p>"
+    +   "<div class='title'>"
+    +     "<img src='img/close.png' class='close' />"
+    +   info.desc
+    +   "</div>"
     +   "<div class='support'>"
     +     "<div class='header'>"
     +       "<img src='img/icon_support.png' >"
