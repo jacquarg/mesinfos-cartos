@@ -6,6 +6,8 @@ var displayJSON = function(data) { console.log(JSON.stringify(data, null, 2));};
 var BASE_WIDTH = 823, BASE_HEIGHT = 681;
 var CENTER_X = 411 , CENTER_Y = 346 ;
 
+var BASE_RATIO = BASE_WIDTH / BASE_HEIGHT;
+
 var infos = [];
 var defis = {};
 var currentDefi = undefined;
@@ -28,36 +30,7 @@ $(document).ready(function(){
   $('img').on('dragstart', function(event) { event.preventDefault(); });
   resetDefi();
 
-  $('.mapbg').click(function(ev) {
-    if (dragDistance > 5) { return }
-    var coord = toResizedPolar(ev);
-    var inArea;
-    if (coord.r < 30) {
-      inArea = [{label: "Mon profil"}];
-    } else {
-      inArea = miConfig.areas.filter(function(area) {
-        if (area.rMin < coord.r && coord.r < area.rMax) {
-          var tMax = area.tMax;
-          var t = coord.t
-          if (area.tMin > area.tMax) {
-            tMax += 2 * Math.PI;
-            if (coord.t < area.tMin) { t += 2 * Math.PI; }
-          }
-          if (area.tMin < t && t < tMax) {
-            return true;
-          }
-        }
-        return false;
-      });
-    }
-    if (inArea.length > 0) {
-      var filter = { typology: inArea[0].label };
-      if (currentDefi) {
-        filter.defi = currentDefi;
-      }
-      openListPopin(filter);
-    }
-  });
+
 
   $('#container').on('mousedown', draggable);
 
@@ -92,15 +65,14 @@ $(document).ready(function(){
   });
 
   // Set dimensions
-  var ratio = BASE_WIDTH / BASE_HEIGHT;
   var wW = $(window).width();
   var wH = $(window).height();
   var width, height;
-  if (wW / wH < ratio) {
+  if (wW / wH < BASE_RATIO) {
     width = wW;
-    height = wW / ratio ;
+    height = wW / BASE_RATIO ;
   } else {
-    width = wH * ratio ;
+    width = wH * BASE_RATIO ;
     height = wH;
   }
 
@@ -124,37 +96,92 @@ $(document).ready(function(){
     if (event.target.className.indexOf('mapbg') != -1) {
       event.preventDefault();
       var delta = event.deltaY * event.deltaFactor / 2 ;
-      $('#container').width($('#container').width() + delta * ratio);
-      $('#container').height($('#container').height() + delta);
-
-      // Automatically scroll down, to use whole available area.
-      window.scrollTo(0, $('#zoom').offset().top + $('zoom').height());
+      zoom(delta);
     }
   });
+  $('#zoomin').click(function() { zoom(24); });
+  $('#zoomout').click(function() { zoom(-24); });
 
 });
 
+zoom = function(delta) {
+    $('#container').width($('#container').width() + delta * BASE_RATIO);
+    $('#container').height($('#container').height() + delta);
 
+    // Automatically scroll down, to use whole available area.
+    window.scrollTo(0, $('#zoom').offset().top);
+}
+
+onClickOpenListPopin = function(ev) {
+    if (dragDistance > 5) { return }
+    var coord = toResizedPolar(ev);
+    var inArea;
+    if (coord.r < 30) {
+      inArea = [{label: "Mon profil"}];
+    } else {
+      inArea = miConfig.areas.filter(function(area) {
+        if (area.rMin < coord.r && coord.r < area.rMax) {
+          var tMax = area.tMax;
+          var t = coord.t
+          if (area.tMin > area.tMax) {
+            tMax += 2 * Math.PI;
+            if (coord.t < area.tMin) { t += 2 * Math.PI; }
+          }
+          if (area.tMin < t && t < tMax) {
+            return true;
+          }
+        }
+        return false;
+      });
+    }
+    if (inArea.length > 0) {
+      var filter = { typology: inArea[0].label };
+      if (currentDefi) {
+        filter.defi = currentDefi;
+      }
+      openListPopin(filter);
+    }
+};
+
+
+var previousMouseMove;
 drag = function(e) {
   e.preventDefault();
-  $('#zoom').scrollTop($('#zoom').scrollTop()  - e.movementY);
-  $('#zoom').scrollLeft($('#zoom').scrollLeft()  - e.movementX);
-  dragDistance += e.movementX * e.movementX + e.movementY * e.movementY ;
+  var moveY = 0, moveX = 0;
+  if (e.movementY !== undefined) {
+    moveY = e.movementY;
+    moveX = e.movementX;
+  } else {
+    if (previousMouseMove !== undefined) {
+      moveY = e.screenY - previousMouseMove.y
+      moveX = e.screenX - previousMouseMove.x
+    }
+    previousMouseMove = { x: e.screenX, y: e.screenY } ;
+  }
+  $('#zoom').scrollTop($('#zoom').scrollTop()  - moveY);
+  $('#zoom').scrollLeft($('#zoom').scrollLeft()  - moveX);
+  dragDistance += moveX * moveX + moveY * moveY ;
 
 }
 
-removeDrag = function() {
+removeDrag = function(e) {
+  $('#container').css('cursor', 'default');
+
   document.removeEventListener('mouseup', removeDrag);
   document.removeEventListener('mousemove', drag);
+
+  onClickOpenListPopin(e)
 }
 
 // Make the background draggable
 draggable = function(e) {
-  console.log(e.target);
+  dragDistance = 0;
+  document.addEventListener('mouseup', removeDrag);
+
   if (e.target.className.indexOf('mapbg') != -1) {
+    $('#container').css('cursor', 'grabbing');
     document.addEventListener('mousemove', drag);
     document.addEventListener('mouseup', removeDrag);
-    dragDistance = 0;
   }
 }
 
