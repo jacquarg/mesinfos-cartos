@@ -54,7 +54,7 @@ h2 {
 }
 
 #zoom {
-  overflow: auto;
+  overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100%;

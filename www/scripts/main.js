@@ -21,11 +21,15 @@ $(document).ready(function(){
   });
 
   var defiName, uri;
-  for (defiName in miConfig.defis) {
+  async.eachSeries(Object.keys(miConfig.defis), function(defiName, callback) {
     $.getJSON(miConfig.defis[defiName], function(data) {
       defis[defiName] = data;
+      console.log(defis);
+      callback();
     });
-  }
+    }, function() {
+      console.log("Defi loaded");
+    });
 
   $('img').on('dragstart', function(event) { event.preventDefault(); });
   resetDefi();
@@ -52,9 +56,9 @@ $(document).ready(function(){
       // Show / Hide some typologies
       typologies = extractTypologies(filterList({ defi: currentDefi }));
     }
+    console.log(typologies);
     for (var typology in miConfig.typologiesMap) {
       var mapBg = $('img[data-typology="' + typology + '"]');
-      console.log(mapBg);
       if (typologies[typology]) {
         mapBg.hide();
       } else {
@@ -258,7 +262,7 @@ openListPopin = function(filter, position) {
 
   var lineTemplate = function(info) {
     var html = "<li>" ;
-     if (info.referential) {
+     if (info.referential && info.typology != miConfig.referentialTypology) {
       html += "<img class='referentiallink' src='img/referential_link.png'>";
     }
     html +=   "<span>"
