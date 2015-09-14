@@ -186,6 +186,7 @@ drag = function(e) {
     }
     previousMouseMove = { x: e.screenX, y: e.screenY } ;
   }
+
   $('#zoom').scrollTop($('#zoom').scrollTop()  - moveY);
   $('#zoom').scrollLeft($('#zoom').scrollLeft()  - moveX);
   dragDistance += moveX * moveX + moveY * moveY ;
@@ -194,6 +195,7 @@ drag = function(e) {
 
 removeDrag = function(e) {
   $('#container').css('cursor', 'default');
+  previousMouseMove = undefined;
 
   document.removeEventListener('mouseup', removeDrag);
   document.removeEventListener('mousemove', drag);
@@ -208,6 +210,8 @@ draggable = function(e) {
 
   if (e.target.className.indexOf('mapbg') != -1) {
     $('#container').css('cursor', 'grabbing');
+    $('#container').css('cursor', '-webkit-grabbing');
+
     document.addEventListener('mousemove', drag);
     document.addEventListener('mouseup', removeDrag);
   }
@@ -278,7 +282,10 @@ openListPopin = function(filter, position) {
         top: caract.position.top * sizeRatio,
       }
     }
-    console.log(position);
+
+    position.left = Math.max(position.left, 0);
+    position.top = Math.max(position.top, 0);
+
     var colors = caract.color.r + ', ' + caract.color.g + ', ' + caract.color.b ;
     var sizeRatio = $("#container").width() / BASE_WIDTH ;
     return "<div class='listpopin' data-title='" + list.title + "' style='border: solid 2px rgb(" + colors + "); left:" + position.left + "px;top:" + position.top + "px;' >"
@@ -364,6 +371,8 @@ openDetailPopin = function(info, position) {
 
   var caract = miConfig.typologiesMap[info.typology];
   var colors = caract.color.r + ', ' + caract.color.g + ', ' + caract.color.b ;
+  position.left = Math.max(position.left, 0);
+  position.top = Math.max(position.top, 0);
   var position = "left:" + position.left
       + "px;top:" + position.top + "px;";
   if (info.supportExample) {
@@ -407,7 +416,9 @@ openDetailPopin = function(info, position) {
 openPopin = function(html) {
   var popin = $(html);
 
-  popin.draggable();
+  popin.draggable({
+    containment: '#zoom'
+  });
   popin.find('.close').click(function() {
     popin.remove();
   });

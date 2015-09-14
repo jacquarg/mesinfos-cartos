@@ -40,6 +40,14 @@ h2 {
   max-width: 760px;
 }
 
+h3.defis {
+  color: #9D9D9D;
+  font-family: gothamrndlight;
+  font-size: 18px;
+  text-decoration: italic;
+  margin-left: 40px;
+}
+
 #container {
   /* width and height overriden by css. */
   width: 1024px;
@@ -83,7 +91,7 @@ h2 {
 #buttons {
   position: absolute;
   top: 0px;
-  height: 60px;
+  height: 50px;
   width: 100%;
   text-align: center;
 }
@@ -186,6 +194,9 @@ h2 {
   height: 100%;
 }
 
+#credits #print {
+  height: 80%;
+}
 /* Popins */
 
 .listpopin .close, .detailpopin .close {
@@ -346,4 +357,13 @@ h2 {
 
 .detailpopin .accesseasiness img {
   height: 25px;
+}
+
+@media print {
+  html, body {
+    width: 750px;
+    margin: 0;
+    padding: 0;
+    background: #FFF; 
+  }
 }
