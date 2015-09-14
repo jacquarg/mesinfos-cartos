@@ -10,7 +10,9 @@ var BASE_RATIO = BASE_WIDTH / BASE_HEIGHT;
 
 var infos = [];
 var defis = {};
-var currentDefi = undefined;
+var currentDefi = 'all';
+var popins = {};
+
 // Create popup
 
 // getJSON
@@ -41,22 +43,39 @@ $(document).ready(function(){
 
   $('#legend > [data-typology]').click(function(ev) {
     var filter = { typology: ev.target.dataset.typology };
-    if (currentDefi) {
+    if (currentDefi != 'all') {
       filter.defi = currentDefi;
     }
     openListPopin(filter);
   });
 
   $('[data-defi]').click(function(ev) {
+    var defiBtn, src, newDefi;
+
+    // Deactivate previously selected defi.
+    if (currentDefi != 'all') {
+      defiBtn = $('[data-defi="' + currentDefi + '"].defi');
+      src = defiBtn.attr('src').split('-')[0];
+      defiBtn.attr('src', src + '.png');
+    }
+
+    newDefi = ev.target.dataset.defi;
+
     var typologies;
-    currentDefi = ev.target.dataset.defi;
-    if (currentDefi === 'all') {
+    if (currentDefi === newDefi) {
+      currentDefi = 'all';
       resetDefi();
     } else {
+      currentDefi = newDefi;
+
+      // Activate defi button.
+      defiBtn = $('[data-defi="' + newDefi + '"].defi');
+      src = defiBtn.attr('src').split('.')[0];
+      defiBtn.attr('src', src + '-active.png');
+
       // Show / Hide some typologies
       typologies = extractTypologies(filterList({ defi: currentDefi }));
     }
-    console.log(typologies);
     for (var typology in miConfig.typologiesMap) {
       var mapBg = $('img[data-typology="' + typology + '"]');
       if (typologies[typology]) {
@@ -106,7 +125,9 @@ $(document).ready(function(){
   $('#zoomin').click(function() { zoom(24); });
   $('#zoomout').click(function() { zoom(-24); });
 
+
 });
+
 
 zoom = function(delta) {
     $('#container').width($('#container').width() + delta * BASE_RATIO);
@@ -118,6 +139,7 @@ zoom = function(delta) {
 
 onClickOpenListPopin = function(ev) {
     if (dragDistance > 5) { return }
+
     var coord = toResizedPolar(ev);
     var inArea;
     if (coord.r < 30) {
@@ -139,8 +161,10 @@ onClickOpenListPopin = function(ev) {
       });
     }
     if (inArea.length > 0) {
-      var filter = { typology: inArea[0].label };
-      if (currentDefi) {
+      var typology = inArea[0].label;
+      var filter = { typology: typology };
+
+      if (currentDefi != 'all') {
         filter.defi = currentDefi;
       }
       openListPopin(filter);
@@ -190,7 +214,14 @@ draggable = function(e) {
 }
 
 resetDefi = function() {
-  currentDefi = undefined;
+  var defiBtn, src ;
+  if (currentDefi != 'all') {
+      defiBtn = $('[data-defi="' + currentDefi + '"].defi');
+      src = defiBtn.attr('src').split('-')[0];
+      defiBtn.attr('src', src + '.png');
+  }
+
+  currentDefi = 'all';
   $('img[data-typology]').hide();
 }
 
@@ -250,7 +281,7 @@ openListPopin = function(filter, position) {
     console.log(position);
     var colors = caract.color.r + ', ' + caract.color.g + ', ' + caract.color.b ;
     var sizeRatio = $("#container").width() / BASE_WIDTH ;
-    return "<div class='listpopin' style='border: solid 2px rgb(" + colors + "); left:" + position.left + "px;top:" + position.top + "px;' >"
+    return "<div class='listpopin' data-title='" + list.title + "' style='border: solid 2px rgb(" + colors + "); left:" + position.left + "px;top:" + position.top + "px;' >"
     +   "<div class='header' style='background-color: rgb(" + colors + ");' >"
     +     "<img class='icon' src='img/" + caract.headerIcon  + "'>"
     +     "<h3>" + list.title + "</h3>"
@@ -295,6 +326,10 @@ openListPopin = function(filter, position) {
 
   list = filterList(filter);
 
+  // only one popup with this typology
+  if ($('[data-title="' + list.title + '"].listpopin').length > 0) { return; }
+
+
   if (list.infos.length == 0) {
     // totally filtered popin, don't show it empty.
     console.info("No info to dislpay.");
@@ -323,6 +358,10 @@ openListPopin = function(filter, position) {
 };
 
 openDetailPopin = function(info, position) {
+  // Don't open wame twice.
+  if ($('[data-title="' + info.desc + '"].detailpopin').length > 0) { return; }
+
+
   var caract = miConfig.typologiesMap[info.typology];
   var colors = caract.color.r + ', ' + caract.color.g + ', ' + caract.color.b ;
   var position = "left:" + position.left
@@ -334,7 +373,7 @@ openDetailPopin = function(info, position) {
   }
 
   var template = function(info) {
-    return "<div class='detailpopin' style='" + position + "' >"
+    return "<div class='detailpopin' data-title='" + info.desc + "'style='" + position + "' >"
     +   "<div class='title'>"
     +     "<img src='img/close.png' class='close' />"
     +   info.desc
