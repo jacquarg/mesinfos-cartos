@@ -42,7 +42,8 @@ $(document).ready(function(){
 
 
   $('#legend > [data-typology]').click(function(ev) {
-    var filter = { typology: ev.target.dataset.typology };
+    // dataset not supported on IE < 11
+    var filter = { typology: $(ev.target).data().typology };
     if (currentDefi != 'all') {
       filter.defi = currentDefi;
     }
@@ -59,7 +60,8 @@ $(document).ready(function(){
       defiBtn.attr('src', src + '.png');
     }
 
-    newDefi = ev.target.dataset.defi;
+    // dataset not supported on IE < 11
+    newDefi = $(ev.target).data().defi;
 
     var typologies;
     if (currentDefi === newDefi) {

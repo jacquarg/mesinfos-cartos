@@ -1,28 +1,27 @@
 @font-face {
-  font-family: gothamrndbold;
+  font-family: gothamrnd;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/GothamRnd-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: gothamrnd;
   font-weight: bold;
+  font-style: normal;
   src: url("../fonts/GothamRnd-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: gothamrndbookita;
-  font-weight: regular;
-  src: url("../fonts/GothamRnd-BookIta.otf") format("opentype");
-}
-
-@font-face {
-  font-family: gothamrndlightita;
-  font-weight: light;
+  font-family: gothamrnd;
+  font-style: italic;
+  font-weight: normal;
   src: url("../fonts/GothamRnd-LightIta.otf") format("opentype");
 }
-@font-face {
-  font-family: gothamrndlight;
-  font-weight: light;
-  src: url("../fonts/GothamRnd-Light.otf") format("opentype");
-}
+
 
 h1 {
-  font-family: gothamrndbold;
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
   font-size: 54px;
   color: #9D9D9D;
   text-align: center;
@@ -32,7 +31,9 @@ h1 {
 }
 
 h2 {
-  font-family: gothamrndlight;
+  /*font-family: gothamrndlight;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: normal;
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
@@ -42,7 +43,9 @@ h2 {
 
 h3.defis {
   color: #9D9D9D;
-  font-family: gothamrndlight;
+  /*font-family: gothamrndlight;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: normal;
   font-size: 18px;
   text-decoration: italic;
   margin-left: 40px;
@@ -66,8 +69,6 @@ h3.defis {
   position: absolute;
   width: 100%;
   height: 100%;
- /* left: 0px;
-  right: 350px;*/
 }
 
 .mapbg {
@@ -157,7 +158,9 @@ h3.defis {
 }
 
 #legend h3 {
-  font-family: gothamrndbold;
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
   font-size: 13px;
   text-transform: uppercase;
   margin-bottom: 0px;
@@ -166,7 +169,10 @@ h3.defis {
 }
 
 #legend p {
-  font-family: gothamrndlightita ;
+  /*font-family: gothamrndlightita ;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: normal;
+  font-style: italic;
   font-size: 13px;
   margin-top: 0px;
   cursor: pointer;
@@ -203,7 +209,9 @@ h3.defis {
   position: absolute;
   right: 5px;
   top: 3  px;
-  font-family: gothamrndbold;
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
   cursor: pointer;
   width: 13px;
 }
@@ -238,7 +246,9 @@ h3.defis {
   padding: 0px;
   margin: 0px;
   color: #FFF;
-  font-family: gothamrndbold;
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 13px;
   width: 185px
@@ -262,7 +272,9 @@ h3.defis {
 }
 
 .listpopin .list li {
-  font-family: gothamrndlight;
+  /*font-family: gothamrndlight;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: normal;
   font-size: 12px;
   margin-bottom: 10px;
 }
@@ -277,7 +289,9 @@ h3.defis {
 }
 
 .listpopin h4 {
-  font-family: gothamrndbold;
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
   font-size: 14px;
   margin-left: 15px;
 }
@@ -303,7 +317,9 @@ h3.defis {
 .detailpopin .title {
   background-color: #FFCA00;
   color: white;
-  font-family: gothamrndbold;
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
   padding: 12px;
   font-size: 12px;
 
@@ -318,7 +334,9 @@ h3.defis {
 .detailpopin h4 {
   background-color: #F6F6F6;
   color: #9D9D9D;
-  font-family: gothamrndbold;
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
   font-size: 11px;
   line-height: 20px;
   text-align: center;
@@ -333,7 +351,9 @@ h3.defis {
 }
 
 .detailpopin p {
-  font-family: gothamrndlight;
+  /*font-family: gothamrndlight;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: normal;
   font-size: 12px;
   margin: 12px;
 }
@@ -345,7 +365,9 @@ h3.defis {
 .detailpopin .accesseasiness {
   background-color: #F6F6F6;
   color: white;
-  font-family: gothamrndbold;
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
   font-size: 20px;
   line-height: 35px;  
   text-align: center;
