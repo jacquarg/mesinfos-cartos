@@ -301,7 +301,7 @@ openListPopin = function(filter, position) {
   };
 
   var lineTemplate = function(info) {
-    var html = "<li>" ;
+    var html = "<li title='Où ? Comment y accéder ? ...' >" ;
      if (info.referential && info.typology != miConfig.referentialTypology) {
       html += "<img class='referentiallink' src='img/referential_link.png'>";
     }

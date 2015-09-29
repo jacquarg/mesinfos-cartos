@@ -1,0 +1,1662 @@
+﻿[
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Remboursement de ma mutuelle pour chaque consultation, acte (radiologie, biologie, ...), traitement, hospitalisation, équipement : type, code, montant remboursé, reste à charge, date",
+    "support": "Contrat mutuelle ; Espace client en ligne de ma mutuelle",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R11"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Liste et plafonds/taux des remboursement des actes, traitements et équipements remboursées par ma mutuelle",
+    "support": "Contrat mutuelle ; Espace client en ligne de ma mutuelle",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R11"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Délai de remboursement de ma mutuelle",
+    "support": "Contrat mutuelle ; Espace client en ligne de ma mutuelle",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R11"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Prix mensuel de ma mutuelle",
+    "support": "Bulletins de salaire ; (si étudiant : formulaire d'inscription)",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R11"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Taux de prise en charge de ma mutuelle par l'employeur",
+    "support": "Bulletins de salaire",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Remboursements par mon organisme de sécurité sociale de chaque consultation, acte (radiologie, biologie, ...), traitement, hospitalisation, équipement : type, code, montant remboursé, reste à charge, date",
+    "support": "Compte en ligne de mon organisme de sécurité sociale (Améli, etc)",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Récupération dans un format facture via : http://weboob.org/modules#mod_ameli",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Montant et durée des indemnités journalières (arrêt maladie, accident du travail, invalidité)",
+    "support": "Compte en ligne de mon organisme de sécurité sociale (Améli, etc)",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Via la page de téléchargement des attestations de paiement d'indemnités journalières : https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&_pageLabel=as_attestation_paiement_ij_page",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R6"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Droit à l'APA : date de début, montant, type de GIR",
+    "support": "Déclaration d'une allocation personnalisée d'autonomie",
+    "access": "OCR ; Saisie Manuelle",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R6"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Notification de pension : taux d'incapacité permanente, classe de la pension d'invalidité",
+    "support": "Compte en ligne de mon organisme de sécurité sociale (Améli, etc)",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R6"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Notification de rente",
+    "support": "Compte en ligne de mon organisme de sécurité sociale (Améli, etc)",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R6"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Santé au travail : type de visite, aptitude, date de l'examen. A l'instant T et historique",
+    "support": "Fiche d'aptitude médicale",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Type de mon ALD (Affectation Longue Durée, maladie chronique) sur proposition du médecin traitant : 1, 2 , 3, 4, 5",
+    "support": "Protocole de soin. Cerfa n°1162*04",
+    "access": "scraping, OCR et retranscription",
+    "accessEasiness": "2",
+    "supportExample": "Sur ameli.fr : https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&_pageLabel=as_info_ALD_page",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R3",
+      "R17"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Type de mon ALD sur décision du médecin conseil (sécurité sociale) : 1, 2 , 3, 4, 5) et date de la décision",
+    "support": "Protocole de soin. Cerfa n°1162*05",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R3",
+      "R17"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Affection Longue Durée (ALD) ; liste des différents examens, consultations, analyses, soins, prescriptions à prévoir.",
+    "support": "Protocole de soin. Cerfa n°1162*03",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R3",
+      "R17"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Qualité de l'ouïe : seuil d'intelligibilité, pourcentage de discrimination, ...",
+    "support": "Bilan ORL",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Qualité buccodentaire : hygiène, suivi, localisation des dents cariées, anomalies dento-maxillo-faciales, ...",
+    "support": "Bilan Bucodentaire",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Taux d'oxygénation du sang : instant T et historique",
+    "support": "Résultat analyse de sang ; Oxymètre connecté (seul ou présent dans les trackers d'activité)",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Taux de cholesterol total : instant T et historique",
+    "support": "Résultat analyse de sang ; Autotest",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Taux de mauvais cholesterol (LDL) en G/L : instant T et historique",
+    "support": "Résultat analyse de sang ; Autotest",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Taux de bon cholesterol (HDL) en G/L : instant T et historique",
+    "support": "Résultat analyse de sang ; Autotest",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Taux de triglycérides : instant T et historique",
+    "support": "Résultat analyse de sang",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Coagulation du sang : instant T et historique",
+    "support": "Résultat analyse de sang ; Appareil de mesure de la coagulation, connecté ou non",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Taux de glycémie : instant T et historique",
+    "support": "Résultat analyse de sang ; Glucomètre connecté ou non",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "Lecteurs de glycémie : http://www.medicalexpo.fr/fabricant-medical/lecteur-glycemie-607.html",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Taux d'alcool dans le sang :  instant T et historique",
+    "support": "Résultat analyse de sang ; Ethylotest connecté ou non",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "Étylotests connectés : http://www.objetconnecte.net/breeze-bactrack-ethylotest-connecte/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Taux de THC dans le sang :  instant T et historique",
+    "support": "Résultat analyse de sang",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Vitamines : quantité, type :  instant T et historique",
+    "support": "Résultat analyse de sang",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "MST : présence ou absence, type",
+    "support": "Résultat analyse de sang",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Plaquettes (en mm3)",
+    "support": "Résultat analyse de sang",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Groupe sanguin",
+    "support": "Résultat analyse de sang",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Rhésus",
+    "support": "Résultat analyse de sang",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Urine : aspect ; nom des tests (acronymes) et valeur ng/ml ; rapport ou commentaires (vs une norme) :  instant T et historique",
+    "support": "Résultat analyse d'urine ; Autotest",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Portail de récupération de résultats d'analyses : http://www.mesanalyses.fr/",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Fréquence cardiaque : instant T et historique",
+    "support": "Résultat test électrocardiogramme ; tracker d'activité",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Tension (en mm de mercure)",
+    "support": "Bilan médecine du travail ; Tensiomètre personnel ; Tensiomètre connecté",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Mesure du souffle : volumes et débits pulmonaires",
+    "support": "Débimètre connecté ou non",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "ADN séquencé",
+    "support": "Résultat de laboratoires spécialisés (PCR)",
+    "access": "Fichier numérique",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Allergies : liste des allergènes responsables, dosage des IgE, etc",
+    "support": "Résultats d'analyses allergologue",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Images médicales (mammographie, électrocardiagramme)",
+    "support": "Radios, scanners, IRM",
+    "access": "Fichier numérique",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Résultat d'un test spécialisé (densité osseuse, frottis, ...)",
+    "support": "Résultats d'analyses",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Test de grossesse",
+    "support": "Cadran du test pharmarcie ; Test professionnel",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Qualité de la vision : correction oeil droit et oeil gauche ; type de problème de vision",
+    "support": "Bilan ou ordonnance ophtalmologique",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Historique des coûts des soins",
+    "support": "Compte en ligne organisme de sécurité sociale",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Récupération dans un format facture via : http://weboob.org/modules#mod_ameli",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R12"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Hospitalisations : nombres, raisons, durées, ...",
+    "support": "Avis médicaux ; Bulletin de situation ou d'hospitalisation ; Bon de sortie",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Vaccins effectués (libellé ; code ; date de prescription )",
+    "support": "Carnet de vaccination ; Facture institut de vaccination ; Facturette pharmacie",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": [
+      "R9",
+      "R10"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Presciption de lentilles et lunettes : correction oeil droit et oeil gauche (sph, cyl, axe...) ; type de problème de vision, date d'émission de la prescription",
+    "support": "Bilan ou ordonnance ophtalmologique",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Achats lentilles et lunettes  : type, prix, fréquence d'achat, remboursement (taux, délai, avance)",
+    "support": "facture ophtalmologiste ; compte en ligne mutuelle et ameli",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "Récupération dans un format facture via : http://weboob.org/modules#mod_ameli",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Prescription d'un équipement de santé  (ex : dentier, appareil auditif) : type et date d'émission de la prescription",
+    "support": "Ordonnance médecin généraliste ou spécialiste",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Prescription d'un examen, test spécialisé : nature et motif de(s) examen(s) prescrit(s), date d'émission de la prescription",
+    "support": "Ordonnance",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Achat équipement de santé (ex : dentier, appareil auditif) :  type, prix, fréquence d'achat, remboursement (taux, délai, avance)",
+    "support": "Facture ; Compte bancaire ; Compte en ligne mutuelle et ameli",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Prix des médicaments achetés pour un voyage donné (traitements et trousse de premiers secours)",
+    "support": "Ordonnance de délivrance (scannée par le pharmacien) ; tickets de caisse",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Prescription de médicament : nom, quantité, fréquence, durée du traitement, date",
+    "support": "Ordonnance médecin",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Délivrance de médicament : nom, quantité, date d'achat, prix, remboursement",
+    "support": "Ordonnance de délivrance (scannée par le pharmacien)",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Prise réelle de médicament : nom du médicament, date, quantité",
+    "support": "Piluliers intelligents ; boitiers automatiques (par ex. insuline) ; carnet de suivi des prises de médicament",
+    "access": "API ; Saisie manuelle",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": null
+  },
+  {
+    "typology": "Caractéristiques médicaments",
+    "desc": "Composition de mes médicaments",
+    "support": "Boite du médicament ; Base de donnée publique des médicaments croisée avec mon historique d'achat en pharmacie, mes ordonnances etc",
+    "access": "OCR ; Retranscription ; Calcul",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": [
+      "R8"
+    ]
+  },
+  {
+    "typology": "Caractéristiques médicaments",
+    "desc": "Les effets secondaires connus de mes traitements",
+    "support": "Croisement du site d'EudraVigilance (Pharmacovigilance in the European Economic Area) et de mon historique d'achat en pharmacie, mes ordonnances etc",
+    "access": "Calcul",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": [
+      "R5"
+    ]
+  },
+  {
+    "typology": "Caractéristiques médicaments",
+    "desc": "Evaluation de mes médicaments (avis HAS)",
+    "support": "Base de donnée de la HAS \"Evaluation des médicaments\" croisée avec mon historique d'achat en pharmacie, mes ordonnances etc",
+    "access": "Calcul",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R7"
+    ]
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Composition de mes produits de parapharmarcie",
+    "support": "Etiquette ou Croisement du site Open Beauty Facts et de mon historique d'achats",
+    "access": "OCR ; Retranscription ; Calcul",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R19"
+    ]
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Labellisation de mes produits de parapharmacie",
+    "support": "Etiquette ou Croisement du site Open Beauty Facts et de mon historique d'achats",
+    "access": "OCR ; Retranscription ; Calcul",
+    "accessEasiness": "",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R19"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Mes effets secondaires observés",
+    "support": "Carnet de santé ; Déclaratif",
+    "access": "Saisie Manuelle",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": null
+  },
+  {
+    "typology": "Caractéristiques médicaments",
+    "desc": "Interactions médicamenteuses",
+    "support": "Notices (non connu lorsque prise d'au moins 4-5 médicaments)",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Arrêts de travail (instant T et historique) : date de début/fin, motif médical (code ou en toutes lettres), autorisations de sorties",
+    "support": "Avis d'arrêt de travail. Cerfa n° 50069#05",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Nom et coordonnées du médecin traitant",
+    "support": "Compte en ligne de mon organisme de sécurité sociale",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&_pageLabel=as_info_perso_page#bloc_masituation",
+    "subTypology": "",
+    "domain": "Relations médicales",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Prix et dépassement d'honoraires de mes médecins habituels",
+    "support": "Espace client en ligne de ma mutuelle",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R13",
+      "R14"
+    ]
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Prix et temps de trajet pour aller chez mon médecin",
+    "support": "Géolocalisation de mon médecin et de mon domicile ; Calcul sur site type Via Michelin et autres",
+    "access": "API",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Mes contacts/mes médecins",
+    "support": "Historique d'appel ; Agenda téléphonique",
+    "access": "API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "Autre",
+    "domain": "Relations médicales",
+    "referential": [
+      "R16"
+    ]
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Agenda des médecins",
+    "support": "Site de prise de rendez-vous en ligne",
+    "access": "API ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "https://www.rdvmedicaux.com/",
+    "subTypology": "Autre",
+    "domain": "Relations médicales",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Mes rendez-vous médicaux",
+    "support": "Agenda en ligne",
+    "access": "API ; scrapping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Relations médicales",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Historique de géolocalisation",
+    "support": "Smartphone (compte Google, compte Apple, ...)",
+    "access": "API",
+    "accessEasiness": "2",
+    "supportExample": "https://www.google.com/settings/takeout/custom/location_history?hl=fr&gl=US&expflags",
+    "subTypology": "Autre",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Quantité des interactions sociales",
+    "support": "Compte réseaux sociaux",
+    "access": "Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Qualité des interactions sociales",
+    "support": "Compte réseaux sociaux",
+    "access": "API",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Nombre de SMS envoyés et reçus (semaine/mois/année)",
+    "support": "Décompte de mon smartphone ; compte en ligne de mon opérateur",
+    "access": "Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Nombre de tweets (publiés, reçus, par semaine/mois/année)",
+    "support": "Compte twitter",
+    "access": "Scraping ; API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Nombre d'heures passées en ligne (internet ; vidéos à la demande ; etc)",
+    "support": "Historique de navigation",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Mon activité sportive (nombre d'heures de sport par semaine, type de sport, intensité)",
+    "support": "Agenda ; Formulaire d'inscription ; Géolocalisation ; Tracker d'activité",
+    "access": "API ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": [
+      "R18"
+    ]
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Prix de mon abonnement sportif et de mes équipements sportifs",
+    "support": "Facture ; Données bancaires (en ligne)",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Mon activité physique (heures de sommeil, qualité du sommeil, nombre de pas, énergie basale dépensée au repos/en activité, distance parcourue, nombre de calories brûlées, pulsations cardiaques..)",
+    "support": "Applications Smartphone ; Objets connectés (trackers d'activité)",
+    "access": "API ; Scraping",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": [
+      "R18"
+    ]
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Télévision : nombre d'heure passé devant ; taille de l'écran ; contenu regardé",
+    "support": "Déclaratif",
+    "access": "Saisie manuelle",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Température corporelle",
+    "support": "Thermomètre ; Thermomètre connecté (seul ou dans un tracker d'activité)",
+    "access": "OCR et retranscription ; Saisie manuelle ; API",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Composition de mes produits alimentaires",
+    "support": "Emballage produit ou Open Food Fact croisé avec historique d'achat alimentation",
+    "access": "OCR ; Retranscription ; Calcul",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Provenance de mes produits alimentaires",
+    "support": "Emballage produit ou Open Food Fact et/ou Liste code pays sur les code-barres croisé avec historique d'achat alimentation",
+    "access": "OCR ; Retranscription ; Calcul",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R1",
+      "R15"
+    ]
+  },
+  {
+    "typology": "Caractéristiques produits",
+    "desc": "Labellisation de mes produits alimentaires",
+    "support": "Emballage produit ou Open Food Fact croisé avec historique d'achat alimentation",
+    "access": "OCR ; Retranscription ; Calcul",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Mes achats d'alimentation",
+    "support": "Tickets de caisse",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "Skerou : http://www.skerou.com/",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Dates d'anniversaires de mes proches et fêtes",
+    "support": "Agenda",
+    "access": "API",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "Autre",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Chiffre IMC",
+    "support": "Balance ; Balance connecté",
+    "access": "Saisie manuelle ; API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R2"
+    ]
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Nombre d'heures de travail : officielles et officieuses",
+    "support": "Contrat de travail ; Déclaratif ; Géolocalisation",
+    "access": "Scraping ; Saisie Manuelle ; API",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Mes habitudes quotidiennes : consommation de tabac et d’alcool, habitudes d'alimentation et d’activité physique, exposition au soleil, exposition aux risques liés au milieu professionnel...",
+    "support": "Questionnaire divers (assurance maladie après 50 ans, mutuelle, sports à risque, Institut national du cancer etc) ; Géolocalisation ; Agenda",
+    "access": "OCR et retranscription",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": [
+      "R18"
+    ]
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Nombre de verre d'alcool/jour/semaine",
+    "support": "Questionnaire (assurance maladie après 50 ans, mutuelle, sports à \nrisque, Institut national du cancer etc) ; Déclaratif",
+    "access": "OCR et retranscription ; Saisie Manuelle",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": [
+      "R18"
+    ]
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Nombre de cigarettes/jour/semaine",
+    "support": "Données bancaires ; Tickets de caisse ; Déclaratif ; Questionnaire (assurance maladie après 50 ans, mutuelle, sports à risque,  Institut national du cancer etc)",
+    "access": "Scraping ; OCR et retranscription ; Saisie Manuelle",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Hygiène de vie",
+    "referential": [
+      "R18"
+    ]
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Exposition à des substances cancérogènes",
+    "support": "Questionnaire (assurance maladie après 50 ans, mutuelle, sports à \nrisque,  Institut national du cancer etc) ; Géolocalisation",
+    "access": "OCR et retranscription ; Scraping",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Hygiène de vie",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles médicales",
+    "desc": "Habitudes d'exposition aux UV",
+    "support": "Questionnaire assurance maladie après 50 ans, questionnaire mutuelle, questionnaire sports à risque, questionnaire de l'Institut national du cancer ; objet connecté (ex : Netatmo June)",
+    "access": "OCR et retranscription ; API",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Hygiène de vie",
+    "referential": [
+      "R18"
+    ]
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Accompagnement humain (professionnels, aidants familiaux, réseaux...) : nom de l'accompagnant, type d'accompagnement, lieux, dates, fréquence",
+    "support": "Carnet d'adresse ; Historique de communication ; Facture téléphonique détaillée (compte en ligne) ; Agenda",
+    "access": "Scraping ; API",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "Bien-être",
+    "domain": "Relations médicales",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Prix mensuel de la maison de retraite de mes ayants-droits",
+    "support": "Données bancaires",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "Autre",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Données personnelles non médicales",
+    "desc": "Prix du trajet maison de retraite, centre de soin, médecin, etc",
+    "support": "Via Michelin et autres sites de calcul",
+    "access": "API",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "Autre",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Mon profil",
+    "desc": "Mes caractéristiques biologiques (poids, taille, genre, âge) : instant T et historique",
+    "support": "Carnet de santé ; visite médicale ; Automesure",
+    "access": "Saisie manuelle",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Mon profil",
+    "desc": "Origine ethnique et géographique",
+    "support": "Déclaratif",
+    "access": "Saisie manuelle",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Mon profil",
+    "desc": "Identité (nom, prénom, date de naissance, adresse, profession, sexe)",
+    "support": "Carte d'identité ; Passeport ; Profil sécurité sociale, assurances, mutuelles, banques, CAF, MonSP, impôts, employeurs, etc...",
+    "access": "Scraping ; Saisie Manuelle",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Ensoleillement",
+    "support": "Station météo",
+    "access": "API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Luminosité",
+    "support": "Station météo",
+    "access": "API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Taux d'UV",
+    "support": "Site météo",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "http://www.meteofrance.com/accueil",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Température air intérieur",
+    "support": "Cadran thermomètre ; Thermomètre Connecté ; Station météo",
+    "access": "Saisie manuelle ; OCR et retranscription ; API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Température air exterieur",
+    "support": "Cadran thermomètre ; Thermomètre Connecté ; Station météo",
+    "access": "Saisie manuelle ; OCR et retranscription ; API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Hydrométrie",
+    "support": "Station météo",
+    "access": "API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Ondes électromagnétiques",
+    "support": "Détecteur d'onde électromagnétiques (connecté ou non) ; Carte de couverture 3G, Wifi : mesures d'associations",
+    "access": "Saisie manuelle ; OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Taux de CO2 autour de moi",
+    "support": "Station météo",
+    "access": "API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Pollution (NO2, O3, PM10, PM2, SO2)",
+    "support": "Site web divers",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "pour l'Ile de France : http://www.airparif.asso.fr/",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Bruit ambiant (en dB)",
+    "support": "Site Web divers ; Capteurs",
+    "access": "Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "pour l'Ile de France : http://www.bruitparif.fr/",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Qualité air interieur (O2)",
+    "support": "Capteur de mesure (ex : Foobot)",
+    "access": "API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Présence de particules radioactives",
+    "support": "Capteur de mesure (ex : Lapka)",
+    "access": "API",
+    "accessEasiness": "1",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Epidémies en cours",
+    "support": "Site \"Réseau Sentinelles\"",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "https://websenti.u707.jussieu.fr/sentiweb/",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Contexte",
+    "desc": "Qualité de l'eau",
+    "support": "Site d'UFC Que Choisir",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "http://www.quechoisir.org/app/carte-eau/",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Caractéristiques des aliments (composition, emballage, provenance, valeur nutritionnelle, label, ...)",
+    "support": "Site d'Open Food Facts",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "http://fr.openfoodfacts.org/",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R1"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Norme IMC",
+    "support": "Sites officiels : ministère de la santé, mangez-bougez, HAS, etc...",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "http://www.inpes.sante.fr/50000/pdf/docIMCAd.pdf",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R2"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Liste des ALD (Affectation Longue Durée)",
+    "support": "Site Ameli",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "http://www.ameli.fr/professionnels-de-sante/medecins/exercer-au-quotidien/les-affections-de-longue-duree/qu-est-ce-qu-une-affection-de-longue-duree/les-ald-exonerantes.php",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": [
+      "R3"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Valeurs de références collectives (normes pour chaque valeur des tests, par exemple pour le taux de cholesterol)",
+    "support": "Mentionnées sur les résultat d'analyses (sang ; urine ; tension ; ...) et les sites officiels (type Haute Autorité de Santé)",
+    "access": "OCR et retranscription ; Scraping ; API",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Constante",
+    "referential": [
+      "R4"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Les effets secondaires connus des traitements",
+    "support": "Site d'EudraVigilance (Pharmacovigilance in the European Economic Area)",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "http://www.adrreports.eu/fr/",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R5"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Guide « vos droits et démarches » (2 800 fiches d’information et questions-réponses et quelques 5 000 liens vers des ressources utiles)",
+    "support": "Jeu de données \"Service du Premier Ministre\"",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "https://www.data.gouv.fr/fr/datasets/service-public-fr-guide-vos-droits-et-demarches-particuliers/",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R6"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Evaluation par la HAS des médicaments",
+    "support": "Jeu de données HAS",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "https://www.data.gouv.fr/fr/datasets/evaluation-par-la-has-des-medicaments/",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R7"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Base de données publique des médicaments (base officielle)",
+    "support": "Jeu de données \"Ministère des Affaires sociales, de la Santé et des Droits des femmes\"",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "https://www.data.gouv.fr/fr/datasets/base-de-donnees-publique-des-medicaments-base-officielle/",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R8"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Obligation et recommandation de vaccins",
+    "support": "Site de l'institut Pasteur",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "http://www.pasteur.fr/fr/map",
+    "subTypology": "",
+    "domain": "Traitements",
+    "referential": [
+      "R9"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Prix des vaccins",
+    "support": "Site de l'institut Pasteur",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "https://www.pasteur.fr/sites/www.pasteur.fr/files/tarifs_affiche_mai_2015.pdf",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R10"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Offres des différentes mutuelles",
+    "support": "Site de chaque mutuelle ou comparateurs",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "https://www.assurland.com/assurance-sante-v2-21.html#mrasn=62726.88134",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R11"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Estimation des tarifs pour un soin",
+    "support": "exemple pour un soin dentaire : http://www.fourmisante.com/remboursement-dentaire.html",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R12"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Annuaire des praticiens",
+    "support": "Pages jaunes",
+    "access": "API",
+    "accessEasiness": "3",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Relations médicales",
+    "referential": [
+      "R13"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Annuaire des praticiens par type de remboursements associés (dépassement d'honoraire, secteur 1, secteur 2, ...)",
+    "support": "Site/Service Ameli",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "http://ameli-direct.ameli.fr/",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": [
+      "R14"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Liste des préfixe pays sur les code-barres",
+    "support": "Site de GS1",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "http://www.gs1.org/company-prefix",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R15"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Médecins accrédités par la HAS",
+    "support": "Jeu de données HAS",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "https://www.data.gouv.fr/fr/datasets/medecins-accredites-par-la-has/",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R16"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Protocoles HAS (Protocole de traitement pour chaque maladie)",
+    "support": "Site de la HAS (Haute Autorité de Santé)",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "http://www.has-sante.fr/portail/jcms/c_1216216/fr/elaboration-des-protocoles-pluriprofessionnels-de-soins-de-premier-recours",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": [
+      "R17"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Recommandations nationales : alimentaires, sportives, hygiène de vie",
+    "support": "Sites officiels : ministère de la santé, mangez-bougez, HAS, etc...",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "Hygiène de vie",
+    "referential": [
+      "R18"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Caractéristiques des produits de parapharmacie (composition, emballage, provenance, label, ...)",
+    "support": "Site (en construction) d'Open Beauty Facts",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "http://fr.wiki.openbeautyfacts.org/Accueil",
+    "subTypology": "",
+    "domain": "",
+    "referential": [
+      "R19"
+    ]
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Statistique annuelle des établissements de santé par établissement, ou par région, informations détaillées ou informations de synthèse issues de la base SAE sont présentées dans plusieurs tableaux : nombre de lits, activité, personnels.",
+    "support": "Site S.A.E Diffusion",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "https://www.sae-diffusion.sante.gouv.fr/sae-diffusion/recherche.htm",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Données de cartographie du SNATIH : données d’offre de soin et sur la répartition géographique des séjours hospitaliers",
+    "support": "Site de l'ATIH",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "http://www.atih.sante.fr/snatih/cartographie",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Statistiques médicales par groupe (GHM…), diagnostic, acte ou encore la consommation des médicaments et DMI en sus mais aussi les indicateurs de performance Hospi-Diag, les case-mix par établissement, les taux de recours, la cartographie de l'activité des établissements, le référentiel national de coûts...",
+    "support": "Site de l'ATIH",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "http://www.scansante.fr/",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Liste des établissements et services pour adultes handicapés situés en Île-de-France",
+    "support": "Jeu de données Région Île-de-France",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "https://www.data.gouv.fr/fr/datasets/etablissements-et-services-pour-adultes-handicapes-idf/",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "L’état de santé de la population en France",
+    "support": "Jeu de données Ministère des Affaires sociales, de la Santé et des Droits des femmes",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "https://www.data.gouv.fr/fr/datasets/letat-de-sante-de-la-population-en-france-edition-2015/",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Ensemble des remboursements de l'assurance maladie tous régimes confondus",
+    "support": "Jeu de données CNAM",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "https://www.data.gouv.fr/fr/datasets/open-damir-base-complete-sur-les-depenses-dassurance-maladie-inter-regimes/",
+    "subTypology": "",
+    "domain": "Médico-financier",
+    "referential": null
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Pathologies en fonction des zones géographiques, de l'âge etc",
+    "support": "Open Data",
+    "access": "Open Data",
+    "accessEasiness": "3",
+    "supportExample": "http://www.data-publica.com/dataset/85",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": null
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "CIM10 (Classification internationale des maladies)",
+    "support": "Site de l'OMS",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "http://apps.who.int/classifications/icd10/browse/2008/fr",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": null
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "CCAM (Classification commune des actes)",
+    "support": "Site Ameli",
+    "access": "Scraping",
+    "accessEasiness": "2",
+    "supportExample": "http://www.ameli.fr/accueil-de-la-ccam/index.php",
+    "subTypology": "",
+    "domain": "Pathologie",
+    "referential": null
+  },
+  {
+    "typology": "Référentiels et Normes",
+    "desc": "Autres référentiels + ontologies et thésaurus à trouver/rentrer + DMP",
+    "support": "",
+    "access": "",
+    "accessEasiness": "",
+    "supportExample": "",
+    "subTypology": "",
+    "domain": "",
+    "referential": null
+  }
+]
