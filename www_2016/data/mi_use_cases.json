@@ -1,0 +1,495 @@
+﻿[
+  {
+    "typology": "Management",
+    "domains": [
+      "Management",
+      ""
+    ],
+    "title": "Mint",
+    "slogan": "That horizon might be closer than you think. \nWe’ll help you get there by managing \nmoney and budgets better every day.",
+    "description": "Manage your money, pay your bills and track your credit score : <br>- Effortlessly create budgets that are easy to stick to. We even make a few for you.<br>- From money and budgeting to customized tips and more, get a clear view of your total financial life.<br>- Credit :  Find out yours and learn how you can improve it.",
+    "useCaseCategory": "Personal Finance Manager",
+    "website": "https://www.mint.com/",
+    "countries": [
+      {
+        "name": "United States",
+        "code": "US",
+        "flagURI": "img/flags/us.png"
+      }
+    ]
+  },
+  {
+    "typology": "Management",
+    "domains": [
+      "Management",
+      "Control"
+    ],
+    "title": "Cozy Cloud",
+    "slogan": "Simple, versatile, yours. Store, sync, and share your data just the way you want it.",
+    "description": "Cozy is a Free Libre Open Source piece of Software that runs on a personal server (such as a Rasbperry PI 2). Its goal is to offer a personal Cloud so that user can enjoy the benefits of the Cloud while retaining control of their data : <br>- Sync your calendars and contacts<br>- Run Your Cloud At Home<br>- Backup and Share your Photos<br>- Make Sense Of Your Data<br>- Learn web development",
+    "useCaseCategory": "Administrate your data",
+    "website": "https://cozy.io/en/",
+    "countries": [
+      {
+        "name": "France",
+        "code": "FR",
+        "flagURI": "img/flags/fr.png"
+      }
+    ]
+  },
+  {
+    "typology": "Management",
+    "domains": [
+      "Management",
+      "Self-knowledge"
+    ],
+    "title": "Meeco",
+    "slogan": "Meeco helps you securely manage and control your digital relationships",
+    "description": "Meeco is a new service to help you manage life and all your important digital relationships. Add, organise, edit and securely share all your information.<br>- Simplify life with all your important information at your fingertips, encrypted, secure and synced across all your devices. <br>- Chat with your important connections and privately keep your inner circle up to date. <br>- Your personal web of private bookmarks to shop, pay bills and plan holidays without being tracked. <br>- Personalise your wish list with private notes and photos to signal and share the things you want. <br>- Record your digital events to create a personalised and actionable timeline.",
+    "useCaseCategory": "Manage your daily life",
+    "website": "https://meeco.me/",
+    "countries": [
+      {
+        "name": "Australia",
+        "code": "AU",
+        "flagURI": "img/flags/au.png"
+      }
+    ]
+  },
+  {
+    "typology": "Management",
+    "domains": [
+      "Management",
+      ""
+    ],
+    "title": "Skerou",
+    "slogan": "The app which revolutionizes your supermarket shopping",
+    "description": "Follow your shopping history (take a picture of your receipt and get it analysed) ; Quickly prepare your shopping lists ; Enjoy offers of refund",
+    "useCaseCategory": "Manage your daily life",
+    "website": "https://skerou.com/",
+    "countries": [
+      {
+        "name": "France",
+        "code": "FR",
+        "flagURI": "img/flags/fr.png"
+      }
+    ]
+  },
+  {
+    "typology": "Control",
+    "domains": [
+      "Control",
+      ""
+    ],
+    "title": "My Permissions",
+    "slogan": "Protect Your Personal Information",
+    "description": "MyPermissions empowers users to monitor and control the access to their personal information on mobile devices and online. We give users control over the data that apps are able to access. MyPermissions protects users from unknowingly sharing photos, documents, locations, contacts, emails, or any other sensitive information, and allows them to approve or revoke what apps access their data, and how.",
+    "useCaseCategory": "Control data exchanges",
+    "website": "https://mypermissions.com/",
+    "countries": [
+      {
+        "name": "Israel",
+        "code": "IL",
+        "flagURI": "img/flags/il.png"
+      }
+    ]
+  },
+  {
+    "typology": "Control",
+    "domains": [
+      "Control",
+      ""
+    ],
+    "title": "Privowny",
+    "slogan": "Your personal data coach",
+    "description": "Add-on available on Firefox and Chrome, you can install and activate it on multiple browsers/machines simultaneously in order to : <br>- Protect your identity/privacy (Block trackers and surf anonymously ; Create disposable email addresses ; STOP SPAM)<br>- Track what the Internet knows about you (Email addresses ; Usernames passwords ; Phone numbers ; Credit/debit cards ; Any other data left)",
+    "useCaseCategory": "Tracking trackers",
+    "website": "https://privowny.com/",
+    "countries": [
+      {
+        "name": "France",
+        "code": "FR",
+        "flagURI": "img/flags/fr.png"
+      },
+      {
+        "name": "United States",
+        "code": "US",
+        "flagURI": "img/flags/us.png"
+      }
+    ]
+  },
+  {
+    "typology": "Control",
+    "domains": [
+      "Control",
+      ""
+    ],
+    "title": "FranceConnect",
+    "slogan": "The State (France) device which guarantees the identity of a user thanks to existing accounts for which his identity was already verified.",
+    "description": "FranceConnect is a tool that allows users to identity and authenticate themselves on our partners websites thanks to identity providers. <br>Individuals and companies can connect to services (public or private) without having to create a new account. The created account is a certified account, because the identity of the individual or the company has been verified by an approved identity provider.",
+    "useCaseCategory": "Manage your identity",
+    "website": "https://doc.integ01.dev-franceconnect.fr/",
+    "countries": [
+      {
+        "name": "France",
+        "code": "FR",
+        "flagURI": "img/flags/fr.png"
+      }
+    ]
+  },
+  {
+    "typology": "Self-knowledge",
+    "domains": [
+      "Self-knowledge",
+      "Life Experience"
+    ],
+    "title": "Umanlife",
+    "slogan": "Manage Your life",
+    "description": "Umanlife is dedicated to the improvement of your wellness. We aim at influencing healthy behaviors through innovation and disruptive user experience.Health is not only about collecting data : it is about tailoring the relevant personal follow-up.<br>- All personal data is stored in absolute confidentiality and safety. <br>- Based on a unique intelligence program, Umanlife can deliver perfect advice for wellness to its users.<br>- Umanlife enjoys a special partnership with the most visible connected objects devices, giving users the ability to collect personal data easily.<br>- Unlike most existing apps, Umanlife allows you to involve your friends in your path towards wellness: share your experience and benefit from peer support",
+    "useCaseCategory": "Quantified Self",
+    "website": "http://us.umanlife.com/",
+    "countries": [
+      {
+        "name": "France",
+        "code": "FR",
+        "flagURI": "img/flags/fr.png"
+      }
+    ]
+  },
+  {
+    "typology": "Self-knowledge",
+    "domains": [
+      "Self-knowledge",
+      "Life Experience"
+    ],
+    "title": "Digi.me",
+    "slogan": "Your content is the main attraction. We work hard to surround it with loveliness",
+    "description": "Digi.me is a PC & Mac application which enables you to download your online social life and unite your social networks. You can back up your Facebook Timeline, Twitter, Instagram, Facebook Pages, Flickr, Linkedin, Google+, RSS, Pinterest & Viadeo to create a beautiful, searchable, digital journal.",
+    "useCaseCategory": "Life Logging",
+    "website": "https://get.digi.me/",
+    "countries": [
+      {
+        "name": "United Kingdom",
+        "code": "GB",
+        "flagURI": "img/flags/gb.png"
+      }
+    ]
+  },
+  {
+    "typology": "Self-knowledge",
+    "domains": [
+      "Self-knowledge",
+      "Management"
+    ],
+    "title": "Rescue Time",
+    "slogan": "Find your ideal work‑life balance.",
+    "description": "With so many distractions and possibilities in your digital life, it's easy to get scattered. RescueTime helps you understand your daily habits so you can focus and be more productive : <br>- Runs securely in the background on your computer and mobile devices.<br>- Tracks time spent on applications and websites, giving you an accurate picture of your day.<br>- Gives you detailed reports and data based on your activity.",
+    "useCaseCategory": "Data overview",
+    "website": "https://www.rescuetime.com/",
+    "countries": [
+      {
+        "name": "United States",
+        "code": "US",
+        "flagURI": "img/flags/us.png"
+      }
+    ]
+  },
+  {
+    "typology": "Self-knowledge",
+    "domains": [
+      "Self-knowledge",
+      ""
+    ],
+    "title": "Interest Dashboard",
+    "slogan": "Explore your personal web!",
+    "description": "Firefox Interest Dashboard is about you - your curiosities, your research, your pursuits. It helps you analyze your interests and categorizes them for you in rich visualizations and compelling story-lines. All interests analysis is derived from your browser history and happens within the client.",
+    "useCaseCategory": "Data overview",
+    "website": "https://www.mozilla.org/en-US/firefox/interest-dashboard/",
+    "countries": [
+      {
+        "name": "United States",
+        "code": "US",
+        "flagURI": "img/flags/us.png"
+      }
+    ]
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      ""
+    ],
+    "title": "Opower",
+    "slogan": "Opower is the leading customer engagement platform for utilities",
+    "description": "Opower provides cloud-based software to the utility industry and their customers (BtoB). Opower's software provides customers with better information about their energy consumption, along with personalized ways to save energy and money. <br>1) Demand side management<br>- Energy Efficiency: save energy and promote programs with perfectly tailored energy advice.<br>- Demand Response: achieve cost-effective peak energy savings with real-time communications.<br>2) Customer care<br>- Digital Engagement: boost self-service and satisfaction with insight-rich web experiences.<br>- Bill Advisor: give customers control over their bills with alerts and CSR tools.",
+    "useCaseCategory": "Reduce your Carbon footprint",
+    "website": "https://opower.com/",
+    "countries": [
+      {
+        "name": "United States",
+        "code": "US",
+        "flagURI": "img/flags/us.png"
+      }
+    ]
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      ""
+    ],
+    "title": "Egreen",
+    "slogan": "Have fun while reducing your energy consumption",
+    "description": "EGreen is a device which helps you reduce your energy consumptions in your housing. It allows you to better understand your consumption thanks to sensors  measuring in real time your consumption of electricity, water, gas and your house temperature. A Web platform accompanies you in the reduction of your energy expenditure with playful and social features. Follow and reduce your consumptions thanks to personalized advices, compare with other profiles and challenge your friends or colleagues!",
+    "useCaseCategory": "Reduce your Carbon footprint",
+    "website": "http://www.egreen.fr/",
+    "countries": [
+      {
+        "name": "France",
+        "code": "FR",
+        "flagURI": "img/flags/fr.png"
+      }
+    ]
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      ""
+    ],
+    "title": "MesGouts",
+    "slogan": "Compare food products according to YOUR criteria to find the best products FOR YOU",
+    "description": "Create a profile listing what is important for you regarding food products : organic and local farming, no palm oil etc., and consult products most adapted to your desires, needs and values!",
+    "useCaseCategory": "Buy products according to your value",
+    "website": "http://www.mesgouts.fr/",
+    "countries": [
+      {
+        "name": "France",
+        "code": "FR",
+        "flagURI": "img/flags/fr.png"
+      }
+    ]
+  },
+  {
+    "typology": "Contribution",
+    "domains": [
+      "Contribution",
+      "Self-knowledge"
+    ],
+    "title": "Data Sense",
+    "slogan": "A tool for making sense of your data.",
+    "description": "Data Sense is a research experiment designed by a group of anthropologists, designers and computer scientists at Intel Labs, in collaboration with Savage Internet and Empirical. We are researching whether it is possible to build tools to improve data literacy without making people into statisticians: in Data Sense, you visually interact with data to look for patterns and answer questions. You can also annotate your data to paint a fuller picture. Discover habits you didn't even know you had!",
+    "useCaseCategory": "Data overview",
+    "website": "https://makesenseofdata.com/",
+    "countries": [
+      {
+        "name": "United States",
+        "code": "US",
+        "flagURI": "img/flags/us.png"
+      }
+    ]
+  },
+  {
+    "typology": "Contribution",
+    "domains": [
+      "Contribution",
+      "Self-knowledge"
+    ],
+    "title": "Mappiness",
+    "slogan": "The happiness mapping app",
+    "description": "Mappiness maps happiness across space in the UK. It's part of a research project at the London School of Economics.<br>1) We beep you once (or more) a day to ask how you're feeling, and a few basic things to control for: who you're with, where you are, what you're doing (if you're outdoors, you can also take a photo)<br>2) The data gets sent back — anonymously and securely — to our data store, along with your approximate location from the iPhone's GPS, and a noise-level measure<br>3) What's in it for you? <br>-  Interesting information about your own happiness, which you can download or see charted inside the app — including when, where and with whom you're happiest<br>- The warm glow of helping increase the sum of human knowledge",
+    "useCaseCategory": "Mood monitoring",
+    "website": "http://www.mappiness.org.uk/",
+    "countries": [
+      {
+        "name": "United Kingdom",
+        "code": "GB",
+        "flagURI": "img/flags/gb.png"
+      }
+    ]
+  },
+  {
+    "typology": "Contribution",
+    "domains": [
+      "Contribution",
+      "Self-knowledge"
+    ],
+    "title": "Patient Like Me",
+    "slogan": "Live Better, Together!",
+    "description": "- Learn from others. Compare treatments, symptoms and experiences with people like you and take control of your health<br>- Connect with people like you. Share your experience, give and get support to improve your life and the lives of others<br>- Track your health. Chart your health over time and contribute to research that can advance medicine for all",
+    "useCaseCategory": "Experience sharing",
+    "website": "https://www.patientslikeme.com/",
+    "countries": [
+      {
+        "name": "United States",
+        "code": "US",
+        "flagURI": "img/flags/us.png"
+      }
+    ]
+  },
+  {
+    "typology": "Contribution",
+    "domains": [
+      "Contribution",
+      "Management"
+    ],
+    "title": "Sanoia",
+    "slogan": "Your free and anonymous health record",
+    "description": "Sanoïa is a platform dedicated to patients following their chronic disease. It helps them discuss with healthcare professionals and contributes to improve follow-ups. Data is secured and remain confidential. <br>Sanoïa can, with the agreement of the patient, collect and anonymize data to create statistics in order to improve the knowledge on the evolutions of a disease and the effects of treatments. The objective of these statistical processings is exclusively to serve the medical research.",
+    "useCaseCategory": "Health monitoring",
+    "website": "http://www.sanoia.com/",
+    "countries": [
+      {
+        "name": "France",
+        "code": "FR",
+        "flagURI": "img/flags/fr.png"
+      }
+    ]
+  },
+  {
+    "typology": "Life experience",
+    "domains": [
+      "Life experience",
+      "Management"
+    ],
+    "title": "Save up!",
+    "slogan": "SaveUp Makes Saving Money and Paying Down Debt Fun and Exciting!",
+    "description": "- Link SaveUp to Your Student Loans, Mortgages, Credit Card Accounts, Savings and 401k Accounts.<br>- Earn Rewards Points for Each Dollar That You Pay Towards Increasing Your Financial Well Being.<br>- Play Instant-Win Games, Lotteries and a Super Jackpot With Your Accumulated Points.<br>- Win Cars, Vacations, and More. We Have Up to $2,000,000 In Prizes.",
+    "useCaseCategory": "Personal Finance Manager",
+    "website": "https://www.saveup.com/",
+    "countries": [
+      {
+        "name": "United States",
+        "code": "US",
+        "flagURI": "img/flags/us.png"
+      }
+    ]
+  },
+  {
+    "typology": "Life experience",
+    "domains": [
+      "Life experience",
+      "Management"
+    ],
+    "title": "Habitica",
+    "slogan": "Your life, the role playing game",
+    "description": "Habitica is a free habit building and productivity app that treats your real life like a game. With in-game rewards and punishments to motivate you and a strong social network to inspire you, Habitica can help you achieve your goals to become healthy, hard-working, and happy.",
+    "useCaseCategory": "Manage your daily life",
+    "website": "https://habitica.com/static/front",
+    "countries": [
+      {
+        "name": "United States",
+        "code": "US",
+        "flagURI": "img/flags/us.png"
+      }
+    ]
+  },
+  {
+    "typology": "Life experience",
+    "domains": [
+      "Life experience",
+      "Self-Knowledge"
+    ],
+    "title": "Zombies, Run!",
+    "slogan": "Run in the Real World. Become a Hero in Another.",
+    "description": "Every run becomes a mission where you’re the hero, with our immersive audio drama putting you at the centre of your very own zombie adventure story. While you run to the perfect mix of heart-pumping audio drama and pulse-pounding songs from your own playlist, you’ll collect supplies to grow your base back home. <br>(Personal data : geolocalisation, musique, run history)",
+    "useCaseCategory": "Quantified Self",
+    "website": "https://zombiesrungame.com/",
+    "countries": [
+      {
+        "name": "United Kingdom",
+        "code": "GB",
+        "flagURI": "img/flags/gb.png"
+      }
+    ]
+  },
+  {
+    "typology": "Decisions and Action",
+    "domains": [
+      "Decisions and Action",
+      ""
+    ],
+    "title": "Cheap Energy Club",
+    "slogan": "Helping you get no-hassle, CONSTANTLY cheap gas & electricity",
+    "description": "- Find you the cheapest deal<br>We'll do a full market energy comparison to see if you're overpaying on your current deal . If not great - if you are, we'll help you switch<br>- Constantly monitor your tariff<br>Then each month, without you doing anything, we'll do a background comparison to check you're still on the cheapest tariff - in case yours has risen in price or others fallen<br>-Alert you when it's time to switch again<br>When the time's right for you to switch based on your current details, we'll alert you and show you the best gas and electric deals<br><br>(The calculator estimates your current energy usage based on your annual kWh usage, bill amount or Low/Medium/High user data you input.)",
+    "useCaseCategory": "Comparing contracts",
+    "website": "http://www.moneysavingexpert.com/cheapenergyclub",
+    "countries": [
+      {
+        "name": "United Kingdom",
+        "code": "GB",
+        "flagURI": "img/flags/gb.png"
+      }
+    ]
+  },
+  {
+    "typology": "Decisions and Action",
+    "domains": [
+      "Decisions and Action",
+      ""
+    ],
+    "title": "CtrLio",
+    "slogan": "Revolutionise money saving",
+    "description": "The new, smarter way to lower household bills, starting with your mobile phone contract.<br>- Ctrlio analyses your last three online bills to find your actual monthly usage. This gives you the best results.<br>- We convert your usage into anonymous sets of numbers, which tell brands what you want, without sharing your personal details.<br>- We bring you the best deals, matched to your needs, and haggle with brands on your behalf to get you instant discounts.",
+    "useCaseCategory": "Comparing contracts",
+    "website": "https://ctrlio.com/",
+    "countries": [
+      {
+        "name": "United Kingdom",
+        "code": "GB",
+        "flagURI": "img/flags/gb.png"
+      }
+    ]
+  },
+  {
+    "typology": "Decisions and Action",
+    "domains": [
+      "Decisions and Action",
+      ""
+    ],
+    "title": "Bought by Many",
+    "slogan": "Insurance Made Social. The smart new way to buy insurance.",
+    "description": "Cut straight to insurance that will actually cover your unique situation: just take a look at our 282 groups from Staffie Owners to Off-Piste Skiers, we negotiate discounts directly with insurers, only for our members.",
+    "useCaseCategory": "Group buying",
+    "website": "https://boughtbymany.com/",
+    "countries": [
+      {
+        "name": "United Kingdom",
+        "code": "GB",
+        "flagURI": "img/flags/gb.png"
+      }
+    ]
+  },
+  {
+    "typology": "Decisions and Action",
+    "domains": [
+      "Decisions and Action",
+      ""
+    ],
+    "title": "Thumbtack",
+    "slogan": "Consider it done. From house painting to personal training, we bring you the right pros for every project on your list.",
+    "description": "- Get introduced to pros: tell us about your needs and we'll introduce you to several experienced professionals in your area who are ready to complete your project. <br>- Compare professionals: within hours, interested and available professionals will send you custom quotes. Each quote includes: price estimate, customer reviews, contact info, personalized message, business profile<br>- Hire the right pro: when you're ready, hire an experienced professional at a price that's right for you.",
+    "useCaseCategory": "Reverse bidding",
+    "website": "https://www.thumbtack.com/",
+    "countries": [
+      {
+        "name": "United States",
+        "code": "US",
+        "flagURI": "img/flags/us.png"
+      }
+    ]
+  },
+  {
+    "typology": "Empty",
+    "domains": [
+      "Empty",
+      ""
+    ],
+    "title": "...",
+    "slogan": "...",
+    "description": "...",
+    "useCaseCategory": "...",
+    "website": "...",
+    "countries": []
+  }
+]

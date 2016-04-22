@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"-->
+    <title>MesInfos Cas d'usage</title>
+    <script src="scripts/vendors/jquery-1.9.1.js"></script>
+    <script src="scripts/vendors/jquery.textfill.min.js"></script>
+
+    <script src="scripts/vendors/jquery-ui.min.js"></script>
+    <script src="scripts/vendors/jquery.mousewheel.min.js"></script>
+
+    <script src="scripts/vendors/async.js"></script>
+    <!-- <script src="scripts/vendors/FileSaver.min.js"></script> -->
+
+    <!-- <script src="scripts/vendors/sheetrock.min.js"></script> -->
+
+    <link href="styles/usecases.css" rel="stylesheet" type="text/css" />
+    <script src="templates/templatedetail.js"></script>
+    <script src="templates/templatelistpopin.js"></script>
+
+    <!--
+    <script src="http://www.google-analytics.com/ga.js" async="" type="text/javascript"></script>
+    <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.3 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-43732327-1']);
+                    _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+      //]]></script>
+      -->
+ </head>
+
+  <body>
+    <h1>Use cases of Self Data</h1>
+    <h2>Cartography of Self Data's use case by main usage types</h2>
+    <div id="container">
+      <img id="fond" class="mapbg" src="img/usecases/all.jpg" />
+    </div>
+    
+    <div id='credits'>
+        <img id='creditscc' src='img/credits_creativecommons.png' />
+        <img id='creditsfing' src='img/credits_fing.png' />
+        <a href='res/SelfData_Usecases-20160422.pdf'>
+            <img id='print' src='img/print.png' target='blank' />
+        </a>
+      </div>
+
+
+      <script>
+        window.miConfig = {
+            infosUri: 'data/mi_use_cases.json',
+            base: {
+              width: 954,
+              height: 938,
+              centerX: 477,
+              centerY: 484,
+            },
+            areas: [
+              {
+                label: "Conscience",
+                rMin: 166,
+                rMax: 484,
+                tMin: 4.71,
+                tMax: 5.6,
+                position: {left: '24%', top: '66%', orientation: 'toleft'},
+              },
+              {
+                label: "Self-knowledge",
+                rMin: 166,
+                rMax: 484,
+                tMin: 5.6,
+                tMax: 0.217,
+                position: {left: "42.3%", top: "42.3%",orientation: 'toleft'},
+
+              },
+              {
+                label: "Control",
+                rMin: 166,
+                rMax: 484,
+                tMin: 0.217,
+                tMax: 1.11,
+                position: {left: "35.9%", top: "13%",orientation: 'toleft'},
+
+              },
+              {
+                label: "Management",
+                rMin: 166,
+                rMax: 484,
+                tMin: 1.11,
+                tMax: 2.01,
+                position: {left: "32.6%", top: "0%", orientation: 'toright'},
+
+              },
+              {
+                label: "Life experience",
+                rMin: 166,
+                rMax: 484,
+                tMin: 2.01,
+                tMax: 2.91,
+                position: {left: "5.7%", top: "13%", orientation: 'toright'},
+
+              },
+              {
+                label: "Decisions and Action",
+                rMin: 166,
+                rMax: 484,
+                tMin: 2.91,
+                tMax: 3.8,
+                position: {left: "-0.9%", top: "42.3%", orientation: 'toright'},
+
+              },
+              {
+                label: "Contribution",
+                rMin: 166,
+                rMax: 484,
+                tMin: 3.8,
+                tMax: 4.7,
+                position: {left: "18%", top: "66%", orientation: 'toright'},
+
+              },
+            ],
+        };
+
+      </script>
+      <script src="scripts/display.js"></script>
+  </body>
+</html>

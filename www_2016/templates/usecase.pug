@@ -1,0 +1,39 @@
+.usecase
+  a(href=website)
+    img(src=website + 'favicon.ico')
+    h1.textfill
+      span= title
+
+  .countries
+        each country in countries
+           img(src=country.flagURI, title=country.name)
+      
+  .usecase-main
+    .slogan.textfill
+        span= slogan
+
+    h3 Description
+    .description.textfill
+        span!= description
+    
+  .usecase-right
+    h3 Domain
+    .domains
+        img(src='img/usecases/'+ domains[0] + '.jpg', title=domains[0])
+        if domains[1]
+            .domain2 
+              |+
+              = domains[1]
+
+    h3 Use Case category
+    .category.textfill
+        span= useCaseCategory
+
+    h3 Website
+    .website.textfill
+        span= website
+
+    //- h3 Tags
+    //- h3 Type
+    //- p= type
+    //- h3 Resources

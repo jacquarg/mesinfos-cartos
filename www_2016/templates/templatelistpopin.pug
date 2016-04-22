@@ -1,0 +1,10 @@
+.listpopin(class=position.orientation, data-title=title, style="left:" + position.left + "; top:" + position.top ";")
+  .close ×
+  .header(title=title)
+    img(src="img/usecases/" + title + ".jpg")
+
+  .list
+    ul
+      each item in infos
+        li(data-title=item.title)
+          span= item.title

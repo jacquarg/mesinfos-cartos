@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Carto : GDoc --> JSONLD</title>
+    <script src="scripts/vendors/jquery-1.9.1.js"></script>
+    <script src="scripts/vendors/jquery.textfill.min.js"></script>
+
+    <script src="scripts/vendors/async.js"></script>
+
+    <script src="scripts/vendors/FileSaver.min.js"></script>
+
+
+    <script src="scripts/vendors/sheetrock.min.js"></script>
+
+    <script src="scripts/countries.js"></script>
+
+    <script src="scripts/grabdata.js"></script>
+
+    <script src="templates/templatedetail.js"></script>
+
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+ </head>
+
+  <body>
+    
+    
+    <div id="container">
+    <button id="fetchUseCases" href="#">Use Cases</button> 
+    <button id="printUseCases" href="#">Print use Cases</button> 
+      <script>
+        
+        var fetchAndSave = function(spreadSheetUri, fileName) {
+          fetchFromSpreadsheet(spreadSheetUri, function(err, infos) {
+            console.log(infos); 
+
+            var blob = new Blob([JSON.stringify(infos, null, 2)], {type: "text/json;charset=utf-8"});
+            saveAs(blob, fileName);
+          });
+        };
+
+        var fetchAndPrint = function(spreadSheetUri, templateF) {
+          // fetchFromSpreadsheet(spreadSheetUri, function(err, infos) {
+          $.getJSON("data/mi_use_cases.json", function(infos) {
+  
+            infos.forEach(function(useCase, index) {
+              $('body').append(
+                '<div class="printcontainer' + index % 2 + '">' + 
+                templateF(useCase)
+              + '</div>');
+            });
+              $('#container').hide();
+              $("img").error(function(){ $(this).hide(); });
+              $('h1.textfill').textfill({
+                maxFontPixels: 90,
+
+              });
+              $('.textfill.slogan').textfill({ maxFontPixels: 30, });
+              $('.textfill.description').textfill({ maxFontPixels: 20, });
+
+                $('.textfill.category').textfill({ maxFontPixels: 20, });
+                $('.textfill.website').textfill({ maxFontPixels: 20, });
+          });
+        };
+        $('#fetchUseCases').click(function() { fetchAndSave('https://docs.google.com/spreadsheets/d/1kk5zuWqgphUmWwgbErpiXIN9Lm8Nip0OSjradRqTYsM/edit#gid=1688192418', 'mi_use_cases.json');
+          });
+
+        $('#printUseCases').click(function() { fetchAndPrint('https://docs.google.com/spreadsheets/d/1kk5zuWqgphUmWwgbErpiXIN9Lm8Nip0OSjradRqTYsM/edit#gid=1688192418', templatedetail);
+            // return '<pre>' + JSON.stringify(data, null, 2) + '</pre>' ; 
+          });        
+      </script>
+    </div>
+  </body>
+</html>

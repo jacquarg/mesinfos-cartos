@@ -1,0 +1,496 @@
+@font-face {
+  font-family: gothamrnd;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/GothamRnd-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: gothamrnd;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/GothamRnd-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: gothamrnd;
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/GothamRnd-LightIta.otf") format("opentype");
+}
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 54px;
+  color: #9D9D9D;
+  text-align: center;
+  text-transform: uppercase;
+  /*! margin-top: 50px; */
+  /*! margin-bottom: 5px; */
+  margin:  50px auto 5px;
+}
+
+h2 {
+  /*font-family: gothamrndlight;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px auto 80px;
+  max-width: 760px;
+}
+
+h3.defis {
+  color: #9D9D9D;
+  /*font-family: gothamrndlight;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration: italic;
+  margin-left: 40px;
+}
+
+#container {
+  /* width and height overriden by css. */
+  width: 300px;
+  height: 300px;
+  position: absolute;
+}
+
+#workarea {
+  position: absolute;
+  height: 100%;
+  left: 0px;
+}
+
+#zoom {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mapbg {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: absolute;
+  left: 0px;
+}
+
+.layer {
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+      */
+}
+
+#buttons {
+  position: absolute;
+  top: 0px;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+#buttons img {
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 2000;
+
+  cursor: pointer;
+}
+
+#zoomcontrols {
+  position: absolute;
+  height: 60px;
+  width: 30px;
+  right: 15px;
+  bottom: 15%;
+}
+
+#zoomcontrols img {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  z-index: 2000;
+  cursor: pointer;
+
+}
+
+#legend {
+  position: absolute;
+  right: 20px;
+  padding: 20px;
+  height: 80%;
+  overflow: auto;
+  border: solid 10px rgba(150, 150, 150, 0.3);
+  margin-top: 10px;
+}
+  
+@media ( min-width: 1150px) {
+  #legend {
+    width: 300px;
+  }
+  #workarea {
+    right: 380px;
+  }
+}
+@media (max-width: 1150px) {
+  #legend {
+    top: 100%;
+    width: 80%;
+    height: auto;
+    right: 50%;
+    margin-right: -43%;
+    margin-top: 300px;
+  }
+
+  #workarea {
+    right: 0px;
+  }
+}
+
+#legend h3 {
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  cursor: pointer;
+
+}
+
+#legend p {
+  /*font-family: gothamrndlightita ;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 0px;
+  cursor: pointer;
+
+}
+
+#credits {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  height: 3%;
+}
+
+#credits #creditsbam {
+  height: 60%;
+  margin-bottom: 6px;
+}
+
+#credits #creditscc {
+  height: 80%;
+  margin: 5px;
+}
+
+#credits #creditsfing {
+  height: 100%;
+}
+
+#credits #print {
+  height: 80%;
+}
+/* Popins */
+
+
+.listpopin .close, .detailpopin .close {
+  position: absolute;
+  right: 5px;
+  top: 3  px;
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  cursor: pointer;
+  font-size: 19px;
+  width: 13px;
+  padding:  5px;
+  z-index: 10000;
+}
+
+.detailpopin, .listpopin {
+  position: absolute;
+  background: white;
+  z-index: 1000;
+}
+
+.listpopin {
+  width: 58%;
+  height: 34%;
+  border: solid 1px #F37C22;
+
+}
+
+.listpopin .header {
+  position: absolute;
+  height: 100%;
+  /*! width: 100%; */
+  color: white;
+}
+.listpopin .header img {
+  width: 100%;
+  height: 100%;
+}
+
+.listpopin.toright .header {
+  left: 0px;
+}
+.listpopin.toleft .header {
+  right: 0px;
+}
+
+.listpopin.toright .list {
+  right: 0px;
+}
+.listpopin.toleft .list {
+  left: 0px;
+}
+
+.listpopin .list {
+}
+.listpopin .list {
+  position: absolute;
+  top:0px;
+  height: 100%;
+  width: 41%;
+  /*! padding-left: 40px; */
+  margin-top: 20px;
+
+}
+
+.listpopin h4 {
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.listpopin ul {
+  margin-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.listpopin .list li {
+  /*font-family: gothamrndlight;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.listpopin .list li span {
+  cursor: pointer;
+}
+
+.detailpopin {
+  width: 270px;  
+}
+
+.detailpopin {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 730px;
+  /*! background: white; */
+  z-index: 2000;
+
+  border: 1px solid rgb(157, 157, 157);
+  
+  height: 480px;
+  /*! padding:  40px; */
+  /*! margin:  -40px; */
+  /*! border: 400px solid rgba(0,0,0,0.5); */
+}
+
+.detailpopin p a {
+  color: #666;
+}
+
+.detailpopin .fogbackground {
+  height: 5000px;
+  width: 5000px;
+  left: -2000px;
+  top:-2000px;
+  position: absolute;
+  opacity: 0.4;
+  background-color: black;
+  /*! z-index: -1; */
+}
+.detailpopin .usecase {
+    /*! z-index: 2000; */
+    background-color: white;
+    border:  40px solid white;
+}
+
+.usecase {
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    top: 0px;
+    left:0px;
+   /* border: solid 1px black;*/
+  
+
+}
+.usecase-main {
+    position: absolute;
+    width: 430px;
+    height: 310px;
+    top: 90px;
+    left: 0px;
+    
+  
+}
+.usecase-right {
+    position: absolute;
+    width: 180px;
+    height: 300px;
+    right: 0px;
+    top: 100px;
+}
+
+
+.usecase h1 {
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+    width: 600px;
+    height: 90px;
+    padding:  0px;
+    display: inline-block;
+    color: #F37C22;
+  
+}
+
+.usecase a {
+    text-decoration: none;
+}
+
+
+.usecase a img {
+  padding: 0px 15px 0px 0px;
+  height: 35px;
+  /*! line-height:  6px; */
+  margin:  0px;
+}
+
+.usecase .textfill {
+  font-size: 6px;
+}
+  
+.usecase .description,
+.usecase .category,
+.usecase .website {
+  /*font-family: gothamrndlight;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: normal;
+ 
+}
+
+.usecase h3 {
+   /* background-color: #544594; */
+   background-color: #333;
+  color: white;
+  /*font-family: gothamrndbold;*/
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity:  0.8;
+   margin:  8px 0px;
+}
+
+.usecase .slogan {
+  font-size: 10px;
+  width: 100%;
+  height: 80px;
+  margin-top: 15px;
+  font-family: gothamrnd, Arial, sans-serif;
+
+}
+
+.usecase .description {
+  font-size: 6px; 
+  width: 420px; 
+  height: 140px;
+}
+.usecase .domains img {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.usecase .category,
+.usecase .website 
+{
+  width: 100%;
+  height: 20px;
+}
+
+.usecase .countries {
+  position: absolute;
+  top: 85px;
+  right: 0px;
+  opacity:  0.8;
+}
+.usecase .countries img { 
+  padding-left: 10px;
+}
+
+.usecase .domain2 {
+  color: #F37C22;
+  font-family: gothamrnd, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: right;
+  
+  margin-bottom:  -5px;
+}
+
+.printcontainer {
+  position: relative;
+  height: 500px;
+  margin-top: 100px;
+  page-break-before: always;
+}
+
+.printcontainer0 {
+  position: relative;
+  height: 400px;
+  margin-top: 50px;
+  page-break-before: always;
+}
+
+.printcontainer1 {
+  position: relative;
+  height: 400px;
+  margin-top: 100px;
+
+}
+
+@media print {
+  html, body {
+    width: 650px;
+    margin: 0;
+    padding: 0;
+    background: #FFF; 
+  }
+}
+
