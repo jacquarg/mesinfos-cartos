@@ -29,10 +29,17 @@
     <div id="container">
     <button id="fetchUseCases" href="#">Use Cases</button> 
     <button id="printUseCases" href="#">Print use Cases</button> 
+    <button id="fetchPiloteData" href="#">Fetch pilote data</button> 
       <script>
         
-        var fetchAndSave = function(spreadSheetUri, fileName) {
-          fetchFromSpreadsheet(spreadSheetUri, function(err, infos) {
+        var fetchAndSave = function(spreadSheetUri, parser, fileName) {
+          fetchFromSpreadsheet(spreadSheetUri, parser, function(err, infos) {
+            if (err) {
+              console.log("ERROR");
+              console.log(err);
+
+              
+            }
             console.log(infos); 
 
             var blob = new Blob([JSON.stringify(infos, null, 2)], {type: "text/json;charset=utf-8"});
@@ -63,12 +70,13 @@
                 $('.textfill.website').textfill({ maxFontPixels: 20, });
           });
         };
-        $('#fetchUseCases').click(function() { fetchAndSave('https://docs.google.com/spreadsheets/d/1kk5zuWqgphUmWwgbErpiXIN9Lm8Nip0OSjradRqTYsM/edit#gid=1688192418', 'mi_use_cases.json');
+        $('#fetchUseCases').click(function() { fetchAndSave('https://docs.google.com/spreadsheets/d/1kk5zuWqgphUmWwgbErpiXIN9Lm8Nip0OSjradRqTYsM/edit#gid=1688192418', rows2Usecases, 'mi_use_cases.json');
           });
 
         $('#printUseCases').click(function() { fetchAndPrint('https://docs.google.com/spreadsheets/d/1kk5zuWqgphUmWwgbErpiXIN9Lm8Nip0OSjradRqTYsM/edit#gid=1688192418', templatedetail);
             // return '<pre>' + JSON.stringify(data, null, 2) + '</pre>' ; 
           });        
+        $('#fetchPiloteData').click(function() { fetchAndSave('https://docs.google.com/spreadsheets/d/12G_fjrIRwDpsM3mS8F3wmEWJZLjzCeT02Pw73ZoELos/edit#gid=1090525603', rows2Data, 'mi_pilote_data.json')})
       </script>
     </div>
   </body>

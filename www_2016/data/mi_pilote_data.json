@@ -1,0 +1,748 @@
+﻿[
+  {
+    "typology": "Finance",
+    "title": "Échéancier",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "MAIF",
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Modalités de paiement",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "MAIF"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "RIB",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "MAIF",
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Recouvrement",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "MAIF",
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Profil",
+    "title": "Identité",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "MAIF",
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Profil",
+    "title": "Adresse",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "MAIF",
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Profil",
+    "title": "Coordonnées",
+    "fields": [
+      "",
+      " adresse postale",
+      " téléphone",
+      " email"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "MAIF",
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Profil",
+    "title": "Personne",
+    "fields": [
+      "",
+      "  profession",
+      " age",
+      " foyer"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "MAIF",
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Domicile",
+    "title": "Sinitre",
+    "fields": [
+      "",
+      " coût du sinistre",
+      " garanties mises en jeux",
+      " paiements",
+      " expertises",
+      " réparations",
+      " mesures d'urgence"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "MAIF"
+    ]
+  },
+  {
+    "typology": "Domicile",
+    "title": "Interractions",
+    "fields": [
+      "",
+      " suivi du dossier de sinistre",
+      " chat",
+      " mail",
+      " téléphonique",
+      " courrier",
+      " connextion espace perso"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "MAIF"
+    ]
+  },
+  {
+    "typology": "Contexte",
+    "title": "Open Data",
+    "fields": [
+      ""
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Grand Lyon"
+    ]
+  },
+  {
+    "typology": "Déplacement",
+    "title": "Trajet en Velo'v",
+    "fields": [
+      "",
+      " horodatage",
+      " durée",
+      " distance",
+      " borne de départ",
+      " borne d'arrivée"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Grand Lyon"
+    ]
+  },
+  {
+    "typology": "Déplacement",
+    "title": "Trajets via TCL",
+    "fields": [
+      "",
+      " horodatage",
+      " borne d'entrée"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Grand Lyon"
+    ]
+  },
+  {
+    "typology": "Communication",
+    "title": "Réclamation",
+    "fields": [
+      "",
+      " horodatage",
+      " object",
+      " corps"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Grand Lyon",
+      "Société Générale"
+    ]
+  },
+  {
+    "typology": "Profil",
+    "title": "laclasse_com",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Grand Lyon"
+    ]
+  },
+  {
+    "typology": "Communication",
+    "title": "Journal d'appel",
+    "fields": [
+      "",
+      " horodatage",
+      " correspondant",
+      " géolocalisation",
+      " durée"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Orange"
+    ]
+  },
+  {
+    "typology": "Déplacement",
+    "title": "Géolocalisation",
+    "fields": [
+      "",
+      " latitude",
+      " longitude",
+      " précision",
+      " horodatage"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Orange",
+      "Orange"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "VOD",
+    "fields": [
+      "",
+      " horodatage",
+      " programme"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Orange"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Programme TV",
+    "fields": [
+      "",
+      " horodatage",
+      " programme"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Orange"
+    ]
+  },
+  {
+    "typology": "Domicile",
+    "title": "Sinistre",
+    "fields": [
+      "",
+      " Nombre de franchises",
+      " Nombre de sinistre année N, N-1....N-4",
+      " Date d'expertise",
+      " code responsabilité de sinistre",
+      " Indicateurs de garanties de sinistre"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Modalité de paiement",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Domicile",
+    "title": "caractéristiques véhicule",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Domicile",
+    "title": "caractéristiques logement",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Profil",
+    "title": "conducteur",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "épargne",
+    "fields": [
+      ""
+    ],
+    "availability": "septembre",
+    "providers": [
+      "AXA"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Consommation de Gaz - transmise par Gazpar",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "GRDF"
+    ]
+  },
+  {
+    "typology": "Communication",
+    "title": "Vie du client",
+    "fields": [
+      "",
+      " top connexion espace client annuel",
+      " date entrée du client",
+      " produit d'entré",
+      " nombre de contrats"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "AXA"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Écritures bancaires",
+    "fields": [
+      "",
+      " date",
+      " montant",
+      " libellé"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Société Générale",
+      "Cozy",
+      "Crédit coopératif"
+    ]
+  },
+  {
+    "typology": "Profil",
+    "title": "Revenu",
+    "fields": [
+      ""
+    ],
+    "availability": "2017-01",
+    "providers": [
+      "Société Générale"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Client",
+    "fields": [
+      ""
+    ],
+    "availability": "2017-01",
+    "providers": [
+      "Société Générale"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Journal D'appel",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Orange"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Produits bancaires",
+    "fields": [
+      ""
+    ],
+    "availability": "2017-01",
+    "providers": [
+      "Société Générale"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Open data sur le territoire du Grand Lyon",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Grand Lyon"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Donnée de mobilité (Optimod'Lyon)",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Grand Lyon"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Données sur l'énergie (Toshiba)",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Grand Lyon"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Guichet unique métropolitain",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Grand Lyon"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Pass Urbain métropolitain",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Grand Lyon"
+    ]
+  },
+  {
+    "typology": "Communication",
+    "title": "Produit conseillé",
+    "fields": [
+      ""
+    ],
+    "availability": "2017-01",
+    "providers": [
+      "Société Générale"
+    ]
+  },
+  {
+    "typology": "Communication",
+    "title": "Email",
+    "fields": [
+      "headers, from, to, cc, bcc, replyTo, subject, text, html, date, attachments, inReplyTo"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Communication",
+    "title": "Contact",
+    "fields": [
+      "datapoints, n, fn, org, title, bday, department"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy",
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Communication",
+    "title": "Event",
+    "fields": [
+      "start, end, description, place, rrule"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "File",
+    "fields": [
+      "name, path, class, lastModification, creationDate, size, mime, checksum"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Folder",
+    "fields": [
+      "name, path, lastModification, creationDate"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Photo",
+    "fields": [
+      "title, description, orientation, binary"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Facture",
+    "fields": [
+      "type, vendor, date, amount"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Profil",
+    "title": "BloodPressure",
+    "fields": [
+      "systolic, diastolic"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Bookmark",
+    "fields": [
+      "title, url, tag"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Commit",
+    "fields": [
+      "sha, parent, tree, url, author, email, message, additions, deletions, files"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Note",
+    "fields": [
+      "title, content, creationDate, lastModificationDate"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Sleep",
+    "fields": [
+      "deepSleepDuration, lightSleepDuration, sleepDuration"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Steps",
+    "fields": [
+      "distance, steps"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "UseTracker",
+    "fields": [
+      "dateStart, dateEnd, duration, app"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Weight",
+    "fields": [
+      "weight, leanWeight, fatWeight"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Tasky",
+    "fields": [
+      "creationDate, completionDate, description, tags"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "Domicile",
+    "title": "Consommation de gaz",
+    "fields": [
+      ""
+    ],
+    "availability": "2017-01",
+    "providers": [
+      "GRDF"
+    ]
+  },
+  {
+    "typology": "Domicile",
+    "title": "Consommation d'électricité",
+    "fields": [
+      ""
+    ],
+    "availability": "2017-01",
+    "providers": [
+      "ERDF"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Agenda",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Écritures bancaires (liste des banques)",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Photos",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Fichiers",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Factures PDF",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Cozy"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "EMails",
+    "fields": [
+      ""
+    ],
+    "availability": "",
+    "providers": [
+      "Cozy"
+    ]
+  }
+]

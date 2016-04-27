@@ -2,7 +2,7 @@
 
 // $('#graph-container').
 
-function fetchFromSpreadsheet(spreadSheetUri, callback) {
+function fetchFromSpreadsheet(spreadSheetUri, parser, callback) {
     // STUB
     // $.getJSON('data/MIS-datamodel.json', function(json) { callback(null, json); });
     // return
@@ -14,7 +14,7 @@ function fetchFromSpreadsheet(spreadSheetUri, callback) {
             if (error) { return callback(error); }
             var infos, err;
             try {
-                infos = rows2UseCases(response.rows);
+                infos = parser(response.rows);
                 callback(err, infos);
             } catch (e) {
                 err = e;
@@ -24,6 +24,47 @@ function fetchFromSpreadsheet(spreadSheetUri, callback) {
       }
     });
 }
+
+var rows2Data = function(rows) {
+    // Pour chaque ligne
+    // sauter les ligne à ignorer,
+    // champs :
+    // typologie, domaine, description, support, accès, facilité d'accès, exemple de supports, referencial
+    console.log(rows);
+
+    var infos = [], row, info;
+    // skip first (heading) line
+    for (i=1; i<rows.length; i++) {
+        row = rows[i].cellsArray;
+        if (row[9]) { continue; }
+
+        // parse country
+        info = {
+            typology: row[5].trim(),
+            title: row[0].trim(),
+            fields: row[6].replace(/\n/g, '').split('*'),
+            availability: row[3].trim(),
+            providers: [row[1].trim()],
+        };
+
+        infos.push(info);
+
+    }
+    // group by title :
+
+    var res = [];
+    var mapping = {};
+    infos.forEach(function(info) {
+        if (info.title in mapping) {
+            mapping[info.title].providers.push(info.providers[0]);
+        } else {
+            mapping[info.title] = info;
+            res.push(info);
+        }
+    });
+
+    return res;
+};
 
 var rows2UseCases = function(rows) {
     // Pour chaque ligne
@@ -69,7 +110,7 @@ var rows2UseCases = function(rows) {
 
     }
     return infos
-}
+};
 
 // MesInfos Energie / Sante
 var rows2Infos = function(rows) {
