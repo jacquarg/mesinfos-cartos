@@ -36,7 +36,7 @@ var rows2Data = function(rows) {
     // skip first (heading) line
     for (i=1; i<rows.length; i++) {
         row = rows[i].cellsArray;
-        if (row[9]) { continue; }
+        if (row[13]) { continue; }
 
         // parse country
         info = {

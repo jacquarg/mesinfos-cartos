@@ -8,6 +8,7 @@
     "availability": "septembre",
     "providers": [
       "MAIF",
+      "EDF",
       "AXA"
     ]
   },
@@ -19,7 +20,8 @@
     ],
     "availability": "septembre",
     "providers": [
-      "MAIF"
+      "MAIF",
+      "EDF"
     ]
   },
   {
@@ -31,6 +33,7 @@
     "availability": "septembre",
     "providers": [
       "MAIF",
+      "EDF",
       "AXA"
     ]
   },
@@ -55,6 +58,7 @@
     "availability": "septembre",
     "providers": [
       "MAIF",
+      "EDF",
       "AXA"
     ]
   },
@@ -67,6 +71,7 @@
     "availability": "septembre",
     "providers": [
       "MAIF",
+      "EDF",
       "AXA"
     ]
   },
@@ -132,6 +137,150 @@
     "availability": "septembre",
     "providers": [
       "MAIF"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Contrat",
+    "fields": [
+      "TODO"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "EDF"
+    ]
+  },
+  {
+    "typology": "Domicile",
+    "title": "Caractéristiques contrat électrique",
+    "fields": [
+      "",
+      " point de livraison",
+      " numéro",
+      " numéroBP",
+      " numéro contrat",
+      " nom de l'ofrre",
+      " puissance",
+      " structure tarifaire",
+      " option prix"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "EDF"
+    ]
+  },
+  {
+    "typology": "Communication",
+    "title": "Contacts",
+    "fields": [
+      "",
+      " téléphone service client",
+      "  téléphone service technique",
+      " adresse service client"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "EDF"
+    ]
+  },
+  {
+    "typology": "Profil",
+    "title": "Rendez-vous",
+    "fields": [
+      "",
+      " prochaine date de relevé physique"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "EDF"
+    ]
+  },
+  {
+    "typology": "Domicile",
+    "title": "Relevé de consomation",
+    "fields": [
+      "",
+      " périodevaleur",
+      " type de relevécatégorie relevé",
+      " motif relevé"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "EDF",
+      "EDF"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Factures",
+    "fields": [
+      "",
+      " date",
+      " numéro de facture",
+      " montant",
+      " document"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "EDF"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Justificatif de domicile",
+    "fields": [
+      "TODO"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "EDF"
+    ]
+  },
+  {
+    "typology": "Domicile",
+    "title": "Équipements",
+    "fields": [
+      "",
+      " usage",
+      " date",
+      " prix"
+    ],
+    "availability": "disponible",
+    "providers": [
+      "EDF"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Historique de navigation",
+    "fields": [
+      "TODO"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Qwant"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Historique des recherches",
+    "fields": [
+      "TODO"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Qwant"
+    ]
+  },
+  {
+    "typology": "Loisir",
+    "title": "Carnets Qwant",
+    "fields": [
+      "TODO"
+    ],
+    "availability": "septembre",
+    "providers": [
+      "Qwant"
     ]
   },
   {

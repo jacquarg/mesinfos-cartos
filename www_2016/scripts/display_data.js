@@ -161,7 +161,7 @@ initProviders = function(infos) {
     for (var provider in typology.providers) {
       var img = $('<img class="provider" id="' + label + '_' + provider + '" src="img/typologies/logo_' + provider.toLowerCase() + '.png" >');
 
-      var coordinates = polarToAbsolute(typology.rMax - 5, typology.tMax - index * 0.1 - 0.3);
+      var coordinates = polarToAbsolute(typology.rMax - 5, typology.tMax - index * 0.13 - 0.2);
       index++;
 
       img.css('left', coordinates[0] + 'px');
