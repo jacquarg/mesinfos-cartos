@@ -55,6 +55,7 @@ $(document).ready(function(){
   $("#container").click(onClickOpenListPopin);
 
 
+
   $(".defi").click(function(ev) {
     var defiBtn, src, newDefi, providersByAreas;
     // Deactivate previously selected defi.
@@ -77,9 +78,9 @@ $(document).ready(function(){
 
       // Show / Hide some typologies
       var filterValue = {
-        'disponible': 'disponible',
-        'septembre': ['disponible', 'septembre'],
-        '2017-01': ['disponible', 'septembre', '2017-01'],
+        '2016-08': '2016-08',
+        '2016-09': ['2016-08', '2016-09'],
+        '2017-01': ['2016-08', '2016-09', '2017-01'],
       }[newDefi];
 
       var list = filterList({ availability: filterValue })

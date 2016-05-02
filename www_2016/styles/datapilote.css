@@ -84,7 +84,24 @@ h3.defis {
   position: absolute;
 }
 
+#Center {
+  opacity: 1 !important;
+  
+      -webkit-filter: none !important;
+       -moz-filter: none !important;
+         -o-filter: none !important;
+        -ms-filter: none !important;
+            filter: none !important;
+}
+
+#opendatagl {
+  width: 100px;
+  bottom: 10%;
+  left: 3%;
+  
+}
 img.grayed {
+  opacity: 0.6;
     -webkit-filter: grayscale(100%);
        -moz-filter: grayscale(100%);
          -o-filter: grayscale(100%);
@@ -134,6 +151,7 @@ img.grayed {
   font-size: 18px;
   opacity: 0.5;
   padding:  10px;
+  cursor:   pointer;
 }
   
 #zoomcontrols {

@@ -5,7 +5,7 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "--",
     "providers": [
       "MAIF",
       "EDF",
@@ -18,7 +18,7 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2017-01",
     "providers": [
       "MAIF",
       "EDF"
@@ -30,7 +30,7 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2017-01",
     "providers": [
       "MAIF",
       "EDF",
@@ -43,7 +43,7 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2017-01",
     "providers": [
       "MAIF",
       "AXA"
@@ -55,10 +55,9 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "MAIF",
-      "EDF",
       "AXA"
     ]
   },
@@ -68,7 +67,7 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "MAIF",
       "EDF",
@@ -84,7 +83,7 @@
       " téléphone",
       " email"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "MAIF",
       "AXA"
@@ -95,19 +94,26 @@
     "title": "Personne",
     "fields": [
       "",
-      "  profession",
-      " age",
-      " foyer"
+      " Civilité",
+      " Age",
+      " Profession",
+      " Telephone       ",
+      " Mail",
+      " Nom du représentant",
+      " Situation famililale       ",
+      " personnes à charges      ",
+      " Numéro sociétaire"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "MAIF",
+      "EDF",
       "AXA"
     ]
   },
   {
     "typology": "Domicile",
-    "title": "Sinitre",
+    "title": "Sinistre",
     "fields": [
       "",
       " coût du sinistre",
@@ -117,13 +123,14 @@
       " réparations",
       " mesures d'urgence"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
-      "MAIF"
+      "MAIF",
+      "AXA"
     ]
   },
   {
-    "typology": "Domicile",
+    "typology": "Communication",
     "title": "Interractions",
     "fields": [
       "",
@@ -134,7 +141,7 @@
       " courrier",
       " connextion espace perso"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "MAIF"
     ]
@@ -143,11 +150,60 @@
     "typology": "Finance",
     "title": "Contrat",
     "fields": [
-      "TODO"
+      "",
+      " produit",
+      " ancienneté/échéance"
     ],
-    "availability": "disponible",
+    "availability": "2016-09",
     "providers": [
+      "MAIF",
       "EDF"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Objet assuré",
+    "fields": [
+      ""
+    ],
+    "availability": "2016-09",
+    "providers": [
+      "MAIF"
+    ]
+  },
+  {
+    "typology": "Finance",
+    "title": "Couverture",
+    "fields": [
+      "",
+      " montants biens assurés",
+      " éléments de cotisation"
+    ],
+    "availability": "2016-09",
+    "providers": [
+      "MAIF"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Proposition commercial",
+    "fields": [
+      ""
+    ],
+    "availability": "2016-09",
+    "providers": [
+      "MAIF"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Besoin client",
+    "fields": [
+      ""
+    ],
+    "availability": "2016-09",
+    "providers": [
+      "MAIF"
     ]
   },
   {
@@ -164,23 +220,24 @@
       " structure tarifaire",
       " option prix"
     ],
-    "availability": "disponible",
+    "availability": "2016-09",
     "providers": [
       "EDF"
     ]
   },
   {
     "typology": "Communication",
-    "title": "Contacts",
+    "title": "Contact",
     "fields": [
       "",
       " téléphone service client",
       "  téléphone service technique",
       " adresse service client"
     ],
-    "availability": "disponible",
+    "availability": "2016-09",
     "providers": [
-      "EDF"
+      "EDF",
+      "Cozy"
     ]
   },
   {
@@ -190,7 +247,7 @@
       "",
       " prochaine date de relevé physique"
     ],
-    "availability": "disponible",
+    "availability": "2016-09",
     "providers": [
       "EDF"
     ]
@@ -204,7 +261,7 @@
       " type de relevécatégorie relevé",
       " motif relevé"
     ],
-    "availability": "disponible",
+    "availability": "2016-09",
     "providers": [
       "EDF",
       "EDF"
@@ -220,7 +277,7 @@
       " montant",
       " document"
     ],
-    "availability": "disponible",
+    "availability": "2016-09",
     "providers": [
       "EDF"
     ]
@@ -231,7 +288,7 @@
     "fields": [
       "TODO"
     ],
-    "availability": "disponible",
+    "availability": "2016-09",
     "providers": [
       "EDF"
     ]
@@ -245,7 +302,7 @@
       " date",
       " prix"
     ],
-    "availability": "disponible",
+    "availability": "2016-09",
     "providers": [
       "EDF"
     ]
@@ -256,7 +313,7 @@
     "fields": [
       "TODO"
     ],
-    "availability": "septembre",
+    "availability": "2016-08",
     "providers": [
       "Qwant"
     ]
@@ -267,7 +324,7 @@
     "fields": [
       "TODO"
     ],
-    "availability": "septembre",
+    "availability": "2016-08",
     "providers": [
       "Qwant"
     ]
@@ -278,7 +335,7 @@
     "fields": [
       "TODO"
     ],
-    "availability": "septembre",
+    "availability": "2017-01",
     "providers": [
       "Qwant"
     ]
@@ -289,7 +346,7 @@
     "fields": [
       ""
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Grand Lyon"
     ]
@@ -305,7 +362,7 @@
       " borne de départ",
       " borne d'arrivée"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "Grand Lyon"
     ]
@@ -318,7 +375,7 @@
       " horodatage",
       " borne d'entrée"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "Grand Lyon"
     ]
@@ -332,7 +389,7 @@
       " object",
       " corps"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "Grand Lyon",
       "Société Générale"
@@ -344,7 +401,7 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "Grand Lyon"
     ]
@@ -359,7 +416,7 @@
       " géolocalisation",
       " durée"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "Orange"
     ]
@@ -374,7 +431,7 @@
       " précision",
       " horodatage"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "Orange",
       "Orange"
@@ -388,7 +445,7 @@
       " horodatage",
       " programme"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "Orange"
     ]
@@ -401,25 +458,9 @@
       " horodatage",
       " programme"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "Orange"
-    ]
-  },
-  {
-    "typology": "Domicile",
-    "title": "Sinistre",
-    "fields": [
-      "",
-      " Nombre de franchises",
-      " Nombre de sinistre année N, N-1....N-4",
-      " Date d'expertise",
-      " code responsabilité de sinistre",
-      " Indicateurs de garanties de sinistre"
-    ],
-    "availability": "septembre",
-    "providers": [
-      "AXA"
     ]
   },
   {
@@ -428,7 +469,7 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "AXA"
     ]
@@ -439,7 +480,7 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "AXA"
     ]
@@ -450,7 +491,7 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "AXA"
     ]
@@ -461,7 +502,7 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "AXA"
     ]
@@ -472,20 +513,9 @@
     "fields": [
       ""
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "AXA"
-    ]
-  },
-  {
-    "typology": "",
-    "title": "Consommation de Gaz - transmise par Gazpar",
-    "fields": [
-      ""
-    ],
-    "availability": "",
-    "providers": [
-      "GRDF"
     ]
   },
   {
@@ -498,9 +528,20 @@
       " produit d'entré",
       " nombre de contrats"
     ],
-    "availability": "septembre",
+    "availability": "2016-09",
     "providers": [
       "AXA"
+    ]
+  },
+  {
+    "typology": "",
+    "title": "Consommation de Gaz - transmise par Gazpar",
+    "fields": [
+      ""
+    ],
+    "availability": "2017-01",
+    "providers": [
+      "GRDF"
     ]
   },
   {
@@ -512,11 +553,10 @@
       " montant",
       " libellé"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Société Générale",
-      "Cozy",
-      "Crédit coopératif"
+      "Cozy"
     ]
   },
   {
@@ -635,20 +675,8 @@
     "fields": [
       "headers, from, to, cc, bcc, replyTo, subject, text, html, date, attachments, inReplyTo"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
-      "Cozy"
-    ]
-  },
-  {
-    "typology": "Communication",
-    "title": "Contact",
-    "fields": [
-      "datapoints, n, fn, org, title, bday, department"
-    ],
-    "availability": "disponible",
-    "providers": [
-      "Cozy",
       "Cozy"
     ]
   },
@@ -658,7 +686,7 @@
     "fields": [
       "start, end, description, place, rrule"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Cozy"
     ]
@@ -669,7 +697,7 @@
     "fields": [
       "name, path, class, lastModification, creationDate, size, mime, checksum"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Cozy"
     ]
@@ -680,7 +708,7 @@
     "fields": [
       "name, path, lastModification, creationDate"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Cozy"
     ]
@@ -691,7 +719,7 @@
     "fields": [
       "title, description, orientation, binary"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Cozy"
     ]
@@ -702,7 +730,7 @@
     "fields": [
       "type, vendor, date, amount"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Cozy"
     ]
@@ -713,7 +741,7 @@
     "fields": [
       "systolic, diastolic"
     ],
-    "availability": "disponible",
+    "availability": "2017-01",
     "providers": [
       "Cozy"
     ]
@@ -724,7 +752,7 @@
     "fields": [
       "title, url, tag"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Cozy"
     ]
@@ -735,7 +763,7 @@
     "fields": [
       "sha, parent, tree, url, author, email, message, additions, deletions, files"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Cozy"
     ]
@@ -746,7 +774,7 @@
     "fields": [
       "title, content, creationDate, lastModificationDate"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Cozy"
     ]
@@ -757,7 +785,7 @@
     "fields": [
       "deepSleepDuration, lightSleepDuration, sleepDuration"
     ],
-    "availability": "disponible",
+    "availability": "2017-01",
     "providers": [
       "Cozy"
     ]
@@ -768,7 +796,7 @@
     "fields": [
       "distance, steps"
     ],
-    "availability": "disponible",
+    "availability": "2017-01",
     "providers": [
       "Cozy"
     ]
@@ -779,7 +807,7 @@
     "fields": [
       "dateStart, dateEnd, duration, app"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Cozy"
     ]
@@ -790,7 +818,7 @@
     "fields": [
       "weight, leanWeight, fatWeight"
     ],
-    "availability": "disponible",
+    "availability": "2017-01",
     "providers": [
       "Cozy"
     ]
@@ -801,7 +829,7 @@
     "fields": [
       "creationDate, completionDate, description, tags"
     ],
-    "availability": "disponible",
+    "availability": "2016-08",
     "providers": [
       "Cozy"
     ]
@@ -826,72 +854,6 @@
     "availability": "2017-01",
     "providers": [
       "ERDF"
-    ]
-  },
-  {
-    "typology": "",
-    "title": "Agenda",
-    "fields": [
-      ""
-    ],
-    "availability": "",
-    "providers": [
-      "Cozy"
-    ]
-  },
-  {
-    "typology": "",
-    "title": "Écritures bancaires (liste des banques)",
-    "fields": [
-      ""
-    ],
-    "availability": "",
-    "providers": [
-      "Cozy"
-    ]
-  },
-  {
-    "typology": "",
-    "title": "Photos",
-    "fields": [
-      ""
-    ],
-    "availability": "",
-    "providers": [
-      "Cozy"
-    ]
-  },
-  {
-    "typology": "",
-    "title": "Fichiers",
-    "fields": [
-      ""
-    ],
-    "availability": "",
-    "providers": [
-      "Cozy"
-    ]
-  },
-  {
-    "typology": "",
-    "title": "Factures PDF",
-    "fields": [
-      ""
-    ],
-    "availability": "",
-    "providers": [
-      "Cozy"
-    ]
-  },
-  {
-    "typology": "",
-    "title": "EMails",
-    "fields": [
-      ""
-    ],
-    "availability": "",
-    "providers": [
-      "Cozy"
     ]
   }
 ]
