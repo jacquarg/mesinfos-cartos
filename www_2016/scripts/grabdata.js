@@ -66,7 +66,7 @@ var rows2Data = function(rows) {
     return res;
 };
 
-var rows2UseCases = function(rows) {
+var rows2Usecases = function(rows) {
     // Pour chaque ligne
     // sauter les ligne à ignorer,
     // champs :
@@ -84,13 +84,13 @@ var rows2UseCases = function(rows) {
         info = {
             typology: row[0].trim(),
             domains: [row[0].trim(), row[1].trim()],
-            title: row[2].trim(),
-            slogan: row[3].trim(),
-            description: row[4].trim().replace(/[\n]/g,'<br>'),
-            useCaseCategory: row[5].trim(),
+            title: row[3].trim(),
+            slogan: row[4].trim(),
+            description: row[5].trim().replace(/[\n]/g,'<br>'),
+            useCaseCategory: row[6].trim(),
             //type: row[5].trim(),
-            website: row[6].trim(),
-            countries: row[7].split(';').map(function(country) {
+            website: row[7].trim(),
+            countries: row[8].split(';').map(function(country) {
                     var name = country.trim();
                     if (!name) { return null; }
 
@@ -103,6 +103,7 @@ var rows2UseCases = function(rows) {
                         flagURI: 'img/flags/' + code.toLowerCase() + '.png',
                     };
                 }).filter(function(obj) { return !!obj}),
+            status: row[2],
             //tags: row[8].trim(),
         };
 
@@ -111,6 +112,42 @@ var rows2UseCases = function(rows) {
     }
     return infos
 };
+
+
+var rows2ServicesMI = function(rows) {
+    // Pour chaque ligne
+    // sauter les ligne à ignorer,
+    // champs :
+    // typologie, domaine, description, support, accès, facilité d'accès, exemple de supports, referencial
+    console.log(rows);
+
+    var infos = [], row, info;
+    // skip first (heading) line
+    for (i=1; i<rows.length; i++) {
+        row = rows[i].cellsArray;
+        //if (row[]) { continue; }
+
+        // parse country
+
+        info = {
+            typology: row[2].trim(),
+            domains: [row[2].trim(), row[3].trim()],
+            title: row[0].trim(),
+            slogan: row[5].trim(),
+            description: row[6].trim().replace(/[\n]/g,'<br>'),
+            tags: row[4].split(',').map(function(tag) {return tag.trim()}),
+            website: row[11].trim(),
+            status: row[1],
+            linkOnMesInfosSite: row[12]
+        };
+
+        infos.push(info);
+
+    }
+    return infos
+};
+
+
 
 // MesInfos Energie / Sante
 var rows2Infos = function(rows) {

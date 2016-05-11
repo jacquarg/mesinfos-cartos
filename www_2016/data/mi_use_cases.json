@@ -16,7 +16,8 @@
         "code": "US",
         "flagURI": "img/flags/us.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Management",
@@ -35,7 +36,8 @@
         "code": "FR",
         "flagURI": "img/flags/fr.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Management",
@@ -54,7 +56,8 @@
         "code": "AU",
         "flagURI": "img/flags/au.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Management",
@@ -73,7 +76,8 @@
         "code": "FR",
         "flagURI": "img/flags/fr.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Control",
@@ -92,7 +96,8 @@
         "code": "IL",
         "flagURI": "img/flags/il.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Control",
@@ -116,7 +121,8 @@
         "code": "US",
         "flagURI": "img/flags/us.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Control",
@@ -135,7 +141,8 @@
         "code": "FR",
         "flagURI": "img/flags/fr.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Self-knowledge",
@@ -154,7 +161,8 @@
         "code": "FR",
         "flagURI": "img/flags/fr.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Self-knowledge",
@@ -173,7 +181,8 @@
         "code": "GB",
         "flagURI": "img/flags/gb.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Self-knowledge",
@@ -192,7 +201,8 @@
         "code": "US",
         "flagURI": "img/flags/us.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Self-knowledge",
@@ -211,7 +221,8 @@
         "code": "US",
         "flagURI": "img/flags/us.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Conscience",
@@ -230,7 +241,8 @@
         "code": "US",
         "flagURI": "img/flags/us.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Conscience",
@@ -249,7 +261,8 @@
         "code": "FR",
         "flagURI": "img/flags/fr.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Conscience",
@@ -268,7 +281,8 @@
         "code": "FR",
         "flagURI": "img/flags/fr.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Contribution",
@@ -287,7 +301,8 @@
         "code": "US",
         "flagURI": "img/flags/us.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Contribution",
@@ -306,7 +321,8 @@
         "code": "GB",
         "flagURI": "img/flags/gb.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Contribution",
@@ -325,7 +341,8 @@
         "code": "US",
         "flagURI": "img/flags/us.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Contribution",
@@ -344,7 +361,8 @@
         "code": "FR",
         "flagURI": "img/flags/fr.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Life experience",
@@ -363,7 +381,8 @@
         "code": "US",
         "flagURI": "img/flags/us.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Life experience",
@@ -382,7 +401,8 @@
         "code": "US",
         "flagURI": "img/flags/us.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Life experience",
@@ -401,7 +421,8 @@
         "code": "GB",
         "flagURI": "img/flags/gb.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Decisions and Action",
@@ -420,7 +441,8 @@
         "code": "GB",
         "flagURI": "img/flags/gb.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Decisions and Action",
@@ -439,7 +461,8 @@
         "code": "GB",
         "flagURI": "img/flags/gb.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Decisions and Action",
@@ -458,7 +481,8 @@
         "code": "GB",
         "flagURI": "img/flags/gb.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
     "typology": "Decisions and Action",
@@ -477,19 +501,161 @@
         "code": "US",
         "flagURI": "img/flags/us.png"
       }
-    ]
+    ],
+    "status": "Available"
   },
   {
-    "typology": "Empty",
+    "typology": "Management",
     "domains": [
-      "Empty",
+      "Management",
       ""
     ],
-    "title": "...",
-    "slogan": "...",
-    "description": "...",
-    "useCaseCategory": "...",
-    "website": "...",
-    "countries": []
+    "title": "PerSonal digital diary (Ptraces)",
+    "slogan": "",
+    "description": "Get a very broad personal diary based on different kinds of traces (browsing, photos...)",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Concept"
+  },
+  {
+    "typology": "Control",
+    "domains": [
+      "Control",
+      ""
+    ],
+    "title": "MyGeoSearch",
+    "slogan": "",
+    "description": "Tool to enable user to manage he's cellphone's data (geolocation...) and he's privacy",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Concept"
+  },
+  {
+    "typology": "",
+    "domains": [
+      "",
+      ""
+    ],
+    "title": "Mydex",
+    "slogan": "",
+    "description": "",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Available"
+  },
+  {
+    "typology": "",
+    "domains": [
+      "",
+      ""
+    ],
+    "title": "Peercraft",
+    "slogan": "",
+    "description": "",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Available"
+  },
+  {
+    "typology": "Management",
+    "domains": [
+      "Management",
+      ""
+    ],
+    "title": "Linxo",
+    "slogan": "",
+    "description": "",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Available"
+  },
+  {
+    "typology": "Control",
+    "domains": [
+      "Control",
+      "Management"
+    ],
+    "title": "Belgium state service",
+    "slogan": "",
+    "description": "Dashboard to track the data gov have on you (how is it used, for what uses)",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Concept"
+  },
+  {
+    "typology": "Contribution",
+    "domains": [
+      "Contribution",
+      "Self-Knowledge"
+    ],
+    "title": "MyData Coop",
+    "slogan": "",
+    "description": "Enable people to contribute to clinical research/studies based on their personal data (well being, etc.)",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Available"
+  },
+  {
+    "typology": "Self-Knowledge",
+    "domains": [
+      "Self-Knowledge",
+      ""
+    ],
+    "title": "NewsforMe",
+    "slogan": "",
+    "description": "My private news agent : generate and pool data from news that match my preferences",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Concept"
+  },
+  {
+    "typology": "Management",
+    "domains": [
+      "Management",
+      ""
+    ],
+    "title": "Archeo",
+    "slogan": "",
+    "description": "200K users : personal file account => moving towards PDS",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Available"
+  },
+  {
+    "typology": "Self-Knowledge",
+    "domains": [
+      "Self-Knowledge",
+      ""
+    ],
+    "title": "MapMyLife",
+    "slogan": "",
+    "description": "My personal map, built from using (meta)data from every provider (transport, energy, shopping, iot...)",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Concept"
+  },
+  {
+    "typology": "Management",
+    "domains": [
+      "Management",
+      "Self-knowledge"
+    ],
+    "title": "Kresus",
+    "slogan": "",
+    "description": "Navigating in your data and your traces, financialy ( available for Cozy users)",
+    "useCaseCategory": "",
+    "website": "",
+    "countries": [],
+    "status": "Available"
   }
 ]

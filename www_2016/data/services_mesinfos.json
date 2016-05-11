@@ -1,0 +1,719 @@
+﻿[
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      "Contrôle"
+    ],
+    "title": "Le système d'information personnel",
+    "slogan": "Fabriquez votre propre ordinateur et ses applications en assemblant des modules souhaités afin de sécuriser son information sur un support unique et à proximité. La façon la plus facile de maîtriser ses données personnelles.",
+    "description": "Avec votre système d'information personnel, vous n'êtes plus obliger de passer par un intermédiaire, une plate-forme tiers ou des experts. Vous prenez la main ! - Échanger avec vos amis en toute confidentialité - Profiter du potentiel de vos informations et celles du domaine public - Piloter les objets numériques qui vous entoure en toute sécurité Facile comme un jeu de LEGO ou l'assemblage d'une maquette. Du matériels libre, des pièces d'application prêtent à l'usage, les plans de montage, des personnes pour vous aider et des ateliers dans votre quartier. - Fabriquer votre propre ordinateur en assemblant les modules de votre choix. - Fabriquer vos applications numériques en fonction de vos besoins ou de vos envies. - Maîtriser et utiliser vos informations à votre convenance",
+    "tags": [
+      "DIY",
+      "personnalisation",
+      "fabrication",
+      "confidentialité"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/le-systeme-dinformation-personnel/"
+  },
+  {
+    "typology": "Contrôle",
+    "domains": [
+      "Contrôle",
+      "Gestion, décision et action"
+    ],
+    "title": "Datacy",
+    "slogan": "Reprenez le contrôle de vos données !",
+    "description": "Datacy optimise le contrôle des données que les utilisateurs laissent au fil de leurs navigations sur Internet. L'utilisateur peut facilement surveiller, gérer, synchroniser ses données entre plusieurs services et les réutiliser pour en faire ce qu'il souhaite. Du côté des partenaires, Datacy leur permet d'utiliser les données des utilisateurs afin de détecter leurs intentions et préparer des démarches spécifiques.",
+    "tags": [
+      "Optimisation",
+      "tracking",
+      "VRM",
+      "intention"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/datacy/"
+  },
+  {
+    "typology": "Contrôle",
+    "domains": [
+      "Contrôle",
+      "Gestion"
+    ],
+    "title": "Scan'n Go",
+    "slogan": "Grâce à votre smartphone, transmettez ou donnez accès à vos informations par simple scan d’un QR code. Vos données personnelles restent sous votre contrôle exclusif ! Personne ne peut usurper votre identité…\nPour vos données les plus confidentielles, votre téléphone devient une extension du cloud (espace très privé)",
+    "description": "Personne ne peut accéder de manière illicite à vos données : grâce à votre téléphone vous générez un accord non reproductible, non falsifiable par un tiers. Cet accord est concrétisé par une signature générée par votre téléphone en utilisant un certificat numérique émis par un tiers de confiance. <br>Le Site Mes infos identifie de manière sûre la personne qui donne l’accès à un tiers à ses informations personnelles et il conserve une trace fiable de l’autorisation. Les données les plus sensibles peuvent être stockés dans le smartphone (coffre-fort sécurisé) plutôt que dans le cloud.<br><br>En résumé, les bénéfices sont :<br>- Contrôle total sur ses données personnelles : l’accès aux données est protégé par une authentification forte de l’utilisateur<br>- Processus simplifié pour accord de la transmission (un scan de QR code)<br>- Sécurité accrue du cloud (usurpation impossible, traçabilité accrue, notion de preuve)",
+    "tags": [
+      "QR code",
+      "scan",
+      "authentification"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/scanngo/"
+  },
+  {
+    "typology": "Contrôle",
+    "domains": [
+      "Contrôle",
+      "Décision et action"
+    ],
+    "title": "BePleez",
+    "slogan": "bepleez.com, le réseau social basé sur les intentions d'achat des consommateurs",
+    "description": "bepleez est la solution qu’attendaient les consommateurs pour reprendre en main leurs achats. Concept inédit et innovant, avec bepleez.com, le consommateur poste une intention d’achat et son budget. Les marques partenaires sont informées de sa demande. En fonction de leur actualité, de leurs opérations marketing, elles y répondent avec une offre personnalisée (prix, cadeau, frais de port offerts...). Sur la plateforme collaborative bepleez, les consommateurs s'entraident à choisir le bon produit avec un like, un commentaire, ou une suggestion produit ; des avis qui comptent.",
+    "tags": [
+      "VRM",
+      "appel d'offre personnel"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/bepleez/"
+  },
+  {
+    "typology": "Contrôle",
+    "domains": [
+      "Contrôle",
+      "décision et action, gestion"
+    ],
+    "title": "SocialSafe",
+    "slogan": "SocialSafe est une “bibliothèque personnelle” destinée aux individus, stockée sur l’ordinateur de l’individu ou son “cloud personnel”. Le service permet de stocker toutes ses données de manière sécurisée et d’en faire usage sous le contrôle des individus : journal, dashboard, vues d’ensemble ou partielles, exports…",
+    "description": "For consumers SocialSafe returns control of their data directly to them. SocialSafe creates “Your Library of You” by aggregating all your data that is otherwise spread over the internet, and in business silos, into a personal library that the user owns and controls and is 100% private to them. Users may then do more with that data, may subsequently permission access others to use that data and will be sure that the data is theirs always. Initially, SocialSafe is for all your social streams, but is being expanded to cover all data categories from finance, purchases, health, Quantified Self, leisure, etc.<br><br>For businesses, SocialSafe provides the ability to access personal data in a private and a permissioned manner. The era of ‘free’ big data is coming to a close and new methods of accessing personal data, privately and with user’s permission, are required – SocialSafe is the solution for this. Studies show that Big Data is often wrong about 30-50% of the time when it comes to determining individual preferences and data. Furthermore, Big Data in any one instance is never more than just a slice of information from the whole that makes up an individual, an imperfect slice at that. With SocialSafe businesses will get access to fully accurate data, with reduced friction, and the ability to access a greater set of data by adopting more private usage models.",
+    "tags": [
+      "Cloud personnel",
+      "stockage"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/socialsafe/"
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      "Connaissance de soi"
+    ],
+    "title": "L'addition!",
+    "slogan": "Gérez vos comptes sans rendre de comptes !",
+    "description": "Notre service permet de conserver le détail de vos dépenses et les garanties associées à vos achats en toute indépendance. Nous proposons une application universelle qui fonctionnera quel que soit votre partenaire bancaire contrairement aux applications existantes liées aux banques. Les personnes pourront associer les factures détaillées et garanties de tous leurs postes de dépense sans que leurs banques ne puissent y accéder.",
+    "tags": [
+      "Budget",
+      "comptabilité",
+      "suivi des dépenses"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/laddition/"
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      "Connaissance de soi, contribution"
+    ],
+    "title": "3d Fin & Life",
+    "slogan": "Parce qu’il est plus intéressant de vivre sa vie que de faire de la comptabilité, 3d Fin & Life vous restitue votre vie financière et réelle dans un environnement en 3 dimensions: combien, quand et où passez vous votre temps & votre argent.",
+    "description": "Avec 3d Fin & Life, tout utilisateur va savoir précisément combien, quand et où il passe son temps et son argent sans avoir à faire de comptabilité. Grâce à la mise en relation des données bancaires et géographiques de l’utilisateur, 3d Fin & Life note immédiatement ce que l’utilisateur dépense et, au moyen d’une étiquette, le classe automatiquement dans le poste de dépense voulu par ce dernier. Ainsi lorsque vous déjeunez au restaurant le midi, c’est automatiquement compté dans l’étiquette « Déjeuner travail ». Si c’est le dimanche, c’est dans « Restaurant en famille » que ce sera classé. Et si vous payez en liquide, 3d Fin & Life vous propose à la fin de chaque journée de rentrer toutes les dépenses qui ne sont pas comptabilisées automatiquement. Sans avoir à rentrer de manière fastidieuse vos factures au risque de nombreuses erreurs, vous disposez en temps réel du reporting de vos finances paramétré en fonction de vos objectifs personnels. Surtout, grâce au relevé mobile, 3d Fin & Life détermine où vous passez votre temps et vous fournit le relevé cartographique: 8h au travail, 1h15 dans les transports, 45 minutes au centre commercial, 55 minutes au club de sport etc. 3d Fin & Life détermine vos finances en vous évitant de faire de la comptabilité et vous fournit le relevé cartographique de vos activités quotidiennes. Voyez votre vie sous un nouvel angle.",
+    "tags": [
+      "Budget",
+      "temps",
+      "suivi"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/3dfinlife/"
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      "Connaissance de soi"
+    ],
+    "title": "Gravis",
+    "slogan": "Avec Gravis, surveillez votre budget en fixant vos propres limites et catégories. Gardez l'équilibre pour le bien-être du petit gruvu qui vous accompagne.",
+    "description": "Gravis est un gestionnaire de budget personnalisable. L'usager peut définir des catégories et fixer ses objectifs budgétaires. Si les limites budgétaires sont respectées en fin de mois, une récompense est attribuée à l'usager via son petit personnage, le gruvu. L'interface graphique intuitive et attachante rendra le suivi du budget plus ludique donc plus facile.",
+    "tags": [
+      "Gestion",
+      "budget",
+      "suivi",
+      "gamification"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": ""
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      "Contribution"
+    ],
+    "title": "GarantBox",
+    "slogan": "GarantBox, reprenez le contrôle sur vos garanties.",
+    "description": "GarantBox est une application qui vous simplifie la vie en centralisant toutes les garanties sur vos achats. Vous achetez un écran plat ? Les modalités de garanties sont automatiquement rangées dans l’application et celle-ci vous prévient quand la garantie arrive à son terme. Vous avez un problème avec votre lave-vaisselle acheté il y a 3 ans ? Pas la peine de rechercher dans vos papiers pendant des heures pour savoir si la réparation peut être prise en compte par le constructeur : vous y avez accès en un clic sur l’application, quand vous voulez, où vous voulez. Vous doutez de la fiabilité d’un ordinateur que vous avez repéré en magasin ? Vérifiez en direct le pourcentage d’utilisation de la garantie chez les autres utilisateurs et les commentaires qu’ils ont laissés. GarantBox vous propose de reprendre le contrôle sur les constructeurs et les distributeurs pour évaluer leurs produits et garanties.",
+    "tags": [
+      "Garanties",
+      "achat",
+      "centralisation",
+      "évaluation et contribution"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/gravis/"
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      ""
+    ],
+    "title": "TADALIST",
+    "slogan": "Vous faites, Tada check!",
+    "description": "TADA List est une application de gestion de tâches intelligente, directement liée à votre activité quotidienne. Une application de gestions de tâches est déjà ancrée dans les usages,mais lier directement les données qui résultent de notre activité quotidienne est un véritable apport et confort pour l’utilisateur.",
+    "tags": [
+      "Suivi",
+      "gestion",
+      "tâches",
+      "application"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/tadalist/"
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      ""
+    ],
+    "title": "SWAF",
+    "slogan": "Swaf est un organisateur de soirée entre amis.\nIl facilite et rend ludique les préparatifs de vos fêtes.",
+    "description": "Les utilisateurs de SWAF vont pouvoir organiser des soirées sans se prendre la tête. Une fois les invitations lancées, les invités acceptent ou non l’invitation. La liste des courses est gérée par tous les participants, ce qui permet une bonne gestion de la nourriture et des boissons. Une playlist commune participative, est complétée par les invités qui le veulent à partir de leurs playlists personnelles ou de leurs envies du moment. De plus, swaf permet une organisation de l’après-soirée, comme le nombre de places pour dormir sur place et chez les amis logeants aux alentours et les chauffeurs présents à la soirée. <br>Au fil des soirées passées, les utilisateurs débloqueront des bonus pour personnaliser leurs «avatars gobelet». Un système de classement pour chaque personne reposant sur les données des soirées précédentes sera mis en place afin de connaitre les préférences de chacun en boisson, nourriture et musique. Un autre classement déterminera le plus fêtard de nos listes d’amis ainsi que les plus pantouflards.",
+    "tags": [
+      "Soirée",
+      "fête",
+      "organisation",
+      "contribution"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/swaf/"
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      "Connaissance de soi"
+    ],
+    "title": "Cool'OK",
+    "slogan": "La vie tranquille avec le sourire",
+    "description": "Avec cette application, les membres de la colocation peuvent facilement partager et gérer des produits constituant un bien commun sur un game-play ludique. Dans cette optiqe, chacun peut équilibrer ses comptes et ainsi harmoniser la vie de tous!<br>L’application alerte également les autres personnes lorsqu’une course à été faite ou lorsqu’il manque un produit phare pour que l’on oublie pas d’en acheter à son retour.<br><br>En résumé, les bénéfices pour l’utilisateur :<br>Gagner du temps et de l’argent via un système collaboratif de bien commun<br>Ne plus oublier de se faire rembourser et garder l’oeil sur ses comptes et ses dettes<br>Simplifier les transactions d’argent entre les colocataires<br>Rendre la vie facile et agréable dans un lieu partagé : fini les querelles !",
+    "tags": [
+      "Colocation",
+      "optimisation",
+      "finances",
+      "courses"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/coolok/"
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      "Décision et action, contribution"
+    ],
+    "title": "Vireo",
+    "slogan": "Voyager libre comme l'air !",
+    "description": "Vous passez beaucoup de temps à organiser vos voyages, faire des aller-retours entre vos applications pour comparer les offres, trouver des alternatives de transport ou encore vous renseigner sur les évements qui se déroulent dans les lieux où vous êtes amenés à vous rendre. Viréo est fait pour vous !<br><br>Viréo est un agrégateur de données et un organisateur permettant d’assurer une communication efficace entre votre agenda personnel et les applications que vous utilisez au quotidien. <br><br>Viréo prend en compte les dates, lieux, trafic et météo pour vous proposer le moyen de transport le plus adéquat. Il vous propose de trouver un hébergement et une table convenable, proche de vos lieux de rendez-vous et bien notées par les communautés d’usagers. Il vous propose aussi des évènements culturels proches de vos lieux de déplacements et relatifs à vos centres d’intérêt. <br>Viréo vous permet de gagner un temps précieux par un système de recherche dynamique et autonome en vous faisant des propositions sur mesure.<br><br>En résumé, les bénéfices pour l’utilisateur sont :<br>- Optimiser les recherches, l’organisation et les déplacements.<br>- Comparer efficacement les offres de différents secteurs : transports, hôtellerie, restauration etc.<br>- Mémoriser les besoins, les envies, et les centres d’intérêts.<br>- Prendre en compte en direct, le trafic, la météo lors de ces déplacements.",
+    "tags": [
+      "agrégateur",
+      "agenda",
+      "optimisation",
+      "trajet"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/vireo/"
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      "Contribution"
+    ],
+    "title": "OnYGo",
+    "slogan": "Le covoiturage de proximité",
+    "description": "OnYGo propose de gérer tout simplement ses trajets de proximité en faisant appel au covoiturage. OnYGo permet de trouver facilement des covoitureurs par la géolocalisation ou l'entrée d'adresse et en identifiant les trajets similaires. Il repose sur la confiance, grâce à des profils détaillés, vérifiés (par le compte bancaire, le numéro de téléphone et/ou l'assurance du véhicule) et évalués par les usagers ainsi que par la possibilité de faire reposer les transactions sur un système de porte-monnaie électronique. Il permet de ne pas perdre de temps aux points de rendez-vous en proposant des alertes fondées sur la proximité du covoitureur pour éviter les aléas du trafic quotidien. Il propose des options avancées de création ou de recherche de trajets permettant aux personnes nécessitant des prestations de confort particulières (personnes âgées, Personnes à mobilité réduite, etc.) et aux personnes dotées de véhicules capables de les fournir de se retrouver. Il propose de profiter de tout un ensemble de bons plans pour réduire ses coûts de transport grâce à des partenariats noués avec des entreprises locales concernées par le transport (stations service par exemple) et une rétribution des conducteurs les plus actifs.",
+    "tags": [
+      "covoiturage",
+      "transport",
+      "mobilité"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/onygo/"
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      "Décision et action, contribution"
+    ],
+    "title": "MyBigBang",
+    "slogan": "MyBigBang m’informe, m’alerte et me protège de la radioactivité où que je sois.",
+    "description": "Le but de ce service va être de fournir aux utilisateurs des alertes et des indications personnalisées géolocalisées pour les mettre en sécurité et les aider à minimiser leur exposition à la radioactivité.",
+    "tags": [
+      "Radioactivité",
+      "prévention",
+      "urgence",
+      "protection"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/mybigbang/"
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      "Décision et action"
+    ],
+    "title": "BIGhab",
+    "slogan": "BIGhab, c'est Moins pour la planète, plus dans votre assiette ! BIGhab, améliore vos habitudes alimentaires et diminuer vos déchets culinaire !",
+    "description": "L'application BIGhab et la poubelle connecté BIGbin vous montre jour après jours la quantité alimentaire acheté et la quantité alimentaire jeté. La différence ainsi obtenue vous indique votre gâchis alimentaire .",
+    "tags": [
+      "Alimentation",
+      "gaspillage",
+      "gestion"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/bighab/"
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      "Connaissance de soi"
+    ],
+    "title": "BeGreen",
+    "slogan": "Vivez mieux, vivez sain !",
+    "description": "Begreen est une appplication smartphone permettant à l’utilisateur de baisser ses émissions de CO2 en analysant ces dernières et en le coachant en ce sens.",
+    "tags": [
+      "Ecologie",
+      "environnement",
+      "consommation",
+      "gammification",
+      "challenge"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/begreen-concept/"
+  },
+  {
+    "typology": "Decision et action",
+    "domains": [
+      "Decision et action",
+      "Contribution"
+    ],
+    "title": "Offpeak",
+    "slogan": "Cette solution \"nudge\" incite les personnes à reporter leur déplacement urbain en dehors des heures de pointe. Elle augmente la qualité et le confort de circulation sans investissement. Offpeak réduit le stress personnel et urbain",
+    "description": "Si des achats sont réalisés pendant ces temps décalés, ils génèrent des points avantages pour la personne. - avantages économiques (réduction, coupon,..) - privilèges (selon les partenaires: ville) Il permet également à la collectivité d'améliorer le service sans investissement de capacité nouvelle. 10% de décalage possible.",
+    "tags": [
+      "Optimisation",
+      "trajet",
+      "organisation",
+      "transport",
+      "circulation",
+      "diagnostic",
+      "récompense"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": ""
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      "Connaissance de soi, action et décision"
+    ],
+    "title": "Marvis",
+    "slogan": "Marvis est un assistant personnel intelligent qui traite les données que vous générez au quotidien pour vous aider à améliorer votre qualité de vie.",
+    "description": "Marvis fonctionne sur un algorithme de croisement des données privées et publiques en rapport avec l’utilisateur. <br>L’usager possède un alter-ego virtuel (avatar) sur lequel se répercutent en « temps réel » toutes les actions de sa vie quotidienne. <br>Ce qu’il mange, visionne, ses trajets, ses factures de téléphone, son compte en banque… tout possède un impact direct sur son avatar virtuel, lui permettant de prendre rapidement conscience de la portée de ses gestes. De plus, on ne lui renvoie pas d'information inutile : seules les données qu'il fournit effectivement sont traitées et utilisées à son profit. <br>Plus qu’un simple assistant intelligent, Marvis peut interagir avec chacun: il s'adapte aux données et anticipe les désirs. Il devient ainsi un réel compagnon de vie.<br>Grâce aux données partagées par les entreprises, l'utilisateur améliore sa qualité de vie sans être une cible marketing.",
+    "tags": [
+      "Avatar",
+      "assistant",
+      "temps réel",
+      "anticipation",
+      "Intelligence"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/marvis/"
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      "Connaissance"
+    ],
+    "title": "CoachMoiFort",
+    "slogan": "CoachMoiFort - \"Mon smart au service de mon body\" présente \"Ayé, j'me lance - l'appli qui secoue les Parisiens\"",
+    "description": "CoachMoiFort encourage les plus paresseux à bouger plus et à courir dans Paris grâce aux bienfaits de la musique. L'optimisation ludique de leurs données personnelles transforme Paris en terrain de jeu.",
+    "tags": [
+      "sport",
+      "activité physique",
+      "défit",
+      "Paris",
+      "parcours",
+      "coach"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/coachmoifort/"
+  },
+  {
+    "typology": "Décision et action",
+    "domains": [
+      "Décision et action",
+      "Connaissance de soi"
+    ],
+    "title": "Rizom",
+    "slogan": "Rizom est votre outil, depuis les données que vous partager dans les réseaux, vous pourrez des maintenant mieux gerer et de façon simple vos actions au quotidien. Pour atteindre vos objectifs, Rizom vous aide en temps réel à faire le bons choix.",
+    "description": "A partir d’objectifs fixes par l’utilisateur, Rizom vous orientera sur vos choix de consommation en relation avec votre activité. ->Objectifs de santé: proposition de trajets à pieds, conseil d'alimentation, de cuisson pour recette... Comparaison des efforts physiques et de l'alimentation. ->Objectifs de gestion des dépenses Liste et rapport des dépenses par jour, semaines, mois. Analyses des besoins entre primaires et secondaires. Constitution d'une base de donnée des biens. ->Objectif de gain de temps: Proposition des meilleurs solutions pour le déplacements, calcule automatique des differents moyens de transports.",
+    "tags": [
+      "Consommation",
+      "assistant",
+      "santé",
+      "dépenses"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/rizom/"
+  },
+  {
+    "typology": "Décision et action",
+    "domains": [
+      "Décision et action",
+      "Connaissance de soi"
+    ],
+    "title": "TALI",
+    "slogan": "TALI \"Life Catcher\" : Si les données sont notre reflet, alors Tali est leur miroir.",
+    "description": "A partir des données vivantes qui s'actualisent ( contacts, géolocalisation, appel, envoi de sms et mails), TALI: 1) Rend visible l'invisible Par une cartographie: reflet augmenté de nos interactions en temps réel, offrant une lecture sensible et personnelle de l'évolution de nos relations 2) Tangibilise les données relationnelles: Par un miroir connecté de poche. Cet objet personnel permet la visualisation de ses interactions. 3) Fait plaisir Par un service d'envoi de cartes postales crées à partir d'une application reliée au TALI qui permet de partager ses cartographies Exemple: Malgré la distance, une personne chère peut rester dans notre top5 et la carte postale peut devenir une preuve, un témoignage de cette importance dans la vie de l'autre. 4) Crée de la surprise - Par un objet qui chauffe lorsqu'une personne prend de l'importance dans ma cartographie sans que je sache qui c'est. Exemple: je n'ai pas vu un ami cher depuis plusieurs mois, lorsque je le retrouve, je me doute que c'est à cause de sa présence que le TALI se met à chauffer. - Par des cartographies qui m'apparaissent lorsque je suis dans une configuration similaire (réseau, lieu) à un moment différent Exemple: Je retourne dans ma ville d'enfance, une cartographie de mon réseau d'amis de l'époque m'apparait. 5) Fait prendre de la distance face aux données En les prenant comme elles viennent, comme l'horoscope, en dédramatisant les résultats. Exemple: Si je passe plus de temps avec mes collègues que mes amis, TALI le montre. A moi d'en tirer les conséquences adéquates... ou pas si mes collègues sont aussi mes amis.",
+    "tags": [
+      "social",
+      "cartographie",
+      "relation",
+      "mobilité",
+      "évolution",
+      "contacts"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/tali/"
+  },
+  {
+    "typology": "Connaissance de soi",
+    "domains": [
+      "Connaissance de soi",
+      ""
+    ],
+    "title": "Gif.T",
+    "slogan": "Un Gif.T animé vaut mille sms.",
+    "description": "Grâce à l’appareil photo de votre mobile, générez puis envoyez des gifs animés et habitéspar de petits personnages colorés, les «giftons».<br><br>«Gif.T» propose un espace de partage, autour du quotidien. Le gif animé, fichier comprenant plusieurs images qui se répètent à l’infini, est tout à fait compatible avec notre rythme de vie actuel. Il permet de capturer et de transmettre rapidement un idée, une émotion. <br>Aussi, Gif.T permet à l’utilisateur d’intégrer au gif généré des «giftons», de petits personnages virtuels qui s’intégreront et s’animeront dans la scène capturée. Ainsi, les giftons donnent un ton léger et humoristique au moment du quotidien partagé. La confrontation du réel et du virtuel proposée vise à rapprocher les utilisateurs et leurs contacts au travers de leur quotidien.",
+    "tags": [
+      "Social",
+      "SMS",
+      "communication"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/gift/"
+  },
+  {
+    "typology": "Decision et action",
+    "domains": [
+      "Decision et action",
+      "gestion"
+    ],
+    "title": "Croq' Motion",
+    "slogan": "Croq' Motion, il donne du goût à votre soirée ! Trouvez LE repas idéal pour chacun de vos films préférés, gagnez des points et collectionnez des objets cultes pour personnaliser votre application.",
+    "description": "Croq' Motion propose une expérience de cinéma augmenté, depuis son canapé. Grâce à deux bases de données ( vidéothèque & recettes de cuisines ), l'application génère des plats en fonction de vos choix cinématographiques. Ainsi, Croq' Motion propose des recettes à base de poulpe pour le film Old Boy, une pizza pour Wayne's World ou des sushis devant Holy Motors.",
+    "tags": [
+      "Film",
+      "repas",
+      "proposition",
+      "expérience",
+      "suggestion"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/croqmotion/"
+  },
+  {
+    "typology": "Connaissance de soi",
+    "domains": [
+      "Connaissance de soi",
+      "Contrôle"
+    ],
+    "title": "Datafiction, le site dont vous êtes le héro !",
+    "slogan": "Vivez et Jouez des histoires qui vous feront découvrir et comprendre vos données personnelles.",
+    "description": "Le projet a pour objectifs de révéler, démystifier et sensibiliser à l'existence des données personnelles ainsi qu'à leur importance. Dans un premier temps, nous exposons la façon dont les données sont actuellement utilisées par les diverses entreprises du web. Dans un second temps, le projet propose de donner des clés au citoyen pour qu'il se réapproprie ses données personnelles et puisse ainsi mieux protéger sa vie privé. Notre regard est autre que celui du quantified-self puisque nous privilégions des histoires sensibles et dédramatisées, par le jeu, afin de toucher un public non averti. Une des remarques tirée des ateliers MesInfos qui a porté notre projet et illustre notre propos est la suivante :<br>“Ce ne sont pas mes patterns, mes routines, mes habitudes, c’est à dire ce qui intéresse les clients de Google, mais justement, à l’inverse, les écarts, les exceptions, les surprises, les maximums et les minimums. Bref, tout ce qui ferait un peu le sel de ma vie.”",
+    "tags": [
+      "Jeu de rôle",
+      "trace web",
+      "éducation",
+      "réappropriation"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/datafiction/"
+  },
+  {
+    "typology": "Contribution",
+    "domains": [
+      "Contribution",
+      "Conscience"
+    ],
+    "title": "Compwatch",
+    "slogan": "Compwatch, le couchsurfing de la data, un service vous permettant de vous intégrez plus rapidement dans un pays étranger.",
+    "description": "Ce service permet aux personnes vivants pendant une période courte (entre 3 mois et 1 an) dans un pays étranger ou dans une nouvelle ville de s'intégrer plus facilement et plus rapidement en indiquant grâce aux données des habitants locaux leurs habitudes c'est-à-dire les endroits qu'ils ont l'habitude de fréquenter.",
+    "tags": [
+      "Iot",
+      "intégration",
+      "découverte"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/compwatch/"
+  },
+  {
+    "typology": "Vivre une experience",
+    "domains": [
+      "Vivre une experience",
+      "Decision et action"
+    ],
+    "title": "Logical Dating",
+    "slogan": "Logical Dating",
+    "description": "Site de rencontre basé sur les informations collectées. A la différence des sites existants, on se basera sur des données réelles et non déclaratives. Aussi, le profil d'une personne sera complet dès son adhésion on supprimera donc le coût d'entrée de tels types de site.",
+    "tags": [
+      "Rencontre"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/logicaldating/"
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      ""
+    ],
+    "title": "Energie de nous",
+    "slogan": "Détectez, partagez et faites prospérer vos gisements d’énergie !",
+    "description": "Le portail Energie de Nous permet à chaque citoyen de visualiser les gisements énergétiques de son territoire, de mieux comprendre leurs enjeux, et de participer à des actions citoyennes collectives. Grâce l’interactivité de l’outil, chaque citoyen peut contribuer à l’émergence de projets et amorcer des initiatives individuelles et/ou collectives qui seront mises en valeur sur la plateforme. <br>Le portail met à disposition des citoyens les données énergétiques disponibles (open data ville) et celles spécifiquement créées pour l’émergence de projets collectifs. Certaines données sont directement accessibles, d’autres nécessitent un enregistrement (nom et adresse mail au minimum). Chaque sujet dispose d’une entrée spécifique <br>Chaque citoyen aura accès : <br>aux réseaux énergétiques présents dans sa ville<br>aux actions et projets de production d’ENR dans son quartier et sa ville et pourra y participer<br>aux actions et projets d’économie d’énergie de son quartier et sa ville et pourra y participer<br>aux gisements non exploités  indiqués par les autres citoyens<br>Evaluer financièrement chaque projet <br>Et <br>pourra indiquer les gisements qu’il aura détectés et exploités<br>bénéficier d’une monnaie complémentaire pour toutes ses contributions<br>Pourra échanger avec les autres citoyens enregistrés (réseau interne)<br><br>Chaque citoyen prendra ainsi conscience <br>de ses « impacts énergétiques », de la façon dont on peut produire de l’énergie grâce aux éléments naturels et à l’énergie humaine, <br>des sources de surconsommation inutile, du rôle de chacun pour améliorer l’efficacité des équipements et infrastructures, <br>du potentiel de leurs espaces (toit, sol, mur,…) pour produire de l’énergie renouvelable, <br>de la nature des investissements et gains possibles.<br><br>Au final, <br>partager l’information sur le système actuel de façon simple et précise, <br>permettre à chaque citoyen de participer à la recherche de pépites énergétiques, <br>-motiver la recherche de façon ludique et la valoriser, lui offrir l’opportunité de profiter des gisements de proximité, <br>…sont les fondamentaux de l’application Energie de Nous",
+    "tags": [
+      "Energie",
+      "initiatives"
+    ],
+    "website": "",
+    "status": "Concept",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/energiedenous/"
+  },
+  {
+    "typology": "Connaissance de soi",
+    "domains": [
+      "Connaissance de soi",
+      ""
+    ],
+    "title": "mes1001choses",
+    "slogan": "Élargissez vos horizons !",
+    "description": "Mes1001Choses vous aide à mieux connaitre vos habitudes de déplacement et d’interaction avec vos environnements afin de vous proposer de nouveaux horizons qui améliorent votre quotidien",
+    "tags": [
+      "Mobilité",
+      "découverte",
+      "lieux"
+    ],
+    "website": "",
+    "status": "Prototype",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/mes1001choses/"
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      ""
+    ],
+    "title": "PurchEase",
+    "slogan": "Tous les services de vos courses, sur applis mobiles",
+    "description": "En vous inscrivant, vous bénéficiez non d'un, mais de nombreux services autour de ses données de courses (Intermarché dans MesInfos).<br>A votre disposition 4 applications mobiles différentes proposant toutes un usage différent selon vos goûts. Ce ne sont que des applications avc de réels services existants, pas des prototypes, et ces applications ont été spécialement adaptées pour vous permettre d'exploiter la puissance de vos informations.",
+    "tags": [
+      "Courses",
+      "dépenses",
+      "liste",
+      "fidélisation"
+    ],
+    "website": "",
+    "status": "Prototype",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/purchease/"
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      ""
+    ],
+    "title": "Ali-ventaire",
+    "slogan": "Ali-ventaire : mes courses selon mes envies, mon budget, mon régime alimentaire, mes recettes.",
+    "description": "Jonathan n'aime pas beaucoup parcourir les allés des supermarchés, les ingrédients ne lui donnent pas envies, ou ne lui conviennent pas. Quand il fait une recette, il oublie toujours quelque chose, ou l'a déjà. En plus, il n'a vraiment pas le temps de perdre son temps. <br>        Surtout qu'en ouvrant l'application ali-ventaire, il se voit proposer des recettes correspondant à tout ce qu'il désire, il n'a qu'à valider pour les commander directement dans l'intermarché le plus proche. Cette semaine, il n'a que très peu de temps pour manger, il saisit « plats rapides ». L'application lui propose des plats diversifié correspondant. Il peut éliminer celles qui ne lui conviennent pas, les remplacer par d'autres. Une fois récupéré, Jonathan peut se mettre au fourneau, suivre les conseils de préparations ou déclencher le minuteur de cuisson avant de se mettre à table.<br>        Dans son placard virtuel, il peut gérer ses stocks. Avec l'assistant chef, il peut créer des recettes, les modifier et les partager.<br>        D'un coup d’œil, Jonathan peut même consulter sa consommation de fruits, légumes, laitage, poisson, etc... afin de mieux comprendre son alimentation.<br><br>        Pour ce week-end, il prévoit un risotto aux asperges, et il ne lui manque rien...",
+    "tags": [
+      "Cuisine",
+      "stock",
+      "budget",
+      "aliments",
+      "finances",
+      "recettes"
+    ],
+    "website": "",
+    "status": "Prototype",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/aliventaire/"
+  },
+  {
+    "typology": "Connaissance de soi",
+    "domains": [
+      "Connaissance de soi",
+      ""
+    ],
+    "title": "Mes Infos Géographiques",
+    "slogan": "L'historique de mes fréquentation géographiques en un clin d'œil.",
+    "description": "Permet de naviguer visuellement dans votre historique des lieux que vous avez les plus fréquentés.",
+    "tags": [
+      "Mobilité",
+      "suivi",
+      "cartographie",
+      "visulaisation",
+      "fréquence"
+    ],
+    "website": "",
+    "status": "Prototype",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/mesinfos-geographiques/"
+  },
+  {
+    "typology": "Connaissance de soi",
+    "domains": [
+      "Connaissance de soi",
+      "Gestion"
+    ],
+    "title": "mes infos nutritionnelles",
+    "slogan": "Un coach nutritionnel dans votre ticket de caisse.",
+    "description": "« mes infos nutritionnelles » permet de suivre sa consommation en terme nutritionnels (calories, protéines, lipides, glucides) à partir de ses achats alimentaire.",
+    "tags": [
+      "Suivi",
+      "alimentation",
+      "gestion",
+      "consommation"
+    ],
+    "website": "",
+    "status": "Prototype",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/mes-infos-nutritionnelles-mes-courses-au-service-de-ma-nutrition/"
+  },
+  {
+    "typology": "Connaissance de soi",
+    "domains": [
+      "Connaissance de soi",
+      ""
+    ],
+    "title": "Care",
+    "slogan": "Care est un service permettant la visualisation de sa consommation alimentaire de façon ludique.",
+    "description": "Care permet de prendre conscience da sa consommation alimentaire, de la comparer dans le temps, et d'en examiner les détails en fonction des pôles représentatifs de la consommation. Chaque utilisateur aura chaque semaine, un nouveau coeur : forme graphique de sa consommation alimentaire.",
+    "tags": [
+      "Consommation",
+      "alimentaire",
+      "visualisation"
+    ],
+    "website": "",
+    "status": "Prototype",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/care/"
+  },
+  {
+    "typology": "Decision et action",
+    "domains": [
+      "Decision et action",
+      "Connaissance de soi"
+    ],
+    "title": "PiggyBank",
+    "slogan": "Retrouver l'argent de vos envies",
+    "description": "PiggyBank permet d'avoir un retour d'informations sur ses dépenses au quotidien.<br>L'application lui fournit une métrique afin de pouvoir économiser petit à petit tout au long du mois.<br>L'expérience est rendue confortable grâce à une ergonomie poussée et un nombre d'actions simplifiées.<br><br>Dans un second temps, avec cet argent économisé, l'utilisateur pourra concrétiser ses envies d'achat qu'il aura préalablement sauvegardées au sein de l'application sans perturber son équilibre financier.<br>À la manière d'un marque-page, les envies d'achat seront stockées dans l'application à l'intérieur d'un \"dashboard des envies\".",
+    "tags": [
+      "Finance",
+      "budget",
+      "achat",
+      "gestion"
+    ],
+    "website": "",
+    "status": "Prototype",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/piggybank/"
+  },
+  {
+    "typology": "Conscience",
+    "domains": [
+      "Conscience",
+      "Connaissance de soi"
+    ],
+    "title": "BeGreen",
+    "slogan": "Vivez mieux, vivez sain !",
+    "description": "BeGreen vous permet de mesurer, analyser et surtout améliorer vos émissions de CO2.<br>Grâce à vos données personnelles, vous pouvez maintenant accéder précisément, en temps réel et de manière détaillée à chacune des sources de votre empreinte écologique. Fixez-vous des objectifs, atteignez-les, et agissez de manière responsable avec BeGreen.",
+    "tags": [
+      "Ecologie",
+      "environnement",
+      "consommation",
+      "CO2",
+      "visualisation"
+    ],
+    "website": "",
+    "status": "Prototype",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/begreen/"
+  },
+  {
+    "typology": "Connaissance de soi",
+    "domains": [
+      "Connaissance de soi",
+      "Gestion"
+    ],
+    "title": "MesInfos Semantic Search",
+    "slogan": "MesInfos Semantic Search vous permet d'explorer vos données personnelles grâce à des requêtes en langage naturel, dans une interface enrichie par les données du Linked Open Data.",
+    "description": "MesInfos Semantic Search vous permet de trouver l'information que vous cherchez sans avoir à affiner une recherche avec de nombreux paramètres.<br>#1 \"Virements bancaires reçus en 2013 de la part de MaMutuelle\". <br>#2 \"Films que j'ai regardé avec pour acteur Leonardo Di Caprio.\"<br>#3 \"Appels reçus de plus d'une heure en 2014.\"<br>#4 \"Plus forte catégorie de dépense alimentaire ce mois-ci.\"<br>C'est aussi simple que cela!<br>De plus, vos données sont enrichies : retrouvez dans le cadre de l'exemple #2 la fiche biographique de Di Caprio, ses autres films, ses liens avec d'autres acteurs...",
+    "tags": [
+      "Moteur de recherche",
+      "exploration"
+    ],
+    "website": "",
+    "status": "Prototype",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/mesinfos-semantic-search/"
+  },
+  {
+    "typology": "Gestion",
+    "domains": [
+      "Gestion",
+      "Connaissance de soi"
+    ],
+    "title": "MesObjets",
+    "slogan": "Avec MesObjets, je crée un inventaire de mes objets. \nJe centralise mes preuves d'achats dans mon Cozy et j'agrège les informations disponibles grâce à  Respublica.io et l'Open Linked Data",
+    "description": "Avec MesObjets, un individu peut fournir rapidement et facilement la preuve qu'il a acheté tel ou tel objet.<br>Plus besoins de stresser pour savoir si j'ai gardé mon ticket de caisse pour échanger un produit dans un magasin.<br>En cas de sinistre ou de vol, j'ai accès rapidement à un inventaire de mes objets, et je peux en fournir les preuves d'achats<br>Si je désire vendre un bien je peux facilement prouver que je l'ai bien acheté<br>Si je veux donner un avis sur un objet je peux prouver que je dispose de l'objet<br><br>Exemple pour bien comprendre<br>\"Imaginons que mon habitation soit victime d'un incendie et que le dossier papier contenant l'ensemble de mes factures ait brulé durant l'incendie, il me sera très difficile de prouver que je disposait d'une veste en cuir d'une valeur de 3500 euros. Grâce à MesObjets je pourrais fournir à mon assureur la liste de l'ensemble de mes objets ainsi que leur justificatif d'achat.<br><br>Par ailleurs, l'application vise à intégrer nos objets aux réseaux des Linked Open Data via la plateforme (en construction) Respublica.io et ses pairs : WikiData, OpenDataProduct...<br>En récupérant un identifiant unique - un code barre, un ISBN, un identifiant WikiData - l'utilisateur aura potentiellement accès à l'information sur le producteur de l'objet, la composition de l'objet, d'éventuelle alerte sécurité ou sanitaire sur l'objet. A l'avenir, on peut imaginer que chaque producteur publie les données liés à l'objet et les actualises régulièrement. D'autres acteurs pourraient également venir relier des données à cet objet : les associations de consommateurs ou de défense de l'environnement par exemple.<br><br>Ayant un identifiant unique reconnaissable sur le réseau, les données sont réutilisable dans plusieurs applications : les prochains développements mettront l'accent sur la possibilité de republier une offre de vente, location, prêt ou don de l'objet d'un simple clic!",
+    "tags": [
+      "Objet",
+      "preuve d'achat",
+      "garantie",
+      "assurance",
+      "sinistre"
+    ],
+    "website": "",
+    "status": "Prototype",
+    "linkOnMesInfosSite": "http://mesinfos.fing.org/mesobjets/"
+  }
+]
