@@ -6,7 +6,7 @@ function pug_escape(e){var a=""+e,t=pug_match_html.exec(a);if(!t)return e;var r,
 var pug_has_own_property=Object.prototype.hasOwnProperty;
 var pug_match_html=/["&<>]/;
 function pug_rethrow(n,e,r,t){if(!(n instanceof Error))throw n;if(!("undefined"==typeof window&&e||t))throw n.message+=" on line "+r,n;try{t=t||require("fs").readFileSync(e,"utf8")}catch(i){pug_rethrow(n,null,r)}var a=3,o=t.split("\n"),h=Math.max(r-a,0),s=Math.min(o.length,r+a),a=o.slice(h,s).map(function(n,e){var t=e+h+1;return(t==r?"  > ":"    ")+t+"| "+n}).join("\n");throw n.path=e,n.message=(e||"Pug")+":"+r+"\n"+a+"\n\n"+n.message,n}
-function pug_style(r){if(!r)return"";if("object"==typeof r){var e="",t="";for(var n in r)pug_has_own_property.call(r,n)&&(e=e+t+n+":"+r[n],t=";");return e}return r=""+r,";"===r[r.length-1]?r.slice(0,-1):r}function templatelistpopin(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"servicessdlistpopin.pug":".listpopin(class=position.orientation, data-title=title, style=\"left:\" + position.left + \"; top:\" + position.top \";\")\n  .close ×\n  .header(title=title)\n    img(src=\"img\u002Fservicessd\u002F\" + title + \".jpg\")\n\n  .list\n    if (byType.conceptMesInfos)\n      h4 Concepts MesInfos\n        ul\n          each item in byType.conceptMesInfos\n            li\n              a(href=item.linkOnMesInfosSite, title=item.slogan, target=\"_blank\")= item.title\n\n    if (byType.prototypeMesInfos)\n      h4 Prototypes MesInfos\n        ul\n          each item in byType.prototypeMesInfos\n            li\n              a(href=item.linkOnMesInfosSite, title=item.slogan, target=\"_blank\")= item.title\n\n    if (byType.usecase)\n      h4 Usecases (en)\n        ul\n          each item in byType.usecase\n            li(data-title=item.title)\n              span= item.title\n"};
+function pug_style(r){if(!r)return"";if("object"==typeof r){var e="",t="";for(var n in r)pug_has_own_property.call(r,n)&&(e=e+t+n+":"+r[n],t=";");return e}return r=""+r,";"===r[r.length-1]?r.slice(0,-1):r}function templatelistpopin(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"servicessdlistpopin.pug":".listpopin(class=position.orientation, data-title=title, style=\"left:\" + position.left + \"; top:\" + position.top \";\")\n  .close ×\n  .header(title=title)\n    img(src=\"img\u002Fservicessd\u002F\" + title + \".jpg\")\n\n  .list\n    if (byType.conceptMesInfos)\n      h4 Concepts MesInfos\n      ul\n        each item in byType.conceptMesInfos\n          li\n            a(href=item.linkOnMesInfosSite, title=item.slogan, target=\"_blank\")= item.title\n\n    if (byType.prototypeMesInfos)\n      h4 Prototypes MesInfos\n      ul\n        each item in byType.prototypeMesInfos\n          li\n            a(href=item.linkOnMesInfosSite, title=item.slogan, target=\"_blank\")= item.title\n\n    if (byType.usecase)\n      h4 Usecases (en)\n      ul\n        each item in byType.usecase\n          li(data-title=item.title)\n            span= item.title\n"};
 ;var locals_for_with = (locals || {});(function (byType, position, title) {;pug_debug_line = 1;pug_debug_filename = "servicessdlistpopin.pug";
 pug_html = pug_html + "\u003Cdiv" + (pug_attr("class", pug_classes(["listpopin",position.orientation], [false,true]), false, false)+pug_attr("data-title", title, true, false)+pug_attr("style", pug_style("left:" + position.left + "; top:" + position.top), true, false)+" ;=\";\"") + "\u003E";
 ;pug_debug_line = 2;pug_debug_filename = "servicessdlistpopin.pug";
@@ -24,7 +24,7 @@ if ((byType.conceptMesInfos)) {
 ;pug_debug_line = 8;pug_debug_filename = "servicessdlistpopin.pug";
 pug_html = pug_html + "\u003Ch4\u003E";
 ;pug_debug_line = 8;pug_debug_filename = "servicessdlistpopin.pug";
-pug_html = pug_html + "Concepts MesInfos";
+pug_html = pug_html + "Concepts MesInfos\u003C\u002Fh4\u003E";
 ;pug_debug_line = 9;pug_debug_filename = "servicessdlistpopin.pug";
 pug_html = pug_html + "\u003Cul\u003E";
 ;pug_debug_line = 10;pug_debug_filename = "servicessdlistpopin.pug";
@@ -59,14 +59,14 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = item.title) ? "" : pug_i
 
 }
 
-pug_html = pug_html + "\u003C\u002Ful\u003E\u003C\u002Fh4\u003E";
+pug_html = pug_html + "\u003C\u002Ful\u003E";
 }
 ;pug_debug_line = 14;pug_debug_filename = "servicessdlistpopin.pug";
 if ((byType.prototypeMesInfos)) {
 ;pug_debug_line = 15;pug_debug_filename = "servicessdlistpopin.pug";
 pug_html = pug_html + "\u003Ch4\u003E";
 ;pug_debug_line = 15;pug_debug_filename = "servicessdlistpopin.pug";
-pug_html = pug_html + "Prototypes MesInfos";
+pug_html = pug_html + "Prototypes MesInfos\u003C\u002Fh4\u003E";
 ;pug_debug_line = 16;pug_debug_filename = "servicessdlistpopin.pug";
 pug_html = pug_html + "\u003Cul\u003E";
 ;pug_debug_line = 17;pug_debug_filename = "servicessdlistpopin.pug";
@@ -101,14 +101,14 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = item.title) ? "" : pug_i
 
 }
 
-pug_html = pug_html + "\u003C\u002Ful\u003E\u003C\u002Fh4\u003E";
+pug_html = pug_html + "\u003C\u002Ful\u003E";
 }
 ;pug_debug_line = 21;pug_debug_filename = "servicessdlistpopin.pug";
 if ((byType.usecase)) {
 ;pug_debug_line = 22;pug_debug_filename = "servicessdlistpopin.pug";
 pug_html = pug_html + "\u003Ch4\u003E";
 ;pug_debug_line = 22;pug_debug_filename = "servicessdlistpopin.pug";
-pug_html = pug_html + "Usecases (en)";
+pug_html = pug_html + "Usecases (en)\u003C\u002Fh4\u003E";
 ;pug_debug_line = 23;pug_debug_filename = "servicessdlistpopin.pug";
 pug_html = pug_html + "\u003Cul\u003E";
 ;pug_debug_line = 24;pug_debug_filename = "servicessdlistpopin.pug";
@@ -143,6 +143,6 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = item.title) ? "" : pug_i
 
 }
 
-pug_html = pug_html + "\u003C\u002Ful\u003E\u003C\u002Fh4\u003E";
+pug_html = pug_html + "\u003C\u002Ful\u003E";
 }
 pug_html = pug_html + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";}.call(this,"byType" in locals_for_with?locals_for_with.byType:typeof byType!=="undefined"?byType:undefined,"position" in locals_for_with?locals_for_with.position:typeof position!=="undefined"?position:undefined,"title" in locals_for_with?locals_for_with.title:typeof title!=="undefined"?title:undefined));} catch (err) {pug_rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;}
