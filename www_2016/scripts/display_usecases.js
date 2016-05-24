@@ -23,32 +23,11 @@ var detailPopin = null;
 
 // Create popup
 
-var typologiesEN2FR = {
-  "Conscience": "Conscience",
-  "Self-knowledge": "Connaissance de soi",
-  "Control": "Contrôle",
-  "Management": "Gestion",
-  "Life experience": "Vivre une expérience",
-  "Decisions and Action": "Décision et action",
-  "Contribution": "Contribution",
-};
-
 // getJSON
 $(document).ready(function(){
 
-  $.getJSON(miConfig.usecasesUri, function(data) {
-      infos = data.map(function(usecase) {
-        usecase.type ='usecase';
-        usecase.typology = typologiesEN2FR[usecase.typology];
-        return usecase;
-      });
-
-      $.getJSON(miConfig.servicesMesInfosUri, function(data) {
-      infos = infos.concat(data.map(function(service) {
-          service.type = service.status.toLowerCase() + 'MesInfos' ;
-          return service;
-        }));
-      });
+  $.getJSON(miConfig.infosUri, function(data) {
+      infos = data;
   });
 
   // Set dimensions
@@ -237,8 +216,6 @@ openListPopin = function(filter) {
   }
   var list;
   list = filterList(filter);
-  groupByKey(list, 'type');
-
   console.log(list);
   list.position = POSITIONS[list.title];
 
@@ -487,24 +464,6 @@ filterList = function(filter) {
   });
   return list;
 };
-
-// Split list by values of given key, in by[Key] field.
-groupByKey = function(list, key) {
-  var byKey = 'by' + key[0].toUpperCase() + key.slice(1);
-  list[byKey] = {};
-
-  list.infos.forEach(function(info) {
-
-    var v = info[key];
-    if (!v) { return; }
-
-    if (!list[byKey][v]) {
-      list[byKey][v] = [];
-    }
-    list[byKey][v].push(info);
-  });
-};
-
 
 groupByKeyword = function(list) {
   list.byKeyword = {};

@@ -132,6 +132,44 @@
         };
 
       </script>
-      <script src="scripts/display_servicessd.js"></script>
+      <script src="scripts/display.js"></script>
+      <script>
+        // Create popup
+        var typologiesEN2FR = {
+          "Conscience": "Conscience",
+          "Self-knowledge": "Connaissance de soi",
+          "Control": "Contrôle",
+          "Management": "Gestion",
+          "Life experience": "Vivre une expérience",
+          "Decisions and Action": "Décision et action",
+          "Contribution": "Contribution",
+        };
+
+        getJSON = function() {
+          $.getJSON(miConfig.usecasesUri, function(data) {
+              infos = data.map(function(usecase) {
+                usecase.type ='usecase';
+                usecase.typology = typologiesEN2FR[usecase.typology];
+                return usecase;
+              });
+
+              $.getJSON(miConfig.servicesMesInfosUri, function(data) {
+              infos = infos.concat(data.map(function(service) {
+                  service.type = service.status.toLowerCase() + 'MesInfos' ;
+                  return service;
+                }));
+              });
+          });
+        };
+
+        var basePrepareListForPopin = prepareListForPopin;
+        prepareListForPopin = function(filter) {
+          var list = basePrepareListForPopin(filter);
+          console.log("here3");
+          return groupByKey(list, 'type');
+
+        };
+
+      </script>
   </body>
 </html>
