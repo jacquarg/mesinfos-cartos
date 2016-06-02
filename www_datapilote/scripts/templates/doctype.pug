@@ -1,0 +1,27 @@
+mixin row(d)
+  tr
+    td.nom= d.Nom
+    td.description= d.Description
+    td.exemple= d.Exemple 
+    td.format= d.Format
+
+h3= DocType
+.providers
+  each   v, k in providers
+    - console.log(k)
+    img(src="img/typologies/logo_" + k.toLowerCase() + ".png", title=k)
+
+p= Description
+p= Documentation
+
+table
+  thead
+    tr
+      th Donnée
+      th Description
+      th Exemple
+      th Format
+  tbody
+    each d in data
+      if (d)
+        +row(d)

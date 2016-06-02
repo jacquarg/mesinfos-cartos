@@ -1,0 +1,101 @@
+{
+  "Liste des docTypes" : [
+{
+      "DocType" : "EDFClient",
+      "Description" : "TODO",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "PaymentSchedule",
+      "Description" : "TODO",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "ConsumptionStatement",
+      "Description" : "TODO",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "Invoice",
+      "Description" : "TODO --> Bill !?",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "Contract",
+      "Description" : "",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "Message",
+      "Description" : "Un email",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "Contact",
+      "Description" : "Un contact de mon carrnet d'adresses",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "Event",
+      "Description" : "Un évènement dans l'agenda.",
+      "Documentation" : "Évènements récurrents, cf : https://github.com/cozy/cozy-calendar/wiki/Generalities-about-calendar-components,-iCal-and-date-handling-in-js",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "File",
+      "Description" : "Un descripteur de fichier",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "Folder",
+      "Description" : "Un dossier",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "Album",
+      "Description" : "Un album photo",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "Photo",
+      "Description" : "Une photo dans un album photo.",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "BankOperation",
+      "Description" : "Mes transactions bancaires. Les écritures sur mes comptes en banque (date, montant, ...).",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    },
+{
+      "DocType" : "Bankaccount",
+      "Description" : "Mes comptes bancaires. (banque, intitulé, ...).",
+      "Documentation" : "",
+      "Réutilisations" : "",
+      "Jeu_de_synthèse" : ""
+    }
+  ]}

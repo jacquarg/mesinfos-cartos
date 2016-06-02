@@ -1,0 +1,11 @@
+h3= typology
+ul.doctype
+  each docType in docTypes
+    li
+        span.toggle +
+        = docType.DocType
+        ul.data
+            each data in docType.data
+                if data
+                    li=data.Nom
+

@@ -10,6 +10,7 @@ function fetchFromSpreadsheet(spreadSheetUri, parser, callback) {
 
     sheetrock({
         url: spreadSheetUri,
+        labels: ['Nom', 'Description', 'Exemple', 'Typologie', 'DocType'],
         callback: function (error, options, response) {
             if (error) { return callback(error); }
             var infos, err;
@@ -25,11 +26,12 @@ function fetchFromSpreadsheet(spreadSheetUri, parser, callback) {
     });
 }
 
+
+
 var rows2Data = function(rows) {
     // Pour chaque ligne
     // sauter les ligne à ignorer,
-    // champs :
-    // typologie, domaine, description, support, accès, facilité d'accès, exemple de supports, referencial
+    console.log('toto');
     console.log(rows);
 
     var infos = [], row, info;
@@ -40,8 +42,11 @@ var rows2Data = function(rows) {
 
         // parse country
         info = {
-            typology: row[5].trim(),
-            title: row[0].trim(),
+            typology: row[3].trim(),
+            name: row[0].trim(),
+            description: row[1].trim(),
+            exemple: row[2].trim(),
+
             fields: row[6].replace(/\n/g, '').split('*'),
             availability: row[3].trim(),
             providers: [row[1].trim()],
@@ -214,3 +219,44 @@ var rows2InfoNames = function(rows) {
     }
     return infos
 }
+
+var rows2DataOld = function(rows) {
+    // Pour chaque ligne
+    // sauter les ligne à ignorer,
+    // champs :
+    // typologie, domaine, description, support, accès, facilité d'accès, exemple de supports, referencial
+    console.log(rows);
+
+    var infos = [], row, info;
+    // skip first (heading) line
+    for (i=1; i<rows.length; i++) {
+        row = rows[i].cellsArray;
+        if (row[13]) { continue; }
+
+        // parse country
+        info = {
+            typology: row[5].trim(),
+            title: row[0].trim(),
+            fields: row[6].replace(/\n/g, '').split('*'),
+            availability: row[3].trim(),
+            providers: [row[1].trim()],
+        };
+
+        infos.push(info);
+
+    }
+    // group by title :
+
+    var res = [];
+    var mapping = {};
+    infos.forEach(function(info) {
+        if (info.title in mapping) {
+            mapping[info.title].providers.push(info.providers[0]);
+        } else {
+            mapping[info.title] = info;
+            res.push(info);
+        }
+    });
+
+    return res;
+};

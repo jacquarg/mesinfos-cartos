@@ -101,7 +101,6 @@ $(document).ready(function(){
       }
     }
 
-    console.log('toto');
     console.log(providersByAreas);
     $('.provider').addClass('grayed');
     for (var label in providersByAreas) {
