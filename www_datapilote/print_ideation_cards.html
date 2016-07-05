@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"-->
+    <title>Données Pilote MesInfos</title>
+    <script src="scripts/vendors/jquery-1.9.1.js"></script>
+    <script src="scripts/vendors/jquery.textfill.min.js"></script>
+
+    <script src="scripts/vendors/jquery.ba-throttle-debounce.min.js"></script>
+
+    <!-- <script src="scripts/vendors/FileSaver.min.js"></script> -->
+
+
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" type="text/css">
+    <link href="styles/ideationcards.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/templates/ideationcard.js"></script>
+ </head>
+
+  <body>
+    <script type="text/javascript">
+      var miConfig = {
+        areas: [
+              {
+                label: "Caractéristiques",
+                rMin: 320,
+                rMax: 390,
+                tMin: 0,
+                tMax: 6.14,
+                position: {left: '11.5%', top: '11.5%', height: '77%' },
+                headerIconPath: 'img/typologies/picto_caracteristiques.png',
+              },
+              {
+                label: "Center",
+                rMin: 0.1,
+                rMax: 59.9,
+                tMin: 0,
+                tMax: 6.14,
+                position: {left: "44%", top: "44%", height: '12%'},
+                color: {r: 0x59, g: 0xB3, b: 0x60},
+                headerIconPath: 'img/typologies/picto_profil.png',
+              },
+              {
+                label: "Déplacement",
+                rMin: 60,
+                rMax: 305,
+                tMin: 0,
+                tMax: 1.04,
+                position: {left: "50%", top: "22.1%", height: '27.9%'},
+                color: {r: 0x3F, g: 0xA8, b: 0x7B},
+                headerIconPath: 'img/typologies/picto_deplacement.png',
+              },
+              {
+                label: "Domicile",
+                rMin: 60,
+                rMax: 305,
+                tMin: 1.05,
+                tMax: 2.1,
+                position: {left: "34.1%", top: "18%", height: '32.1%'},
+                color: {r: 0xB7, g: 0xDB, b: 0x6C},
+                headerIconPath: 'img/typologies/picto_domicile.png',
+              },
+              {
+                label: "Finance",
+                rMin: 60,
+                rMax: 305,
+                tMin: 2.1,
+                tMax: 3.14,
+                position: {left: "18.1%", top: "22.3%", height: "27.9%"},
+                color: {r: 0x75, g: 0xCB, b: 0x82},
+                headerIconPath: 'img/typologies/picto_finance.png',
+
+              },
+              {
+                label: "Communication",
+                rMin: 60,
+                rMax: 305,
+                tMin: 3.14,
+                tMax: 4.19,
+                position: {left: "18%", top: "50%", height: "27.8%"},
+                color: {r: 0x9B, g: 0xDB, b: 0x6C},
+                headerIconPath: 'img/typologies/picto_communication.png',
+              },
+              {
+                label: "Profil",
+                rMin: 60,
+                rMax: 305,
+                tMin: 4.19,
+                tMax: 5.23,
+                position: {left: "34%", top: "50%", height: "32.1%"},
+                color: {r: 0x59, g: 0xB3, b: 0x60},
+                headerIconPath: 'img/typologies/picto_profil.png',
+              },
+              {
+                label: "Loisir",
+                rMin: 60,
+                rMax: 305,
+                tMin: 5.23,
+                tMax: 6.28,
+                position: {left: "50%", top: "50%", height: "27.8%"},
+                color: {r: 0x2C, g: 0x85, b: 0x6D},
+                headerIconPath: 'img/typologies/picto_loisir.png',
+
+              },
+            ],
+        };
+        var AREAS_BY_LABEL = miConfig.areas.reduce(function(agg, area) {
+          area.providers = {};
+          agg[area.label] = area;
+          return agg;
+        }, {});
+
+    </script>
+    <script>
+    var drawCards = $.getJSON('data/list_data.json', function(data) {
+      var subsets = data["Liste des données"].filter(function(d) {
+        return d && d.Nom && d.Typologie && d.DocType && d.Nature && d.Nature === 'Subset' ;
+      });
+
+      subsets.forEach(function(data, index) {
+        data.typologyColor = AREAS_BY_LABEL[data.Typologie].color;
+        $('body').append(
+          '<div class="printcontainer' + index % 2 + '">' + 
+              templateideationcard(data)
+            + '</div>');
+          });
+        
+        // $("img").error(function(){ $(this).hide(); });
+            // $('h1.textfill').textfill({
+            //   maxFontPixels: 90,
+
+            // });
+            // $('.textfill.slogan').textfill({ maxFontPixels: 30, });
+            // $('.textfill.description').textfill({ maxFontPixels: 20, });
+
+            //   $('.textfill.category').textfill({ maxFontPixels: 20, });
+            //   $('.textfill.website').textfill({ maxFontPixels: 20, });
+        });
+
+      $(document).ready(drawCards);
+    </script>
+
+  </body>
+</html>

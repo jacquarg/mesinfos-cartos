@@ -3,19 +3,6 @@
 @media (max-width: 992) and (min-width: 750)
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 html {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -23,69 +10,45 @@ html {
   color: #666;   
 }
 
-a {
-  color: #0088cc;
-  text-decoration: none;
-}
-a:hover, a:focus {
-  color: #005580;
-  text-decoration: underline;
-}
-
-a:hover, a:active {
-  outline: 0;
-}
-
-h1 {
-  color: #aaaaaa;
-  font-family: "Grand Hotel", cursive;
-  font-size: 40px;
-  line-height: 41.5px;
-  margin: 0;
-  text-align: center;
-  margin-top: 33px;
- 
-  margin-top: 50px;
-  margin-bottom: 5px;
-}
-
-#period_filter {
-  font-size: 20px;
+.ideationcard {
+  position: relative;
+  width: 74mm;
+  height: 105mm;
+  border: 1px solid;
+  
   
 }
 
-
-#list_container {
-  /*! position: absolute; */
-  /*! top:100%; */
-  width:  200px;
-  /*! right:  0px; */
-  /*! margin-top: 30px; */
-  padding:  20px;
-  float: left;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background:  #F1F1F1;
+.typology {
+  color: white;
+  font-family: "Grand Hotel", cursive;
+  font-size: 8mm;
+  padding: 2mm;
 }
 
-#documentation h3 {
-  text-align: center;
-  font-family: 'Grand Hotel', cursive;
-  font-size: 50px;
-  color: #aaaaaa;
-  line-height: 41.5px;  
-}
-
-#documentation h4 {
+.name {
   margin: 0;
-  margin-top: 15px;
-  margin-bottom: 12px;
+  margin: 5mm;
+  text-align: center;
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 10mm;
   color: #555;
 }
 
+.description {
+  font-size: 4mm;
+  padding: 5mm;
+  line-height: 5mm;
+  
+}
+
+.holder {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  
+}
 #documentation ul.doctypes {
   /*font-family: gothamrndlight;*/
   font-family: gothamrnd, Arial, sans-serif;
@@ -164,22 +127,6 @@ h1 {
   margin-left:  10px;
 }
 
-#documentation ul.subsets li h4:after {
-  content: '◢';
-  font-size: 50%;
-  position: relative;
-  left: 8px;
-  bottom: 1px;  
-}
-
-#documentation ul.subsets .expanded h4:after {
-  content: '▲';
-  font-size: 50%;
-  position: relative;
-  left: 8px;
-  bottom: 1px;  
-}
-
 #documentation ul.subsets li .detenteur {
   float: left;
   
@@ -199,7 +146,7 @@ h1 {
   margin: 20px 10px;
 }
 #documentation .subset {
-  width: 49%;
+  width: 55%;
   float: left;
   margin-bottom: 20px;
 }
@@ -210,7 +157,7 @@ h1 {
   padding: 0px;
 }
 #documentation .doctype {
-  width: 50%;
+  width: 44%;
   float: right;
 }
 
@@ -239,8 +186,7 @@ h1 {
 }
 #documentation .doctype p {
   /*! padding: 0px 10px; */  
-  margin:  0.5em;
-  font-size: 90%;
+  /*! margin:  0px; */
 }
 
 #documentation h5 {
@@ -248,16 +194,16 @@ h1 {
   /*font-family: gothamrndlight;*/
   font-family: gothamrnd, Arial, sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   margin:  0px 0px 10px 0px;
   /*! padding:  5px; */
 }
 
 #documentation h6 {
-  margin: 0.5em 0;
+  margin: 0.8em 0;
   /*! padding: 0px 10px; */
-  font-size:  13px;
+  font-size:  16px;
 }
 
 #documentation .doctype .similaires ul {
@@ -337,28 +283,6 @@ h1 {
   /*! width: 25%; */
 }
 
-#documentation tbody.compact tr.showmetadata td {
-  border: none;
-  font-size: 90%;
-  font-weight: normal;
-  color: #aaa;
-  background-color:#fdfdfd;
-  cursor: pointer;
-
-}
-
-#documentation tbody.expanded tr.showmetadata td {
-  border: none;
-}
-
-
-#documentation tbody.compact tr.metadata {
-  display: none;
-}
-
-#documentation tbody.expanded tr.metadata {
-}
-
 
 h2 {
   /*font-family: gothamrndlight;*/
@@ -410,7 +334,7 @@ h4 {
 }
 
 #workarea {
-  position: relative;
+  /*! position: absolute; */
   /*! height: 100%; */
   /*! left: 0px; */
   float: left;
@@ -594,11 +518,6 @@ img.grayed {
   right: 10px;
   bottom: 10px;
   height: 3%;
-}
-
-#credits #version {
-  height: 60%;
-  margin-bottom: 6px;
 }
 
 #credits #creditsbam {

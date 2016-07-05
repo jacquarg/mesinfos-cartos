@@ -5,17 +5,13 @@
     <!--meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"-->
     <title>Données Pilote MesInfos</title>
     <script src="scripts/vendors/jquery-1.9.1.js"></script>
-    <script src="scripts/vendors/jquery.textfill.min.js"></script>
 
-    <script src="scripts/vendors/jquery-ui.min.js"></script>
-    <script src="scripts/vendors/jquery.mousewheel.min.js"></script>
+    <script src="scripts/vendors/jquery.ba-throttle-debounce.min.js"></script>
 
-    <script src="scripts/vendors/async.js"></script>
-    <!-- <script src="scripts/vendors/FileSaver.min.js"></script> -->
-
-    <!-- <script src="scripts/vendors/sheetrock.min.js"></script> -->
-
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" type="text/css">
     <link href="styles/datapilote.css" rel="stylesheet" type="text/css" />
+
     <script src="scripts/templates/typology.js"></script>
     <script src="scripts/templates/doctype.js"></script>
 
@@ -41,21 +37,21 @@
 
   <body>
     <h1>Les données du pilote MesInfos
-      <select id='period_filter'>
-        <option value="2016-09">dès septembre 2016</option>
+      <!--select id='period_filter'>
+        <option value="2016-11">dès l'automne 2016</option>
         <option value="2017">présenties pour 2017</option>
         <option value="2020">de vos rèves</option>
-      </select>
+      </select-->
     </h1>
 
-
-
-    </div>
+    <div id="container" >
     <div id="workarea">
-    <div id="container">
+      <input title="Filtrer les données" type='text' id='word_filter'><span id='word_filter_submit' >Q</span>
+    <div id="map_container">
+
       <div id="fond" class="mapbg" ></div>
       <!-- <img id="fond" class="mapbg" src="img/typologies/20160425-carto_data_pilote_MI.png" /> -->
-      <img id="Caractéristiques" class="mapelem" src="img/typologies/caracteristiques.png" />
+      <!--img id="Caractéristiques" class="mapelem" src="img/typologies/caracteristiques.png" /-->
       <img id="Communication" class="mapelem" src="img/typologies/communication.png" />
       <img id="Déplacement" class="mapelem" src="img/typologies/deplacement.png" />
       <img id="Domicile" class="mapelem" src="img/typologies/domicile.png" />
@@ -71,19 +67,17 @@
 
     <div id='list_container'>
       <h2>Liste des données</h2>
-      <input title="Filtrer les données" type='text' id='word_filter'><span id='word_filter_submit' >Q</span>
       <div id='list_typologies'></div>
     </div>
 
-    <div id='documentation'>
+    <div id='documentation'></div>
+
     </div>
     
     <div id='credits'>
+        <span id='version'>rev 0.0.2</span>
         <img id='creditscc' src='img/credits_creativecommons.png' />
         <img id='creditsfing' src='img/credits_fing.png' />
-        <a href='res/SelfData_Usecases-20160422.pdf'>
-            <img id='print' src='img/print.png' target='blank' />
-        </a>
       </div>
 
 
@@ -181,9 +175,6 @@
             ],
         };
         miConfig.areas.forEach(function(area) {
-          console.log('toto');
-          console.log(
-          $('#' + area.label));
           $('#' + area.label)
             .css('top', area.position.top)
             .css('left', area.position.left)

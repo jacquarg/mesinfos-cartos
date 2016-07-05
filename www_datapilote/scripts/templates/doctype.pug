@@ -1,27 +1,53 @@
-mixin row(d)
-  tr
+mixin row(d, cls)
+  tr(class=cls)
     td.nom= d.Nom
     td.description= d.Description
-    td.exemple= d.Exemple 
-    td.format= d.Format
+    td.exemple= d.Exemple
+li
+  .toggle 
+    h4(id=Nom)= Nom
+    a.detenteur(href='#?Détenteur=' + Détenteur.toLowerCase(), title='Toutes les données de ' + Détenteur)
+      img(src="img/typologies/logo_" + Détenteur.toLowerCase() + ".png", title=Détenteur)
 
-h3= DocType
-.providers
-  each   v, k in providers
-    - console.log(k)
-    img(src="img/typologies/logo_" + k.toLowerCase() + ".png", title=k)
+  .details(style='display: none;')
+    .subset
+      p= Description
+      
+      ul.caracteristiques
+        li
+          b Fréquence :&nbsp;
+          = Fréquence
+        li
+          b Latence :&nbsp;
+          = Latence
+    .doctype
+      h5 DocType :&nbsp;
+        a(href='?DocType=' + DocType, title='Toutes les données du type ' + DocType)= DocType
 
-p= Description
-p= Documentation
+      p= docType.Description
 
-table
-  thead
-    tr
-      th Donnée
-      th Description
-      th Exemple
-      th Format
-  tbody
-    each d in data
-      if (d)
-        +row(d)
+      .similaires
+        h6 Du même type :
+        ul
+          each s in docType.subsets
+            li
+              a(href='?DocType=' + DocType + '#' + s.Nom)= s.Nom
+ 
+    table.data
+      thead
+        tr
+          th Donnée
+          th Description
+          th Exemple
+      tbody.compact
+        each d in data
+          if (d)
+            +row(d)
+        tr.showmetadata 
+          td Metadata
+          td ◢
+          td &nbsp;
+
+        each d in metadata
+          if (d)
+            +row(d, 'metadata')
