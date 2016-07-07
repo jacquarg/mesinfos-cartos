@@ -114,24 +114,30 @@
     </script>
     <script>
     var drawCards = $.getJSON('data/list_data.json', function(data) {
-      var subsets = data["Liste des données"].filter(function(d) {
+      var subsets = data["export"].filter(function(d) {
         return d && d.Nom && d.Typologie && d.DocType && d.Nature && d.Nature === 'Subset' ;
+      }).sort(function(a, b) {
+        return a.Nom > b.Nom ? 1 : -1;
       });
 
+      var container;
       subsets.forEach(function(data, index) {
         data.typologyColor = AREAS_BY_LABEL[data.Typologie].color;
-        $('body').append(
-          '<div class="printcontainer' + index % 2 + '">' + 
-              templateideationcard(data)
-            + '</div>');
-          });
-        
+        data.index = index + 1;
+        if (index % 8 == 0) {
+          container = $('<div class="printcontainer"></div>');
+          $('body').append(container);
+        }
+        container.append(templateideationcard(data));
+      });
+
+      $('.name').textfill({ maxFontPixels: 30, });
         // $("img").error(function(){ $(this).hide(); });
             // $('h1.textfill').textfill({
             //   maxFontPixels: 90,
 
             // });
-            // $('.textfill.slogan').textfill({ maxFontPixels: 30, });
+            
             // $('.textfill.description').textfill({ maxFontPixels: 20, });
 
             //   $('.textfill.category').textfill({ maxFontPixels: 20, });
@@ -140,6 +146,8 @@
 
       $(document).ready(drawCards);
     </script>
-
+    <!-- Credits : 
+    Frequency Gauge : Created by Catia Marsh Mallow from the Noun Project
+    -->
   </body>
 </html>

@@ -1,6 +1,10 @@
 .ideationcard
   .typology(style="background-color: rgb(" + typologyColor.r + "," + typologyColor.g + "," + typologyColor.b + ");")= Typologie
-  .name= Nom
-  img.holder(src="img/typologies/logo_" + Détenteur.toLowerCase() + ".png", title=Détenteur)
+  .name
+    span= Nom
+  img.holder(src="img/creationcard/logo_" + Détenteur.toLowerCase() + ".png", title=Détenteur)
   .description= Description
-  .frequency= Fréquence
+  .frequency
+    img(src='img/creationcard/frequency_gauge.svg')
+    span= Fréquence
+  .index= index 

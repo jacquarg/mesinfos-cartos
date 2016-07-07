@@ -618,6 +618,30 @@ img.grayed {
 #credits #print {
   height: 80%;
 }
+
+#feedback {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: #00A442;
+  border-radius: 2px;
+  padding: 0 5px 5px 5px;
+
+}
+
+#feedback img {
+  height: 20px;
+  position: relative;
+  top: 5px; 
+  margin-right: 5px;
+  /*! margin-top: 5px; */
+}
+
+#feedback span {
+  line-height: 12px;
+    color: white;
+}
+
 /* Popins */
 
 .listpopin .close, .detailpopin .close {

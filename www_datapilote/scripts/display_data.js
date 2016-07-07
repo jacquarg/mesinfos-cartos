@@ -296,15 +296,15 @@ drawList = function(byTypos) {
 
 drawDocumentation = function(byTypos) {
   $('#documentation').empty();
-  for (var typology in byTypos) {
+  var typos = Object.keys(byTypos).sort();
+  typos.forEach(function(typology) {
 
     var typoElem = $(templatelisttypology({ typology: typology }));
     $('#documentation').append(typoElem);
     byTypos[typology].forEach(function(instance) {
       typoElem.find('ul.subsets').append($(templatedetaildoctype(instance)));
     });
-    t = 'toto';
-  }
+  });
 
   $('.toggle').click(function(ev) {
     $(ev.currentTarget.parentElement).toggleClass('expanded');

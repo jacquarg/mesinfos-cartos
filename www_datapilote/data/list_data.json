@@ -443,8 +443,8 @@
       "Mise_à_disposition" : "2016-09"
     },
 {
-      "Nom" : "Coordonnées à la Maif",
-      "Description" : "Identification et moyen de contact : Nom, prénom, adresse, date de naissance, ...",
+      "Nom" : "Coordonnées chez la Maif",
+      "Description" : "Identification et moyen de contact du souscripteur : Nom, prénom, adresse, date de naissance, ...",
       "Exemple" : "",
       "Typologie" : "Profil",
       "DocType" : "Client",
@@ -457,7 +457,7 @@
     },
 {
       "Nom" : "Foyer",
-      "Description" : "Désigne les membres du foyer et leurs rôles dans le foyer",
+      "Description" : "Désigne les membres du foyer et leur rôle dans le foyer",
       "Exemple" : "",
       "Typologie" : "Profil",
       "DocType" : "Contact",
@@ -469,7 +469,7 @@
       "Mise_à_disposition" : "2016-09"
     },
 {
-      "Nom" : "Contrat d'assurance Maif",
+      "Nom" : "Contrats d'assurance Maif",
       "Description" : "Désigne le type de contrat d'assurance, son tarif, et les risques assurés.",
       "Exemple" : "",
       "Typologie" : "Finance",
@@ -482,7 +482,7 @@
       "Mise_à_disposition" : "2016-10"
     },
 {
-      "Nom" : "Véhicule assuré",
+      "Nom" : "Véhicules assurés",
       "Description" : "Qualifie le vehicule assuré (immatriculation, date de mise en circulation, modèle et marque)",
       "Exemple" : "",
       "Typologie" : "Déplacement",
@@ -495,7 +495,7 @@
       "Mise_à_disposition" : "2016-10"
     },
 {
-      "Nom" : "Habitation assurée",
+      "Nom" : "Habitations assurées",
       "Description" : "Qualifie l'habitat assuré (nombre de pièces, standing)",
       "Exemple" : "",
       "Typologie" : "Domicile",
@@ -508,7 +508,7 @@
       "Mise_à_disposition" : "2016-10"
     },
 {
-      "Nom" : "Modalité de paiement Maif",
+      "Nom" : "Modalités de paiement Maif",
       "Description" : "Qualifie le mode de paiement pour l'assuré (mensualité, RIB, échéancier, ...)",
       "Exemple" : "",
       "Typologie" : "Finance",
@@ -587,7 +587,7 @@
     },
 {
       "Nom" : "Coordonnées chez EDF",
-      "Description" : "Désigne notamment les éléments suivants : adresse, email, téléphone fixe et portable",
+      "Description" : "Identification et moyen de contact du souscripteur : adresse, email, téléphone fixe et portable",
       "Exemple" : "",
       "Typologie" : "Profil",
       "DocType" : "Client",
@@ -690,7 +690,7 @@
       "Mise_à_disposition" : "2016-10"
     },
 {
-      "Nom" : "Modalité de paiement EDF",
+      "Nom" : "Modalités de paiement EDF",
       "Description" : "Mode de paiement : mensualités, échéancier, RIB, date de paiement",
       "Exemple" : "",
       "Typologie" : "Finance",
@@ -1003,9 +1003,9 @@
     },
 {
       "Nom" : "Contact EDF commercial",
-      "Description" : "Coordonnée du service commercial EDF qui m'est attribué.",
+      "Description" : "Coordonnée du service commercial EDF qui m'est attribué (adresses postale, téléphone)",
       "Exemple" : "",
-      "Typologie" : "Communication",
+      "Typologie" : "Finance",
       "DocType" : "Contact",
       "Nature" : "Subset",
       "Format" : "",
@@ -1057,7 +1057,7 @@
       "Nom" : "Contact EDF dépannage",
       "Description" : "Numéro de téléphone de dépannage (électricité, gaz, ...)",
       "Exemple" : "",
-      "Typologie" : "Communication",
+      "Typologie" : "Domicile",
       "DocType" : "Contact",
       "Nature" : "Subset",
       "Format" : "",
@@ -1083,7 +1083,7 @@
       "Nom" : "Prochain relevé de compteur",
       "Description" : "Date du prochain relevé de compteur (approximative)",
       "Exemple" : "",
-      "Typologie" : "Communication",
+      "Typologie" : "Domicile",
       "DocType" : "Event",
       "Nature" : "Subset",
       "Format" : "",
@@ -1210,7 +1210,7 @@
       "Mise_à_disposition" : "2016-10"
     },
 {
-      "Nom" : "Consommation de Gaz",
+      "Nom" : "Consommations de Gaz",
       "Description" : "Relevé de consommation de gaz (semestriel)",
       "Exemple" : "",
       "Typologie" : "Domicile",
@@ -1223,7 +1223,7 @@
       "Mise_à_disposition" : "2016-10"
     },
 {
-      "Nom" : "Consommation d'électricité",
+      "Nom" : "Consommations d'électricité",
       "Description" : "Relevé de consommation d'électricité (semestriel)",
       "Exemple" : "",
       "Typologie" : "Domicile",
@@ -1379,7 +1379,7 @@
       "Mise_à_disposition" : "2016-10"
     },
 {
-      "Nom" : "Facture EDF",
+      "Nom" : "Factures EDF",
       "Description" : "Mes factures EDF (notamment de régularisation annuelle)",
       "Exemple" : "",
       "Typologie" : "Finance",
@@ -1387,7 +1387,7 @@
       "Nature" : "Subset",
       "Format" : "",
       "Détenteur" : "EDF",
-      "Fréquence" : "Mesuelle à Annuelle",
+      "Fréquence" : "Mensuelle à Annuelle",
       "Latence" : "24h",
       "Mise_à_disposition" : "2016-10"
     },
@@ -1470,7 +1470,7 @@
       "Mise_à_disposition" : "2016-10"
     },
 {
-      "Nom" : "Contrat gaz EDF",
+      "Nom" : "Contrats gaz EDF",
       "Description" : "Les caractéristiques principales de mon contrat de Gaz chez EDF",
       "Exemple" : "",
       "Typologie" : "Finance",
@@ -1483,7 +1483,7 @@
       "Mise_à_disposition" : "2016-10"
     },
 {
-      "Nom" : "Contrat électricité EDF",
+      "Nom" : "Contrats électricité EDF",
       "Description" : "Les caractéristiques principales de contrat d'électricité chez EDF",
       "Exemple" : "",
       "Typologie" : "Finance",
@@ -1887,7 +1887,7 @@
     },
 {
       "Nom" : "Historique de navigation",
-      "Description" : "titre de la page, date de consultation, URL",
+      "Description" : "Titre de la page, date de consultation, URL",
       "Exemple" : "",
       "Typologie" : "Loisir",
       "DocType" : "WebHistory",
@@ -2107,8 +2107,8 @@
       "Mise_à_disposition" : "2016-10"
     },
 {
-      "Nom" : "Donnée d'appel  téléphonique",
-      "Description" : "type d'appel (entrant, sortant, sms..), horodatage, numéro, position géographique pendant la communication",
+      "Nom" : "Données d'appel  téléphonique",
+      "Description" : "Type d'appel (entrant, sortant, sms..), horodatage, numéro, position géographique pendant la communication",
       "Exemple" : "",
       "Typologie" : "Communication",
       "DocType" : "PhoneCommunicationLog",
@@ -2355,7 +2355,7 @@
     },
 {
       "Nom" : "VOD",
-      "Description" : "Les vidéo que j'ai commendé sur le portail Orange (date, prix, titre de la vidéo, ...)",
+      "Description" : "Les vidéos que j'ai commendées sur le portail Orange (date, prix, titre de la vidéo, ...)",
       "Exemple" : "",
       "Typologie" : "Loisir",
       "DocType" : "VideoStream",
@@ -2368,7 +2368,7 @@
     },
 {
       "Nom" : "IPTV",
-      "Description" : "Les émission que j'ai visionné via ma LiveBox Orange (horodatage, chaine, ...)",
+      "Description" : "Les émissions que j'ai visionnées via ma LiveBox Orange (horodatage, chaine, ...)",
       "Exemple" : "",
       "Typologie" : "Loisir",
       "DocType" : "VideoStream",
@@ -2407,7 +2407,7 @@
     },
 {
       "Nom" : "EMail",
-      "Description" : "Un email, parmis les comptes emails configurés dans Cozy",
+      "Description" : "Un email, parmi les comptes emails configurés dans Cozy (émetteur, destinataires, objet, corps du message, pièces jointes, horodatage, ...)",
       "Exemple" : "",
       "Typologie" : "Communication",
       "DocType" : "Message",
@@ -2966,7 +2966,7 @@
     },
 {
       "Nom" : "Mon agenda",
-      "Description" : "Un évènement des agendas de mon Cozy",
+      "Description" : "Un événement des agendas de mon Cozy",
       "Exemple" : "",
       "Typologie" : "Communication",
       "DocType" : "Event",
@@ -3199,7 +3199,7 @@
       "Mise_à_disposition" : "2014"
     },
 {
-      "Nom" : "Fichier dans mon Cozy",
+      "Nom" : "Fichiers dans mon Cozy",
       "Description" : "Un fichier, que j'ai placé dans mon Cozy (image, pdf, ...)",
       "Exemple" : "",
       "Typologie" : "Loisir",
@@ -3667,7 +3667,7 @@
       "Mise_à_disposition" : "2015-07"
     },
 {
-      "Nom" : "Photo",
+      "Nom" : "Photos",
       "Description" : "Une photo, sauvegardée sur mon Cozy",
       "Exemple" : "",
       "Typologie" : "Loisir",
@@ -3810,8 +3810,8 @@
       "Mise_à_disposition" : "2016-08"
     },
 {
-      "Nom" : "Opération bancaire",
-      "Description" : "Sur un de mes comptes, que je suis grace à l'application Kresus.",
+      "Nom" : "Opérations bancaires",
+      "Description" : "Mes relevé de comptes bancaires (libellé, date, montant pour chaque opération), que je récupère auprès de ma banque, et visualise grace à l'application Cozy Kresus.",
       "Exemple" : "",
       "Typologie" : "Finance",
       "DocType" : "BankOperation",
@@ -4291,8 +4291,8 @@
       "Mise_à_disposition" : "2014"
     },
 {
-      "Nom" : "Trace d'usage",
-      "Description" : "Trace d'usage du Cozy",
+      "Nom" : "Traces d'usage",
+      "Description" : "Trace d'usage du Cozy, notamment récolté - avec accord de l'utilisateur - pour la recherche dans le PIlote MesInfos (application utilisée, horodatage, ...)",
       "Exemple" : "",
       "Typologie" : "Loisir",
       "DocType" : "UseTracker",
@@ -4369,8 +4369,8 @@
       "Mise_à_disposition" : "2015"
     },
 {
-      "Nom" : "Trace d'activité RescueTime",
-      "Description" : "Activité, tracé avec le service Rescue Time.",
+      "Nom" : "Traces d'activité RescueTime",
+      "Description" : "Activité, tracée avec le service Rescue Time.",
       "Exemple" : "",
       "Typologie" : "Loisir",
       "DocType" : "RescueTimeActivity",
@@ -4474,7 +4474,7 @@
     },
 {
       "Nom" : "Données  sommeil",
-      "Description" : "Données récolté via un objet connecté Jawbone",
+      "Description" : "Données récoltées via un objet connecté Jawbone",
       "Exemple" : "",
       "Typologie" : "Loisir",
       "DocType" : "Sleep",
@@ -4786,7 +4786,7 @@
     },
 {
       "Nom" : "Mon poids",
-      "Description" : "Mon poids, récolté par une balance connecté",
+      "Description" : "Mon poids, récolté par une balance connectée",
       "Exemple" : "",
       "Typologie" : "Loisir",
       "DocType" : "Weight",
@@ -5046,7 +5046,7 @@
     },
 {
       "Nom" : "Factures de téléphone",
-      "Description" : "Mes factures de téléphone, scrapper chez Bouygues, SFR, Free, Orange, Sosh, Virgin Mobile.",
+      "Description" : "Mes factures de téléphone, scrappées chez Bouygues, SFR, Free, Orange, Sosh, Virgin Mobile.",
       "Exemple" : "",
       "Typologie" : "Finance",
       "DocType" : "Bill",
@@ -5058,8 +5058,8 @@
       "Mise_à_disposition" : "2015"
     },
 {
-      "Nom" : "Facture Internet",
-      "Description" : "Mes factures internet, scrappée chez Bouyges, Free, ...",
+      "Nom" : "Factures Internet",
+      "Description" : "Mes factures internet, scrappées chez Bouyges, Free, ...",
       "Exemple" : "",
       "Typologie" : "Finance",
       "DocType" : "Bill",
