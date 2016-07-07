@@ -623,10 +623,14 @@ img.grayed {
   position: fixed;
   top: 0px;
   right: 0px;
-  background-color: #00A442;
+  background-color: #00A44280;
   border-radius: 2px;
   padding: 0 5px 5px 5px;
+  cursor: pointer;
+}
 
+#feedback.expanded {
+padding: 10px;
 }
 
 #feedback img {
@@ -640,6 +644,16 @@ img.grayed {
 #feedback span {
   line-height: 12px;
     color: white;
+}
+
+#feedback.expanded iframe {
+  display: block;
+}
+
+#feedback iframe {
+  display: none;
+  border: none;
+  margin-top: 10px;
 }
 
 /* Popins */

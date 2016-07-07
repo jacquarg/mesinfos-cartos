@@ -83,11 +83,33 @@
       </div>
 
       <div id='feedback'>
-        <a href='https://etherpad.fr/p/Commentaires_carto_donn%C3%A9es_pilote_MesInfos' target='_blank' >
         <img src='img/feedback.svg' ><span title='Commentaire, idées, réactions' >Réactions</span>
-        </a>
-      </div>
+      </a>
+      <!--
+       href='https://annuel.framapad.org/p/Commentaires_carto_donn%C3%A9es_pilote_MesInfos' target='_blank' >
+      <iframe id='feedbackframe' name='embed_readwrite' src='https://annuel.framapad.org/p/Commentaires_carto_donn%C3%A9es_pilote_MesInfos?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>
+      -->
+      <script type="text/javascript">//<![CDATA[
+        // Feedback
+        function clickFeedBack(ev) {
+          // small screens
+          if ($(window).width() < 500) {
+            window.open('https://annuel.framapad.org/p/Commentaires_carto_donn%C3%A9es_pilote_MesInfos');
+            return;
+          }
 
+          // Else enought space to open as overlay.
+          var feedbackElem = $(ev.currentTarget);
+          feedbackElem.toggleClass('expanded');
+
+          if (feedbackElem.children('iframe').length === 0) {
+            feedbackElem.append("<iframe id='feedbackframe' name='embed_readwrite' src='https://annuel.framapad.org/p/Commentaires_carto_donn%C3%A9es_pilote_MesInfos?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>");
+          }
+        }
+
+        $('#feedback').click(clickFeedBack);
+        //]]>
+      </script>
 
       <script>
         window.miConfig = {
