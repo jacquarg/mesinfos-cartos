@@ -1,0 +1,25 @@
+mixin usecaselist(list) 
+  ul
+    each item in list
+      li(data-title=item.Title)
+        if item.linkOnly
+          a(href=item.Website, target="_blank")= item.Title
+        else
+          span= item.Title
+
+.usecaselist
+  h2= longLabel
+  img.usecasetitle(src="img/usecases/" + title + ".jpg")
+
+  .list
+    if (byStatus.operational)
+      h4 Currently operational
+      +usecaselist(byStatus.operational)
+
+    if (byStatus.under_development)
+      h4 Under development
+      +usecaselist(byStatus.under_development)
+
+    if (byStatus.idea)
+      h4 Just an idea or a scenario
+      +usecaselist(byStatus.idea)

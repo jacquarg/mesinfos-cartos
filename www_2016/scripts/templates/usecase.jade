@@ -4,33 +4,50 @@
     h1.textfill
       span= Title
 
+  if status !== 'operational'
+   .status
+     img(src="img/usecases/#{status}.png")
+
   .countries
-        each country in countries
-           img(src=country.flagURI, title=country.name)
+    each country in countries
+      img(src=country.flagURI, title=country.name)
       
   .usecase-main
-    .slogan.textfill
-        span= Slogan
+    if Slogan___Tweet_length_description
+      .slogan.textfill
+        span= Slogan___Tweet_length_description
 
     h3 Description
-    .description.textfill
-        span!= locals['Long description']
-    
-  .usecase-right
-    h3 Use Case category
-    .domains
-        img(src='img/usecases/'+ domain + '.jpg', title=locals['Use Case category'])
+    .descriptioncontainer
+      if Long_description
+        .description.textfill
+          span!= Long_description
 
-    h3 Tags
-    .category.textfill
-      each tag in tags
-        span= tag
+      if Who_offers__or_could_offer__the_service_
+        .whooffers
+          span.h4 Who offers the service:
+          span &nbsp;
+          span= Who_offers__or_could_offer__the_service_
+
+      if Where_is_the_economic_value___What_is_the_business_model_
+        .businessmodel
+          span.h4 Business model:
+          span &nbsp;
+          span= Where_is_the_economic_value___What_is_the_business_model_
+
+  .usecase-right
+    h3 Category
+    .domains
+        img(src='img/usecases/'+ domain + '.jpg', title=Use_Case_category)
+
+    if tags
+      h3 Tags
+      .tags.textfill
+        span= Tags
 
     h3 Website
     .website.textfill
-        span= Website
+      span= Website
 
-    //- h3 Tags
-    //- h3 Type
-    //- p= type
-    //- h3 Resources
+      if Link_file_if_necessary
+        a(href=Link_file_if_necessary) Resources

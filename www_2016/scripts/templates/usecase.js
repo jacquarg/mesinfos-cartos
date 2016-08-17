@@ -1,103 +1,316 @@
-function pug_attr(t,e,n,r){if(e===!1||null==e||!e&&("class"===t||"style"===t))return"";if(e===!0)return" "+(r?t:t+'="'+t+'"');if("function"==typeof e.toISOString)e=e.toISOString();else if("string"!=typeof e&&(e=JSON.stringify(e),!n&&-1!==e.indexOf('"')))return" "+t+"='"+e.replace(/'/g,"&#39;")+"'";return n&&(e=pug_escape(e))," "+t+'="'+e+'"'}
-function pug_escape(e){var a=""+e,t=pug_match_html.exec(a);if(!t)return e;var r,c,n,s="";for(r=t.index,c=0;r<a.length;r++){switch(a.charCodeAt(r)){case 34:n="&quot;";break;case 38:n="&amp;";break;case 60:n="&lt;";break;case 62:n="&gt;";break;default:continue}c!==r&&(s+=a.substring(c,r)),c=r+1,s+=n}return c!==r?s+a.substring(c,r):s}
-var pug_match_html=/["&<>]/;
-function pug_rethrow(n,e,r,t){if(!(n instanceof Error))throw n;if(!("undefined"==typeof window&&e||t))throw n.message+=" on line "+r,n;try{t=t||require("fs").readFileSync(e,"utf8")}catch(i){pug_rethrow(n,null,r)}var a=3,o=t.split("\n"),h=Math.max(r-a,0),s=Math.min(o.length,r+a),a=o.slice(h,s).map(function(n,e){var t=e+h+1;return(t==r?"  > ":"    ")+t+"| "+n}).join("\n");throw n.path=e,n.message=(e||"Pug")+":"+r+"\n"+a+"\n\n"+n.message,n}function usecase(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"usecase.pug":".usecase\n  a(href=website)\n    img(src=website + 'favicon.ico')\n    h1.textfill\n      span= title\n\n  .countries\n        each country in countries\n           img(src=country.flagURI, title=country.name)\n      \n  .usecase-main\n    .slogan.textfill\n        span= slogan\n\n    h3 Description\n    .description.textfill\n        span!= description\n    \n  .usecase-right\n    h3 Domain\n    .domains\n        img(src='img\u002Fusecases\u002F'+ domains[0] + '.jpg', title=domains[0])\n        if domains[1]\n            .domain2 \n              |+\n              = domains[1]\n\n    h3 Use Case category\n    .category.textfill\n        span= useCaseCategory\n\n    h3 Website\n    .website.textfill\n        span= website\n\n    \u002F\u002F- h3 Tags\n    \u002F\u002F- h3 Type\n    \u002F\u002F- p= type\n    \u002F\u002F- h3 Resources"};
-;var locals_for_with = (locals || {});(function (countries, description, domains, slogan, title, useCaseCategory, website) {;pug_debug_line = 1;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cdiv class=\"usecase\"\u003E";
-;pug_debug_line = 2;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Ca" + (pug_attr("href", website, true, false)) + "\u003E";
-;pug_debug_line = 3;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attr("src", website + 'favicon.ico', true, false)) + "\u002F\u003E";
-;pug_debug_line = 4;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Ch1 class=\"textfill\"\u003E";
-;pug_debug_line = 5;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cspan\u003E";
-;pug_debug_line = 5;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + (pug_escape(null == (pug_interp = title) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fh1\u003E\u003C\u002Fa\u003E";
-;pug_debug_line = 7;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cdiv class=\"countries\"\u003E";
-;pug_debug_line = 8;pug_debug_filename = "usecase.pug";
+function templateusecase(locals) {
+var jade_debug = [ new jade.DebugItem( 1, "usecase.jade" ) ];
+try {
+var buf = [];
+var jade_mixins = {};
+var jade_interp;
+;var locals_for_with = (locals || {});(function (Link_file_if_necessary, Long_description, Slogan___Tweet_length_description, Tags, Title, Use_Case_category, Website, Where_is_the_economic_value___What_is_the_business_model_, Who_offers__or_could_offer__the_service_, countries, domain, status, tags, undefined) {
+jade_debug.unshift(new jade.DebugItem( 0, "usecase.jade" ));
+jade_debug.unshift(new jade.DebugItem( 1, "usecase.jade" ));
+buf.push("<div class=\"usecase\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 2, "usecase.jade" ));
+buf.push("<a" + (jade.attr("href", Website, true, false)) + ">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 3, "usecase.jade" ));
+buf.push("<img" + (jade.attr("src", Website + 'favicon.ico', true, false)) + "/>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 4, "usecase.jade" ));
+buf.push("<h1 class=\"textfill\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 5, "usecase.jade" ));
+buf.push("<span>" + (jade.escape(null == (jade_interp = Title) ? "" : jade_interp)));
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</h1>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</a>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 7, "usecase.jade" ));
+if ( status !== 'operational')
+{
+jade_debug.unshift(new jade.DebugItem( 8, "usecase.jade" ));
+jade_debug.unshift(new jade.DebugItem( 8, "usecase.jade" ));
+buf.push("<div class=\"status\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 9, "usecase.jade" ));
+buf.push("<img" + (jade.attr("src", "img/usecases/" + (status) + ".png", true, false)) + "/>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.shift();
+}
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 11, "usecase.jade" ));
+buf.push("<div class=\"countries\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 12, "usecase.jade" ));
 // iterate countries
-var pug_obj0 = countries;
-if ('number' == typeof pug_obj0.length) {
+;(function(){
+  var $$obj = countries;
+  if ('number' == typeof $$obj.length) {
 
-  for (var pug_index0 = 0, pug_length0 = pug_obj0.length; pug_index0 < pug_length0; pug_index0++) {
-    var country = pug_obj0[pug_index0];
+    for (var $index = 0, $$l = $$obj.length; $index < $$l; $index++) {
+      var country = $$obj[$index];
 
-;pug_debug_line = 9;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attr("src", country.flagURI, true, false)+pug_attr("title", country.name, true, false)) + "\u002F\u003E";
+jade_debug.unshift(new jade.DebugItem( 12, "usecase.jade" ));
+jade_debug.unshift(new jade.DebugItem( 13, "usecase.jade" ));
+buf.push("<img" + (jade.attr("src", country.flagURI, true, false)) + (jade.attr("title", country.name, true, false)) + "/>");
+jade_debug.shift();
+jade_debug.shift();
+    }
+
+  } else {
+    var $$l = 0;
+    for (var $index in $$obj) {
+      $$l++;      var country = $$obj[$index];
+
+jade_debug.unshift(new jade.DebugItem( 12, "usecase.jade" ));
+jade_debug.unshift(new jade.DebugItem( 13, "usecase.jade" ));
+buf.push("<img" + (jade.attr("src", country.flagURI, true, false)) + (jade.attr("title", country.name, true, false)) + "/>");
+jade_debug.shift();
+jade_debug.shift();
+    }
+
   }
+}).call(this);
 
-} else {
-  var pug_length0 = 0;
-  for (var pug_index0 in pug_obj0) {
-    pug_length0++;
-    var country = pug_obj0[pug_index0];
-
-;pug_debug_line = 9;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attr("src", country.flagURI, true, false)+pug_attr("title", country.name, true, false)) + "\u002F\u003E";
-  }
-
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 15, "usecase.jade" ));
+buf.push("<div class=\"usecase-main\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 16, "usecase.jade" ));
+if ( Slogan___Tweet_length_description)
+{
+jade_debug.unshift(new jade.DebugItem( 17, "usecase.jade" ));
+jade_debug.unshift(new jade.DebugItem( 17, "usecase.jade" ));
+buf.push("<div class=\"slogan textfill\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 18, "usecase.jade" ));
+buf.push("<span>" + (jade.escape(null == (jade_interp = Slogan___Tweet_length_description) ? "" : jade_interp)));
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.shift();
 }
-
-pug_html = pug_html + "\u003C\u002Fdiv\u003E";
-;pug_debug_line = 11;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cdiv class=\"usecase-main\"\u003E";
-;pug_debug_line = 12;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cdiv class=\"slogan textfill\"\u003E";
-;pug_debug_line = 13;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cspan\u003E";
-;pug_debug_line = 13;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + (pug_escape(null == (pug_interp = slogan) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E";
-;pug_debug_line = 15;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Ch3\u003E";
-;pug_debug_line = 15;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "Description\u003C\u002Fh3\u003E";
-;pug_debug_line = 16;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cdiv class=\"description textfill\"\u003E";
-;pug_debug_line = 17;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cspan\u003E";
-;pug_debug_line = 17;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + (null == (pug_interp = description) ? "" : pug_interp) + "\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
-;pug_debug_line = 19;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cdiv class=\"usecase-right\"\u003E";
-;pug_debug_line = 20;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Ch3\u003E";
-;pug_debug_line = 20;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "Domain\u003C\u002Fh3\u003E";
-;pug_debug_line = 21;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cdiv class=\"domains\"\u003E";
-;pug_debug_line = 22;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attr("src", 'img/usecases/'+ domains[0] + '.jpg', true, false)+pug_attr("title", domains[0], true, false)) + "\u002F\u003E";
-;pug_debug_line = 23;pug_debug_filename = "usecase.pug";
-if (domains[1]) {
-;pug_debug_line = 24;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cdiv class=\"domain2\"\u003E";
-;pug_debug_line = 24;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + " ";
-;pug_debug_line = 25;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "+";
-;pug_debug_line = 26;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + (pug_escape(null == (pug_interp = domains[1]) ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E";
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 20, "usecase.jade" ));
+buf.push("<h3>");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 20, jade_debug[0].filename ));
+buf.push("Description");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</h3>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 21, "usecase.jade" ));
+buf.push("<div class=\"descriptioncontainer\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 22, "usecase.jade" ));
+if ( Long_description)
+{
+jade_debug.unshift(new jade.DebugItem( 23, "usecase.jade" ));
+jade_debug.unshift(new jade.DebugItem( 23, "usecase.jade" ));
+buf.push("<div class=\"description textfill\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 24, "usecase.jade" ));
+buf.push("<span>" + (null == (jade_interp = Long_description) ? "" : jade_interp));
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.shift();
 }
-pug_html = pug_html + "\u003C\u002Fdiv\u003E";
-;pug_debug_line = 28;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Ch3\u003E";
-;pug_debug_line = 28;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "Use Case category\u003C\u002Fh3\u003E";
-;pug_debug_line = 29;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cdiv class=\"category textfill\"\u003E";
-;pug_debug_line = 30;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cspan\u003E";
-;pug_debug_line = 30;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + (pug_escape(null == (pug_interp = useCaseCategory) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E";
-;pug_debug_line = 32;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Ch3\u003E";
-;pug_debug_line = 32;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "Website\u003C\u002Fh3\u003E";
-;pug_debug_line = 33;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cdiv class=\"website textfill\"\u003E";
-;pug_debug_line = 34;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + "\u003Cspan\u003E";
-;pug_debug_line = 34;pug_debug_filename = "usecase.pug";
-pug_html = pug_html + (pug_escape(null == (pug_interp = website) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";}.call(this,"countries" in locals_for_with?locals_for_with.countries:typeof countries!=="undefined"?countries:undefined,"description" in locals_for_with?locals_for_with.description:typeof description!=="undefined"?description:undefined,"domains" in locals_for_with?locals_for_with.domains:typeof domains!=="undefined"?domains:undefined,"slogan" in locals_for_with?locals_for_with.slogan:typeof slogan!=="undefined"?slogan:undefined,"title" in locals_for_with?locals_for_with.title:typeof title!=="undefined"?title:undefined,"useCaseCategory" in locals_for_with?locals_for_with.useCaseCategory:typeof useCaseCategory!=="undefined"?useCaseCategory:undefined,"website" in locals_for_with?locals_for_with.website:typeof website!=="undefined"?website:undefined));} catch (err) {pug_rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;}
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 26, "usecase.jade" ));
+if ( Who_offers__or_could_offer__the_service_)
+{
+jade_debug.unshift(new jade.DebugItem( 27, "usecase.jade" ));
+jade_debug.unshift(new jade.DebugItem( 27, "usecase.jade" ));
+buf.push("<div class=\"whooffers\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 28, "usecase.jade" ));
+buf.push("<span class=\"h4\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 28, jade_debug[0].filename ));
+buf.push("Who offers the service:");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 29, "usecase.jade" ));
+buf.push("<span>");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 29, jade_debug[0].filename ));
+buf.push("&nbsp;");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 30, "usecase.jade" ));
+buf.push("<span>" + (jade.escape(null == (jade_interp = Who_offers__or_could_offer__the_service_) ? "" : jade_interp)));
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.shift();
+}
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 32, "usecase.jade" ));
+if ( Where_is_the_economic_value___What_is_the_business_model_)
+{
+jade_debug.unshift(new jade.DebugItem( 33, "usecase.jade" ));
+jade_debug.unshift(new jade.DebugItem( 33, "usecase.jade" ));
+buf.push("<div class=\"businessmodel\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 34, "usecase.jade" ));
+buf.push("<span class=\"h4\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 34, jade_debug[0].filename ));
+buf.push("Business model:");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 35, "usecase.jade" ));
+buf.push("<span>");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 35, jade_debug[0].filename ));
+buf.push("&nbsp;");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 36, "usecase.jade" ));
+buf.push("<span>" + (jade.escape(null == (jade_interp = Where_is_the_economic_value___What_is_the_business_model_) ? "" : jade_interp)));
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.shift();
+}
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 38, "usecase.jade" ));
+buf.push("<div class=\"usecase-right\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 39, "usecase.jade" ));
+buf.push("<h3>");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 39, jade_debug[0].filename ));
+buf.push("Category");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</h3>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 40, "usecase.jade" ));
+buf.push("<div class=\"domains\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 41, "usecase.jade" ));
+buf.push("<img" + (jade.attr("src", 'img/usecases/'+ domain + '.jpg', true, false)) + (jade.attr("title", Use_Case_category, true, false)) + "/>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 43, "usecase.jade" ));
+if ( tags)
+{
+jade_debug.unshift(new jade.DebugItem( 44, "usecase.jade" ));
+jade_debug.unshift(new jade.DebugItem( 44, "usecase.jade" ));
+buf.push("<h3>");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 44, jade_debug[0].filename ));
+buf.push("Tags");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</h3>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 45, "usecase.jade" ));
+buf.push("<div class=\"tags textfill\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 46, "usecase.jade" ));
+buf.push("<span>" + (jade.escape(null == (jade_interp = Tags) ? "" : jade_interp)));
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.shift();
+}
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 48, "usecase.jade" ));
+buf.push("<h3>");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 48, jade_debug[0].filename ));
+buf.push("Website");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</h3>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 49, "usecase.jade" ));
+buf.push("<div class=\"website textfill\">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 50, "usecase.jade" ));
+buf.push("<span>" + (jade.escape(null == (jade_interp = Website) ? "" : jade_interp)));
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.shift();
+buf.push("</span>");
+jade_debug.shift();
+jade_debug.unshift(new jade.DebugItem( 52, "usecase.jade" ));
+if ( Link_file_if_necessary)
+{
+jade_debug.unshift(new jade.DebugItem( 53, "usecase.jade" ));
+jade_debug.unshift(new jade.DebugItem( 53, "usecase.jade" ));
+buf.push("<a" + (jade.attr("href", Link_file_if_necessary, true, false)) + ">");
+jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
+jade_debug.unshift(new jade.DebugItem( 53, jade_debug[0].filename ));
+buf.push("Resources");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</a>");
+jade_debug.shift();
+jade_debug.shift();
+}
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.shift();
+buf.push("</div>");
+jade_debug.shift();
+jade_debug.shift();}.call(this,"Link_file_if_necessary" in locals_for_with?locals_for_with.Link_file_if_necessary:typeof Link_file_if_necessary!=="undefined"?Link_file_if_necessary:undefined,"Long_description" in locals_for_with?locals_for_with.Long_description:typeof Long_description!=="undefined"?Long_description:undefined,"Slogan___Tweet_length_description" in locals_for_with?locals_for_with.Slogan___Tweet_length_description:typeof Slogan___Tweet_length_description!=="undefined"?Slogan___Tweet_length_description:undefined,"Tags" in locals_for_with?locals_for_with.Tags:typeof Tags!=="undefined"?Tags:undefined,"Title" in locals_for_with?locals_for_with.Title:typeof Title!=="undefined"?Title:undefined,"Use_Case_category" in locals_for_with?locals_for_with.Use_Case_category:typeof Use_Case_category!=="undefined"?Use_Case_category:undefined,"Website" in locals_for_with?locals_for_with.Website:typeof Website!=="undefined"?Website:undefined,"Where_is_the_economic_value___What_is_the_business_model_" in locals_for_with?locals_for_with.Where_is_the_economic_value___What_is_the_business_model_:typeof Where_is_the_economic_value___What_is_the_business_model_!=="undefined"?Where_is_the_economic_value___What_is_the_business_model_:undefined,"Who_offers__or_could_offer__the_service_" in locals_for_with?locals_for_with.Who_offers__or_could_offer__the_service_:typeof Who_offers__or_could_offer__the_service_!=="undefined"?Who_offers__or_could_offer__the_service_:undefined,"countries" in locals_for_with?locals_for_with.countries:typeof countries!=="undefined"?countries:undefined,"domain" in locals_for_with?locals_for_with.domain:typeof domain!=="undefined"?domain:undefined,"status" in locals_for_with?locals_for_with.status:typeof status!=="undefined"?status:undefined,"tags" in locals_for_with?locals_for_with.tags:typeof tags!=="undefined"?tags:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
+} catch (err) {
+  jade.rethrow(err, jade_debug[0].filename, jade_debug[0].lineno, ".usecase\n  a(href=Website)\n    img(src=Website + 'favicon.ico')\n    h1.textfill\n      span= Title\n\n  if status !== 'operational'\n   .status\n     img(src=\"img/usecases/#{status}.png\")\n\n  .countries\n    each country in countries\n      img(src=country.flagURI, title=country.name)\n      \n  .usecase-main\n    if Slogan___Tweet_length_description\n      .slogan.textfill\n        span= Slogan___Tweet_length_description\n\n    h3 Description\n    .descriptioncontainer\n      if Long_description\n        .description.textfill\n          span!= Long_description\n\n      if Who_offers__or_could_offer__the_service_\n        .whooffers\n          span.h4 Who offers the service:\n          span &nbsp;\n          span= Who_offers__or_could_offer__the_service_\n\n      if Where_is_the_economic_value___What_is_the_business_model_\n        .businessmodel\n          span.h4 Business model:\n          span &nbsp;\n          span= Where_is_the_economic_value___What_is_the_business_model_\n\n  .usecase-right\n    h3 Category\n    .domains\n        img(src='img/usecases/'+ domain + '.jpg', title=Use_Case_category)\n\n    if tags\n      h3 Tags\n      .tags.textfill\n        span= Tags\n\n    h3 Website\n    .website.textfill\n      span= Website\n\n      if Link_file_if_necessary\n        a(href=Link_file_if_necessary) Resources");
+}
+}
