@@ -66,7 +66,6 @@ getJSON = function() {
           info[k.replace(/[\ \/\-\?\(\))]/g, '_')] = info[k];
         }
 
-        console.log(info);
         return info;
       });
   });
@@ -148,7 +147,6 @@ openListPopin = function(filter) {
     popin = null;
   }
   var list = prepareListForPopin(filter);
-  console.log(list);
   popin = $(templatelistpopin(list));
 
   popin.find('.close').click(function(ev) {
@@ -163,9 +161,7 @@ openListPopin = function(filter) {
         left: $(ev.target).parents('.listpopin').position().left - 182 - Math.random() * 5,
         top: ev.pageY - $('#container').offset().top - 20,
       };
-      console.log(ev);
       var name = ev.target.parentElement.dataset.title;
-      console.log(getByKV('Title', name));
       openDetailPopin(getByKV('Title', name), position);
     });
 
@@ -178,7 +174,6 @@ prepareListForPopin = function(filter) {
   list.position = POSITIONS[list.title];
   list.longLabel = LABELS_MAP[list.title];
   list.byStatus = groupByKey(list.infos, 'status', 'Title');
-  console.log(list);
   return list;
 };
 
@@ -401,13 +396,11 @@ getOffsetCoordinatesOfEvent = function(e) {
 }
 
 toResizedPolar = function(e) {
-  console.log(e);
   var coords = getOffsetCoordinatesOfEvent(e);
   var x = coords[0];
   var y = coords[1];
 
   var sizeRatio = getSizeRatio();
-  console.log("x: " + x + ", y: " + y);
 
   // apply ratio
   x = x / sizeRatio ;
@@ -419,14 +412,11 @@ toResizedPolar = function(e) {
   x = x - CENTER_X ;
   y = -y + CENTER_Y ;
 
-  console.log("x: " + x + ", y: " + y);
 
   // convert to polar
   r = Math.sqrt(x * x + y * y);
   t = Math.atan2(y, x);
   t = (t + 2 * Math.PI) %  (2 * Math.PI)
-  console.log(r);
-  console.log(t);
   return {r: r, t: t};
 }
 ////////////// /////////////////////////
