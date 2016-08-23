@@ -53,7 +53,7 @@ getJSON = function() {
           };
       }).filter(function(obj) { return !!obj});
 
-        info.tags = info.Tags.split(',').map(String.trim);
+        info.tags = info.Tags.split(',').map(function(s) { return s.trim(); });
         info.domain = LONGLABELS_MAP[info['Use Case category']];
         info.status = {
           'Just an idea or a scenario': 'idea', 
@@ -161,7 +161,8 @@ openListPopin = function(filter) {
         left: $(ev.target).parents('.listpopin').position().left - 182 - Math.random() * 5,
         top: ev.pageY - $('#container').offset().top - 20,
       };
-      var name = ev.target.parentElement.dataset.title;
+      var name = $(ev.target).parent().data('title');
+      //BAD IE9 var name = ev.target.parentElement.dataset.title;
       openDetailPopin(getByKV('Title', name), position);
     });
 

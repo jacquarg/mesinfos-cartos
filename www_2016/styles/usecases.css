@@ -60,6 +60,7 @@ h3.defis {
   width: 300px;
   height: 300px;
   position: absolute;
+  cursor: pointer;
 }
 
 #addusecase {
@@ -104,7 +105,9 @@ h3.defis {
   top: 0px;
   position: absolute;
   left: 0px;
+  pointer-events: none;
 }
+
 
 .layer {
   image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
