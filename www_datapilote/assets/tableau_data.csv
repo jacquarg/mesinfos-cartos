@@ -1,0 +1,574 @@
+Nom,Description,Exemple,Typologie,DocType,Nature,Format,Détenteur,Fréquence,Latence,Mise_à_disposition
+Sociétaire Maif,"Identification et moyen de contact du souscripteur : Nom, prénom, adresse, date de naissance, ...",,Profil,Client,Subset,,Maif,Rare,24h,2016-09
+name/prefix,Civilités de la personne,Mme,Profil,Client,Caractérisation,,Maif,,,2016-09
+name/family,Nom de la personne,Dupond,Profil,Client,Caractérisation,,Maif,,,2016-09
+name/given,Prénom de la personne,Germaine,Profil,Client,Caractérisation,,Maif,,,2016-09
+name/maiden,NomJeuneFille,Martin,Profil,Client,Caractérisation,,Maif,,,2016-09
+email,Email,germainedupondmesinfos@gmail.com,Profil,Client,Caractérisation,,Maif,,,2016-09
+telMobile,NumeroTelephonePortable,33 7 23 45 67 89,Profil,Client,Caractérisation,,Maif,,,2016-09
+telHome,NumeroTelephoneDomicile,,Profil,Client,Caractérisation,,Maif,,,2016-09
+telPro,NumeroTelephoneProfessionnel,,Profil,Client,Caractérisation,,Maif,,,2016-09
+telFax,NumeroFax,,Profil,Client,Caractérisation,,Maif,,,2016-09
+birthdate,Date de naissance de la personne,1961-01-29,Profil,Client,Caractérisation,,Maif,,,2016-09
+birthplace/city,Commune de naissance,,Profil,Client,Caractérisation,,Maif,,,2016-09
+birthplace/region,DepartementNaissance,,Profil,Client,Caractérisation,,Maif,,,2016-09
+birthplace/country,PaysNaissance,,Profil,Client,Caractérisation,,Maif,,,2016-09
+CodeActif,actif / retraité,,Profil,Client,Metadata,,Maif,,,2016-09
+CodeEtat,décédé / vide,,Profil,Client,Metadata,,Maif,,,2016-09
+DateEtat,"Date du décès, le cas échéant.",,Profil,Client,Metadata,,Maif,,,2016-09
+profession,Profession,,Profil,Client,Caractérisation,,Maif,,,2016-09
+familySituation,SituationFamiliale,,Profil,Client,Caractérisation,,Maif,,,2016-09
+referenceClient,Numéro de sociétaire,5290079N,Profil,Client,Metadata,,Maif,,,2016-09
+timestampModification,Horodatage de dernière modification,10/04/2011,Profil,Client,Metadata,,Maif,,,2016-09
+Foyer,Désigne les membres du foyer et leur rôle dans le foyer,,Profil,Foyer,Subset,,Maif,Rare,24h,2016-09
+Foyer,Désigne les membres du foyer et leur rôle dans le foyer,,Profil,Foyer,DocType,,Maif,Rare,24h,2016-09
+name,Nom du foyer (nom de famille + nom de la comune),DUPOND LYON,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+address/street,Élément d'adresse : numéro de voie,2 Boulevard des Belges,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+address/country,Pays,FRANCE,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+address/city,Nom de la commune,LYON,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+address/postcode,Code postal,69006,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+address/deliveryOffice,Bureau de poste distributeur,LYON,Profil,Foyer,Metadata,,Maif,,,2016-09
+address/inseeCode,Code INSEE de la commune,69386,Profil,Foyer,Metadata,,Maif,,,2016-09
+membres/name/prefix,Civilités de la personne,Mme ,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/name/family,Nom de la personne,DUPOND,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/name/given,Prénom de la personne,Germaine,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/name/maiden,Nom de jeune fille de la personne,Martin,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/email,Email (seulement pour membres principaux),germainedupondmesinfos@gmail.com,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/telMobile,NumeroTelephonePortable (seulement pour membres principaux),33 7 23 45 67 89,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/telHome,NumeroTelephoneDomicile (seulement pour membres principaux),,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/telPro,NumeroTelephoneProfessionnel (seulement pour membres principaux),,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/telFax,NumeroFax (seulement pour membres principaux),,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/birthdate,Date de naissance de la personne,1961-01-29,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/birthplace/city,Commune de naissance (seulement pour membres principaux),,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/birthplace/region,DepartementNaissance (seulement pour membres principaux),,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/birthplace/country,PaysNaissance (seulement pour membres principaux),,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+membres/profession,Profession (seulement pour membres principaux),,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+Residence,"Nom de la résidence, complément d'adresse.",,Profil,Foyer,Metadata,,Maif,,,2016-09
+membres/quality,"Rôle du membre membre dans le foyer (enfant, ...)",3 Enfant à charge,Profil,Foyer,Caractérisation,,Maif,,,2016-09
+Contrats d'assurance Maif,"Désigne le type de contrat d'assurance, son tarif, et les risques assurés.",contrat_maif,Finance,Contract,Subset,if (doc.docTypeVersion.indexOf('Maif') === 0) { emit(doc._id);},Maif,Rare,24h,2016-09
+societaire,Numéro du sociétaire souscripteur du contrat.,"1234567N
+",Finance,Contract,Caractérisation,,Maif,,,2016-09
+name,Nom du produit.,VAM,Finance,Contract,Caractérisation,,Maif,,,2016-09
+formuleBase,Formule souscrite dans le contrat,VAM Assistance panne 0km,Finance,Contract,Caractérisation,,Maif,,,2016-09
+startDate,Date de souscription au contrat,1989-04-29,Finance,Contract,Caractérisation,,Maif,,,2016-09
+MontantTarifTtc,,,Finance,Contract,Caractérisation,,Maif,,,2017-01
+objets,"Objets du contrat d'assurance (véhicules assurés, ou dominciles assurés, ...",,Finance,Contract,Caractérisation,,Maif,,,2016-09
+objets/startDate,"Date d'ajout, pour chaque nouvel objet (véhicule ou habitation) ajouté au contrat.",,Finance,Contract,Caractérisation,,Maif,,,2016-09
+Sinistre Véhicule,"Un sinistre sur mon véchiule (date, lieu, immatriculation, conducteur, ...)",,Déplacement,InsuranceClaim,Subset,if(doc.type === 'Véhicule') { emit(doc._id); },Maif,,,2016-09
+Sinistre Habitation,"Un sinistre, à mon domicile (date, lieu, ...)",sinistre_habitation,Domicile,InsuranceClaim,Subset,if(doc.type === 'Habitation') { emit(doc._id); },Maif,,,2016-09
+type,"Type du sinistre (véhicule, habitation, ...)",Véhicule,Domicile,InsuranceClaim,Metadata,,Maif,,,2016-09
+societaire,Le sociétaire auquel est rataché ce sinistre.,1234567N,Domicile,InsuranceClaim,Metadata,,Maif,,,2016-09
+horodatage,Date et heure de survenance du sinistre.,2015-07-20T19:00,Domicile,InsuranceClaim,Transaction,,Maif,,,2016-09
+lieuSurvenance,"Lieu de survenance (champ libre : une commune, un numéro d’autoroute, …)",LYON 06,Domicile,InsuranceClaim,Transaction,,Maif,,,2016-09
+ref,"Référence de l’événement, communiquée au sociétaire pour les relations avec la MAIF (appels, documents …)",F150181177B,Domicile,InsuranceClaim,Metadata,,Maif,,,2016-09
+typeLieuSurvenance,"Type du lieu de survenance (Sans information, Agglomération, Rase campagne)
+",Agglomération,Déplacement,InsuranceClaim,Transaction,,Maif,,,2016-09
+natureLieu,Nature lieu - Si sinistre habitation,Appartement,Domicile,InsuranceClaim,Transaction,,Maif,,,2016-09
+address/street,Adresse de l'habitation assurée - Si sinistre habitation,"2, Boulevard des Belges
+",Domicile,InsuranceClaim,Transaction,,Maif,,,2016-09
+address/postcode,Adresse de l'habitation assurée - Si sinistre habitation,69006,Domicile,InsuranceClaim,Transaction,,Maif,,,2016-09
+address/city,Adresse de l'habitation assurée - Si sinistre habitation,LYON 06,Domicile,InsuranceClaim,Transaction,,Maif,,,2016-09
+address/country,Adresse de l'habitation assurée - Si sinistre habitation,FRANCE,Domicile,InsuranceClaim,Transaction,,Maif,,,2016-09
+immatriculationVehicule,Immatriculation du véhicule assurée - Si sinistre véhicule,AA-123-XD,Déplacement,InsuranceClaim,Transaction,,Maif,,,2016-09
+driver/prefix,Genre du conducteur - Si sinistre véhicule,Féminin,Déplacement,InsuranceClaim,Transaction,,Maif,,,2016-09
+driver/family,Nom du conducteur - Si sinistre véhicule,Dupond,Déplacement,InsuranceClaim,Transaction,,Maif,,,2016-09
+driver/given,Prénom du conducteur - Si sinistre véhicule,Germaine,Déplacement,InsuranceClaim,Transaction,,Maif,,,2016-09
+Véhicules assurés,"Qualifie le vehicule assuré (immatriculation, date de mise en circulation, modèle et marque)",,Déplacement,Vehicle,Subset,,Maif,Rare,24h,2017-01
+societaire,Numéro du sociétaire souscripteur du contrat.,"1234567N
+",Déplacement,Vehicle,Metadata,,Maif,,,2017-01
+usageVehicule,Usage du véhicule,TODO,Déplacement,Vehicle,Caractérisation,,Maif,Rare,24h,2017-01
+coeffVehicule,Coefficient clause véhicule,TODO,Déplacement,Vehicle,Caractérisation,,Maif,Rare,24h,2017-01
+immatriculation,Immatriculation véhicule,AA-123-XD,Déplacement,Vehicle,Caractérisation,,Maif,Rare,24h,2017-01
+dateMiseEnCirculation,date mise en circulation véhicule,2010-07-03,Déplacement,Vehicle,Caractérisation,,Maif,Rare,24h,2017-01
+marque,Marque du véhicule,RENAULT CLIO,Déplacement,Vehicle,Caractérisation,,Maif,Rare,24h,2017-01
+famille,Famille du véhicule,TODO,Déplacement,Vehicle,Caractérisation,,Maif,Rare,24h,2017-01
+conducteur/Identite,Conducteur véhicule,Martinez Paul,Déplacement,Vehicle,Caractérisation,,Maif,Rare,24h,2017-01
+conductuer/typePermis,Ttype de permis d'un conducteur du vehicule.,B,Déplacement,Vehicle,Caractérisation,,Maif,Rare,24h,2017-01
+conducteur/datePermis,Date de permis d'un conducteur du vehicule.,2000-07-08,Déplacement,Vehicle,Caractérisation,,Maif,Rare,24h,2017-01
+Habitations assurées,"Qualifie l'habitat assuré (nombre de pièces, standing)",,Domicile,Home,Subset,,Maif,Rare,24h,2017-01
+societaire,Numéro du sociétaire souscripteur du contrat.,"1234567N
+",Domicile,Home,Metadata,,Maif,,,2017-01
+address/street,Adresse du lieu assuré (rue),"Résidence du lac
+39, rue Tronchet",Domicile,Home,Caractérisation,,Maif,Rare,24h,2017-01
+address/postcode,Adresse du lieu assuré (code postale),69006,Domicile,Home,Caractérisation,,Maif,Rare,24h,2017-01
+addresse/city,Adresse du lieu assuré (commune),LYON 06,Domicile,Home,Caractérisation,,Maif,Rare,24h,2017-01
+addresse/country,Adresse du lieu assuré (pays),FRANCE,Domicile,Home,Caractérisation,,Maif,Rare,24h,2017-01
+natureLieu,Nature lieu,Appartement,Domicile,Home,Caractérisation,,Maif,Rare,24h,2017-01
+situationJuridiqueLieu,Situation juridique lieu assuré.,Location,Domicile,Home,Caractérisation,,Maif,Rare,24h,2017-01
+nombrePieces,Tranche nombre de pièces lieu,Une pièce (studio),Domicile,Home,Caractérisation,,Maif,Rare,24h,2017-01
+patrimoineMobilier,Tranche patrimoine mobilier lieu,14000€,Domicile,Home,Caractérisation,,Maif,Rare,24h,2017-01
+Modalités de paiement Maif,"Qualifie le mode de paiement pour l'assuré (mensualité, RIB, échéancier, ...)",,Finance,PaymentTerms,Subset,,Maif,Rare,24h,2017-01
+societaire,Numéro du sociétaire souscripteur du contrat.,"1234567N
+",Finance,PaymentTerms,Metadata,,Maif,,,2017-01
+rib/bic,Code BIC,TODO,Finance,PaymentTerms,Caractérisation,,Maif,Rare,24h,2017-01
+rib/iban,Code IBAN,TODO,Finance,PaymentTerms,Caractérisation,,Maif,Rare,24h,2017-01
+modePaiement,Mode de paiement,TODO,Finance,PaymentTerms,Caractérisation,,Maif,Rare,24h,2017-01
+Devis Maif,Un devis pour une assurance Maif,,Finance,Quote,Subset,,Maif,,,2017-01
+Quote,"Un devis, d'un de mes fournisseur",,Finance,Quote,DocType,,,,,2016
+Client EDF,"Identification et moyen de contact du souscripteur : adresse, email, téléphone fixe et portable",client_edf,Profil,Client,Subset,if (doc.vendor === 'EDF') { emit(doc._id); },EDF,Rare,24h,2016-10
+numeroAcc,Numéro d'accord commercial (~numéro de contrat),00123456879,Profil,Client,Metadata,String - 12 chiffres,EDF,,,2016-10
+clientId,Numéro client dans CRM EDF,6012345678,Profil,Client,Metadata,String - 10 chiffres,EDF,,,2016-10
+address,Adresse du client EDF,"{""formated"": ""2 BOULEVARD DES BELGES\n69006 LYON"",
+      ""street"": ""2 BOULEVARD DES BELGES"",
+      ""city"": ""LYON"",
+      ""postcode"": ""69006"",
+      ""country"": ""FRANCE""
+",Profil,Client,Caractérisation,Object - address,EDF,,,2016-10
+name,Nom du client EDF,"{
+      ""prefix"": ""MME"",
+      ""family"": ""DUPOND"",
+      ""given"": ""GERMAINE"",
+      ""formated"": ""GERMAINE DUPOND""
+    }",Profil,Client,Caractérisation,Object - name,EDF,,,2016-10
+cellPhone,téléphone mobile du client,0665022841,Profil,Client,Caractérisation,String - numéro de téléphone (français),EDF,,,2016-10
+homePhone,téléphone fixe du client,0123456789,Profil,Client,Caractérisation,,EDF,,,2016-10
+loginEmail,Email de connexion à l'interface client EDF,germainedupondmesinfos@gmail.com,Profil,Client,Caractérisation,,EDF,,,2016-10
+coHolder,Co-titulaire du contrat,"{ family: 'DUPOND', given:'GERARD', ""formated"": ""GERARD DUPOND"" }",Profil,Client,Caractérisation,,EDF,,,2016-10
+numeroAccount,Idem  numeroAcc sans les deux premiers 00.,1234567890,Domicile,EDFClient,Metadata,String - 10 chiffres,EDF,,,2016-10
+Modalités de paiement EDF,"Mode de paiement : mensualités, échéancier, RIB, date de paiement",modalites_paiement_edf,Finance,PaymentTerms,Subset,emit(doc._id);,EDF,Annuelle,24h,2016-10
+PaymentTerms,"Modalités de paiement chez un fournisseur (moyen de paiement, RIB, échéancier, ...)",,Finance,PaymentTerms,DocType,,,,,2016-10
+bank,Nom de la banque du client (abrégé),STE GENERALE,Finance,PaymentTerms,Caractérisation,String,EDF,,,2016-10
+bankAddress,Adresse de domiciliation du compte bancaire,5 PLACE DE LA NATION PARIS 75011 France,Finance,PaymentTerms,Caractérisation,,EDF,,,2016-10
+codeBanque,Code banque,76300,Finance,PaymentTerms,Caractérisation,,EDF,,,2016-10
+codeGuichet,Code guichet,03,Finance,PaymentTerms,Caractérisation,,EDF,,,2016-10
+numeroCompte,Numéro de compte,,Finance,PaymentTerms,Caractérisation,,EDF,,,2016-10
+cleRib,Clé RIB,12,Finance,PaymentTerms,Caractérisation,,EDF,,,2016-10
+titulaire,Nom du titulaire du compte bancaire,M. MARTIN DUPOND,Finance,PaymentTerms,Caractérisation,,EDF,,,2016-10
+balance,Montant restant dû ou à recevoir,0.0,Finance,PaymentTerms,Caractérisation,,EDF,,,2016-10
+paymentMeans,"Mode d'encaissement (prélèvement, ...)",TODO,Finance,PaymentTerms,Caractérisation,,EDF,,,2016-10
+modifBankDetailsAllowed,Le RIB du client peut-il être modifié ou non.,true,Finance,PaymentTerms,Caractérisation,,EDF,,,2016-10
+lastPayment/date,Date du dernier réglement effectué.,TODO,Finance,PaymentTerms,Transaction,,EDF,,,2016-10
+lastPayment/amount,Montant du dernier règlement effectué,TODO,Finance,PaymentTerms,Transaction,,EDF,,,2016-10
+lastPayment/type,Type du dernier réglement,ENCAISSEMENT_PRELEVEMENT,Finance,PaymentTerms,Transaction,,EDF,,,2016-10
+billFrequency,"Périodicité de la facture (mensuelle, annuelle, ...)",ANNU,Finance,PaymentTerms,Transaction,,EDF,,,2016-10
+nextBillDate,Date de la prochaine facture,2015-10-15,Finance,PaymentTerms,Transaction,,EDF,,,2016-10
+idPayer,NumeroBP du payeur,087609078098,Finance,PaymentTerms,Transaction,,EDF,,,2016-10
+payerDivergent,Si le payeur n'est pas le titulaire du contrat.,false,Finance,PaymentTerms,Transaction,,EDF,,,2016-10
+commercialContat/title,"Nom du contact EDF (commercial) , nom du groupe régional duquel dépend le client.",Paris Pyramide,Communication,Client,Caractérisation,,EDF,,,2016-10
+commercialContat/address,Adresse du contact EDF (commercial),"{
+        ""formated"": ""TSA 20012\n41975 BLOIS CEDEX 9"",
+        ""street"": ""TSA 20012"",
+        ""postcode"": ""41975"",
+        ""city"": ""BLOIS CEDEX 9""
+      }",Communication,Client,Caractérisation,Object - address,EDF,,,2016-10
+commercialContat/phone,Numéro de téléphone du contact EDF (commercial),09 69 32 15 15,Communication,Client,Caractérisation,Stirng - phone number,EDF,,,2016-10
+paymentSchedules/number,Numéro dans l'échéancier,1,Finance,PaymentTerms,Metadata,,EDF,,,2016-10
+paymentSchedules/receiptDate,Date d'encaissement de l'échéance,2016-04-11,Finance,PaymentTerms,Metadata,,EDF,,,2016-10
+paymentSchedule/scheduleDate,Date de l'échance,2016-04-11,Finance,PaymentTerms,Transaction,,EDF,,,2016-10
+paymentSchedules/paid,Déjà payée,true,Finance,PaymentTerms,Transaction,"['EFFECTUE', ...]",EDF,,,2016-10
+paymentSchedule/amount,amountElectricity + amountGas,69,Finance,PaymentTerms,Metadata,,EDF,,,2016-10
+paymentSchedules/amountElectricity,Montant pour l'electricité,69,Finance,PaymentTerms,Transaction,,EDF,,,2016-10
+paymentSchedules/amountGas,Montant pour le gaz,0,Finance,PaymentTerms,Transaction,,EDF,,,2016-10
+ConsumptionStatement,"Relevé de consommation (électricité, gaz, ...)",,Domicile,ConsumptionStatement,DocType,,EDF,,,2016-10
+Consommations de Gaz,Relevé de consommation de gaz (semestriel),,Domicile,ConsumptionStatement,Subset,emit(doc._id);,EDF,Semestrielle,24h,2016-10
+Consommations d'électricité,Relevé de consommation d'électricité (semestriel),consommation_electrique,Domicile,ConsumptionStatement,Subset,emit(doc._id);,EDF,Semestrielle,24h,2016-10
+docTypeVersion,"Origine du document, et version de format du document, ",EDFKonnector-0.0.0-draft,Domicile,ConsumptionStatement,Metadata,,EDF,,,2016-10
+contractNumber,Numéro du contrat,1234654321,Domicile,ConsumptionStatement,Metadata,,EDF,,,2016-10
+billNumber,Numéro de la facture associé à la consommation,12346897654,Domicile,ConsumptionStatement,Metadata,,EDF,,,2016-10
+start,Début de période de relevé de consommation,2016-01-08,Domicile,ConsumptionStatement,Transaction,,EDF,,,2016-10
+end,Fin de période de relevé de consommation,2016-07-01,Domicile,ConsumptionStatement,Transaction,,EDF,,,2016-10
+value,Consommation estimée ou réelle,648.0,Domicile,ConsumptionStatement,Transaction,,EDF,,,2016-10
+statementType,Type de relève associé à la consommation (réelle ou estimée),REEL,Domicile,ConsumptionStatement,Metadata,,EDF,,,2016-10
+statementCategory,Catégorie de relève associée à la consommation (complète statementType),RELEVE_REEL_PAR_ERD_GRD,Domicile,ConsumptionStatement,Metadata,,EDF,,,2016-10
+statementReason,Motif de relève associé à la consommation,RELEVE_PERIODIQUE,Domicile,ConsumptionStatement,Metadata,,EDF,,,2016-10
+period,"Désignation de la période de consommation : mois de la consommation mensuelle, année de la consommation annuelle. (pour clients edelia)",,Domicile,ConsumptionStatement,Metadata,String -  au format ISO8601,EDF,,,2016-10
+cost,Coût total de la période. (relevés Edelia),,Domicile,ConsumptionStatement,Transaction,Number - Euros,EDF,,,2016-10
+costByCategory,"Coût sur la période, par catégory (BASE, Heures creuses,abonnement ...)  (relevés Edelia)","{
+      ""BASE"": 350,
+      ""standing"": 55
+    }",Domicile,ConsumptionStatement,Transaction,Object,EDF,,,2016-10
+costByCategory/BASE,"Coût sur la période, par catégory (BASE, Heures creuses, ...)  (relevés Edelia)",,Domicile,ConsumptionStatement,Transaction,Number - Euros,EDF,,,2016-10
+costByCategory/standing,Part abonnement de la période en euros  (relevés Edelia),,Domicile,ConsumptionStatement,Transaction,Number - euros,EDF,,,2016-10
+valuesByCatergory/BASE,"Consommation sur la période, par catégory (BASE, Heures creuses, ...)  (relevés Edelia)",,Domicile,ConsumptionStatement,Transaction,Number - kWh,EDF,,,2016-10
+similarHomes,Comparaison avec des habitations similaires (relevé annuels Edelia),"{
+      ""site"": 2144,
+      ""average"": 2335,
+      ""least"": 1030
+    }",Domicile,ConsumptionStatement,Transaction,Object,EDF,,,2016-10
+similarHomes/average,Comparaison avec des habitations similaires : moyenne (relevé annuels Edelia),2335,Domicile,ConsumptionStatement,Transaction,Number - kWh,EDF,,,2016-10
+similarHomes/least,Comparaison avec des habitations similaires : le moins consommateur (relevé annuels Edelia),1030,Domicile,ConsumptionStatement,Transaction,Number - kWh,EDF,,,2016-10
+similarHomes/site,Comparaison avec des habitations similaires : cette habitation (relevé annuels Edelia),2144,Domicile,ConsumptionStatement,Transaction,Number - kWh,EDF,,,2016-10
+statement,Releves de consommation (relevés Edelia),"{
+        ""date"": ""2016-10-01"",
+        ""indexesByLabel"": {
+          ""BASE"": 70800
+        }",Domicile,ConsumptionStatement,Transaction,Object,EDF,,,2016-10
+Factures EDF,Mes factures EDF (notamment de régularisation annuelle),facture_electricite,Finance,Bill,Subset,"if (doc.vendor === ""EDF"") { emit(doc._id);}",EDF,Mensuelle à Annuelle,24h,2016-10
+vendor,Organisme émetteur de la facture.,EDF,Finance,Bill,Metadata,String,EDF,,,2016-10
+clientId,Numéro client,6012345678,Finance,Bill,Transaction,String - number,EDF,,,2016-10
+number,Numéro de facture,12346897654,Finance,Bill,Transaction,String - number,EDF,,,2016-10
+date,Date de la facture,2016-03-03,Finance,Bill,Transaction,String - ISO8601,EDF,,,2016-10
+amount,Montant,30.21,Finance,Bill,Transaction,Number,EDF,,,2016-10
+fileId,Id du fichier de la facture PDF,17931c49656d8eb5a09c7ac3ea27f0a1,Finance,Bill,Metadata,,EDF,,,2016-10
+Contract,"Un contrat avec un fournisseur (date, objet, parties, ...)",,Finance,Contract,DocType,,EDF,,,2016-10
+Contrats gaz EDF,Les caractéristiques principales de mon contrat de Gaz chez EDF,,Finance,Contract,Subset,if (doc.vendor === 'EDF' && doc.energie === 'Gaz') { emit(doc._id);},EDF,Rare,24h,2016-10
+Contrats électricité EDF,Les caractéristiques principales de contrat d'électricité chez EDF,contrat_electricite,Finance,Contract,Subset,if (doc.vendor === 'EDF' && doc.energie === 'Électricité') { emit(doc._id);},EDF,Rare,24h,2016-10
+vendor,Organisme émetteur du contrat.,EDF,Finance,Contract,Metadata,,EDF,,,2016-10
+clientId,Numéro client,6012345678,Finance,Contract,Metadata,,EDF,,,2016-10
+docTypeVersion,Origine et version de la structure de donnée.,EDFKonnector-0.0.0-draft,Finance,Contract,Metadata,,EDF,,,2016-10
+number,"Numéro de contrat (différent numéroAcc, numéro d'accord commercial)",1234654321,Finance,Contract,Caractérisation,string - numérique,EDF,,,2016-10
+start,Date de début de contrat,2013-03-01,Finance,Contract,Caractérisation,string - une date au format ISO8601 date,EDF,,,2016-10
+status,Status du contrat,"CONTRAT_ACTIF
+",Finance,Contract,Metadata,"string - { 'CONTRAT_ACTIF', TODO }",EDF,,,2016-10
+end,Fin du contrat (le cas échéant),2016-10-01,Finance,Contract,Metadata,string - une date au format ISO8601 date,EDF,,,2016-10
+terminationGrounds,Motif de résiliation (le cas échéant),TODO,Finance,Contract,Metadata,TODO,EDF,,,2016-10
+pdl,Point de livraison,1324654321,Finance,Contract,Caractérisation,string - numérique,EDF,,,2016-10
+energie,Electricité ou Gaz,Électricité,Finance,Contract,Caractérisation,"['ELECTRICITE', 'GAZ']",EDF,,,2016-10
+name,Nom de l'offre commerciale,Tarif Bleu,Finance,Contract,Caractérisation,"Offre Gaz naturel, Mon Contrat gaz naturel, Mon Contrat Gaz Naturel a prix fixe, Electricite Pro, Mon Contrat Electricite, Electricite Pro a Prix Fixe, Essentiel Pro, Heures Creuses Souples, Presence Pro, Souplesse Pro, Tarif Bleu, Tarif Bleu ,Essentiel Gaz ,Mon Contrat Gaz Naturel, Mon Contrat Gaz Naturel, Gaz Naturel a Prix Fixe, Presence Gaz, Souplesse Gaz, Gaz Naturel, EJP, TPN
+",EDF,,,2016-10
+contractSubcategory1,"Strucure tarifaire (prix constant, spécifique heures creuses, ...), si ernergoe == Électricité",OPTION_BASE,Finance,Contract,Caractérisation,,EDF,,,2016-10
+contractSubcategory2,Option tarifaire (précise la structure),,Finance,Contract,Caractérisation,,EDF,,,2016-10
+power,Puissance compteur si energie = Électricité,6 kVA,Finance,Contract,Caractérisation,"string - 0 kVA, 3 kVA, 6 kVA, 9 kVA, 12 kVA, 15 kVA, 18 kVA, 24 kVA, 30 kVA, 36 kVA
+",EDF,,,2016-10
+optionPrix,"Souvent absent, option très spécifique (Outremer, Option Cuisson/eau chaude, ...)",Option chauffage,Finance,Contract,Metadata,cf transcodage,EDF,,,2016-10
+counter/type,Caractéristique compteur (TODO),BASE,Finance,Contract,Caractérisation,,EDF,,,2016-10
+counter/nombreRoues,Caractéristique compteur (TODO),005,Finance,Contract,Caractérisation,,EDF,,,2016-10
+counter/dernierIndex,Dernier relevé du compteur,67481.0,Finance,Contract,Caractérisation,,EDF,,,2016-10
+annualConsumption,Consommation annuelle (kWh),2125,Finance,Contract,Caractérisation,,EDF,,,2016-10
+counter/type,Type du compteur,EMC,Finance,Contract,Caractérisation,,EDF,,,2016-10
+peakHours,Horraire heures creuses,?,Finance,Contract,Caractérisation,,EDF,,,2016-10
+statement/saisieReleveConfiance,Releve.SaisieRc : Statut de la saisie dans le cadre de Suivi Conso,SAISIE_IMPOSSIBLE_NON_ELIGIBLE_RC,Finance,Contract,Caractérisation,,EDF,,,2016-10
+statement/dateFermetureReleveConfiance,Date de fermeture de la période de saisie relevé confiance en cours.,,Finance,Contract,Caractérisation,,EDF,,,2016-10
+statement/prochaineDateOuvertureReleveConfiance,Date d’ouverture de la prochaine période de saisie index en relevé confiance.,,Finance,Contract,Caractérisation,,EDF,,,2016-10
+statement/prochaineDateFermetureReleveConfiance,Date de fermeture de la prochaine période de saisie index en relevé confiance.,,Finance,Contract,Caractérisation,,EDF,,,2016-10
+statement/prochaineDateFermetureReelle,Date prévue de la fermeture de la prochaine relève réelle des index.,,Finance,Contract,Caractérisation,,EDF,,,2016-10
+statement/saisieSuiviConso,Statut de la saisie dans le cadre de Suivi Conso,SAISIE_IMPOSSIBLE_SC_NON_SOUSCRIT,Finance,Contract,Caractérisation,,EDF,,,2016-10
+statement/prochaineDateOuvertureSaisieConso,Date de prochaine saisie possible Suivi Conso,,Finance,Contract,Caractérisation,,EDF,,,2016-10
+troubleshootingPhone,Numéro de téléphone de dépannage,09 726 750 75,Domicile,Contract,Caractérisation,,EDF,,,2016-10
+prochainReleve,Date de prochain relevé,2017-01-11T23:00:00.000Z,Communication,Contract,Transaction,,EDF,,,2016-10
+Profil énergétique d'habitation,Profil de consommation Edelia (EDF) de l'habitation. L'utilisateur doit avoir activer le service Edelia auprès d'EDF pour obtenir ces données.,profile_energetique_habitat,Domicile,Home,Subset,if (doc.docTypeVersion && doc.docTypeVersion.indexOf('konnectors_edf') !== -1) { emit(doc._id); },EDF,Rare,24h,2016-10
+pdl,Point de livraison (numéro de compteur électrique) de cette habitation.,01324654321236,Domicile,Home,Metadata,string - number,EDF,,,2016-10
+beginTs,Timestamp de début de validité du profil.,2016-09-27T12:30:14Z,Domicile,Home,Metadata,string - ISO8601 YYYY-MM-DDThh:mm:ssZ,EDF,,,2016-10
+isProfileValidated,Determine si le profil a déjà été validé par l'utilisateur.,true,Domicile,Home,Metadata,boolean,EDF,,,2016-10
+housingType,"Type de logement parmi : Appartement, Maison",Appartement,Domicile,Home,Caractérisation,"String - { Appartement, Maison }",EDF,,,2016-10
+residenceType,"Type de résidence parmi : Principale, Secondaire",Principale,Domicile,Home,Caractérisation,"String - { Principale, Secondaire }",EDF,,,2016-10
+occupationType,"Type d'occupation parmi : Proprietaire, Locataire",Locataire,Domicile,Home,Caractérisation,"String - { Propriétaire, Locataire }",EDF,,,2016-10
+constructionDate,Année de construction.,2001,Domicile,Home,Caractérisation,String  - année YYYY,EDF,,,2016-10
+isBBC,Bâtiment basse consommation  ,true,Domicile,Home,Caractérisation,boolean,EDF,,,2016-10
+surface,Surface du logement en m².,69,Domicile,Home,Caractérisation,number - m²,EDF,,,2016-10
+occupantsCount,Nombre d'occupants du logement.,4,Domicile,Home,Caractérisation,number - integer,EDF,,,2016-10
+principalHeatingSystemType,Energie de chauffage principal,Electricite,Domicile,Home,Caractérisation,"String - { Electricite, Gaz, Autre }",EDF,,,2016-10
+sanitoryHotWaterType,Type d'eau chaude sanitaire parmi,Electricite,Domicile,Home,Caractérisation,"String - { Electrique, Solaire, Gaz, Collectif, Autre }",EDF,,,2016-10
+docTypeVersion,"Origine du document, et version de format du document, ",konnectors_edf-0.7.2,Domicile,Home,Metadata,,EDF,,,2016-10
+Historique de navigation,"Titre de la page, date de consultation, URL",,Loisir,WebHistory,Subset,,Qwant,temps-réel,temps-réel,2016-08
+WebHistory,Historique de navigation Web.,,Loisir,WebHistory,DocType,,Qwant,,,2016-08
+title,,,Loisir,WebHistory,Transaction,,Qwant,,,2016-08
+url,,,Loisir,WebHistory,Transaction,,Qwant,,,2016-08
+timestamp,,,Loisir,WebHistory,Metadata,,Qwant,,,2016-08
+Historique des recherches,"Mots clés, horodatage",,Loisir,SearchHistory,Subset,,Qwant,temps-réel,temps-réel,2016-08
+SearchHistory,Historique de recherche sur le web.,,Loisir,SearchHistory,DocType,,Qwant,,,2016-08
+keyword,,,Loisir,SearchHistory,Transaction,,Qwant,,,2016-08
+timestamp,,,Loisir,SearchHistory,Metadata,,Qwant,,,2016-08
+GeoPoint,Point de géolocalisation,,Déplacement,GeoPoint,DocType,,,,,2016-10
+Géolocalisation Mobile,"La géolocalisation de mon téléphone Mobile Orange : latitude, longitude, horodatage, rayon de précision de la position",geoloc,Déplacement,GeoPoint,Subset,emit(doc._id);,Orange,1/15min,1h (TODO),2016-10
+msisdn,Numéro de téléphone du mobile.,33684525322,Déplacement,GeoPoint,Metadata,String - ,Orange,,,2016-10
+timestamp,horodatage de la position récupérée.,,Déplacement,GeoPoint,Transaction,String - ISO8601 UTC.,Orange,,,2016-10
+latitude,Latitude du point.,48.8504,Déplacement,GeoPoint,Transaction,Number,Orange,,,2016-10
+longitude,Longitude du point,2.3799,Déplacement,GeoPoint,Transaction,Number,Orange,,,2016-10
+radius,Rayon de précision de la position.,150,Déplacement,GeoPoint,Metadata,Number - en mètre,Orange,,,2016-10
+PhoneCommunicationLog,Une entrée de journal d'appel.,,Communication,PhoneCommunicationLog,DocType,,,,,2016-10
+Données d'appel  téléphonique,"Type d'appel (entrant, sortant, sms..), horodatage, numéro, position géographique pendant la communication",donnees_d_appel_telephonique,Communication,PhoneCommunicationLog,Subset,,Orange,mensuelle,un mois,2016-10
+type,"Type de communication (appel entrant, appel sortant, SMS entrant, SMS sortant, etc)",SMS sortant,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+timestamp,Horodatage de début de communication.,,Communication,PhoneCommunicationLog,Transaction,,Orange,,,2016-10
+subscriber,Numéro du détenteur de la ligne.,,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+peer,Numéro du correspondant.,,Communication,PhoneCommunicationLog,Transaction,,Orange,,,2016-10
+chipCount,Coup de l'appel (unité définie par chipType),,Communication,PhoneCommunicationLog,Transaction,,Orange,,,2016-10
+chipType,"Unité de valorisation de l'appel (seconde, octets, ...)",,Communication,PhoneCommunicationLog,Transaction,,Orange,,,2016-10
+imsi,Numéro de la carte SIM (International Mobile Subscriber Identify),,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+imei,Numéro du mobile (International Mobile Equipment Identity),,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+latitude,Position géographique pendant la communication (latitude),48.8504,Communication,PhoneCommunicationLog,Transaction,,Orange,,,2016-10
+longitude,Position géographique pendant la communication (longitude),2.3799,Communication,PhoneCommunicationLog,Transaction,,Orange,,,2016-10
+endReason,"Cause de terminaison de l'appel si l'appel est efficace (libération normale, échec distant, incident radio...).",,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+returnCallNumber,Numéro vers lequel est renvoyé l'appel.,,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+callOrigin,"Origine de l'appel (automatique national ou international, manuel national ou international...).",,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+peerType,"Format du numéro du partenaire d'appel (n° international, n° national, n° abrégé, n° de réseu spécial...).",,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+peerPlan,"Plan de numérotaton correspondant au numéro partenaire de l'appel (téléphonie, data, plan national...).",,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+callCountry,Centre de facturation qui a transmis le CRA émis depuis l'etranger.,,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+mobileNetwork,Type de couverture. Indique la couverture réseau utilisée (GSM/GPRS ou UMTS).,,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+secondaryMSISDN,MSISDN secondaire (numéro MSISDN carte jumelle ou numéro traduit pour les numéro courts).,,Communication,PhoneCommunicationLog,Metadata,,Orange,,,2016-10
+VOD / IPTV,"Les vidéos que j'ai commandées ou visionnée via les services Orange (VoD, replay, ...) (date, prix, titre de la vidéo, ...)",vod_iptv,Loisir,VideoStream,Subset,emit(doc._id);,Orange,mensuelle,un mois,2016-10
+VideoStream,Une entré d'historique de vidéo regardées.,,Loisir,VideoStream,DocType,,Orange,mensuelle,un mois,2016-10
+title,Titre du programme visionné,Affaire bettina beau : la secrétaire a-t-elle...,Loisir,VideoStream,Transaction,String,Orange,mensuelle,un mois,2016-10
+subTitle,Complément de titre.,0-Enquêtes criminelles,Loisir,VideoStream,Transaction,String,Orange,mensuelle,un mois,2016-10
+price,Prix de la vidéo (cas d'une VOD payante),2.99,Loisir,VideoStream,Transaction,Number - euros,Orange,mensuelle,un mois,2016-10
+fromOffer,Bouquet de la vidéo,24/24 TV,Loisir,VideoStream,Metadata,String,Orange,mensuelle,un mois,2016-10
+viewingDate,Horodatage de visionnage,2016-10-24T18:45:12Z,Loisir,VideoStream,Transaction,String - ISO8601,Orange,mensuelle,un mois,2016-10
+viewingDuration,Durée de visionnage (souvent non-renseignée) TODO : quelle unité,0.93,Loisir,VideoStream,Transaction,Number - TODO,Orange,mensuelle,un mois,2016-10
+Message,Un email,,Communication,Message,DocType,String,Cozy,1/10min,0,2015
+EMail,"Un email, parmi les comptes emails configurés dans Cozy (émetteur, destinataires, objet, corps du message, pièces jointes, horodatage, ...)",email,Communication,Message,Subset,emit(doc._id);,Cozy,1/10min,0,2015
+accountID,"Id du document Account, auquel ce message est relié",79e8f41dc48435615f8233f54a235762,Communication,Message,Metadata,String - id d'un document de DocType Account,Cozy,1/10min,0,2015
+messageID,Id du message (normalisé),CAP123jNbif05OLrWmPEct5OB+F4+4=wW-xJskDJAvHZp-0u56g@mail.gmail.com,Communication,Message,Metadata,String,Cozy,1/10min,0,2015
+normSubject,"Objet du mail (normalisé (sans RE, FWD, ...)",Point coordination Mesinfos,Communication,Message,Transaction,String,Cozy,1/10min,0,2015
+conversationID,Id de la conversation,f570ee59-c968-446f-beff-4fa78490dc6e,Communication,Message,Metadata,String,Cozy,1/10min,0,2015
+mailboxIDS,mailboxes as an hash,"{ 79e8f41dc48435615f8233f54a23b5f4: 9675, 79e8f41dc48435615f8233f54a23670b: 9675 }",Communication,Message,Metadata,"Object - {boxID: uid, boxID2 : uid2}",Cozy,1/10min,0,2015
+hasTwin,mailboxIDs where this message has twin,TODO,Communication,Message,Metadata,Boolean,Cozy,1/10min,0,2015
+twinMailboxIDs,mailboxes as an hash of array,TODO,Communication,Message,Metadata,[String] - id de MailBox,Cozy,1/10min,0,2015
+flags,Flags du message,"[""\Seen"", ""NonJunk""]",Communication,Message,Metadata,[String] -,Cozy,1/10min,0,2015
+headers,Headers du message,"{ x-google-sender-auth :""GZTxDTZdifi5YWZCaB1lvN5zNLg"", x-ovh-spamstate :""OK"",mime-version :""1.0"", ... }",Communication,Message,Metadata,Object,Cozy,1/10min,0,2015
+from,Expéditeur,"[{ name: ""Guillaume Jacquart"", address: ""gjacquart@fing.org"" }]",Communication,Message,Transaction,"[Object] - chacun contenant les champs name, et address",Cozy,1/10min,0,2015
+to ,Destinataires,"[{ name: """", address: ""toto@example.com"" }]",Communication,Message,Transaction,"[Object] - chacun contenant les champs name, et address",Cozy,1/10min,0,2015
+cc,Destinataires en copie,"[{ name: ""Guillaume Jacquart"", address: ""gjacquart@fing.org"" }]",Communication,Message,Transaction,"[Object] - chacun contenant les champs name, et address",Cozy,1/10min,0,2015
+bcc,Destinataires en copie caché,"[{ name: ""Guillaume Jacquart"", address: ""gjacquart@fing.org"" }]",Communication,Message,Transaction,"[Object] - chacun contenant les champs name, et address",Cozy,1/10min,0,2015
+replyTo,Répondre à ,"[{ name: ""Guillaume Jacquart"", address: ""gjacquart@fing.org"" }]",Communication,Message,Metadata,"[Object] - chacun contenant les champs name, et address",Cozy,1/10min,0,2015
+subject,Objet du message,Re: Point coordination Mesinfos,Communication,Message,Metadata,String,Cozy,1/10min,0,2015
+inReplyTo,messageId des messages auxquels ce message répond,[CAP123jNbif05OLrWmPEct5OB+F4+4=wW-xJskDJAvHZp-0u56g@mail.gmail.com],Communication,Message,Metadata,[String] - des messageID,Cozy,1/10min,0,2015
+references,messageID des messages auxquels ce message fait référence,[CAP123jNbif05OLrWmPEct5OB+F4+4=wW-xJskDJAvHZp-0u56g@mail.gmail.com],Communication,Message,Metadata,[String] - des messageID,Cozy,1/10min,0,2015
+text,Contenu textuel du message,Bonjour,Communication,Message,Transaction,String,Cozy,1/10min,0,2015
+html,Contenu formaté du message (html),<div>Bonjour</div>,Communication,Message,Transaction,String - html,Cozy,1/10min,0,2015
+date,Date du message (TODO),2016-05-17T12:56:58.000Z,Communication,Message,Metadata,String - ISO8601 UTC.,Cozy,1/10min,0,2015
+priority,priorité du message (TODO),normal,Communication,Message,Metadata,String - valeurs parmis ...,Cozy,1/10min,0,2015
+ignoreInCount,ignorer ce message dans le comptage du compte (TODO),false,Communication,Message,Metadata,Boolean,Cozy,1/10min,0,2015
+attachments,liste des pièces jointes,"[{contentType :""image/jpeg"",fileName :""image003.jpg"", contentDisposition :""inline"", transferEncoding :""base64"", contentId :""image003.jpg@01D1B025.F5730750"", generatedFileName :""image003.jpg"", checksum :""e9cb966cc221c0cf9c915d307dfa5375"", length :2239, url :""message/17931c49656d8eb5a09c7ac3ea4ac173/attachments/image003.jpg"" }",Communication,Message,Metadata,[Object],Cozy,1/10min,0,2015
+binary,"liste des documents Binary, portant les fichiers joints","{ image003.jpg: { id :""17931c49656d8eb5a09c7ac3ea4ac1b3"", rev :""2-25df978b1f5e6d26a520f177d48aaaf7"" }, ...}",Communication,Message,Metadata,[Object],Cozy,1/10min,0,2015
+alternatives,for calendar content,,Communication,Message,Metadata,TODO,Cozy,1/10min,0,2015
+Contact,Un contact de mon carrnet d'adresses,,Communication,Contact,DocType,,Cozy,,,2013
+Carnet d'adresse,Mon carnet d'adresse dans mon Cozy,carnet_d_adresse,Communication,Contact,Subset,emit(doc._id);,Cozy,temps-réel,temps-réel,2013
+fn,Nom du contact (pré-formaté),Martin Dupond,Communication,Contact,Transaction,String,Cozy,,,2013
+n,"Nom , Prénom, ... du contact (structuré)",Dupont;Martin;;;,Communication,Contact,Metadata,String - (Familly;Given;Middle;Prefix;Suffix),Cozy,,,2013
+org,Employeur (professionnel),Fing,Communication,Contact,Transaction,String,Cozy,,,2013
+title,Intitulé du poste (professionnel),Stagiaire,Communication,Contact,Transaction,String,Cozy,,,2013
+department,Service (professionnel),Service juridique,Communication,Contact,Transaction,String,Cozy,,,2013
+bday,Date d'anniversaire,2001-02-01,Communication,Contact,Transaction,String - ISO8601 (date),Cozy,,,2013
+nickname,Surnom,Marty,Communication,Contact,Transaction,String,Cozy,,,2013
+url,--,,Communication,Contact,Transaction,String - URI,Cozy,,,2013
+revision,Horodatage de dernière modification,2015-08-04T08:35:38.988Z,Communication,Contact,Metadata,String - ISO8601 UTC.,Cozy,,,2013
+datapoints,Liste des caractéristiques du contact.,"[
+  {
+    name :""tel"", // Catégorie de données (tel, mail, address, ...)
+    type :""home"", // Sous-catégorie
+    value :""+33123456789"", // Valeur
+  },
+  {
+    name :""adr"",
+    type :""work"",
+    value: ["""", """", ""8 passage Brulon"", ""Paris"", """", ""75012"", ""France"" ]
+  },
+]",Communication,Contact,Transaction,[Datapoint] - https://github.com/cozy/cozy-contacts/blob/master/server/models/contact.coffee#L9-L16,Cozy,,,2013
+note,Note à propos du contact,Code : A7B12 ; 5ème gauche,Communication,Contact,Transaction,String,Cozy,,,2013
+tags,Tag,"['MesInfos', ]",Communication,Contact,Metadata,[String],Cozy,,,2013
+_attachments,--,,Communication,Contact,Metadata,,Cozy,,,2013
+accounts,"Services externes à Cozy, dans lesquels ce contact est également présent.","[
+  {
+    type :""com.google"", // Designation du service externe
+    name: ""martin.dupond@gmail.com"", // Compte utilisateur sur le service externe
+    id :""4c0dd7b68cebfe28"", // Id de l'évènement dans le service externe
+    lastUpdate :""2015-01-18T14:19:32.690Z"" // dernière mise à jour dans le service externe
+  },
+]",Communication,Contact,Metadata,[Account],Cozy,,,2013
+Event,Un évènement dans l'agenda.,"[ { name: ""Contacts"", url: ""https://github.com/cozy/cozy-calendar"" }]",Communication,Event,DocType," Évènements récurrents, cf : 
+https://github.com/cozy/cozy-calendar/wiki/Generalities-about-calendar-components,-iCal-and-date-handling-in-js",Cozy,,,2013
+Mon agenda,Un événement des agendas de mon Cozy,mon_agenda,Communication,Event,Subset,emit(doc._id);,Cozy,temps-réel,temps-réel,2013
+start,"Horadatage de début de l'évènement. Un horodatage en UTC si l'évènement est ponctuel ; si l'évènement est récurrent, consulter : https://github.com/cozy/cozy-calendar/wiki/Generalities-about-calendar-components,-iCal-and-date-handling-in-js",2016-05-18T18:00:00.000Z,Communication,Event,Transaction,String - ISO8601 ; UTC si ponctuel ; sans timezone si récurrent,Cozy,RT,RT,2013
+end,"Horodatage de fin de l'évènement. Un horodatage en UTC si l'évènement est ponctuel ; si l'évènement est récurrent, consulter : https://github.com/cozy/cozy-calendar/wiki/Generalities-about-calendar-components,-iCal-and-date-handling-in-js",2016-05-18T22:00:00.000Z,Communication,Event,Transaction,String - ISO8601 ; UTC si ponctuel ; sans timezone si récurrent,Cozy,RT,RT,2013
+place,Lieu de l'évènement,8 passage Brulons 75011 Paris,Communication,Event,Transaction,String,Cozy,RT,RT,2013
+details,Description de l'évènement,"Ordre du jour : - Point , - Point 2, ...",Communication,Event,Transaction,String,Cozy,RT,RT,2013
+description,Nom de l'évènement,Point data Pilote MesInfos,Communication,Event,Transaction,String,Cozy,RT,RT,2013
+rrule,Règle de récurrence de l'évènement. (https://github.com/jkbrzt/rrule#differences-from-icalendar-rfc) seulement pour les évènements récurrents,FREQ=WEEKLY;INTERVAL=1;WKST=MO;BYDAY=TU,Communication,Event,Metadata,String - null si évènement ponctuel ; si récurrent cf https://github.com/jkbrzt/rrule#differences-from-icalendar-rfc,Cozy,RT,RT,2013
+tags,Tag. Le premier tag indique le calendrier auquel cet évènement est rattaché.,"['MesInfos', ]",Communication,Event,Metadata,[String],Cozy,RT,RT,2013
+attendees,Liste des invités à l'évènement,"[
+  {
+    key :""4op8nxm5i28qrz7vw4nt93ydgmmdxny7"",
+    status :""INVITATION-NOT-SENT"",
+    email :""gerard.dupondt@example.com"",
+    contactid :""ea567fc52a7b192ffc1310f40c361632"",
+  },
+]",Communication,Event,Transaction,[Object],Cozy,RT,RT,2013
+related,TODO,TODO,Communication,Event,Metadata,TODO,Cozy,RT,RT,2013
+timezone,Fuseau horraire. Uniquement pour les évènements récurrents !,Europe/Paris,Communication,Event,Metadata,String - cf TODO !,Cozy,RT,RT,2013
+alarms,Alarme de rappel de l'évènement,"[
+  {
+    action :""BOTH"", // DISPLAY, EMAIL, BOTH
+    trigg :""-PT15M"", // iCal duration string
+  },
+]",Communication,Event,Transaction,[Object] - https://github.com/cozy/cozy-calendar/wiki/DocType-Event#alarms,Cozy,RT,RT,2013
+created,Horodatage de création.,2016-05-23T08:32:55.321Z,Communication,Event,Metadata,String - ISO8601 UTC.,Cozy,RT,RT,2013
+caldavuri,"Identifiant unique de l'évènement, (hors de la base de données du  Cozy)",233778870329266,Communication,Event,Metadata,String,Cozy,RT,RT,2013
+uuid,-,,Communication,Event,Metadata,,Cozy,RT,RT,2013
+lastModification,Horodatage de dernière modification,2016-05-23T08:40:29.638Z,Communication,Event,Metadata,String - ISO8601 UTC.,Cozy,RT,RT,2013
+accounts,- ,,Communication,Event,Metadata,,Cozy,RT,RT,2013
+File,Un descripteur de fichier,,Loisir,File,DocType,,Cozy,,,2014
+Fichiers dans mon Cozy,"Un fichier, que j'ai placé dans mon Cozy (image, pdf, ...)",,Loisir,File,Subset,emit(doc._id);,Cozy,temps-réel,temps-réel,2014
+path,Chemin du dossier parent,/dossier1,Loisir,File,Metadata,String  séparateur '/',Cozy,,,2014
+name,Nom du fichier,toto.txt,Loisir,File,Transaction,String,Cozy,,,2014
+mime,Type mime du fichier,text/plain,Loisir,File,Metadata,String - type MIME - https://fr.wikipedia.org/wiki/Multipurpose_Internet_Mail_Extensions#En-t.C3.AAtes_MIME,Cozy,,,2014
+creationDate,Horodatage de création du fichier,2016-05-23T09:47:38.870Z,Loisir,File,Metadata,String - ISO8601 UTC.,Cozy,,,2014
+lastModification,Horodatage de dernière modification du fichier,2015-04-03T10:08:40.000Z,Loisir,File,Metadata,String - ISO8601 UTC.,Cozy,,,2014
+class,TODO,document,Loisir,File,Metadata,String,Cozy,,,2014
+size,Taille (octets),28,Loisir,File,Metadata,"Number - entier, en octets",Cozy,,,2014
+binary,Liens vers le document Binary qui porte les données du fichier,"{
+  file: {
+    id :""2f87b10ed05135ba246b19651bb74a10"",
+    rev :""2-2d13532aa9cc9785872ebad67fd3195b""
+  }
+}",Loisir,File,Metadata,[Object],Cozy,,,2014
+checksum,Some de contrôle (hash du fichier),91c7db80e31e375d6504986730ee41c0e63438c6,Loisir,File,Metadata,String,Cozy,,,2014
+modificationHistory,TODO,,Loisir,File,Metadata,,Cozy,,,2014
+clearance,Droit d'accès et partage,public,Loisir,File,Metadata,"undefined, String, [IObject] : https://github.com/cozy/cozy-clearance
+",Cozy,,,2014
+tags,Tag,"['MesInfos', ]",Loisir,File,Metadata,[String] - ,Cozy,,,2014
+uploading,En cours de téléversement,false,Loisir,File,Metadata,Booléen,Cozy,,,2014
+Folder,,,Loisir,Folder,DocType,,Cozy,,,2014
+path,Chemin du dossier parent,/dossier1,Loisir,Folder,Metadata,String  séparateur '/',Cozy,,,2014
+name,Nom du dossier,dossier2,Loisir,Folder,Transaction,String,Cozy,,,2014
+creationDate,Horodatage de création du fichier,2016-05-23T09:47:38.870Z,Loisir,Folder,Metadata,String - ISO8601 UTC.,Cozy,,,2014
+lastModification,Horodatage de dernière modification du fichier,2015-04-03T10:08:40.000Z,Loisir,Folder,Metadata,String - ISO8601 UTC.,Cozy,,,2014
+size,TODO ?,,Loisir,Folder,Metadata,,Cozy,,,2014
+modificationHistory,TODO,,Loisir,Folder,Metadata,?,Cozy,,,2014
+changeNotification,Notifie  les changements venant d'individus à qui le dossier à été partagé. TODO.,false,Loisir,Folder,Metadata,Boolean,Cozy,,,2014
+clearance,Droit d'accès et partage,public,Loisir,Folder,Metadata,"undefined, String, [IObject] : https://github.com/cozy/cozy-clearance
+",Cozy,,,2014
+tags,Tag,"['MesInfos', ]",Loisir,Folder,Metadata,[String] - ,Cozy,,,2014
+Album,Un album photo,,Loisir,Album,DocType,,Cozy,,,2014
+Album Photo,"Un album photo, pour organiser mes Photos dans mon Cozy",album_photo,Loisir,Album,Subset,emit(doc._id);,Cozy,temps-réel,temps-réel,2014
+title,Titre de l'album,Atelier créatif MesInfos,Loisir,Album,Transaction,String,Cozy,,,2014
+description,Description de l'album,Les concept imaginés pendant l'atelier  MesInfos du 12 juillet 2013,Loisir,Album,Transaction,String,Cozy,,,2014
+date,Horodatage de la création de l'album,,Loisir,Album,Metadata,String - ISO8601 UTC.,Cozy,,,2014
+orientation,Orientation de l'image de courveture de l'album,,Loisir,Album,Metadata,Number,Cozy,,,2014
+clearance,Droit d'accès et partage,public,Loisir,Album,Metadata,"undefined, String, [IObject] : https://github.com/cozy/cozy-clearance
+",Cozy,,,2014
+thumbsrc,Chemin vers l'image de couverture de l'album,photos/thumbs/ea567fc52a7b192ffc1310f40c03c4ae.jpg,Loisir,Album,Metadata,,Cozy,,,2014
+updated,,,Loisir,Album,Metadata,String - ISO8601 UTC.,Cozy,,,2014
+coverPicture,Image de couverture de l'album (id),ea567fc52a7b192ffc1310f40c03c4ae,Loisir,Album,Metadata,String - id CouchDB du document Photo,Cozy,,,2014
+thumb,Miniature de l'image de couverture de l'album (id),,Loisir,Album,Metadata,String - id CouchDB du document Photo,Cozy,,,2014
+Photo,Une photo dans un album photo.,,Loisir,Photo,DocType,,Cozy,,,2015-07
+Photos,"Une photo, sauvegardée sur mon Cozy",photos,Loisir,Photo,Subset,emit(doc._id);,Cozy,temps-réel,temps-réel,2015-07
+title,Titre de la photo,"""""",Loisir,Photo,Metadata,String,Cozy,,,2015-07
+description,Description de la photo,"""""",Loisir,Photo,Metadata,String,Cozy,,,2015-07
+orientation,Orientation de la photo,1,Loisir,Photo,Metadata,Number - 1 : pas de rotation,Cozy,,,2015-07
+binary,Liens vers le document Binary qui porte les données de la photo,"{
+  file: {
+    id :""2f87b10ed05135ba246b19651bb74a10"",
+    rev :""2-2d13532aa9cc9785872ebad67fd3195b""
+  },
+  thumb: {
+    ""id"":""39bd90dec5c33c947f99448c260e13fe"",
+    rev"":""2-32a44b3e3b916b40903c306ae1ea4cf9"",
+  },
+  screen: {
+      ""id"":""39bd90dec5c33c947f99448c260e1446"",
+      ""rev"":""2-e8365f417bfce7bf151d257d1cbc5506""
+}
+}",Loisir,Photo,Metadata,[Object],Cozy,,,2015-07
+albumId,Album auquel cette photo appartient,39bd90dec5c33c947f99448c260ddcd2,Loisir,Photo,Metadata,String - id de l'album auquel cette photo appartient,Cozy,,,2015-07
+date,Horodatage de création de cette photo.,2015-07-23T07:41:13.000Z,Loisir,Photo,Metadata,String - ISO8601 UTC.,Cozy,,,2015-07
+thumbsrc,Chemin miniature TODO,photos/thumbs/39bd90dec5c33c947f99448c26133013.jpg,Loisir,Photo,Metadata,String,Cozy,,,2015-07
+src,Chemin vers la photo TODO,photos/thumbs/39bd90dec5c33c947f99448c26133013.jpg,Loisir,Photo,Metadata,String,Cozy,,,2015-07
+gps,Coordonnées de la prise de vue (extraite des données EXIFF),"{
+  alt: 504,
+  lat: 50.9874,
+  lon: 1.9287987,
+}",Loisir,Photo,Metadata,"Object - lat, lon, (degrés), alt (mètres)",Cozy,,,2015-07
+BankOperation,"Mes transactions bancaires. Les écritures sur mes comptes en banque (date, montant, ...). Origine : Société Générale, La Banque Postale, Crédit Coopératif - màj journalières",,Finance,BankOperation,DocType,String,Cozy,1/jour,1jour,2016-08
+Opérations bancaires,"Mes relevés de comptes bancaires (libellé, date, montant pour chaque opération), que je récupère auprès de ma banque, et visualise grace à l'application Cozy Kresus.",operations_bancaires,Finance,BankOperation,Subset,emit(doc._id);,Cozy,journalière,24h,2016-08
+bankAccount,Le numéro de compte lié à l'opération,03591928769823716936,Finance,BankOperation,Caractérisation,String - suite de X chiffres,Cozy,1/jour,1jour,2014
+operationTypeID,"Type de mouvement bancaire (prélèvement, carte, ...)",ea567fc52a7b192ffc1310f40c3fe504,Finance,BankOperation,transaction,"String - id de document CouchDB, parmis les documents Operationtype)",Cozy,1/jour,1jour,2014
+title,Libellé du mouvement,RATP,Finance,BankOperation,transaction,String,Cozy,1/jour,1jour,2014
+date,Date de l'opération,2016-05-03T00:00:00.000Z,Finance,BankOperation,transaction,String - ISO8601 UTC.,Cozy,1/jour,1jour,2014
+amount,Montant de l'opération,-14.1,Finance,BankOperation,transaction,Number - positif : crédit ; négatif : débit,Cozy,1/jour,1jour,2014
+raw,Libellé brut du mouvement,CARTE X0615 03/05 RATP,Finance,BankOperation,metadata,String,Cozy,1/jour,1jour,2014
+dateImport,Date d'importation de l'opération dans le Cozy,,Finance,BankOperation,metadata,String - ISO8601 UTC.,Cozy,1/jour,1jour,2014
+categoryId,Catégorie de classement de l'opération dans l'app Kresus,,Finance,BankOperation,Augmentation,"String - id de document CouchDB, parmis les documents Bankcategory)",Cozy,1/jour,1jour,2014
+Bankaccount,"Mes comptes bancaires. (banque, intitulé, ...).",,Finance,Bankaccount,DocType,String,Cozy,1/jour,1jour,2014
+bank,Le nom de la banque,societegenerale,Finance,Bankaccount,Caractérisation,"String - slug (en minuscule, sans espaces ni caractères spéciaux)",Cozy,1/jour,1jour,2014
+bankAccess,Les codes d'accès pour ce compte,967e87cce32bbd7da2198248736417bd,Finance,Bankaccount,metadata,String - id d'un document Bankaccess,Cozy,1/jour,1jour,2014
+title,Nom du compte bancaire,Livret A,Finance,Bankaccount,Caractérisation,String,Cozy,1/jour,1jour,2014
+accountNumber,Numéro du compte,03591928769823716936,Finance,Bankaccount,Caractérisation,String - suite de X chiffres,Cozy,1/jour,1jour,2014
+iban,Code IBAN de ce compte,FR763000303591928769823716936,Finance,Bankaccount,Caractérisation,String - IBAN : https://fr.wikipedia.org/wiki/International_Bank_Account_Number,Cozy,1/jour,1jour,2014
+initialAount,"Montant initial, au premier scrapping",200.12,Finance,Bankaccount,Metadata,Number - positif : crédit ; négatif : débit,Cozy,1/jour,1jour,2014
+lastChecked,Instant de dernier mise à jour des données,2016-05-16T06:52:47.974Z,Finance,Bankaccount,Metadata,String - ISO8601 UTC.,Cozy,1/jour,1jour,2014
+Note,,,Loisir,Note,DocType,,Cozy,,,2014
+title,Titre de la note.,Courses,Loisir,Note,Transaction,String,Cozy,,,2014
+content,Contenu de la note,"Cacahuètes
+Pommes",Loisir,Note,Transaction,"String - Formatage spécifique (listes, liens vers tâches, contacts, ...)",Cozy,,,2014
+creationDate,Horadatage de création de la note.,2015-12-08T19:37:18.000Z,Loisir,Note,Metadata,String - ISO8601 UTC.,Cozy,,,2014
+lastModificationDate,Horodatage de dernière modification.,2015-02-20T11:57:10.000Z,Loisir,Note,Metadata,String - ISO8601 UTC.,Cozy,,,2014
+tags,Tag,[],Loisir,Note,Metadata,[String],Cozy,,,2014
+parent_Id,Id de la note parente,ea567fc52a7b192ffc1310f40c1c41e6,Loisir,Note,Metadata,String - id d'un document dans CouchDB,Cozy,,,2014
+path,"Chemin de classement de la note
+","['Course', 'Mardi']",Loisir,Note,Metadata,"[String] - Liste de title de notes, de la racine, à celle-ci.",Cozy,,,2014
+humanPath,TODO,undefined,Loisir,Note,Metadata,TODO,Cozy,,,2014
+lastModificationValueOf,TODO,1419432212886,Loisir,Note,Metadata,TODO,Cozy,,,2014
+version,Version du DocType.,2,Loisir,Note,Metadata,"Numer - entier (1, 2, ..)",Cozy,,,2014
+Tasky,,,Loisir,Tasky,DocType,,Cozy,,,2015-06
+Une tâche Tasky,Une tâche créée via l'application Tasky,tasky,Loisir,Tasky,Subset,emit(doc._id);,Cozy,,,2015-06
+done,Tâche accomplie ?,false,Loisir,Tasky,Transaction,Boolean,Cozy,,,2015-06
+completionDate,Horodatage de réalisation de la date,1464352157261,Loisir,Tasky,Metadata,Number - UNIX Timestamp,Cozy,,,2015-06
+description,Nom de la tâche,Documenter les données,Loisir,Tasky,Transaction,String,Cozy,,,2015-06
+order,Ordre de classement de la tâche,8.988465674311579e+307,Loisir,Tasky,Metadata,Number,Cozy,,,2015-06
+tags,Tag,"['Projet1',]",Loisir,Tasky,Metadata,[String],Cozy,,,2015-06
+isArchived,Tâche archivée ?,false,Loisir,Tasky,Metadata,Boolean,Cozy,,,2015-06
+UseTracker,Trace d'usage du Cozy,,Loisir,UseTracker,DocType,,Cozy,,,2014
+Traces d'usage,"Trace d'usage du Cozy, notamment récoltée - avec accord de l'utilisateur - pour la recherche dans le Pilote MesInfos (application utilisée, horodatage, ...)",,Loisir,UseTracker,Subset,emit(doc._id);,Cozy,temps-réel,temps-réel,2014
+app,Application utilisée (slug),kresus,Loisir,UseTracker,Transaction,String,Cozy,,,2014
+dateStart,Horodatage de début d'utilisation.,2016-03-12T10:59:11.359Z,Loisir,UseTracker,Transaction,String - ISO8601 UTC.,Cozy,,,2014
+dateEnd,Horodatage de fin d'utilisation.,2016-03-12T11:26:25.522Z,Loisir,UseTracker,Metadata,String - ISO8601 UTC.,Cozy,,,2014
+duration,Durée d'utilisation (en secondes),1634163,Loisir,UseTracker,Transaction,"Number - entier, secondes",Cozy,,,2014
+RescueTimeActivity,De Konnector,,Loisir,RescueTimeActivity,DocType,,Cozy,,,2015
+Traces d'activité RescueTime,"Activité, tracée avec le service Rescue Time.",,Loisir,RescueTimeActivity,Subset,emit(doc._id);,Cozy,temps-réel,24h,2015
+date,Horodatage de l'activité,2016-05-23T00:00:00.000Z,Loisir,RescueTimeActivity,Transaction,String - ISO8601 UTC.,Cozy,,,2015
+duration,Durée de l'activité (en secondes),61,Loisir,RescueTimeActivity,Transaction,"Number - entier, en secondes.",Cozy,,,2015
+description,"Description de l'activité. Nom du logiciel utilisé, nom de domaine du site consulté.",mesinfos.fing.org,Loisir,RescueTimeActivity,Transaction,String,Cozy,,,2015
+category,"Catégorie de l'activité (Email, Writing, Instant Message, ...",General News & Opinion,Loisir,RescueTimeActivity,Metadata,String,Cozy,,,2015
+productivity,Note de productivité attributé à cette activité (selon réglage de l'utilisateur),-2,Loisir,RescueTimeActivity,Metadata,Number - entier,Cozy,,,2015
+people,TODO,1,Loisir,RescueTimeActivity,Metadata,Number - entier,Cozy,,,2015
+Sleep,Sleep data from jawbone.com,,Loisir,Sleep,DocType,,Cozy,,,2015
+Données  sommeil,Données récoltées via un objet connecté Jawbone,,Loisir,Sleep,Subset,emit(doc._id);,Cozy,temps-réel,24h,2015
+date,TODO,TODO,Loisir,Sleep,Transaction,String - ISO8601 UTC.,Cozy,,,2015
+asleepTime,TODO,TODO,Loisir,Sleep,Transaction,Number,Cozy,,,2015
+awakeTime,TODO,TODO,Loisir,Sleep,Transaction,Number,Cozy,,,2015
+awakeningCount,TODO,TODO,Loisir,Sleep,Transaction,Number,Cozy,,,2015
+bedTime,TODO,TODO,Loisir,Sleep,Transaction,Number,Cozy,,,2015
+deepSleepDuration,TODO,TODO,Loisir,Sleep,Transaction,Number,Cozy,,,2015
+lightSleepDuration,TODO,TODO,Loisir,Sleep,Transaction,Number,Cozy,,,2015
+sleepDuration,TODO,TODO,Loisir,Sleep,Transaction,Number,Cozy,,,2015
+sleepQuality,TODO,TODO,Loisir,Sleep,Transaction,Number,Cozy,,,2015
+vendor,TODO,Withings,Loisir,Sleep,Metadata,String,Cozy,,,2015
+Steps,Steps data from jawbone.com,,Loisir,Steps,DocType,,Cozy,,,2015
+Mes pas,"Mes pas, récoltés avec un bracelet Jawbone",,Loisir,Steps,Subset,emit(doc._id);,Cozy,temps-réel,24h,2015
+date,TODO,TODO,Loisir,Steps,Transaction,String - ISO8601 UTC.,Cozy,,,2015
+activeTime,TODO,TODO,Loisir,Steps,Transaction,Number,Cozy,,,2015
+activeTimeCalories,TODO,TODO,Loisir,Steps,Transaction,Number,Cozy,,,2015
+distance,TODO,TODO,Loisir,Steps,Transaction,Number,Cozy,,,2015
+inactiveTime,TODO,TODO,Loisir,Steps,Transaction,Number,Cozy,,,2015
+longestActiveTime,TODO,TODO,Loisir,Steps,Transaction,Number,Cozy,,,2015
+longestIdleTime,TODO,TODO,Loisir,Steps,Transaction,Number,Cozy,,,2015
+steps,TODO,TODO,Loisir,Steps,Transaction,Number,Cozy,,,2015
+totalCalories,TODO,TODO,Loisir,Steps,Transaction,Number,Cozy,,,2015
+vendor,TODO,Withings,Loisir,Steps,Transaction,String,Cozy,,,2015
+Weight,,,Loisir,Weight,DocType,,Cozy,,,2015
+Mon poids,"Mon poids, récolté par une balance connectée",,Loisir,Weight,Subset,emit(doc._id);,Cozy,temps-réel,24h,2015
+date,TODO,TODO,Loisir,Weight,Transaction,Number,Cozy,,,2015
+weight,TODO,TODO,Loisir,Weight,Transaction,Number,Cozy,,,2015
+leanWeight,TODO,TODO,Loisir,Weight,Transaction,Number,Cozy,,,2015
+fatWeight,TODO,TODO,Loisir,Weight,Transaction,Number,Cozy,,,2015
+user,TODO,TODO,Loisir,Weight,Transaction,Number,Cozy,,,2015
+vendor,TODO,Withings,Loisir,Weight,Transaction,Number,Cozy,,,2015
+PhoneBill,Factures de téléphone,,Finance,PhoneBill,DocType,,Cozy,,,2015
+date,Date d'émission de la facture.,2015-05-07T00:00:00.000Z,Finance,PhoneBill,Transaction,String - ISO8601 UTC.,Cozy,,,2015
+vendor,Fournisseur.,Free Mobile,Finance,PhoneBill,Transaction,String,Cozy,,,2015
+amount,Montant de la facture.,19.99,Finance,PhoneBill,Transaction,Number,Cozy,,,2015
+fileId,Id du document File du fichier PDF de la facture,b84d8e2861c1f8cfe0b8a47dfad8c6f4,Finance,PhoneBill,Metadata,String - id d'un documnet File dans le CouchDB,Cozy,,,2015
+binaryId,Id du document Binary du fichier PDF de la facture,ea567fc52a7b192ffc1310f40c2b62d7,Finance,PhoneBill,Metadata,String - id d'un documnet Bynary dans le CouchDB,Cozy,,,2015
+pdfurl,Url de la facture pdf chez le fournisseur.,,Finance,PhoneBill,Metadata,String - url,Cozy,,,2015
+InternetBill,Facture d'abonnement internet,,Finance,InternetBill,DocType,TODO,Cozy,,,2015
+date,,2016-05-01T00:00:00.000Z,Finance,InternetBill,Transaction,TODO,Cozy,,,2015
+vendor,,,Finance,InternetBill,Transaction,TODO,Cozy,,,2015
+amount,,,Finance,InternetBill,Transaction,TODO,Cozy,,,2015
+filteId,Id du document File du fichier PDF de la facture,,Finance,InternetBill,Metadata,TODO,Cozy,,,2015
+Bill,"Facture auprès d'un fournisseur (date, numéro, pdf, ...)",,Finance,Bill,DocType,,Cozy,,,2015
+Factures de téléphone,"Mes factures de téléphone, scrappées chez Bouygues, SFR, Free, Orange, Sosh, Virgin Mobile.",factures_telephone,Finance,Bill,Subset,if (doc.type && doc.type.toLowerCase() === 'phone') { emit(doc._id); },Cozy,Mensuelle,24h,2015
+Factures Internet,"Mes factures internet, scrappées chez Bouyges, Free, ...",,Finance,Bill,Subset,if (doc.type && doc.type.toLowerCase() === 'internet') { emit(doc._id); },Cozy,Mensuelle,24h,2015
+type,"Type de prestation (internet, téléphone, ...)",TODO,Finance,Bill,Metadata,String,Cozy,,,2015
+subtype,Soustype de la prestation,TODO,Finance,Bill,Metadata,String,Cozy,,,2015
+date,Date d'émission de la facture,TODO,Finance,Bill,Transaction,TODO,Cozy,,,2015
+vendor,Fournisseur,TODO,Finance,Bill,Transaction,TODO,Cozy,,,2015
+amount,Montant de la facture,TODO,Finance,Bill,Transaction,TODO,Cozy,,,2015
+plan,Nom de l'offre commerciale,TODO,Finance,Bill,Transaction,TODO,Cozy,,,2015
+pdfurl,Url de la facture pdf chez le fournisseur.,TODO,Finance,Bill,Metadata,TODO,Cozy,,,2015
+binaryId,Id du document Binary du fichier PDF de la facture,TODO,Finance,Bill,Metadata,TODO,Cozy,,,2015
+fileId,Id du document File du fichier PDF de la facture,TODO,Finance,Bill,Metadata,TODO,Cozy,,,2015
+content,Contenue de la facture,TODO,Finance,Bill,Metadata,TODO,Cozy,,,2015
+Client,"Mes informations clients chez mes fournisseurs (Identité, contact, date de début de relation, ...) .",--,Profil,Client,DocType,,AXA,,,2013
+Home,"Mon domicile (individuel ou collectif, taille, jardin ?, ...) ",--,Domicile,Home,DocType,,AXA,,,2013
+InsuranceClaim,Mes sinistres déclarés à mon assurance.,--,Finance,InsuranceClaim,DocType,,AXA,,,2013
+Vehicle,"Mes véhicules, auto, moto. (immatriculation, puissance, age, kilométrage, marque, ...).",--,Domicile,Vehicle,DocType,,AXA,,,2013

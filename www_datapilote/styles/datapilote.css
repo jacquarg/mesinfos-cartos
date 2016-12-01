@@ -3,24 +3,11 @@
 @media (max-width: 992) and (min-width: 750)
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 html {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 14px; 
-  color: #666;   
+  font-size: 14px;
+  color: #666;
 }
 
 a {
@@ -44,14 +31,14 @@ h1 {
   margin: 0;
   text-align: center;
   margin-top: 33px;
- 
+
   margin-top: 50px;
   margin-bottom: 5px;
 }
 
 #period_filter {
   font-size: 20px;
-  
+
 }
 
 
@@ -73,7 +60,7 @@ h1 {
   font-family: 'Grand Hotel', cursive;
   font-size: 50px;
   color: #aaaaaa;
-  line-height: 41.5px;  
+  line-height: 41.5px;
 }
 
 #documentation h4 {
@@ -93,12 +80,12 @@ h1 {
   font-size: 16px;
   margin: 0px;
   list-style: none;
-  
+
   padding:  0px;
 }
 #documentation .toggle {
   cursor: pointer;
-  
+
 }
 
 
@@ -111,7 +98,7 @@ h1 {
   position: absolute;
   left: 20px;
   top:20px;
-  
+
   /*! background: white; */
   border:  0;
   border-radius: 2px;
@@ -121,10 +108,10 @@ h1 {
 
 #word_filter_submit {
   position: absolute;
-  left: 173px; 
+  left: 173px;
   top: 25px;
   z-index: 2001;
-  
+
 }
 
 #documentation {
@@ -136,7 +123,7 @@ h1 {
   /*! margin-left:  10px; */
   padding:  20px;
   width: 90%;
-  
+
 }
 
 #documentation ul {
@@ -145,7 +132,7 @@ h1 {
 
 #documentation .subsets {
   /*! margin-left: 0px; */
-  
+
   padding-left:  0px;
 }
 
@@ -169,7 +156,7 @@ h1 {
   font-size: 50%;
   position: relative;
   left: 8px;
-  bottom: 1px;  
+  bottom: 1px;
 }
 
 #documentation ul.subsets .expanded h4:after {
@@ -177,16 +164,16 @@ h1 {
   font-size: 50%;
   position: relative;
   left: 8px;
-  bottom: 1px;  
+  bottom: 1px;
 }
 
 #documentation ul.subsets li .detenteur {
   float: left;
-  
+
 }
 #documentation ul.subsets li .detenteur img {
   max-height: 25px;
-  
+
   max-width: 25px;
   position: relative;
   top: 3px;
@@ -206,7 +193,7 @@ h1 {
 
 #documentation .caracteristiques {
   list-style: none;
-  
+
   padding: 0px;
 }
 #documentation .doctype {
@@ -216,12 +203,12 @@ h1 {
 
 #documentation .subset p {
   font-size: 18px;
-  /*! padding:10px; */  
+  /*! padding:10px; */
   margin:  0px 0px 10px 0px;
 }
 
 #documentation .subset ul{
-    
+
 }
 
 #documentation .subset li {
@@ -238,7 +225,7 @@ h1 {
   box-sizing: border-box;
 }
 #documentation .doctype p {
-  /*! padding: 0px 10px; */  
+  /*! padding: 0px 10px; */
   margin:  0.5em;
   font-size: 90%;
 }
@@ -265,7 +252,7 @@ h1 {
 }
 #documentation .doctype .similaires li {
   line-height: 16px;
-  
+
   list-style-type: disc;
 }
 #documentation p {
@@ -278,7 +265,7 @@ h1 {
   border: 1px solid #dddddd;
 
   border-spacing: 0px;
-  
+
   font-family: gothamrnd, Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -303,7 +290,7 @@ h1 {
 }
 #documentation td {
   line-height: 1.2em;
-  
+
 }
 #documentation td.nom {
   font-weight: bold;
@@ -317,7 +304,7 @@ h1 {
   /*! min-width: 30%; */
   width:  40%;
 }
-  
+
 #documentation td.exemple {
   color: #666666;
   /*! overflow:  auto; */
@@ -439,7 +426,7 @@ h4 {
 
 #Center {
   opacity: 1 !important;
-  
+
       -webkit-filter: none !important;
        -moz-filter: none !important;
          -o-filter: none !important;
@@ -451,7 +438,7 @@ h4 {
   width: 100px;
   bottom: 10%;
   left: 3%;
-  
+
 }
 img.grayed {
   opacity: 0.6;
@@ -459,7 +446,7 @@ img.grayed {
        -moz-filter: grayscale(100%);
          -o-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
-            filter: grayscale(100%); 
+            filter: grayscale(100%);
 }
 
 .provider {
@@ -506,7 +493,7 @@ img.grayed {
   padding:  10px;
   cursor:   pointer;
 }
-  
+
 #zoomcontrols {
   position: absolute;
   height: 60px;
@@ -533,7 +520,7 @@ img.grayed {
   border: solid 10px rgba(150, 150, 150, 0.3);
   margin-top: 10px;
 }
-  
+
 
 @media (min-width: 992px) {
   #workarea {
@@ -545,7 +532,7 @@ img.grayed {
   }
   #documentation {
     margin-left: 500px;
-    
+
     width: calc(100% - 550px);
   }
 }
@@ -615,6 +602,12 @@ img.grayed {
   height: 100%;
 }
 
+#credits #csv {
+  height: 100%;
+  margin-left: 20px;
+}
+
+
 #credits #print {
   height: 80%;
 }
@@ -636,7 +629,7 @@ padding: 10px;
 #feedback img {
   height: 20px;
   position: relative;
-  top: 5px; 
+  top: 5px;
   margin-right: 5px;
   /*! margin-top: 5px; */
 }
@@ -682,14 +675,14 @@ padding: 10px;
 
 }
 .detailpopin {
-  width: 270px;  
+  width: 270px;
 }
 
 .listpopin .header {
   height: 60px;
   width: 100%;
   color: white;
-  background: rgb(35, 189, 182) none repeat scroll 0% 0%;  
+  background: rgb(35, 189, 182) none repeat scroll 0% 0%;
 }
 
 .listpopin .header h3 {
@@ -737,7 +730,7 @@ padding: 10px;
 
 .listpopin .list .referentiallink {
   height: 20px;
-  float: right; 
+  float: right;
   cursor: pointer;
 }
 
@@ -764,7 +757,7 @@ padding: 10px;
   z-index: 1000;
 
   border: 1px solid rgb(157, 157, 157);
-  
+
 }
 
 .detailpopin .title {
@@ -822,7 +815,7 @@ padding: 10px;
   font-family: gothamrnd, Arial, sans-serif;
   font-weight: bold;
   font-size: 20px;
-  line-height: 35px;  
+  line-height: 35px;
   text-align: center;
 }
 .detailpopin .accesseasiness h4 {
@@ -841,6 +834,6 @@ padding: 10px;
     width: 750px;
     margin: 0;
     padding: 0;
-    background: #FFF; 
+    background: #FFF;
   }
 }
